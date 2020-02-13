@@ -1,0 +1,1 @@
+@W: MT462 :"w:\my documents\ece 270\lab10\gan35_lab10.v":316:5:328:19|Net STEP3A.un1_outCHAR15_0 appears to be an unidentified clock source. Assuming default frequency. 

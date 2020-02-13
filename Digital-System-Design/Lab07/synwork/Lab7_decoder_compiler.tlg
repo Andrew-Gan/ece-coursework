@@ -1,0 +1,9 @@
+Selecting top level module Lab7_decoder
+@N: CG364 :"U:\desktop\lab7\lab7_decoder.v":1:7:1:18|Synthesizing module Lab7_decoder
+
+@A: CL110 :"U:\desktop\lab7\lab7_decoder.v":7:2:7:5|Too many clocks (> 8) for set/reset analysis of DISP, try moving enabling expressions outside always block
+@W: CL118 :"U:\desktop\lab7\lab7_decoder.v":7:2:7:5|Latch generated from always block for signal DISP[7:0]; possible missing assignment in an if or case statement.
+@W: CL279 :"U:\desktop\lab7\lab7_decoder.v":7:2:7:5|Pruning register bits 7 to 1 of Y[7:0] 
+
+@W: CL246 :"U:\desktop\lab7\lab7_decoder.v":1:20:1:20|Input port bits 3 to 0 of I[7:0] are unused
+

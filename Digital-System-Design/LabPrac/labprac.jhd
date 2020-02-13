@@ -1,0 +1,11 @@
+MODULE cla4 DEFIN labprac.v
+MODULE bounceless_switch DEFIN labprac.v
+MODULE myLP DEFIN labprac.v
+	SUBMODULE cla4
+		INSTANCE LP
+	SUBMODULE bounceless_switch
+		INSTANCE LFTPB
+	SUBMODULE bounceless_switch
+		INSTANCE RGTPB
+	SUBMODULE OSCTIMER
+		INSTANCE I1

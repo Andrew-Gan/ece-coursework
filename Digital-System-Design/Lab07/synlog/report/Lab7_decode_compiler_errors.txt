@@ -1,0 +1,2 @@
+@E: CG1204 :"U:\desktop\lab7\lab7_decode.v":8:4:8:13|Generate if condition expression did not evaluate to a constant
+

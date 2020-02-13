@@ -1,0 +1,155 @@
+Synopsys CPLD Technology Mapper, Version maplat, Build 621R, Built Mar 19 2013
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09LC-SP1 
+@N: MF248 |Running in 64-bit mode.
+@N: MF135 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Found RAM 'STEP1B.MEM_1[6:0]', 16 words by 7 bits 
+@N: MF135 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Found RAM 'STEP1B.MEM[6:0]', 16 words by 7 bits 
+@N:"w:\my documents\ece 270\lab13\gan35_lab13.v":402:1:402:6|Found counter in view:work.lab13_top(verilog) inst STEP2.qPC[3:0]
+@N:"w:\my documents\ece 270\lab13\gan35_lab13.v":349:3:349:8|Found counter in view:work.lab13_top(verilog) inst STEP1B.oADDR[3:0]
+@N: MO106 :"w:\my documents\ece 270\lab13\gan35_lab13.v":309:3:309:6|Found ROM, 'STEP5C.outDIS_1[6:0]', 16 words by 7 bits 
+@N: MO106 :"w:\my documents\ece 270\lab13\gan35_lab13.v":309:3:309:6|Found ROM, 'STEP1F.outDIS_1[6:0]', 16 words by 7 bits 
+@N: MO106 :"w:\my documents\ece 270\lab13\gan35_lab13.v":309:3:309:6|Found ROM, 'STEP1D.outDIS_1[6:0]', 16 words by 7 bits 
+@N: MO106 :"w:\my documents\ece 270\lab13\gan35_lab13.v":309:3:309:6|Found ROM, 'STEP1C.outDIS_1[6:0]', 16 words by 7 bits 
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram4_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram4_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram4_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram4_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram4_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram4_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram4_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram4_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram5_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram5_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram6_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram6_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram6_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram6_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram6_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram6_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram6_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram6_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram7_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram7_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram7_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram7_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram11_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram11_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram11_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram11_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram15_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram15_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram12_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram12_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram12_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram12_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram14_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram14_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram14_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram14_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram15_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram15_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram0_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram0_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram0_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram0_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram0_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram0_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram1_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram1_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram1_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram1_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram1_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram1_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram2_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram2_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram2_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram2_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram2_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram2_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram3_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram3_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram3_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram3_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram3_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram3_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram4_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram4_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram4_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram4_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram4_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram4_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram0_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram0_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram0_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram0_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram0_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram0_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram0_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram0_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram1_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram1_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram1_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram1_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram5_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram5_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram1_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram1_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram5_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram5_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram1_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram1_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram5_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram5_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram5_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram5_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram5_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram5_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram5_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram5_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram6_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram6_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram6_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram6_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram6_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram6_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram7_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram7_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram2_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram2_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram2_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram2_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram2_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram2_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram2_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram2_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram3_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram3_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram3_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram3_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram3_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram3_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram3_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram3_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram7_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram7_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram7_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram7_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram7_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram7_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram7_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram7_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram8_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram8_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram8_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram8_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram8_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram8_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram8_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram8_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram8_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram8_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram8_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram8_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram8_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram8_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram9_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram9_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram9_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram9_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram9_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram9_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram9_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram9_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram9_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram9_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram9_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram9_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram9_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram9_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram10_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram10_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram10_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram10_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram10_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram10_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram10_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram10_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram10_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram10_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram10_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram10_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram10_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram10_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram11_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram11_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram11_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram11_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram11_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram11_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram11_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram11_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram11_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram11_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram12_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram12_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram12_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram12_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram12_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram12_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram12_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram12_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram12_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram12_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram13_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram13_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram13_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram13_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram13_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram13_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram13_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram13_[6]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram13_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram13_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram13_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram13_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram13_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram13_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram14_[0],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram14_[0]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram14_[1],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram14_[1]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram14_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram14_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram14_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram14_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram14_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram14_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram15_[2],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram15_[2]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram15_[3],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram15_[3]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram15_[4],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram15_[4]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram15_[5],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram15_[5]
+@W: BN132 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Removing instance STEP1B.MEM_1.STEP1B.MEM_1_ram15_[6],  because it is equivalent to instance STEP1B.MEM.STEP1B.MEM_ram15_[6]
+@W: FC103 :|Internal tri state STEP4B.qCC_1_0 converted to mux. Simulation mismatch can happen 
+@W: FC103 :|Internal tri state STEP4B.qCC_1 converted to mux. Simulation mismatch can happen 
+@W: MT462 :"w:\my documents\ece 270\lab13\gan35_lab13.v":527:16:527:27|Net STEP4B.oDATA_1 appears to be an unidentified clock source. Assuming default frequency. 
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+DFFC            131 uses
+DFF             1 use
+DFFRSH          3 uses
+DFFRH           1 use
+DFFCRH          8 uses
+IBUF            12 uses
+OBUF            57 uses
+AND2            717 uses
+XOR2            26 uses
+INV             415 uses
+OR2             232 uses
+DLAT            4 uses
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+G-2012.09LC-SP1 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 34MB peak: 101MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Apr 18 14:50:05 2019
+
+###########################################################]

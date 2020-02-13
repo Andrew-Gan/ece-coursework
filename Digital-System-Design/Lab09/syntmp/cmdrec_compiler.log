@@ -1,0 +1,9 @@
+C:\ispLEVER_Classic1_7\synpbase\bin64\c_ver.exe  -osyn  W:\ecn.data\desktop\lab9\synwork\lab9_top_compiler.srs  -top  lab9_top  -prodtype  synplify_pro  -I w:\ecn.data\desktop\lab9\  -I C:\ispLEVER_Classic1_7\synpbase\lib  -v2001  -encrypt  -pro  -dmgen  W:\ecn.data\desktop\lab9\dm  -ll 2000 -compiler_compatible  -ui -fid2 -ram -sharing on  -autosm -lib work C:\ispLEVER_Classic1_7\ispcpld\..\cae_library\synthesis\verilog\mach.v -lib work W:\ecn.data\desktop\lab9\lab9.h -lib work W:\ecn.data\desktop\lab9\gan35_lab9.v -loga  W:\ecn.data\desktop\lab9\lab9_top.srr 
+rc:1 success:1
+W:\ecn.data\desktop\lab9\synwork\lab9_top_compiler.srs|o|1553196545|8090
+C:\ispLEVER_Classic1_7\ispcpld\..\cae_library\synthesis\verilog\mach.v|i|1336523408|12168
+W:\ecn.data\desktop\lab9\lab9.h|i|1552686777|0
+W:\ecn.data\desktop\lab9\gan35_lab9.v|i|1553196536|11963
+W:\ecn.data\desktop\lab9\lab9_top.srr|o|1553196545|2984
+C:\ispLEVER_Classic1_7\synpbase\bin64\c_ver.exe|i|1363708060|5587968
+C:\ispLEVER_Classic1_7\synpbase\bin\c_ver.exe|i|1363708036|2088448

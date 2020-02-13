@@ -1,0 +1,16 @@
+666666
+11111
+3333
+222
+3333
+222
+3333
+11111
+666666
+
+Compile values:
+PC: 16
+sp: -1
+rstack: empty
+fpsp: -1
+fpstack: empty

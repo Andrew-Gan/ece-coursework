@@ -1,0 +1,8 @@
+CLK  i
+RST  i
+PCC  i
+POA  i
+oADDR[3]  o
+oADDR[2]  o
+oADDR[1]  o
+oADDR[0]  o

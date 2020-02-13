@@ -1,0 +1,44 @@
+Selecting top level module lab12_top
+@N: CG364 :"C:\ispLEVER_Classic1_7\ispcpld\..\cae_library\synthesis\verilog\mach.v":417:7:417:14|Synthesizing module OSCTIMER
+
+@N: CG364 :"W:\my documents\ece 270\lab12\gan35_lab12.v":297:9:297:25|Synthesizing module frequency_divider
+
+@N: CG364 :"W:\my documents\ece 270\lab12\gan35_lab12.v":270:9:270:25|Synthesizing module bounceless_switch
+
+@N: CG364 :"W:\my documents\ece 270\lab12\gan35_lab12.v":495:7:495:10|Synthesizing module lfsr
+
+@N: CG364 :"W:\my documents\ece 270\lab12\gan35_lab12.v":520:7:520:10|Synthesizing module cla4
+
+@N: CG364 :"W:\my documents\ece 270\lab12\gan35_lab12.v":556:7:556:13|Synthesizing module magcomp
+
+@N: CG364 :"W:\my documents\ece 270\lab12\gan35_lab12.v":580:7:580:14|Synthesizing module roundcnt
+
+@N: CL177 :"W:\my documents\ece 270\lab12\gan35_lab12.v":589:1:589:6|Sharing sequential element next_qrnd.
+@N: CL177 :"W:\my documents\ece 270\lab12\gan35_lab12.v":589:1:589:6|Sharing sequential element next_qrnd.
+@N: CG364 :"W:\my documents\ece 270\lab12\gan35_lab12.v":316:8:316:14|Synthesizing module bcd2dis
+
+@N: CG364 :"W:\my documents\ece 270\lab12\gan35_lab12.v":610:7:610:11|Synthesizing module bcdfa
+
+@N: CG364 :"W:\my documents\ece 270\lab12\gan35_lab12.v":635:7:635:14|Synthesizing module bcdaccum
+
+@W: CS263 :"W:\my documents\ece 270\lab12\gan35_lab12.v":648:32:648:35|Port-width mismatch for port B. Formal has width 4, Actual 1
+@N: CL177 :"W:\my documents\ece 270\lab12\gan35_lab12.v":650:1:650:6|Sharing sequential element next_oSCORE.
+@N: CG364 :"W:\my documents\ece 270\lab12\gan35_lab12.v":664:7:664:13|Synthesizing module winlose
+
+@W: CG296 :"W:\my documents\ece 270\lab12\gan35_lab12.v":672:10:672:15|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"W:\my documents\ece 270\lab12\gan35_lab12.v":673:20:673:25|Referenced variable THRESH is not in sensitivity list
+@N: CG364 :"W:\my documents\ece 270\lab12\gan35_lab12.v":383:7:383:12|Synthesizing module msggen
+
+@W: CG296 :"W:\my documents\ece 270\lab12\gan35_lab12.v":463:9:463:10|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"W:\my documents\ece 270\lab12\gan35_lab12.v":469:14:469:17|Referenced variable ones is not in sensitivity list
+@W: CG290 :"W:\my documents\ece 270\lab12\gan35_lab12.v":467:14:467:17|Referenced variable tens is not in sensitivity list
+@W: CL118 :"W:\my documents\ece 270\lab12\gan35_lab12.v":464:2:464:3|Latch generated from always block for signal outCHAR[6:0]; possible missing assignment in an if or case statement.
+@N: CL177 :"W:\my documents\ece 270\lab12\gan35_lab12.v":445:0:445:5|Sharing sequential element CQ.
+@N: CG364 :"W:\my documents\ece 270\lab12\gan35_lab12.v":357:7:357:15|Synthesizing module dispshift
+
+@N: CG364 :"W:\my documents\ece 270\lab12\gan35_lab12.v":1:7:1:15|Synthesizing module lab12_top
+
+@W: CG360 :"W:\my documents\ece 270\lab12\gan35_lab12.v":46:11:46:16|No assignment to wire TOPRED
+
+@W: CL156 :"W:\my documents\ece 270\lab12\gan35_lab12.v":46:11:46:16|*Input TOPRED[7:0] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"W:\my documents\ece 270\lab12\gan35_lab12.v":253:7:253:17|*Input un1_MIDRED[7:0] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.

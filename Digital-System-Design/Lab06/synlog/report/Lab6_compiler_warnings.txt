@@ -1,0 +1,2 @@
+@W: CG360 :"U:\desktop\lab6\lab6.v":4:6:4:11|No assignment to wire orRCiK
+

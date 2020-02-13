@@ -1,0 +1,4 @@
+@E: CG283 :"U:\desktop\lab7\lab7_dorm.v":9:2:9:7|Procedural assign is not a supported statement
+@E: CG283 :"U:\desktop\lab7\lab7_dorm.v":22:2:22:7|Procedural assign is not a supported statement
+@E: CS180 :"U:\desktop\lab7\lab7_dorm.v":22:9:22:9|Assignment target Y must be a register or integer
+

@@ -1,0 +1,15 @@
+CLK  i
+ARST  i
+SRST  i
+EN  i
+count_state[2]  o
+count_state[1]  o
+count_state[0]  o
+count_decode[7]  o
+count_decode[6]  o
+count_decode[5]  o
+count_decode[4]  o
+count_decode[3]  o
+count_decode[2]  o
+count_decode[1]  o
+count_decode[0]  o

@@ -1,0 +1,4 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MO106 :"u:\desktop\lab7\lab7_decode.v":32:2:32:5|Found ROM, 'DISP_4[0:6]', 16 words by 7 bits 
+@N: MO106 :"u:\desktop\lab7\lab7_decode.v":11:2:11:5|Found ROM, 'DISP_2[0:6]', 16 words by 7 bits 
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.

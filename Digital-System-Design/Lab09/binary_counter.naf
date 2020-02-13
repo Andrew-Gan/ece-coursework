@@ -1,0 +1,6 @@
+CLK  i
+OUT[3]  o
+OUT[2]  o
+OUT[1]  o
+OUT[0]  o
+dir  i

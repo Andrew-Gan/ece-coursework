@@ -1,0 +1,323 @@
+|--------------------------------------------------- ----------|
+|- ispLEVER Classic 1.7.00.05.28.13 Equations File            -|
+|- Copyright(C), 1992-2012, Lattice Semiconductor Corporation -|
+|- All Rights Reserved.                                       -|
+|--------------------------------------------------------------|
+
+
+Equations:
+
+
+FDIVBY2_clk_out.D = !FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+FDIVBY2_clk_out.C = tmr_out ; (1 pterm, 1 signal)
+FDIVBY2_clk_out.AR = DIP_0_ ; (1 pterm, 1 signal)
+
+LFTPB_Q.D = 1 ; (1 pterm, 0 signal)
+LFTPB_Q.C = !i_S2_NO ; (1 pterm, 1 signal)
+LFTPB_Q.AR = !i_S2_NC ; (1 pterm, 1 signal)
+LFTPB_Q.AP = !i_S2_NO ; (1 pterm, 1 signal)
+
+RGTPB_Q.D = 1 ; (1 pterm, 0 signal)
+RGTPB_Q.C = !i_S1_NO ; (1 pterm, 1 signal)
+RGTPB_Q.AR = !i_S1_NC ; (1 pterm, 1 signal)
+RGTPB_Q.AP = !i_S1_NO ; (1 pterm, 1 signal)
+
+STEP4L_countout_3_.T = !DIP_6_ & !DIP_0_ & o_TOPRED_6_.Q & o_TOPRED_5_.Q
+       & o_TOPRED_4_.Q
+    # DIP_6_ & !DIP_0_ & !o_TOPRED_6_.Q & !o_TOPRED_5_.Q & !o_TOPRED_4_.Q
+    # DIP_0_ & STEP4L_countout_3_.Q ; (3 pterms, 6 signals)
+STEP4L_countout_3_.C = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP6_next_OUT_0_.D = !STEP6_ringout_0_.Q & !STEP6_ringout_1_.Q
+       & !STEP6_ringout_2_.Q & !STEP6_ringout_3_.Q & !STEP6_ringout_4_.Q
+       & !STEP6_ringout_5_.Q & !STEP6_ringout_6_.Q ; (1 pterm, 7 signals)
+STEP6_next_OUT_0_.LH = !DIP_0_ ; (1 pterm, 1 signal)
+
+STEP6_next_OUT_1_.D = STEP6_ringout_0_.Q ; (1 pterm, 1 signal)
+STEP6_next_OUT_1_.LH = !DIP_0_ ; (1 pterm, 1 signal)
+
+STEP6_next_OUT_2_.D = STEP6_ringout_1_.Q ; (1 pterm, 1 signal)
+STEP6_next_OUT_2_.LH = !DIP_0_ ; (1 pterm, 1 signal)
+
+STEP6_next_OUT_3_.D = STEP6_ringout_2_.Q ; (1 pterm, 1 signal)
+STEP6_next_OUT_3_.LH = !DIP_0_ ; (1 pterm, 1 signal)
+
+STEP6_next_OUT_4_.D = STEP6_ringout_3_.Q ; (1 pterm, 1 signal)
+STEP6_next_OUT_4_.LH = !DIP_0_ ; (1 pterm, 1 signal)
+
+STEP6_next_OUT_5_.D = STEP6_ringout_4_.Q ; (1 pterm, 1 signal)
+STEP6_next_OUT_5_.LH = !DIP_0_ ; (1 pterm, 1 signal)
+
+STEP6_next_OUT_6_.D = STEP6_ringout_5_.Q ; (1 pterm, 1 signal)
+STEP6_next_OUT_6_.LH = !DIP_0_ ; (1 pterm, 1 signal)
+
+STEP6_next_OUT_7_.D = STEP6_ringout_6_.Q ; (1 pterm, 1 signal)
+STEP6_next_OUT_7_.LH = !DIP_0_ ; (1 pterm, 1 signal)
+
+STEP6_ringout_0_.D = STEP6_next_OUT_0_.Q ; (1 pterm, 1 signal)
+STEP6_ringout_0_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP6_ringout_1_.D = STEP6_next_OUT_1_.Q ; (1 pterm, 1 signal)
+STEP6_ringout_1_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP6_ringout_2_.D = STEP6_next_OUT_2_.Q ; (1 pterm, 1 signal)
+STEP6_ringout_2_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP6_ringout_3_.D = STEP6_next_OUT_3_.Q ; (1 pterm, 1 signal)
+STEP6_ringout_3_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP6_ringout_4_.D = STEP6_next_OUT_4_.Q ; (1 pterm, 1 signal)
+STEP6_ringout_4_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP6_ringout_5_.D = STEP6_next_OUT_5_.Q ; (1 pterm, 1 signal)
+STEP6_ringout_5_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP6_ringout_6_.D = STEP6_next_OUT_6_.Q ; (1 pterm, 1 signal)
+STEP6_ringout_6_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP6_ringout_7_.D = STEP6_next_OUT_7_.Q ; (1 pterm, 1 signal)
+STEP6_ringout_7_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP8_present_state_1_.D = !DIP_3_ & !DIP_2_ & !DIP_0_
+       & STEP8_present_state_2_.Q & STEP8_present_state_i_0_.Q
+    # DIP_2_ & !DIP_0_ & !STEP8_present_state_i_0_.Q ; (2 pterms, 5 signals)
+STEP8_present_state_1_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP8_present_state_2_.D = !DIP_3_ & DIP_2_ & !DIP_0_
+       & STEP8_present_state_1_.Q
+    # !DIP_3_ & !DIP_2_ & !DIP_0_ & STEP8_present_state_4_.Q ; (2 pterms, 5 signals)
+STEP8_present_state_2_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP8_present_state_3_.D = DIP_3_ & DIP_2_ & !DIP_0_
+       & STEP8_present_state_1_.Q ; (1 pterm, 4 signals)
+STEP8_present_state_3_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP8_present_state_4_.D = !DIP_3_ & DIP_2_ & !DIP_0_
+       & STEP8_present_state_2_.Q & STEP8_present_state_i_0_.Q
+    # !DIP_2_ & !DIP_0_ & !STEP8_present_state_i_0_.Q ; (2 pterms, 5 signals)
+STEP8_present_state_4_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP8_present_state_5_.D = DIP_3_ & !DIP_2_ & !DIP_0_
+       & STEP8_present_state_4_.Q ; (1 pterm, 4 signals)
+STEP8_present_state_5_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP8_present_state_6_.D = DIP_3_ & DIP_2_ & !DIP_0_
+       & STEP8_present_state_3_.Q
+    # DIP_3_ & !DIP_2_ & !DIP_0_ & STEP8_present_state_5_.Q ; (2 pterms, 5 signals)
+STEP8_present_state_6_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+STEP8_present_state_i_0_.D = !( DIP_3_ & !DIP_2_ & !STEP8_present_state_4_.Q
+       & !STEP8_present_state_5_.Q & STEP8_present_state_i_0_.Q
+    # DIP_3_ & DIP_2_ & !STEP8_present_state_1_.Q & !STEP8_present_state_3_.Q
+       & STEP8_present_state_i_0_.Q
+    # !DIP_3_ & !DIP_2_ & !STEP8_present_state_2_.Q
+       & !STEP8_present_state_4_.Q & STEP8_present_state_i_0_.Q
+    # !DIP_3_ & DIP_2_ & !STEP8_present_state_1_.Q & !STEP8_present_state_2_.Q
+       & STEP8_present_state_i_0_.Q
+    # DIP_0_ ) ; (5 pterms, 9 signals)
+STEP8_present_state_i_0_.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+
+dip_i_1__n = !DIP_1_ ; (1 pterm, 1 signal)
+
+gnd_n_n = 0 ; (0 pterm, 0 signal)
+
+o_BOTRED_0_ = !DIP_0_ ; (1 pterm, 1 signal)
+
+o_BOTRED_1_ = dip_i_1__n ; (1 pterm, 1 signal)
+
+o_BOTRED_2_ = !DIP_2_ ; (1 pterm, 1 signal)
+
+o_BOTRED_3_ = !DIP_3_ ; (1 pterm, 1 signal)
+
+o_BOTRED_4_ = !DIP_4_ ; (1 pterm, 1 signal)
+
+o_BOTRED_5_ = !DIP_5_ ; (1 pterm, 1 signal)
+
+o_BOTRED_6_ = !DIP_6_ ; (1 pterm, 1 signal)
+
+o_BOTRED_7_ = !DIP_7_ ; (1 pterm, 1 signal)
+
+o_DIS1_0_ = o_TOPRED_3_.Q & !o_TOPRED_2_.Q & !o_TOPRED_1_.Q & !o_TOPRED_0_.Q
+    # !o_TOPRED_3_.Q & !o_TOPRED_2_.Q & o_TOPRED_1_.Q & o_TOPRED_0_.Q
+    # o_TOPRED_3_.Q & o_TOPRED_2_.Q & o_TOPRED_1_.Q
+    # DIP_7_ ; (4 pterms, 5 signals)
+
+o_DIS1_1_ = !DIP_7_ & !o_TOPRED_3_.Q & !o_TOPRED_2_.Q & o_TOPRED_1_.Q
+       & !o_TOPRED_0_.Q
+    # !DIP_7_ & o_TOPRED_3_.Q & o_TOPRED_2_.Q & !o_TOPRED_1_.Q
+    # !DIP_7_ & o_TOPRED_3_.Q & o_TOPRED_2_.Q & !o_TOPRED_0_.Q
+    # !DIP_7_ & o_TOPRED_3_.Q & !o_TOPRED_1_.Q & !o_TOPRED_0_.Q ; (4 pterms, 5 signals)
+
+o_DIS1_2_ = !DIP_7_ & o_TOPRED_2_.Q & o_TOPRED_1_.Q & !o_TOPRED_0_.Q
+    # !DIP_7_ & o_TOPRED_3_.Q & !o_TOPRED_2_.Q & o_TOPRED_1_.Q
+    # !DIP_7_ & o_TOPRED_3_.Q & !o_TOPRED_0_.Q ; (3 pterms, 5 signals)
+
+o_DIS1_3_ = !DIP_7_ & !o_TOPRED_3_.Q & o_TOPRED_2_.Q & !o_TOPRED_1_.Q
+       & o_TOPRED_0_.Q
+    # !DIP_7_ & o_TOPRED_3_.Q & o_TOPRED_2_.Q & o_TOPRED_1_.Q & !o_TOPRED_0_.Q
+    # !DIP_7_ & o_TOPRED_3_.Q & !o_TOPRED_2_.Q & o_TOPRED_1_.Q & o_TOPRED_0_.Q
+    # !DIP_7_ & !o_TOPRED_2_.Q & !o_TOPRED_1_.Q & !o_TOPRED_0_.Q ; (4 pterms, 5 signals)
+
+o_DIS1_4_ = !DIP_7_ & o_TOPRED_3_.Q & o_TOPRED_2_.Q & !o_TOPRED_1_.Q
+       & o_TOPRED_0_.Q
+    # !DIP_7_ & !o_TOPRED_3_.Q & !o_TOPRED_2_.Q & !o_TOPRED_1_.Q
+    # !DIP_7_ & !o_TOPRED_3_.Q & !o_TOPRED_2_.Q & o_TOPRED_0_.Q ; (3 pterms, 5 signals)
+
+o_DIS1_5_ = !DIP_7_ & o_TOPRED_3_.Q & !o_TOPRED_2_.Q & o_TOPRED_1_.Q
+       & !o_TOPRED_0_.Q
+    # !DIP_7_ & !o_TOPRED_2_.Q & !o_TOPRED_1_.Q & o_TOPRED_0_.Q
+    # !DIP_7_ & !o_TOPRED_3_.Q & !o_TOPRED_1_.Q & !o_TOPRED_0_.Q
+    # !DIP_7_ & !o_TOPRED_3_.Q & !o_TOPRED_2_.Q & o_TOPRED_0_.Q ; (4 pterms, 5 signals)
+
+o_DIS1_6_.X1 = DIP_7_
+    # !o_TOPRED_3_.Q & o_TOPRED_2_.Q & !o_TOPRED_0_.Q
+    # o_TOPRED_3_.Q & !o_TOPRED_2_.Q & o_TOPRED_1_.Q ; (3 pterms, 5 signals)
+o_DIS1_6_.X2 = !DIP_7_ & o_TOPRED_1_.Q & !o_TOPRED_0_.Q ; (1 pterm, 3 signals)
+
+o_DIS2_0_ = !DIP_7_ ; (1 pterm, 1 signal)
+
+o_DIS2_1_ = !DIP_7_ ; (1 pterm, 1 signal)
+
+o_DIS2_2_ = !DIP_7_ ; (1 pterm, 1 signal)
+
+o_DIS2_3_ = 1 ; (1 pterm, 0 signal)
+
+o_DIS2_4_ = 1 ; (1 pterm, 0 signal)
+
+o_DIS2_5_ = !DIP_7_ ; (1 pterm, 1 signal)
+
+o_DIS2_6_ = !DIP_7_ ; (1 pterm, 1 signal)
+
+o_DIS3_0_ = !DIP_7_ ; (1 pterm, 1 signal)
+
+o_DIS3_1_ = 1 ; (1 pterm, 0 signal)
+
+o_DIS3_2_ = !DIP_7_ ; (1 pterm, 1 signal)
+
+o_DIS3_3_ = !DIP_7_ ; (1 pterm, 1 signal)
+
+o_DIS3_4_ = !DIP_7_ ; (1 pterm, 1 signal)
+
+o_DIS3_5_ = 1 ; (1 pterm, 0 signal)
+
+o_DIS3_6_ = 1 ; (1 pterm, 0 signal)
+
+o_DIS4_0_ = !DIP_7_ & !o_TOPRED_6_.Q & !o_TOPRED_5_.Q & !o_TOPRED_4_.Q
+       & !STEP4L_countout_3_.Q
+    # !DIP_7_ & !o_TOPRED_6_.Q & o_TOPRED_5_.Q & o_TOPRED_4_.Q
+       & STEP4L_countout_3_.Q
+    # !DIP_7_ & o_TOPRED_6_.Q & o_TOPRED_5_.Q & !STEP4L_countout_3_.Q ; (3 pterms, 5 signals)
+
+o_DIS4_1_ = !DIP_7_ & !o_TOPRED_6_.Q & o_TOPRED_5_.Q & !o_TOPRED_4_.Q
+       & STEP4L_countout_3_.Q
+    # !DIP_7_ & o_TOPRED_6_.Q & !o_TOPRED_5_.Q & !STEP4L_countout_3_.Q
+    # !DIP_7_ & o_TOPRED_6_.Q & !o_TOPRED_4_.Q & !STEP4L_countout_3_.Q
+    # !DIP_7_ & !o_TOPRED_5_.Q & !o_TOPRED_4_.Q & !STEP4L_countout_3_.Q ; (4 pterms, 5 signals)
+
+o_DIS4_2_ = o_TOPRED_6_.Q & o_TOPRED_5_.Q & !o_TOPRED_4_.Q
+    # !o_TOPRED_6_.Q & o_TOPRED_5_.Q & !STEP4L_countout_3_.Q
+    # DIP_7_
+    # !o_TOPRED_4_.Q & !STEP4L_countout_3_.Q ; (4 pterms, 5 signals)
+
+o_DIS4_3_ = !DIP_7_ & o_TOPRED_6_.Q & !o_TOPRED_5_.Q & o_TOPRED_4_.Q
+       & STEP4L_countout_3_.Q
+    # !DIP_7_ & o_TOPRED_6_.Q & o_TOPRED_5_.Q & !o_TOPRED_4_.Q
+       & !STEP4L_countout_3_.Q
+    # !DIP_7_ & !o_TOPRED_6_.Q & o_TOPRED_5_.Q & o_TOPRED_4_.Q
+       & !STEP4L_countout_3_.Q
+    # !DIP_7_ & !o_TOPRED_6_.Q & !o_TOPRED_5_.Q & !o_TOPRED_4_.Q ; (4 pterms, 5 signals)
+
+o_DIS4_4_ = !DIP_7_ & o_TOPRED_6_.Q & !o_TOPRED_5_.Q & o_TOPRED_4_.Q
+       & !STEP4L_countout_3_.Q
+    # !DIP_7_ & !o_TOPRED_6_.Q & !o_TOPRED_5_.Q & STEP4L_countout_3_.Q
+    # !DIP_7_ & !o_TOPRED_6_.Q & o_TOPRED_4_.Q & STEP4L_countout_3_.Q ; (3 pterms, 5 signals)
+
+o_DIS4_5_ = !DIP_7_ & !o_TOPRED_6_.Q & o_TOPRED_5_.Q & !o_TOPRED_4_.Q
+       & !STEP4L_countout_3_.Q
+    # !DIP_7_ & !o_TOPRED_6_.Q & !o_TOPRED_5_.Q & o_TOPRED_4_.Q
+    # !DIP_7_ & !o_TOPRED_5_.Q & !o_TOPRED_4_.Q & STEP4L_countout_3_.Q
+    # !DIP_7_ & !o_TOPRED_6_.Q & o_TOPRED_4_.Q & STEP4L_countout_3_.Q ; (4 pterms, 5 signals)
+
+o_DIS4_6_ = !DIP_7_ & !o_TOPRED_6_.Q & o_TOPRED_5_.Q & o_TOPRED_4_.Q
+       & !STEP4L_countout_3_.Q
+    # !DIP_7_ & o_TOPRED_6_.Q & !o_TOPRED_5_.Q & !o_TOPRED_4_.Q
+       & STEP4L_countout_3_.Q
+    # !DIP_7_ & o_TOPRED_6_.Q & o_TOPRED_5_.Q & !o_TOPRED_4_.Q
+       & !STEP4L_countout_3_.Q
+    # !DIP_7_ & !o_TOPRED_6_.Q & o_TOPRED_5_.Q & !o_TOPRED_4_.Q
+       & STEP4L_countout_3_.Q ; (4 pterms, 5 signals)
+
+o_JUMBO_0_ = !STEP8_present_state_1_.Q & !STEP8_present_state_3_.Q
+       & !STEP8_present_state_6_.Q ; (1 pterm, 3 signals)
+
+o_JUMBO_1_ = !( !STEP8_present_state_1_.Q & !STEP8_present_state_4_.Q
+       & STEP8_present_state_i_0_.Q ) ; (1 pterm, 3 signals)
+
+o_JUMBO_2_ = !STEP8_present_state_4_.Q & !STEP8_present_state_5_.Q
+       & !STEP8_present_state_6_.Q ; (1 pterm, 3 signals)
+
+o_LED_YELLOW_0_.D = 0 ; (0 pterm, 0 signal)
+o_LED_YELLOW_0_.C = !i_S1_NO ; (1 pterm, 1 signal)
+o_LED_YELLOW_0_.AR = !i_S1_NO ; (1 pterm, 1 signal)
+o_LED_YELLOW_0_.AP = !i_S1_NC ; (1 pterm, 1 signal)
+
+o_LED_YELLOW_1_.D = 0 ; (0 pterm, 0 signal)
+o_LED_YELLOW_1_.C = !i_S2_NO ; (1 pterm, 1 signal)
+o_LED_YELLOW_1_.AR = !i_S2_NO ; (1 pterm, 1 signal)
+o_LED_YELLOW_1_.AP = !i_S2_NC ; (1 pterm, 1 signal)
+
+o_MIDRED_0_ = !STEP6_ringout_0_.Q ; (1 pterm, 1 signal)
+
+o_MIDRED_1_ = !STEP6_ringout_1_.Q ; (1 pterm, 1 signal)
+
+o_MIDRED_2_ = !STEP6_ringout_2_.Q ; (1 pterm, 1 signal)
+
+o_MIDRED_3_ = !STEP6_ringout_3_.Q ; (1 pterm, 1 signal)
+
+o_MIDRED_4_ = !STEP6_ringout_4_.Q ; (1 pterm, 1 signal)
+
+o_MIDRED_5_ = !STEP6_ringout_5_.Q ; (1 pterm, 1 signal)
+
+o_MIDRED_6_ = !STEP6_ringout_6_.Q ; (1 pterm, 1 signal)
+
+o_MIDRED_7_ = !STEP6_ringout_7_.Q ; (1 pterm, 1 signal)
+
+o_TOPRED_0_.D = !( !DIP_0_ & o_TOPRED_0_.Q ) ; (1 pterm, 2 signals)
+o_TOPRED_0_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+
+o_TOPRED_1_.D = !( !DIP_0_ & o_TOPRED_1_.Q & !o_TOPRED_0_.Q
+    # !DIP_0_ & !o_TOPRED_1_.Q & o_TOPRED_0_.Q ) ; (2 pterms, 3 signals)
+o_TOPRED_1_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+
+o_TOPRED_2_.D = !( !DIP_0_ & o_TOPRED_2_.Q & !o_TOPRED_1_.Q & !o_TOPRED_0_.Q
+    # !DIP_0_ & !o_TOPRED_2_.Q & o_TOPRED_1_.Q
+    # !DIP_0_ & !o_TOPRED_2_.Q & o_TOPRED_0_.Q ) ; (3 pterms, 4 signals)
+o_TOPRED_2_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+
+o_TOPRED_3_.D = !( !DIP_0_ & o_TOPRED_3_.Q & !o_TOPRED_2_.Q & !o_TOPRED_1_.Q
+       & !o_TOPRED_0_.Q
+    # !DIP_0_ & !o_TOPRED_3_.Q & o_TOPRED_2_.Q
+    # !DIP_0_ & !o_TOPRED_3_.Q & o_TOPRED_1_.Q
+    # !DIP_0_ & !o_TOPRED_3_.Q & o_TOPRED_0_.Q ) ; (4 pterms, 5 signals)
+o_TOPRED_3_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+
+o_TOPRED_4_.D = !( !DIP_0_ & o_TOPRED_4_.Q ) ; (1 pterm, 2 signals)
+o_TOPRED_4_.C = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+o_TOPRED_5_.D = !( !DIP_6_ & !DIP_0_ & o_TOPRED_5_.Q & o_TOPRED_4_.Q
+    # DIP_6_ & !DIP_0_ & o_TOPRED_5_.Q & !o_TOPRED_4_.Q
+    # DIP_6_ & !DIP_0_ & !o_TOPRED_5_.Q & o_TOPRED_4_.Q
+    # !DIP_6_ & !DIP_0_ & !o_TOPRED_5_.Q & !o_TOPRED_4_.Q ) ; (4 pterms, 4 signals)
+o_TOPRED_5_.C = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+o_TOPRED_6_.D = !( DIP_6_ & !DIP_0_ & !o_TOPRED_6_.Q & o_TOPRED_5_.Q
+    # !DIP_0_ & !o_TOPRED_6_.Q & !o_TOPRED_5_.Q & o_TOPRED_4_.Q
+    # !DIP_6_ & !DIP_0_ & !o_TOPRED_6_.Q & !o_TOPRED_4_.Q
+    # !DIP_6_ & !DIP_0_ & o_TOPRED_6_.Q & o_TOPRED_5_.Q & o_TOPRED_4_.Q
+    # DIP_6_ & !DIP_0_ & o_TOPRED_6_.Q & !o_TOPRED_5_.Q & !o_TOPRED_4_.Q ) ; (5 pterms, 5 signals)
+o_TOPRED_6_.C = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+o_TOPRED_7_ = !STEP4L_countout_3_.Q ; (1 pterm, 1 signal)
+
+osc_dip_i_1__n = !DIP_1_ ; (1 pterm, 1 signal)
+

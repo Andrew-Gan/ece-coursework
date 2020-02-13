@@ -1,0 +1,40 @@
+#$ TOOL ispLEVER Classic 1.7.00.05.28.13
+#$ DATE Thu Mar 07 15:47:28 2019
+#$ MODULE lab8_3
+#$ PINS 10 CLKIN:1'ke'  D:8'ke'  NC:9'ke'  NO:10'ke'  QM_N:16'ke'  QS_N:14'ke'  BQ:23'ke'  QM:17'ke'  QS:15'ke'  QFF:18'ke' 
+
+.model lab8_3
+.inputs CLKIN.BLIF D.BLIF NC.BLIF NO.BLIF BQ.BLIF QS.BLIF QM.BLIF
+.outputs QM_N QS_N QFF.D QFF.C BQ QS QM
+.names CLKIN.BLIF D.BLIF QM.BLIF QM_N
+00- 1
+--0 1
+-11 0
+1-1 0
+.names CLKIN.BLIF QS.BLIF QM.BLIF QS_N
+1-0 1
+-0- 1
+01- 0
+-11 0
+.names NC.BLIF NO.BLIF BQ.BLIF BQ
+-0- 1
+1-1 1
+01- 0
+-10 0
+.names CLKIN.BLIF QS.BLIF QM.BLIF QS
+01- 1
+1-1 1
+00- 0
+1-0 0
+.names CLKIN.BLIF D.BLIF QM.BLIF QM
+01- 1
+1-1 1
+00- 0
+1-0 0
+.names D.BLIF QFF.D
+1 1
+0 0
+.names CLKIN.BLIF QFF.C
+1 1
+0 0
+.end

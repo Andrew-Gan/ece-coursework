@@ -1,0 +1,23 @@
+JDF B
+// Created by Version 1.7 
+PROJECT Lab12
+DESIGN lab12 Normal
+DEVKIT LC4256ZE-5TN144C
+ENTRY Pure Verilog HDL
+MODULE gan35_lab12.v
+MODSTYLE lab12_top Normal
+MODSTYLE dispshift Normal
+MODSTYLE bounceless_switch Normal
+MODSTYLE msggen Normal
+MODSTYLE lfsr Normal
+MODSTYLE magcomp Normal
+MODSTYLE cla4 Normal
+MODSTYLE winlose Normal
+MODSTYLE roundcnt Normal
+MODSTYLE bcd2dis Normal
+MODSTYLE bcdaccum Normal
+MODSTYLE bcdfa Normal
+MODSTYLE frequency_divider Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE lab12_top

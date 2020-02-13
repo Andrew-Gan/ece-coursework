@@ -1,2 +1,2 @@
-# ece_undergrad
-Course content while in undergrad
+# ECE Undergraduate Coursework
+Institution: Purdue University

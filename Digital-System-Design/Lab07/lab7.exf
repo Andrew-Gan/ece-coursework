@@ -1,0 +1,79 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      I[0:6]                        I                  0          7            1
+      Port          2      Y[0:6]                        Y                  0          7            1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      I_0_                        I[0]                       1            0            
+        Port      I_1_                        I[1]                       1            1            
+        Port      I_2_                        I[2]                       1            2            
+        Port      I_3_                        I[3]                       1            3            
+        Port      I_4_                        I[4]                       1            4            
+        Port      I_5_                        I[5]                       1            5            
+        Port      I_6_                        I[6]                       1            6            
+        Port      Y_0_                        Y[0]                       2            0            
+        Port      Y_1_                        Y[1]                       2            1            
+        Port      Y_2_                        Y[2]                       2            2            
+        Port      Y_3_                        Y[3]                       2            3            
+        Port      Y_4_                        Y[4]                       2            4            
+        Port      Y_5_                        Y[5]                       2            5            
+        Port      Y_6_                        Y[6]                       2            6            
+End
+Section Cross Reference File
+Design 'Lab7' created Thu Feb 28 15:00:20 2019
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                   I_6_                                      I[6]
+   Inst                   I_5_                                      I[5]
+   Inst                   I_4_                                      I[4]
+   Inst                   I_3_                                      I[3]
+   Inst                   I_2_                                      I[2]
+   Inst                   I_1_                                      I[1]
+   Inst                   I_0_                                      I[0]
+   Inst                   Y_6_                                      Y[6]
+   Inst                   Y_5_                                      Y[5]
+   Inst                   Y_4_                                      Y[4]
+   Inst                   Y_3_                                      Y[3]
+   Inst                   Y_2_                                      Y[2]
+   Inst                   Y_1_                                      Y[1]
+   Inst                   Y_0_                                      Y[0]
+   Net                  i_6__n                                      I[6]
+   Net                  i_5__n                                      I[5]
+   Net                  i_4__n                                      I[4]
+   Net                  i_3__n                                      I[3]
+   Net                  i_2__n                                      I[2]
+   Net                  i_1__n                                      I[1]
+   Net                y_c_6__n                                    Y_c[6]
+   Net                  y_6__n                                      Y[6]
+   Net                y_c_5__n                                    Y_c[5]
+   Net                  y_5__n                                      Y[5]
+   Net                y_c_4__n                                    Y_c[4]
+   Net                  y_4__n                                      Y[4]
+   Net                y_c_3__n                                    Y_c[3]
+   Net                  y_3__n                                      Y[3]
+   Net                y_c_2__n                                    Y_c[2]
+   Net                  y_2__n                                      Y[2]
+   Net                y_c_1__n                                    Y_c[1]
+   Net                  y_1__n                                      Y[1]
+   Net                y_c_0__n                                    Y_c[0]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     I_0_
+        Input     S
+        Input     I_1_
+        Input     I_2_
+        Input     I_3_
+        Input     I_4_
+        Input     I_5_
+        Input     I_6_
+        Output     Y_0_
+        Output     DP
+        Output     Y_1_
+        Output     Y_2_
+        Output     Y_3_
+        Output     Y_4_
+        Output     Y_5_
+        Output     Y_6_
+End

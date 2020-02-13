@@ -1,0 +1,2 @@
+@E: CG906 :"U:\desktop\lab6\lab6.v":6:22:6:22|Reference to unknown variable C.
+

@@ -1,0 +1,2 @@
+@E: CG301 :"W:\ecn.data\desktop\lab9\gan35_lab9.v":224:12:224:28|Can't mix posedge/negedge use with plain signal references
+

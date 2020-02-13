@@ -1,0 +1,7 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MO106 :"w:\my documents\ece 270\lab12\gan35_lab12.v":335:3:335:6|Found ROM, 'STEP9I.outDIS_1[6:0]', 10 words by 7 bits 
+@N: MO106 :"w:\my documents\ece 270\lab12\gan35_lab12.v":335:3:335:6|Found ROM, 'STEP9H.outDIS_1[6:0]', 10 words by 7 bits 
+@N: MO106 :"w:\my documents\ece 270\lab12\gan35_lab12.v":335:3:335:6|Found ROM, 'STEP9E.outDIS_1[6:0]', 10 words by 7 bits 
+@N: MO106 :"w:\my documents\ece 270\lab12\gan35_lab12.v":335:3:335:6|Found ROM, 'II_1.outDIS_1[6:0]', 10 words by 7 bits 
+@N: MO106 :"w:\my documents\ece 270\lab12\gan35_lab12.v":335:3:335:6|Found ROM, 'II_0.outDIS_1[6:0]', 10 words by 7 bits 
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.

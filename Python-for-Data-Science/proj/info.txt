@@ -1,0 +1,5 @@
+Project path #2 is chosen
+
+Team members:
+name:   Yi En Gan (Andrew)
+login:  gan35

@@ -1,0 +1,4 @@
+@W: FX105 :"U:\desktop\lab8\lab8-4.v":40:16:40:30|Found combinational loop at QS
+@W: FX105 :"U:\desktop\lab8\lab8-4.v":46:18:46:30|Found combinational loop at QM_N
+@W: FX105 :"U:\desktop\lab8\lab8-4.v":37:13:37:27|Found combinational loop at BQ
+

@@ -1,0 +1,28 @@
+Synopsys CPLD Technology Mapper, Version maplat, Build 621R, Built Mar 19 2013
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09LC-SP1 
+@N: MF248 |Running in 64-bit mode.
+@N: MO106 :"u:\desktop\lab7\lab7_decode.v":32:2:32:5|Found ROM, 'DISP_4[0:6]', 16 words by 7 bits 
+@N: MO106 :"u:\desktop\lab7\lab7_decode.v":11:2:11:5|Found ROM, 'DISP_2[0:6]', 16 words by 7 bits 
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+IBUF            5 uses
+OBUF            8 uses
+AND2            84 uses
+INV             62 uses
+OR2             8 uses
+XOR2            1 use
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+G-2012.09LC-SP1 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 31MB peak: 94MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Feb 23 17:20:49 2019
+
+###########################################################]

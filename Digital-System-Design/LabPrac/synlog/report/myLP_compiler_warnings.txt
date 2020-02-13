@@ -1,0 +1,30 @@
+@W: CG360 :"W:\my documents\ece 270\labprac\labprac.v":48:11:48:16|No assignment to wire MIDRED
+@W: CG360 :"W:\my documents\ece 270\labprac\labprac.v":53:11:53:14|No assignment to wire DIS4
+@W: CG360 :"W:\my documents\ece 270\labprac\labprac.v":54:5:54:12|No assignment to wire J_unused
+@W: CG360 :"W:\my documents\ece 270\labprac\labprac.v":54:15:54:19|No assignment to wire J_RED
+@W: CG360 :"W:\my documents\ece 270\labprac\labprac.v":54:22:54:26|No assignment to wire J_YEL
+@W: CG360 :"W:\my documents\ece 270\labprac\labprac.v":54:29:54:33|No assignment to wire J_GRN
+@W: CL168 :"W:\my documents\ece 270\labprac\labprac.v":78:9:78:10|Pruning instance I1 -- not in use ...
+@W: CL189 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Register bit DISP[0] is always 1, optimizing ...
+@W: CL189 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Register bit DISP[2] is always 1, optimizing ...
+@W: CL189 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Register bit DISP[4] is always 1, optimizing ...
+@W: CL189 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Register bit DISP[9] is always 1, optimizing ...
+@W: CL189 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Register bit DISP[11] is always 1, optimizing ...
+@W: CL189 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Register bit DISP[13] is always 0, optimizing ...
+@W: CL189 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Register bit DISP[15] is always 1, optimizing ...
+@W: CL260 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Pruning register bit 15 of DISP[20:0] 
+@W: CL260 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Pruning register bit 13 of DISP[20:0] 
+@W: CL260 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Pruning register bit 11 of DISP[20:0] 
+@W: CL260 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Pruning register bit 9 of DISP[20:0] 
+@W: CL260 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Pruning register bit 4 of DISP[20:0] 
+@W: CL260 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Pruning register bit 2 of DISP[20:0] 
+@W: CL260 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Pruning register bit 0 of DISP[20:0] 
+@W: CL260 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Pruning register bit 7 of DISP[8:5] 
+@W: CL260 :"W:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Pruning register bit 20 of DISP[20:16] 
+@W: CL156 :"W:\my documents\ece 270\labprac\labprac.v":48:11:48:16|*Input MIDRED[7:0] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"W:\my documents\ece 270\labprac\labprac.v":53:11:53:14|*Input DIS4[6:0] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"W:\my documents\ece 270\labprac\labprac.v":54:15:54:19|*Input J_RED to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"W:\my documents\ece 270\labprac\labprac.v":54:22:54:26|*Input J_YEL to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"W:\my documents\ece 270\labprac\labprac.v":54:29:54:33|*Input J_GRN to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"W:\my documents\ece 270\labprac\labprac.v":54:5:54:12|*Input J_unused to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+

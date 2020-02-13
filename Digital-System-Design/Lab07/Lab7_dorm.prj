@@ -1,0 +1,39 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file u:/desktop/lab7\Lab7_dorm.prj
+#-- Written on Sat Feb 23 17:18:02 2019
+
+
+#device options
+set_option -technology ispGAL
+
+#compilation/mapping options
+
+#use verilog 2001 standard option
+set_option -vlog_std v2001
+
+#map options
+
+#simulation options
+set_option -write_verilog false
+set_option -write_vhdl false
+
+#timing analysis options
+set_option -synthesis_onoff_pragma false
+
+#-- add_file options
+add_file -verilog "C:/ispLEVER_Classic1_7/synpbase/lib/cpld/lattice.v"
+add_file -verilog "C:/ispLEVER_Classic1_7/ispcpld/generic/verilog/synplify/generic.v"
+add_file -verilog -lib work "lab7.h"
+add_file -verilog -lib work "lab7_dorm.v"
+
+#-- top module name
+set_option -top_module Lab7_dorm
+
+#-- set result format/file last
+project -result_file "Lab7_dorm.edi"
+
+#-- error message log file
+project -log_file lab7_dorm.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run

@@ -1,0 +1,13 @@
+inBIT  i
+rCOMBO[7]  i
+rCOMBO[6]  i
+rCOMBO[5]  i
+rCOMBO[4]  i
+rCOMBO[3]  i
+rCOMBO[2]  i
+rCOMBO[1]  i
+rCOMBO[0]  i
+PTR[2]  i
+PTR[1]  i
+PTR[0]  i
+match_out  o

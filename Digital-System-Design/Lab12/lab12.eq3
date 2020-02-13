@@ -1,0 +1,1181 @@
+|--------------------------------------------------- ----------|
+|- ispLEVER Classic 1.7.00.05.28.13 Equations File            -|
+|- Copyright(C), 1992-2012, Lattice Semiconductor Corporation -|
+|- All Rights Reserved.                                       -|
+|--------------------------------------------------------------|
+
+
+Equations:
+
+
+FDIVBY2_clk_out.D = !FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+FDIVBY2_clk_out.C = tmr_out ; (1 pterm, 1 signal)
+FDIVBY2_clk_out.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+FDIVBY4_clk_out.D = !FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+FDIVBY4_clk_out.C = FDIVBY2_clk_out.Q ; (1 pterm, 1 signal)
+FDIVBY4_clk_out.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+LFTPB_Q.D = 1 ; (1 pterm, 0 signal)
+LFTPB_Q.C = !i_S2_NO ; (1 pterm, 1 signal)
+LFTPB_Q.AR = !i_S2_NC ; (1 pterm, 1 signal)
+LFTPB_Q.AP = !i_S2_NO ; (1 pterm, 1 signal)
+
+RGTPB_Q.D = 1 ; (1 pterm, 0 signal)
+RGTPB_Q.C = !i_S1_NO ; (1 pterm, 1 signal)
+RGTPB_Q.AR = !i_S1_NC ; (1 pterm, 1 signal)
+RGTPB_Q.AP = !i_S1_NO ; (1 pterm, 1 signal)
+
+STEP9A_qprice_0_.D = STEP9A_qprice_1_.Q ; (1 pterm, 1 signal)
+STEP9A_qprice_0_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9A_qprice_0_.AP = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9A_qprice_1_.D = STEP9A_qprice_2_.Q ; (1 pterm, 1 signal)
+STEP9A_qprice_1_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9A_qprice_1_.AP = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9A_qprice_2_.D = STEP9A_qprice_3_.Q ; (1 pterm, 1 signal)
+STEP9A_qprice_2_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9A_qprice_2_.AP = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9A_qprice_3_.D = STEP9A_qprice_0_.Q & !STEP9A_qprice_1_.Q
+       & STEP9A_qprice_2_.Q
+    # STEP9A_qprice_0_.Q & !STEP9A_qprice_1_.Q & STEP9A_qprice_3_.Q
+    # !STEP9A_qprice_0_.Q & !STEP9A_qprice_2_.Q & !STEP9A_qprice_3_.Q
+    # !STEP9A_qprice_0_.Q & STEP9A_qprice_1_.Q ; (4 pterms, 4 signals)
+STEP9A_qprice_3_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9A_qprice_3_.AP = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9D_gameover.D = !( !STEP9D_gameover.Q & step9d_qrnde_n ) ; (1 pterm, 2 signals)
+STEP9D_gameover.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9D_gameover.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9D_qrnd_0_.D = !STEP9D_qrnd_0_.Q ; (1 pterm, 1 signal)
+STEP9D_qrnd_0_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9D_qrnd_0_.CE = step9d_qrnde_n ; (1 pterm, 1 signal)
+STEP9D_qrnd_0_.AP = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9D_qrnd_1_.D = STEP9D_qrnd_0_.Q & !STEP9D_qrnd_1_.Q
+    # !STEP9D_qrnd_0_.Q & STEP9D_qrnd_1_.Q ; (2 pterms, 2 signals)
+STEP9D_qrnd_1_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9D_qrnd_1_.CE = step9d_qrnde_n ; (1 pterm, 1 signal)
+STEP9D_qrnd_1_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9D_qrnd_2_.D = STEP9D_qrnd_0_.Q & STEP9D_qrnd_1_.Q & !STEP9D_qrnd_2_.Q
+    # !STEP9D_qrnd_1_.Q & STEP9D_qrnd_2_.Q
+    # !STEP9D_qrnd_0_.Q & STEP9D_qrnd_2_.Q ; (3 pterms, 3 signals)
+STEP9D_qrnd_2_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9D_qrnd_2_.CE = step9d_qrnde_n ; (1 pterm, 1 signal)
+STEP9D_qrnd_2_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9D_qrnd_3_.D = STEP9D_qrnd_0_.Q & STEP9D_qrnd_1_.Q & STEP9D_qrnd_2_.Q
+       & !STEP9D_qrnd_3_.Q
+    # !STEP9D_qrnd_2_.Q & STEP9D_qrnd_3_.Q
+    # !STEP9D_qrnd_1_.Q & STEP9D_qrnd_3_.Q
+    # !STEP9D_qrnd_0_.Q & STEP9D_qrnd_3_.Q ; (4 pterms, 4 signals)
+STEP9D_qrnd_3_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9D_qrnd_3_.CE = step9d_qrnde_n ; (1 pterm, 1 signal)
+STEP9D_qrnd_3_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9F_oSCORE_0_.D = mypoints_0__n & !STEP9F_oSCORE_0_.Q
+    # !mypoints_0__n & STEP9F_oSCORE_0_.Q ; (2 pterms, 2 signals)
+STEP9F_oSCORE_0_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_0_.CE = !STEP9D_gameover.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_0_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9F_oSCORE_1_.T = !( !DIP_3_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q
+       & !STEP9F_oSCORE_3_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_3_.Q
+       & step9b_c_0_2__n & step9b_un1_ozf_1_0_n & step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_3_.Q
+       & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n & step9f_n_36_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q & !step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q & step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n
+    # DIP_3_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_3_.Q
+       & mypoints_i_2__n & !step9f_n_36_0_n
+    # DIP_3_ & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_3_.Q & step9b_c_0_2__n
+       & mypoints_i_2__n & !step9f_n_36_0_n
+    # DIP_3_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_2_.Q
+       & STEP9F_oSCORE_3_.Q & !step9f_n_36_0_n
+    # DIP_3_ & STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q
+       & step9b_c_0_2__n & !step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q & !step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_3_.Q
+       & !step9b_c_0_2__n & mypoints_i_2__n & !step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_2_.Q
+       & STEP9F_oSCORE_3_.Q & !step9b_c_0_2__n & !step9f_n_36_0_n
+    # !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_3_.Q
+       & step9b_c_0_2__n & mypoints_i_2__n & !step9f_n_36_0_n
+    # !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_2_.Q
+       & STEP9F_oSCORE_3_.Q & step9b_c_0_2__n & !step9f_n_36_0_n
+    # !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & mypoints_i_2__n & step9f_n_36_0_n
+    # STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_3_.Q
+       & mypoints_i_2__n & !step9f_n_36_0_n
+    # STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & STEP9F_oSCORE_3_.Q & !step9f_n_36_0_n
+    # STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q
+       & !step9b_un1_ozf_1_0_n & !step9f_n_36_0_n
+    # STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & step9f_n_36_0_n
+    # STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_3_.Q & !mypoints_i_2__n
+       & step9f_n_36_0_n
+    # STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_3_.Q & !step9b_un1_ozf_1_0_n
+       & mypoints_i_2__n & !step9f_n_36_0_n
+    # STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q
+       & mypoints_i_2__n & !step9f_n_36_0_n
+    # !mypoints_0__n & !STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+       & !STEP9F_oSCORE_3_.Q & !mypoints_i_2__n
+    # !mypoints_0__n & !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & mypoints_i_2__n
+    # !mypoints_0__n & !STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_3_.Q
+       & mypoints_i_2__n & !step9f_n_36_0_n
+    # !mypoints_0__n & !STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_2_.Q
+       & STEP9F_oSCORE_3_.Q & !step9f_n_36_0_n
+    # mypoints_0__n & !STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_3_.Q
+       & mypoints_i_2__n & !step9f_n_36_0_n
+    # mypoints_0__n & !STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_2_.Q
+       & !STEP9F_oSCORE_3_.Q & !step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_2_.Q
+       & !mypoints_i_2__n
+    # !mypoints_0__n & !STEP9F_oSCORE_3_.Q & step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_3_.Q ) ; (34 pterms, 11 signals)
+STEP9F_oSCORE_1_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_1_.CE = !STEP9D_gameover.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_1_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9F_oSCORE_2_.T.X1 = step9f_tenscarry_n & step9f_n_23_n & step9f_n_43_n
+    # !step9f_tenscarry_n & step9f_n_23_n & !step9f_n_43_n
+    # !step9f_tenscarry_n & !step9f_n_23_n & step9f_n_43_n
+    # step9f_tenscarry_n & !step9f_n_23_n & !step9f_n_43_n ; (4 pterms, 3 signals)
+STEP9F_oSCORE_2_.T.X2 = !mypoints_i_2__n ; (1 pterm, 1 signal)
+STEP9F_oSCORE_2_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_2_.CE = !STEP9D_gameover.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_2_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9F_oSCORE_3_.T = !( STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & !mypoints_i_2__n & step9f_n_23_n & step9f_n_36_0_n
+    # mypoints_0__n & !STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & !step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q
+       & step9f_n_36_0_n
+    # mypoints_0__n & !STEP9F_oSCORE_3_.Q & mypoints_i_2__n & !step9f_n_36_0_n
+    # !mypoints_0__n & STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_3_.Q
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & !mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & !mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & !mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & !mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q & !step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n & !step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & !mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q & !step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n & !step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & !mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q & step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n & !step9f_n_36_0_n
+    # mypoints_0__n & !STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q
+       & !STEP9F_oSCORE_2_.Q & mypoints_i_2__n & !step9f_n_23_n
+       & !step9f_n_36_0_n
+    # mypoints_0__n & !STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q
+       & !STEP9F_oSCORE_2_.Q & !mypoints_i_2__n & step9f_n_23_n
+       & !step9f_n_36_0_n
+    # mypoints_0__n & !STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & mypoints_i_2__n & step9f_n_23_n
+       & !step9f_n_36_0_n
+    # mypoints_0__n & !STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & !mypoints_i_2__n & !step9f_n_23_n
+       & !step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & !STEP9F_oSCORE_2_.Q & mypoints_i_2__n & !step9f_n_23_n
+       & !step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & !STEP9F_oSCORE_2_.Q & !mypoints_i_2__n & step9f_n_23_n
+       & !step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & mypoints_i_2__n & step9f_n_23_n
+       & !step9f_n_36_0_n
+    # !mypoints_0__n & !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & mypoints_i_2__n & !step9f_n_23_n & step9f_n_36_0_n
+    # !mypoints_0__n & !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & !mypoints_i_2__n & step9f_n_23_n & step9f_n_36_0_n
+    # !mypoints_0__n & !STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+       & mypoints_i_2__n & step9f_n_23_n & step9f_n_36_0_n
+    # !mypoints_0__n & !STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+       & !mypoints_i_2__n & !step9f_n_23_n & step9f_n_36_0_n
+    # STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+       & !mypoints_i_2__n & !step9f_n_23_n & !step9f_n_36_0_n
+    # !STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q & mypoints_i_2__n
+       & step9f_n_23_n
+    # !STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q & !mypoints_i_2__n
+       & !step9f_n_23_n
+    # STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q & mypoints_i_2__n
+       & !step9f_n_23_n
+    # mypoints_0__n & !STEP9F_oSCORE_2_.Q & mypoints_i_2__n & step9f_n_23_n
+       & step9f_n_36_0_n
+    # mypoints_0__n & !STEP9F_oSCORE_2_.Q & !mypoints_i_2__n & !step9f_n_23_n
+       & step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_2_.Q & mypoints_i_2__n & !step9f_n_23_n
+       & step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_2_.Q & !mypoints_i_2__n & step9f_n_23_n
+       & step9f_n_36_0_n
+    # !mypoints_0__n & STEP9F_oSCORE_2_.Q & !mypoints_i_2__n & step9f_n_23_n
+       & !step9f_n_36_0_n
+    # !mypoints_0__n & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # mypoints_0__n & !STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & step9f_n_36_0_n ) ; (33 pterms, 12 signals)
+STEP9F_oSCORE_3_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_3_.CE = !STEP9D_gameover.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_3_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9F_oSCORE_4_.T = !DIP_3_ & !STEP9A_qprice_3_.Q & mypoints_0__n
+       & STEP9F_oSCORE_1_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & mypoints_0__n & STEP9F_oSCORE_1_.Q
+       & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n & step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & mypoints_0__n & STEP9F_oSCORE_1_.Q
+       & step9b_c_0_2__n & step9b_un1_ozf_1_0_n & step9f_n_36_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n & !mypoints_i_2__n
+       & !step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n & !mypoints_i_2__n
+       & !step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & step9b_c_0_2__n & step9b_un1_ozf_1_0_n & !mypoints_i_2__n
+       & !step9f_n_36_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !step9f_n_36_0_n
+    # !mypoints_0__n & !STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # !mypoints_0__n & STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & mypoints_i_2__n & !step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q
+       & step9f_n_36_0_n
+    # !mypoints_0__n & STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_3_.Q
+       & !step9f_n_36_0_n
+    # STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q & !mypoints_i_2__n
+    # mypoints_0__n & !STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_2_.Q & !mypoints_i_2__n
+    # STEP9F_oSCORE_3_.Q & !mypoints_i_2__n & step9f_n_36_0_n
+    # STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q & step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_3_.Q
+    # mypoints_0__n & !mypoints_i_2__n & step9f_n_36_0_n
+    # STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_3_.Q & step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_2_.Q & step9f_n_36_0_n ; (22 pterms, 11 signals)
+STEP9F_oSCORE_4_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_4_.CE = !STEP9D_gameover.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_4_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9F_oSCORE_5_.T = !( !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q
+    # !STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_7_.Q
+    # STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_7_.Q & step9f_tenscarry_n
+    # !STEP9F_oSCORE_7_.Q & !step9f_tenscarry_n ) ; (4 pterms, 5 signals)
+STEP9F_oSCORE_5_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_5_.CE = !STEP9D_gameover.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_5_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9F_oSCORE_6_.D.X1 = !STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q & !step9f_tenscarry_n
+    # !STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q
+    # STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_7_.Q
+       & step9f_tenscarry_n ; (3 pterms, 5 signals)
+STEP9F_oSCORE_6_.D.X2 = STEP9F_oSCORE_6_.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_6_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_6_.CE = !STEP9D_gameover.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_6_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9F_oSCORE_7_.D.X1 = mypoints_0__n & STEP9F_oSCORE_3_.Q
+       & STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q & !step9f_n_36_0_n
+    # !mypoints_0__n & STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_3_.Q
+       & STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q
+    # mypoints_0__n & STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_4_.Q
+       & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q & STEP9F_oSCORE_4_.Q
+       & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # !mypoints_0__n & STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q & mypoints_i_2__n
+    # !mypoints_0__n & !STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q & !mypoints_i_2__n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q
+       & !STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q & step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n & !step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q
+       & !STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q & !step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n & !step9f_n_36_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q
+       & !STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q & !step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n & !step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q & step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # !mypoints_0__n & !STEP9F_oSCORE_3_.Q & !STEP9F_oSCORE_5_.Q
+       & !STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q & step9f_n_36_0_n
+    # !STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q & step9f_n_36_0_n
+    # !mypoints_0__n & !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q
+       & mypoints_i_2__n & step9f_n_36_0_n
+    # !STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & !STEP9F_oSCORE_3_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q & mypoints_i_2__n & step9f_n_36_0_n
+    # !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & !STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q & !STEP9F_oSCORE_5_.Q
+       & !STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q & step9b_c_0_2__n
+       & mypoints_i_2__n & step9f_n_36_0_n
+    # STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & !STEP9F_oSCORE_3_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q & !step9b_un1_ozf_1_0_n & mypoints_i_2__n
+       & step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & !STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q & !STEP9F_oSCORE_5_.Q
+       & !STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q & !step9b_c_0_2__n
+       & mypoints_i_2__n & step9f_n_36_0_n
+    # DIP_3_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & !STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q & !STEP9F_oSCORE_5_.Q
+       & !STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q & mypoints_i_2__n
+       & step9f_n_36_0_n
+    # DIP_3_ & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & !STEP9F_oSCORE_3_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q & step9b_c_0_2__n & mypoints_i_2__n
+       & step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_3_.Q & STEP9F_oSCORE_4_.Q
+       & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q
+    # mypoints_0__n & STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_4_.Q
+       & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q
+       & !mypoints_i_2__n
+    # STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q & STEP9F_oSCORE_4_.Q
+       & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q
+       & !mypoints_i_2__n
+    # !mypoints_0__n & STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_3_.Q
+       & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q & !step9f_n_36_0_n
+    # !mypoints_0__n & STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q & mypoints_i_2__n & !step9f_n_36_0_n
+    # !mypoints_0__n & !STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q & !mypoints_i_2__n & !step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q
+       & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q & step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n & !step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q
+       & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q & !step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n & !step9f_n_36_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q
+       & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q & !step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n & !step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q & step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q & step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_4_.Q
+       & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q
+       & step9f_n_36_0_n
+    # STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q & STEP9F_oSCORE_4_.Q
+       & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q
+       & step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q
+       & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q & !mypoints_i_2__n
+       & step9f_n_36_0_n
+    # STEP9F_oSCORE_3_.Q & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q
+       & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q & !mypoints_i_2__n
+       & step9f_n_36_0_n
+    # STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_3_.Q & STEP9F_oSCORE_4_.Q
+       & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q
+       & step9f_n_36_0_n
+    # mypoints_0__n & !STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q & step9f_n_36_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & mypoints_0__n & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & mypoints_0__n & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q & step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & mypoints_0__n & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & step9f_n_36_0_n ; (43 pterms, 15 signals)
+STEP9F_oSCORE_7_.D.X2 = !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9F_oSCORE_7_.Q & !step9f_n_36_0_n ; (1 pterm, 4 signals)
+STEP9F_oSCORE_7_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_7_.CE = !STEP9D_gameover.Q ; (1 pterm, 1 signal)
+STEP9F_oSCORE_7_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9J_next_CQ_0_.D = !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q
+       & !STEP9J_next_CQ_3_.Q & !STEP9J_next_CQ_4_.Q & !step9j_msel_i_2_n
+    # !STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_4_.Q
+    # !STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_3_.Q
+    # !STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_1_.Q ; (4 pterms, 6 signals)
+STEP9J_next_CQ_0_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9J_next_CQ_0_.CE = STEP9D_gameover.Q ; (1 pterm, 1 signal)
+STEP9J_next_CQ_0_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9J_next_CQ_1_.D = !STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q
+       & !STEP9J_next_CQ_3_.Q
+    # STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_1_.Q
+    # !STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_4_.Q ; (3 pterms, 4 signals)
+STEP9J_next_CQ_1_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9J_next_CQ_1_.CE = STEP9D_gameover.Q ; (1 pterm, 1 signal)
+STEP9J_next_CQ_1_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9J_next_CQ_2_.D.X1 = STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q
+    # STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q & STEP9J_next_CQ_3_.Q
+       & !STEP9J_next_CQ_4_.Q
+    # STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q
+       & !STEP9J_next_CQ_3_.Q & !STEP9J_next_CQ_4_.Q & !step9j_msel_i_2_n ; (3 pterms, 6 signals)
+STEP9J_next_CQ_2_.D.X2 = STEP9J_next_CQ_2_.Q ; (1 pterm, 1 signal)
+STEP9J_next_CQ_2_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9J_next_CQ_2_.CE = STEP9D_gameover.Q ; (1 pterm, 1 signal)
+STEP9J_next_CQ_2_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9J_next_CQ_3_.D = STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_2_.Q
+       & !STEP9J_next_CQ_3_.Q & !STEP9J_next_CQ_4_.Q & !step9j_msel_i_2_n
+    # STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q
+       & !STEP9J_next_CQ_3_.Q
+    # !STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_3_.Q & STEP9J_next_CQ_4_.Q
+    # STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_2_.Q & STEP9J_next_CQ_3_.Q
+    # !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_3_.Q ; (5 pterms, 6 signals)
+STEP9J_next_CQ_3_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9J_next_CQ_3_.CE = STEP9D_gameover.Q ; (1 pterm, 1 signal)
+STEP9J_next_CQ_3_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9J_next_CQ_4_.D.X1 = STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q
+       & STEP9J_next_CQ_2_.Q & STEP9J_next_CQ_3_.Q ; (1 pterm, 4 signals)
+STEP9J_next_CQ_4_.D.X2 = STEP9J_next_CQ_4_.Q ; (1 pterm, 1 signal)
+STEP9J_next_CQ_4_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9J_next_CQ_4_.CE = STEP9D_gameover.Q ; (1 pterm, 1 signal)
+STEP9J_next_CQ_4_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9J_outCHAR_0_.D.X1 = STEP9J_next_CQ_3_.Q
+    # STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q
+    # !STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q
+       & step9j_n_80_0_n
+    # STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q
+       & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q
+    # !STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q
+       & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q
+    # !STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q
+       & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q
+    # !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q
+       & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q ; (7 pterms, 9 signals)
+STEP9J_outCHAR_0_.D.X2 = !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & !STEP9F_oSCORE_3_.Q & !STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_1_.Q
+       & STEP9J_next_CQ_2_.Q & !STEP9J_next_CQ_3_.Q & step9j_n_80_0_n ; (1 pterm, 8 signals)
+STEP9J_outCHAR_0_.LH = !step9j_un1_outchar17_0_n ; (1 pterm, 1 signal)
+
+STEP9J_outCHAR_1_.D = !STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q
+       & !STEP9F_oSCORE_6_.Q & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q
+       & !STEP9J_next_CQ_2_.Q
+    # !STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & !STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_2_.Q
+    # !STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q
+       & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & !STEP9J_next_CQ_2_.Q
+    # !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q
+       & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & !STEP9J_next_CQ_2_.Q
+    # !STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q
+       & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & !STEP9J_next_CQ_2_.Q
+    # !STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & !STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_2_.Q
+    # !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q
+       & !STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_2_.Q
+    # !STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & !STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_2_.Q
+    # !STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q
+    # !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_3_.Q
+    # STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_3_.Q ; (11 pterms, 12 signals)
+STEP9J_outCHAR_1_.LH = !step9j_un1_outchar17_0_n ; (1 pterm, 1 signal)
+
+STEP9J_outCHAR_2_.D.X1 = !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_3_.Q
+    # STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q
+    # !STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_3_.Q
+       & !STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_2_.Q
+    # !STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & !STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_2_.Q
+    # !STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & !STEP9J_next_CQ_3_.Q
+    # !STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_7_.Q
+       & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & !STEP9J_next_CQ_3_.Q ; (6 pterms, 12 signals)
+STEP9J_outCHAR_2_.D.X2 = !STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_2_.Q
+       & STEP9J_next_CQ_3_.Q ; (1 pterm, 3 signals)
+STEP9J_outCHAR_2_.LH = !step9j_un1_outchar17_0_n ; (1 pterm, 1 signal)
+
+STEP9J_outCHAR_3_.D = !STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_2_.Q
+       & step9j_n_79_0_n & !STEP9J_next_CQ_3_.Q & step9j_n_80_0_n
+    # STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q
+    # STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_2_.Q & STEP9J_next_CQ_3_.Q
+    # !STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_3_.Q
+    # !STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_7_.Q & STEP9J_next_CQ_0_.Q
+       & STEP9J_next_CQ_1_.Q & step9j_n_127_0_n
+    # !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q & STEP9J_next_CQ_0_.Q
+       & STEP9J_next_CQ_1_.Q & step9j_n_127_0_n
+    # !STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q & STEP9J_next_CQ_0_.Q
+       & STEP9J_next_CQ_1_.Q & step9j_n_127_0_n
+    # !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_7_.Q & STEP9J_next_CQ_0_.Q
+       & STEP9J_next_CQ_1_.Q & step9j_n_127_0_n
+    # STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q & !STEP9J_next_CQ_3_.Q ; (9 pterms, 11 signals)
+STEP9J_outCHAR_3_.LH = !step9j_un1_outchar17_0_n ; (1 pterm, 1 signal)
+
+STEP9J_outCHAR_4_.D.X1 = !STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_1_.Q
+       & STEP9J_next_CQ_3_.Q
+    # STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & !STEP9J_next_CQ_2_.Q
+       & STEP9J_next_CQ_3_.Q
+    # STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q
+       & !STEP9J_next_CQ_3_.Q
+    # STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q & !STEP9J_next_CQ_0_.Q
+       & !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q & !STEP9J_next_CQ_3_.Q
+    # !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q & STEP9J_next_CQ_0_.Q
+       & STEP9J_next_CQ_1_.Q & !STEP9J_next_CQ_2_.Q & !STEP9J_next_CQ_3_.Q
+    # !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q & !STEP9J_next_CQ_0_.Q
+       & !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q & !STEP9J_next_CQ_3_.Q
+    # STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q & STEP9J_next_CQ_0_.Q
+       & STEP9J_next_CQ_1_.Q & !STEP9J_next_CQ_2_.Q & !STEP9J_next_CQ_3_.Q
+    # STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & !STEP9F_oSCORE_3_.Q & !STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_1_.Q
+       & STEP9J_next_CQ_2_.Q & !STEP9J_next_CQ_3_.Q
+    # STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q
+       & !STEP9J_next_CQ_2_.Q & !STEP9J_next_CQ_3_.Q ; (9 pterms, 12 signals)
+STEP9J_outCHAR_4_.D.X2 = STEP9J_next_CQ_2_.Q & STEP9J_next_CQ_3_.Q ; (1 pterm, 2 signals)
+STEP9J_outCHAR_4_.LH = !step9j_un1_outchar17_0_n ; (1 pterm, 1 signal)
+
+STEP9J_outCHAR_5_.D.X1 = STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q
+       & STEP9J_next_CQ_3_.Q
+    # !STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q
+       & STEP9J_next_CQ_3_.Q
+    # STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q
+       & STEP9J_next_CQ_3_.Q
+    # STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_7_.Q & STEP9J_next_CQ_0_.Q
+       & STEP9J_next_CQ_1_.Q & !STEP9J_next_CQ_2_.Q
+    # !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q & STEP9J_next_CQ_0_.Q
+       & STEP9J_next_CQ_1_.Q & !STEP9J_next_CQ_2_.Q
+    # !STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q & !STEP9J_next_CQ_0_.Q
+       & !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q & !STEP9J_next_CQ_3_.Q
+    # !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q & !STEP9J_next_CQ_0_.Q
+       & !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q & !STEP9J_next_CQ_3_.Q
+    # STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_3_.Q
+       & !STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q
+       & !STEP9J_next_CQ_3_.Q
+    # !STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_3_.Q
+       & !STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q
+       & !STEP9J_next_CQ_3_.Q ; (9 pterms, 11 signals)
+STEP9J_outCHAR_5_.D.X2 = !STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q
+       & !STEP9J_next_CQ_2_.Q & !STEP9J_next_CQ_3_.Q ; (1 pterm, 7 signals)
+STEP9J_outCHAR_5_.LH = !step9j_un1_outchar17_0_n ; (1 pterm, 1 signal)
+
+STEP9J_outCHAR_6_.D = !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q & !STEP9J_next_CQ_2_.Q
+       & !STEP9J_next_CQ_3_.Q & step9j_n_127_0_n
+    # !STEP9F_oSCORE_7_.Q & STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q
+       & !STEP9J_next_CQ_2_.Q & !STEP9J_next_CQ_3_.Q & step9j_n_127_0_n
+    # !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q & !STEP9J_next_CQ_0_.Q
+       & !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_2_.Q & step9j_n_79_0_n
+    # !STEP9F_oSCORE_3_.Q & !STEP9J_next_CQ_0_.Q & !STEP9J_next_CQ_1_.Q
+       & STEP9J_next_CQ_2_.Q & step9j_n_79_0_n
+    # !STEP9J_next_CQ_1_.Q & STEP9J_next_CQ_3_.Q ; (5 pterms, 12 signals)
+STEP9J_outCHAR_6_.LH = !step9j_un1_outchar17_0_n ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_0_.D = STEP9D_gameover.Q & STEP9J_outCHAR_0_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_0_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_0_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_10_.D = STEP9D_gameover.Q & STEP9K_outDISP_3_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_10_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_10_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_11_.D = STEP9D_gameover.Q & STEP9K_outDISP_4_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_11_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_11_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_12_.D = STEP9D_gameover.Q & STEP9K_outDISP_5_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_12_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_12_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_13_.D = STEP9D_gameover.Q & STEP9K_outDISP_6_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_13_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_13_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_14_.D = STEP9D_gameover.Q & STEP9K_outDISP_7_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_14_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_14_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_15_.D = STEP9D_gameover.Q & STEP9K_outDISP_8_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_15_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_15_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_16_.D = STEP9D_gameover.Q & STEP9K_outDISP_9_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_16_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_16_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_17_.D = STEP9D_gameover.Q & STEP9K_outDISP_10_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_17_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_17_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_18_.D = STEP9D_gameover.Q & STEP9K_outDISP_11_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_18_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_18_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_19_.D = STEP9D_gameover.Q & STEP9K_outDISP_12_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_19_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_19_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_1_.D = STEP9D_gameover.Q & STEP9J_outCHAR_1_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_1_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_1_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_20_.D = STEP9D_gameover.Q & STEP9K_outDISP_13_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_20_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_20_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_21_.D = STEP9D_gameover.Q & STEP9K_outDISP_14_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_21_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_21_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_22_.D = STEP9D_gameover.Q & STEP9K_outDISP_15_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_22_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_22_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_23_.D = STEP9D_gameover.Q & STEP9K_outDISP_16_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_23_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_23_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_24_.D = STEP9D_gameover.Q & STEP9K_outDISP_17_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_24_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_24_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_25_.D = STEP9D_gameover.Q & STEP9K_outDISP_18_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_25_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_25_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_26_.D = STEP9D_gameover.Q & STEP9K_outDISP_19_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_26_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_26_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_27_.D = STEP9D_gameover.Q & STEP9K_outDISP_20_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_27_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_27_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_2_.D = STEP9D_gameover.Q & STEP9J_outCHAR_2_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_2_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_2_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_3_.D = STEP9D_gameover.Q & STEP9J_outCHAR_3_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_3_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_3_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_4_.D = STEP9D_gameover.Q & STEP9J_outCHAR_4_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_4_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_4_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_5_.D = STEP9D_gameover.Q & STEP9J_outCHAR_5_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_5_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_5_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_6_.D = STEP9D_gameover.Q & STEP9J_outCHAR_6_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_6_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_6_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_7_.D = STEP9D_gameover.Q & STEP9K_outDISP_0_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_7_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_7_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_8_.D = STEP9D_gameover.Q & STEP9K_outDISP_1_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_8_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_8_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+STEP9K_outDISP_9_.D = STEP9D_gameover.Q & STEP9K_outDISP_2_.Q ; (1 pterm, 2 signals)
+STEP9K_outDISP_9_.C = FDIVBY4_clk_out.Q ; (1 pterm, 1 signal)
+STEP9K_outDISP_9_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+_dup_gnd_n_n = 0 ; (0 pterm, 0 signal)
+
+gnd_n_n = 0 ; (0 pterm, 0 signal)
+
+mypoints_0__n = !( DIP_2_ & !STEP9A_qprice_2_.Q
+    # !DIP_2_ & STEP9A_qprice_2_.Q
+    # DIP_1_ & !STEP9A_qprice_1_.Q
+    # !DIP_1_ & STEP9A_qprice_1_.Q
+    # DIP_0_ & !STEP9A_qprice_0_.Q
+    # !DIP_0_ & STEP9A_qprice_0_.Q
+    # DIP_3_ & !STEP9A_qprice_3_.Q
+    # !DIP_3_ & STEP9A_qprice_3_.Q ) ; (8 pterms, 8 signals)
+
+mypoints_i_2__n.X1 = !DIP_3_ & STEP9A_qprice_3_.Q
+    # DIP_2_ & !STEP9A_qprice_2_.Q
+    # DIP_2_ & DIP_1_ & DIP_0_
+    # DIP_2_ & DIP_1_ & !STEP9A_qprice_0_.Q
+    # DIP_2_ & DIP_1_ & !STEP9A_qprice_1_.Q
+    # DIP_2_ & DIP_0_ & !STEP9A_qprice_1_.Q
+    # DIP_2_ & !STEP9A_qprice_0_.Q & !STEP9A_qprice_1_.Q
+    # DIP_1_ & DIP_0_ & !STEP9A_qprice_2_.Q
+    # DIP_1_ & !STEP9A_qprice_0_.Q & !STEP9A_qprice_2_.Q
+    # DIP_1_ & !STEP9A_qprice_1_.Q & !STEP9A_qprice_2_.Q
+    # DIP_0_ & !STEP9A_qprice_1_.Q & !STEP9A_qprice_2_.Q
+    # !STEP9A_qprice_0_.Q & !STEP9A_qprice_1_.Q & !STEP9A_qprice_2_.Q
+    # DIP_3_ & !STEP9A_qprice_3_.Q ; (13 pterms, 8 signals)
+mypoints_i_2__n.X2 = DIP_3_ & !STEP9A_qprice_3_.Q ; (1 pterm, 2 signals)
+
+o_BOTRED_0_ = !DIP_0_ ; (1 pterm, 1 signal)
+
+o_BOTRED_1_ = !DIP_1_ ; (1 pterm, 1 signal)
+
+o_BOTRED_2_ = !DIP_2_ ; (1 pterm, 1 signal)
+
+o_BOTRED_3_ = !DIP_3_ ; (1 pterm, 1 signal)
+
+o_BOTRED_4_ = !DIP_4_ ; (1 pterm, 1 signal)
+
+o_BOTRED_5_ = !DIP_5_ ; (1 pterm, 1 signal)
+
+o_BOTRED_6_ = !DIP_6_ ; (1 pterm, 1 signal)
+
+o_BOTRED_7_ = !DIP_7_ ; (1 pterm, 1 signal)
+
+o_DIS1_0_ = !STEP9D_gameover.Q & !STEP9D_qrnd_1_.Q & !STEP9D_qrnd_2_.Q
+       & !STEP9D_qrnd_3_.Q
+    # !STEP9D_gameover.Q & STEP9D_qrnd_0_.Q & STEP9D_qrnd_1_.Q
+       & STEP9D_qrnd_2_.Q
+    # STEP9D_gameover.Q & !STEP9K_outDISP_0_.Q
+    # !STEP9D_gameover.Q & !step9d_qrnde_n ; (4 pterms, 7 signals)
+
+o_DIS1_1_ = !STEP9D_gameover.Q & STEP9D_qrnd_0_.Q & !STEP9D_qrnd_2_.Q
+       & !STEP9D_qrnd_3_.Q
+    # !STEP9D_gameover.Q & STEP9D_qrnd_2_.Q & STEP9D_qrnd_3_.Q
+    # !STEP9D_gameover.Q & STEP9D_qrnd_1_.Q & !STEP9D_qrnd_2_.Q
+    # !STEP9D_gameover.Q & STEP9D_qrnd_0_.Q & STEP9D_qrnd_1_.Q
+    # STEP9D_gameover.Q & !STEP9K_outDISP_1_.Q ; (5 pterms, 6 signals)
+
+o_DIS1_2_ = !( !STEP9D_gameover.Q & !STEP9D_qrnd_0_.Q & STEP9D_qrnd_1_.Q
+       & !STEP9D_qrnd_3_.Q
+    # !STEP9D_gameover.Q & !STEP9D_qrnd_0_.Q & !STEP9D_qrnd_1_.Q
+       & !STEP9D_qrnd_2_.Q
+    # STEP9D_gameover.Q & STEP9K_outDISP_2_.Q ) ; (3 pterms, 6 signals)
+
+o_DIS1_3_ = !STEP9D_gameover.Q & STEP9D_qrnd_0_.Q & !STEP9D_qrnd_1_.Q
+       & !STEP9D_qrnd_2_.Q & !STEP9D_qrnd_3_.Q
+    # !STEP9D_gameover.Q & !STEP9D_qrnd_0_.Q & !STEP9D_qrnd_1_.Q
+       & STEP9D_qrnd_2_.Q
+    # !STEP9D_gameover.Q & STEP9D_qrnd_0_.Q & STEP9D_qrnd_1_.Q
+       & STEP9D_qrnd_2_.Q
+    # STEP9D_gameover.Q & !STEP9K_outDISP_3_.Q
+    # !STEP9D_gameover.Q & !step9d_qrnde_n ; (5 pterms, 7 signals)
+
+o_DIS1_4_ = !STEP9D_gameover.Q & !STEP9D_qrnd_0_.Q & STEP9D_qrnd_1_.Q
+       & !STEP9D_qrnd_2_.Q
+    # STEP9D_gameover.Q & !STEP9K_outDISP_4_.Q
+    # !STEP9D_gameover.Q & !step9d_qrnde_n ; (3 pterms, 6 signals)
+
+o_DIS1_5_ = !STEP9D_gameover.Q & STEP9D_qrnd_0_.Q & !STEP9D_qrnd_1_.Q
+       & STEP9D_qrnd_2_.Q
+    # !STEP9D_gameover.Q & !STEP9D_qrnd_0_.Q & STEP9D_qrnd_1_.Q
+       & STEP9D_qrnd_2_.Q
+    # STEP9D_gameover.Q & !STEP9K_outDISP_5_.Q
+    # !STEP9D_gameover.Q & !step9d_qrnde_n ; (4 pterms, 6 signals)
+
+o_DIS1_6_ = !STEP9D_gameover.Q & STEP9D_qrnd_0_.Q & !STEP9D_qrnd_1_.Q
+       & !STEP9D_qrnd_2_.Q & !STEP9D_qrnd_3_.Q
+    # !STEP9D_gameover.Q & !STEP9D_qrnd_0_.Q & !STEP9D_qrnd_1_.Q
+       & STEP9D_qrnd_2_.Q
+    # STEP9D_gameover.Q & !STEP9K_outDISP_6_.Q
+    # !STEP9D_gameover.Q & !step9d_qrnde_n ; (4 pterms, 7 signals)
+
+o_DIS2_0_ = !( STEP9D_gameover.Q & STEP9K_outDISP_7_.Q ) ; (1 pterm, 2 signals)
+
+o_DIS2_1_ = !( STEP9D_gameover.Q & STEP9K_outDISP_8_.Q ) ; (1 pterm, 2 signals)
+
+o_DIS2_2_ = !( STEP9D_gameover.Q & STEP9K_outDISP_9_.Q ) ; (1 pterm, 2 signals)
+
+o_DIS2_3_ = !( STEP9D_gameover.Q & STEP9K_outDISP_10_.Q ) ; (1 pterm, 2 signals)
+
+o_DIS2_4_ = !( STEP9D_gameover.Q & STEP9K_outDISP_11_.Q ) ; (1 pterm, 2 signals)
+
+o_DIS2_5_ = !( STEP9D_gameover.Q & STEP9K_outDISP_12_.Q ) ; (1 pterm, 2 signals)
+
+o_DIS2_6_ = !( STEP9D_gameover.Q & STEP9K_outDISP_13_.Q ) ; (1 pterm, 2 signals)
+
+o_DIS3_0_ = !STEP9D_gameover.Q & !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & !STEP9F_oSCORE_3_.Q
+    # STEP9D_gameover.Q & !STEP9K_outDISP_14_.Q
+    # !STEP9D_gameover.Q & !step9j_n_80_0_n ; (3 pterms, 6 signals)
+
+o_DIS3_1_ = !STEP9D_gameover.Q & STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_2_.Q
+       & !STEP9F_oSCORE_3_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+    # STEP9D_gameover.Q & !STEP9K_outDISP_15_.Q ; (5 pterms, 6 signals)
+
+o_DIS3_2_ = !( !STEP9D_gameover.Q & !STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & !STEP9F_oSCORE_3_.Q
+    # !STEP9D_gameover.Q & !STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q
+       & !STEP9F_oSCORE_2_.Q
+    # STEP9D_gameover.Q & STEP9K_outDISP_16_.Q ) ; (3 pterms, 6 signals)
+
+o_DIS3_3_ = !( !STEP9D_gameover.Q & step9j_n_79_0_n & step9j_n_80_0_n
+    # STEP9D_gameover.Q & STEP9K_outDISP_17_.Q ) ; (2 pterms, 4 signals)
+
+o_DIS3_4_ = !STEP9D_gameover.Q & !STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & !STEP9F_oSCORE_2_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_3_.Q
+    # STEP9D_gameover.Q & !STEP9K_outDISP_18_.Q ; (4 pterms, 6 signals)
+
+o_DIS3_5_.X1 = STEP9D_gameover.Q & !STEP9K_outDISP_19_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_3_.Q
+    # !STEP9D_gameover.Q & !STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_2_.Q
+       & !STEP9F_oSCORE_3_.Q ; (3 pterms, 6 signals)
+o_DIS3_5_.X2 = !STEP9D_gameover.Q & !STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q ; (1 pterm, 3 signals)
+
+o_DIS3_6_ = !( !STEP9D_gameover.Q & !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & step9j_n_79_0_n
+    # STEP9D_gameover.Q & STEP9K_outDISP_20_.Q
+    # !STEP9D_gameover.Q & !STEP9F_oSCORE_3_.Q & step9j_n_79_0_n ) ; (3 pterms, 6 signals)
+
+o_DIS4_0_.X1 = !STEP9D_gameover.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q
+       & STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q
+    # STEP9D_gameover.Q & !STEP9K_outDISP_21_.Q ; (3 pterms, 6 signals)
+o_DIS4_0_.X2 = !STEP9D_gameover.Q & STEP9F_oSCORE_7_.Q ; (1 pterm, 2 signals)
+
+o_DIS4_1_ = !STEP9D_gameover.Q & STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q
+    # STEP9D_gameover.Q & !STEP9K_outDISP_22_.Q ; (5 pterms, 6 signals)
+
+o_DIS4_2_ = !( !STEP9D_gameover.Q & !STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q
+       & !STEP9F_oSCORE_7_.Q
+    # !STEP9D_gameover.Q & !STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q
+       & !STEP9F_oSCORE_6_.Q
+    # STEP9D_gameover.Q & STEP9K_outDISP_23_.Q ) ; (3 pterms, 6 signals)
+
+o_DIS4_3_ = !STEP9D_gameover.Q & STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q
+       & STEP9F_oSCORE_6_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_7_.Q
+    # STEP9D_gameover.Q & !STEP9K_outDISP_24_.Q
+    # !STEP9D_gameover.Q & !step9j_n_127_0_n ; (5 pterms, 7 signals)
+
+o_DIS4_4_ = !STEP9D_gameover.Q & !STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_5_.Q
+       & !STEP9F_oSCORE_6_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_6_.Q & STEP9F_oSCORE_7_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_7_.Q
+    # STEP9D_gameover.Q & !STEP9K_outDISP_25_.Q ; (4 pterms, 6 signals)
+
+o_DIS4_5_.X1 = STEP9D_gameover.Q & !STEP9K_outDISP_26_.Q
+    # !STEP9D_gameover.Q & STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_7_.Q
+    # !STEP9D_gameover.Q & !STEP9F_oSCORE_4_.Q & STEP9F_oSCORE_6_.Q
+       & !STEP9F_oSCORE_7_.Q ; (3 pterms, 6 signals)
+o_DIS4_5_.X2 = !STEP9D_gameover.Q & !STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q ; (1 pterm, 3 signals)
+
+o_DIS4_6_ = !( !STEP9D_gameover.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_6_.Q
+       & step9j_n_127_0_n
+    # STEP9D_gameover.Q & STEP9K_outDISP_27_.Q
+    # !STEP9D_gameover.Q & !STEP9F_oSCORE_7_.Q & step9j_n_127_0_n ) ; (3 pterms, 6 signals)
+
+o_JUMBO_0_ = !( DIP_7_ & !DIP_3_ & STEP9A_qprice_3_.Q & !step9b_un1_ozf_1_0_n
+    # DIP_7_ & !DIP_3_ & STEP9A_qprice_3_.Q & !step9b_c_0_2__n
+    # DIP_7_ & !DIP_3_ & !STEP9A_qprice_3_.Q & step9b_c_0_2__n
+    # DIP_7_ & DIP_3_ & STEP9A_qprice_3_.Q & step9b_c_0_2__n ) ; (4 pterms, 5 signals)
+
+o_JUMBO_1_ = !( DIP_7_ & !mypoints_i_2__n ) ; (1 pterm, 2 signals)
+
+o_JUMBO_2_ = !( DIP_7_ & mypoints_0__n ) ; (1 pterm, 2 signals)
+
+o_LED_YELLOW_0_.D = 0 ; (0 pterm, 0 signal)
+o_LED_YELLOW_0_.C = !i_S1_NO ; (1 pterm, 1 signal)
+o_LED_YELLOW_0_.AR = !i_S1_NO ; (1 pterm, 1 signal)
+o_LED_YELLOW_0_.AP = !i_S1_NC ; (1 pterm, 1 signal)
+
+o_LED_YELLOW_1_.D = 0 ; (0 pterm, 0 signal)
+o_LED_YELLOW_1_.C = !i_S2_NO ; (1 pterm, 1 signal)
+o_LED_YELLOW_1_.AR = !i_S2_NO ; (1 pterm, 1 signal)
+o_LED_YELLOW_1_.AP = !i_S2_NC ; (1 pterm, 1 signal)
+
+o_MIDRED_0_ = !( DIP_7_ & STEP9A_qprice_0_.Q ) ; (1 pterm, 2 signals)
+
+o_MIDRED_1_ = !( DIP_7_ & STEP9A_qprice_1_.Q ) ; (1 pterm, 2 signals)
+
+o_MIDRED_2_ = !( DIP_7_ & STEP9A_qprice_2_.Q ) ; (1 pterm, 2 signals)
+
+o_MIDRED_3_ = !( DIP_7_ & STEP9A_qprice_3_.Q ) ; (1 pterm, 2 signals)
+
+o_MIDRED_4_ = 1 ; (1 pterm, 0 signal)
+
+o_MIDRED_5_ = 1 ; (1 pterm, 0 signal)
+
+o_MIDRED_6_ = 1 ; (1 pterm, 0 signal)
+
+o_MIDRED_7_ = 1 ; (1 pterm, 0 signal)
+
+o_TOPRED_0_ = 1 ; (1 pterm, 0 signal)
+
+o_TOPRED_1_ = 1 ; (1 pterm, 0 signal)
+
+o_TOPRED_2_ = 1 ; (1 pterm, 0 signal)
+
+o_TOPRED_3_ = 1 ; (1 pterm, 0 signal)
+
+o_TOPRED_4_ = 1 ; (1 pterm, 0 signal)
+
+o_TOPRED_5_ = 1 ; (1 pterm, 0 signal)
+
+o_TOPRED_6_ = 1 ; (1 pterm, 0 signal)
+
+o_TOPRED_7_ = 1 ; (1 pterm, 0 signal)
+
+step9b_c_0_2__n.X1 = DIP_1_ & !STEP9A_qprice_1_.Q
+    # DIP_1_ & DIP_0_ & !STEP9A_qprice_0_.Q
+    # DIP_0_ & !STEP9A_qprice_0_.Q & !STEP9A_qprice_1_.Q
+    # !DIP_2_ & STEP9A_qprice_2_.Q
+    # DIP_2_ & !STEP9A_qprice_2_.Q ; (5 pterms, 6 signals)
+step9b_c_0_2__n.X2 = !DIP_2_ & STEP9A_qprice_2_.Q ; (1 pterm, 2 signals)
+
+step9b_un1_ozf_1_0_n = !( DIP_1_ & !STEP9A_qprice_1_.Q
+    # !DIP_1_ & STEP9A_qprice_1_.Q
+    # DIP_0_ & !STEP9A_qprice_0_.Q
+    # !DIP_0_ & STEP9A_qprice_0_.Q
+    # DIP_2_ & !STEP9A_qprice_2_.Q
+    # !DIP_2_ & STEP9A_qprice_2_.Q ) ; (6 pterms, 6 signals)
+
+step9d_qrnde_n = !STEP9D_qrnd_1_.Q & !STEP9D_qrnd_2_.Q
+    # !STEP9D_qrnd_3_.Q ; (2 pterms, 3 signals)
+
+step9f_n_23_n = !( DIP_3_ & !STEP9A_qprice_3_.Q
+    # !DIP_3_ & STEP9A_qprice_3_.Q
+    # DIP_2_ & !STEP9A_qprice_2_.Q
+    # !DIP_2_ & STEP9A_qprice_2_.Q
+    # DIP_1_ & !STEP9A_qprice_1_.Q
+    # !DIP_1_ & STEP9A_qprice_1_.Q
+    # DIP_0_ & !STEP9A_qprice_0_.Q
+    # !DIP_0_ & STEP9A_qprice_0_.Q
+    # !STEP9F_oSCORE_0_.Q
+    # !STEP9F_oSCORE_1_.Q ) ; (10 pterms, 10 signals)
+
+step9f_n_36_0_n = !( STEP9A_qprice_0_.Q & STEP9A_qprice_1_.Q
+       & STEP9A_qprice_2_.Q & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # !DIP_0_ & STEP9A_qprice_1_.Q & STEP9A_qprice_2_.Q & !STEP9A_qprice_3_.Q
+       & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # !DIP_1_ & STEP9A_qprice_0_.Q & STEP9A_qprice_2_.Q & !STEP9A_qprice_3_.Q
+       & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # !DIP_1_ & !DIP_0_ & STEP9A_qprice_2_.Q & !STEP9A_qprice_3_.Q
+       & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # !DIP_2_ & STEP9A_qprice_0_.Q & STEP9A_qprice_1_.Q & !STEP9A_qprice_3_.Q
+       & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # !DIP_2_ & !DIP_0_ & STEP9A_qprice_1_.Q & !STEP9A_qprice_3_.Q
+       & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # !DIP_2_ & !DIP_1_ & STEP9A_qprice_0_.Q & !STEP9A_qprice_3_.Q
+       & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # !DIP_2_ & !DIP_1_ & !DIP_0_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & STEP9A_qprice_0_.Q & STEP9A_qprice_1_.Q & STEP9A_qprice_2_.Q
+       & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_0_ & STEP9A_qprice_1_.Q & STEP9A_qprice_2_.Q
+       & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_1_ & STEP9A_qprice_0_.Q & STEP9A_qprice_2_.Q
+       & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_1_ & !DIP_0_ & STEP9A_qprice_2_.Q & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_2_ & STEP9A_qprice_0_.Q & STEP9A_qprice_1_.Q
+       & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_2_ & !DIP_0_ & STEP9A_qprice_1_.Q & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_2_ & !DIP_1_ & STEP9A_qprice_0_.Q & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_2_ & !DIP_1_ & !DIP_0_ & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+    # !DIP_0_ & STEP9A_qprice_0_.Q & STEP9A_qprice_1_.Q & STEP9A_qprice_2_.Q
+       & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_2_.Q
+    # !DIP_1_ & !DIP_0_ & STEP9A_qprice_0_.Q & STEP9A_qprice_2_.Q
+       & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_2_.Q
+    # !DIP_2_ & !DIP_0_ & STEP9A_qprice_0_.Q & STEP9A_qprice_1_.Q
+       & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_2_.Q
+    # !DIP_2_ & !DIP_1_ & !DIP_0_ & STEP9A_qprice_0_.Q & !STEP9A_qprice_3_.Q
+       & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_0_ & STEP9A_qprice_0_.Q & STEP9A_qprice_1_.Q
+       & STEP9A_qprice_2_.Q & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_1_ & !DIP_0_ & STEP9A_qprice_0_.Q & STEP9A_qprice_2_.Q
+       & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_2_ & !DIP_0_ & STEP9A_qprice_0_.Q & STEP9A_qprice_1_.Q
+       & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_2_ & !DIP_1_ & !DIP_0_ & STEP9A_qprice_0_.Q
+       & STEP9F_oSCORE_2_.Q
+    # !DIP_1_ & STEP9A_qprice_1_.Q & STEP9A_qprice_2_.Q & !STEP9A_qprice_3_.Q
+       & STEP9F_oSCORE_2_.Q
+    # !DIP_2_ & !DIP_1_ & STEP9A_qprice_1_.Q & !STEP9A_qprice_3_.Q
+       & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_1_ & STEP9A_qprice_1_.Q & STEP9A_qprice_2_.Q
+       & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_2_ & !DIP_1_ & STEP9A_qprice_1_.Q & STEP9F_oSCORE_2_.Q
+    # !DIP_2_ & STEP9A_qprice_2_.Q & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !DIP_2_ & STEP9A_qprice_2_.Q & STEP9F_oSCORE_2_.Q
+    # DIP_3_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_2_.Q ) ; (31 pterms, 11 signals)
+
+step9f_n_43_n.X1 = mypoints_0__n & STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_3_.Q
+    # mypoints_0__n & STEP9F_oSCORE_0_.Q & step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & !mypoints_i_2__n
+    # !mypoints_0__n & STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_3_.Q
+    # !mypoints_0__n & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & !mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q & !step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n & !step9f_n_36_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & !mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & !mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q & step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n & !step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & !mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & !mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q & !step9b_c_0_2__n
+       & step9b_un1_ozf_1_0_n & !step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & !mypoints_0__n & STEP9F_oSCORE_0_.Q
+       & STEP9F_oSCORE_1_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # mypoints_0__n & !STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_3_.Q & !step9f_n_36_0_n
+    # !STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q
+       & !mypoints_i_2__n & !step9f_n_36_0_n ; (13 pterms, 11 signals)
+step9f_n_43_n.X2 = STEP9F_oSCORE_1_.Q & step9f_n_36_0_n ; (1 pterm, 2 signals)
+
+step9f_tenscarry_n = !DIP_3_ & !STEP9A_qprice_3_.Q & mypoints_0__n
+       & STEP9F_oSCORE_1_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & mypoints_0__n & STEP9F_oSCORE_1_.Q
+       & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n & step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & mypoints_0__n & STEP9F_oSCORE_1_.Q
+       & step9b_c_0_2__n & step9b_un1_ozf_1_0_n & step9f_n_36_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n & !mypoints_i_2__n
+       & !step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n & !mypoints_i_2__n
+       & !step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & step9b_c_0_2__n & step9b_un1_ozf_1_0_n & !mypoints_i_2__n
+       & !step9f_n_36_0_n
+    # !DIP_3_ & !STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !step9f_n_36_0_n
+    # DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & !step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !step9f_n_36_0_n
+    # !DIP_3_ & STEP9A_qprice_3_.Q & STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q & step9b_c_0_2__n & step9b_un1_ozf_1_0_n
+       & !step9f_n_36_0_n
+    # !mypoints_0__n & !STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & !mypoints_i_2__n & !step9f_n_36_0_n
+    # !mypoints_0__n & STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+       & mypoints_i_2__n & !step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q
+       & step9f_n_36_0_n
+    # !mypoints_0__n & STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_3_.Q
+       & !step9f_n_36_0_n
+    # STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q & !mypoints_i_2__n
+    # mypoints_0__n & !STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_2_.Q & !mypoints_i_2__n
+    # STEP9F_oSCORE_3_.Q & !mypoints_i_2__n & step9f_n_36_0_n
+    # STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q & step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_3_.Q
+    # mypoints_0__n & !mypoints_i_2__n & step9f_n_36_0_n
+    # STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_3_.Q & step9f_n_36_0_n
+    # mypoints_0__n & STEP9F_oSCORE_2_.Q & step9f_n_36_0_n ; (22 pterms, 11 signals)
+
+step9j_msel_i_2_n = !STEP9F_oSCORE_1_.Q & !STEP9F_oSCORE_2_.Q
+       & !STEP9F_oSCORE_3_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_7_.Q
+    # !STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q & !STEP9F_oSCORE_7_.Q
+    # !STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q ; (3 pterms, 7 signals)
+
+step9j_n_127_0_n = !( STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q
+       & !STEP9F_oSCORE_6_.Q & !STEP9F_oSCORE_7_.Q
+    # !STEP9F_oSCORE_4_.Q & !STEP9F_oSCORE_5_.Q & STEP9F_oSCORE_6_.Q ) ; (2 pterms, 4 signals)
+
+step9j_n_79_0_n = !( STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q
+       & !STEP9F_oSCORE_2_.Q & !STEP9F_oSCORE_3_.Q
+    # !STEP9F_oSCORE_0_.Q & !STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_2_.Q ) ; (2 pterms, 4 signals)
+
+step9j_n_80_0_n = !( STEP9F_oSCORE_0_.Q & STEP9F_oSCORE_1_.Q
+       & STEP9F_oSCORE_2_.Q
+    # STEP9F_oSCORE_2_.Q & STEP9F_oSCORE_3_.Q
+    # STEP9F_oSCORE_1_.Q & STEP9F_oSCORE_3_.Q ) ; (3 pterms, 4 signals)
+
+step9j_un1_outchar17_0_n = STEP9J_next_CQ_0_.Q & STEP9J_next_CQ_1_.Q
+       & STEP9J_next_CQ_2_.Q & STEP9J_next_CQ_3_.Q
+    # STEP9J_next_CQ_4_.Q ; (2 pterms, 5 signals)
+

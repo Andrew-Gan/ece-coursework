@@ -1,0 +1,17 @@
+JDF B
+// Created by Version 1.7 
+PROJECT Lab10
+DESIGN lab10 Normal
+DEVKIT LC4256ZE-5TN144C
+ENTRY Pure Verilog HDL
+MODULE gan35_lab10.v
+MODSTYLE john4sc Normal
+MODSTYLE lab10_top Normal
+MODSTYLE johndec Normal
+MODSTYLE frequency_divider Normal
+MODSTYLE dispshift Normal
+MODSTYLE bounceless_switch Normal
+MODSTYLE msggen Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE lab10_top

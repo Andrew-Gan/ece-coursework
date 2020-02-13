@@ -1,0 +1,7 @@
+CLK  i
+RST  i
+EN  i
+qprice[3]  o
+qprice[2]  o
+qprice[1]  o
+qprice[0]  o

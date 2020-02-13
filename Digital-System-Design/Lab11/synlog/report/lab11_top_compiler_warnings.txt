@@ -1,0 +1,10 @@
+@W: CL169 :"W:\my documents\ece 270\lab11\lab11_top.v":293:0:293:5|Pruning register next_CQ[5:0] 
+@W: CL118 :"W:\my documents\ece 270\lab11\lab11_top.v":348:2:348:3|Latch generated from always block for signal outCHAR[6:0]; possible missing assignment in an if or case statement.
+@W: CG296 :"W:\my documents\ece 270\lab11\lab11_top.v":439:9:439:13|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"W:\my documents\ece 270\lab11\lab11_top.v":440:5:440:10|Referenced variable rCOMBO is not in sensitivity list
+@W: CG290 :"W:\my documents\ece 270\lab11\lab11_top.v":440:12:440:14|Referenced variable PTR is not in sensitivity list
+@W: CG133 :"W:\my documents\ece 270\lab11\lab11_top.v":437:10:437:18|No assignment to storedVal
+@W: CL118 :"W:\my documents\ece 270\lab11\lab11_top.v":496:2:496:3|Latch generated from always block for signal outEN; possible missing assignment in an if or case statement.
+@W: CL190 :"W:\my documents\ece 270\lab11\lab11_top.v":293:0:293:5|Optimizing register bit CQ[5] to a constant 0
+@W: CL169 :"W:\my documents\ece 270\lab11\lab11_top.v":293:0:293:5|Pruning register CQ[5] 
+

@@ -1,0 +1,1294 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      DIP[7:0]                      DIP                  7          8            -1
+      Port          2      o_TOPRED[7:0]                 o_TOPRED                  7          8            -1
+      Port          3      o_MIDRED[7:0]                 o_MIDRED                  7          8            -1
+      Port          4      o_BOTRED[7:0]                 o_BOTRED                  7          8            -1
+      Port          5      o_DIS1[6:0]                   o_DIS1                  6          7            -1
+      Port          6      o_DIS2[6:0]                   o_DIS2                  6          7            -1
+      Port          7      o_DIS3[6:0]                   o_DIS3                  6          7            -1
+      Port          8      o_DIS4[6:0]                   o_DIS4                  6          7            -1
+      Port          9      o_JUMBO[2:0]                  o_JUMBO                  2          3            -1
+      Port          10      o_LED_YELLOW[1:0]               o_LED_YELLOW                  1          2            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      DIP_7_                      DIP[7]                       1            0            
+        Port      DIP_6_                      DIP[6]                       1            1            
+        Port      DIP_5_                      DIP[5]                       1            2            
+        Port      DIP_4_                      DIP[4]                       1            3            
+        Port      DIP_3_                      DIP[3]                       1            4            
+        Port      DIP_2_                      DIP[2]                       1            5            
+        Port      DIP_1_                      DIP[1]                       1            6            
+        Port      DIP_0_                      DIP[0]                       1            7            
+        Port      o_TOPRED_7_                 o_TOPRED[7]                       2            0            
+        Port      o_TOPRED_6_                 o_TOPRED[6]                       2            1            
+        Port      o_TOPRED_5_                 o_TOPRED[5]                       2            2            
+        Port      o_TOPRED_4_                 o_TOPRED[4]                       2            3            
+        Port      o_TOPRED_3_                 o_TOPRED[3]                       2            4            
+        Port      o_TOPRED_2_                 o_TOPRED[2]                       2            5            
+        Port      o_TOPRED_1_                 o_TOPRED[1]                       2            6            
+        Port      o_TOPRED_0_                 o_TOPRED[0]                       2            7            
+        Port      o_MIDRED_7_                 o_MIDRED[7]                       3            0            
+        Port      o_MIDRED_6_                 o_MIDRED[6]                       3            1            
+        Port      o_MIDRED_5_                 o_MIDRED[5]                       3            2            
+        Port      o_MIDRED_4_                 o_MIDRED[4]                       3            3            
+        Port      o_MIDRED_3_                 o_MIDRED[3]                       3            4            
+        Port      o_MIDRED_2_                 o_MIDRED[2]                       3            5            
+        Port      o_MIDRED_1_                 o_MIDRED[1]                       3            6            
+        Port      o_MIDRED_0_                 o_MIDRED[0]                       3            7            
+        Port      o_BOTRED_7_                 o_BOTRED[7]                       4            0            
+        Port      o_BOTRED_6_                 o_BOTRED[6]                       4            1            
+        Port      o_BOTRED_5_                 o_BOTRED[5]                       4            2            
+        Port      o_BOTRED_4_                 o_BOTRED[4]                       4            3            
+        Port      o_BOTRED_3_                 o_BOTRED[3]                       4            4            
+        Port      o_BOTRED_2_                 o_BOTRED[2]                       4            5            
+        Port      o_BOTRED_1_                 o_BOTRED[1]                       4            6            
+        Port      o_BOTRED_0_                 o_BOTRED[0]                       4            7            
+        Port      o_DIS1_6_                   o_DIS1[6]                       5            0            
+        Port      o_DIS1_5_                   o_DIS1[5]                       5            1            
+        Port      o_DIS1_4_                   o_DIS1[4]                       5            2            
+        Port      o_DIS1_3_                   o_DIS1[3]                       5            3            
+        Port      o_DIS1_2_                   o_DIS1[2]                       5            4            
+        Port      o_DIS1_1_                   o_DIS1[1]                       5            5            
+        Port      o_DIS1_0_                   o_DIS1[0]                       5            6            
+        Port      o_DIS2_6_                   o_DIS2[6]                       6            0            
+        Port      o_DIS2_5_                   o_DIS2[5]                       6            1            
+        Port      o_DIS2_4_                   o_DIS2[4]                       6            2            
+        Port      o_DIS2_3_                   o_DIS2[3]                       6            3            
+        Port      o_DIS2_2_                   o_DIS2[2]                       6            4            
+        Port      o_DIS2_1_                   o_DIS2[1]                       6            5            
+        Port      o_DIS2_0_                   o_DIS2[0]                       6            6            
+        Port      o_DIS3_6_                   o_DIS3[6]                       7            0            
+        Port      o_DIS3_5_                   o_DIS3[5]                       7            1            
+        Port      o_DIS3_4_                   o_DIS3[4]                       7            2            
+        Port      o_DIS3_3_                   o_DIS3[3]                       7            3            
+        Port      o_DIS3_2_                   o_DIS3[2]                       7            4            
+        Port      o_DIS3_1_                   o_DIS3[1]                       7            5            
+        Port      o_DIS3_0_                   o_DIS3[0]                       7            6            
+        Port      o_DIS4_6_                   o_DIS4[6]                       8            0            
+        Port      o_DIS4_5_                   o_DIS4[5]                       8            1            
+        Port      o_DIS4_4_                   o_DIS4[4]                       8            2            
+        Port      o_DIS4_3_                   o_DIS4[3]                       8            3            
+        Port      o_DIS4_2_                   o_DIS4[2]                       8            4            
+        Port      o_DIS4_1_                   o_DIS4[1]                       8            5            
+        Port      o_DIS4_0_                   o_DIS4[0]                       8            6            
+        Port      o_JUMBO_2_                  o_JUMBO[2]                       9            0            
+        Port      o_JUMBO_1_                  o_JUMBO[1]                       9            1            
+        Port      o_JUMBO_0_                  o_JUMBO[0]                       9            2            
+        Port      o_LED_YELLOW_1_               o_LED_YELLOW[1]                      10            0            
+        Port      o_LED_YELLOW_0_               o_LED_YELLOW[0]                      10            1            
+End
+Section Cross Reference File
+Design 'lab11_top' created Thu Apr 04 16:05:03 2019
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst   STEP1A_un1_CQ_inv_3_i                     STEP1A.un1_CQ_inv_3_i
+   Inst   STEP1A_next_CQ_cnst_i_o3_0_               STEP1A.next_CQ_cnst_i_o3[0]
+   Inst          STEP1A_N_31_i                             STEP1A.N_31_i
+   Inst     STEP1A_un1_CQ_10_m                        STEP1A.un1_CQ_10_m
+   Inst          STEP1A_N_30_i                             STEP1A.N_30_i
+   Inst   STEP1A_un1_CQ_inv_3_m                     STEP1A.un1_CQ_inv_3_m
+   Inst          STEP1A_N_33_i                             STEP1A.N_33_i
+   Inst   STEP1A_next_CQ_cnst_i_a3_0_               STEP1A.next_CQ_cnst_i_a3[0]
+   Inst          STEP1A_N_32_i                             STEP1A.N_32_i
+   Inst   STEP2_un5_count_decode_0_0_x3             STEP2.un5_count_decode_0_0_x3
+   Inst   STEP2_next_count_state_n1_i_o3_i          STEP2.next_count_state_n1_i_o3_i
+   Inst     STEP2_pointer_i_0_                        STEP2.pointer_i[0]
+   Inst     STEP5_un1_ARST_1_i                        STEP5.un1_ARST_1_i
+   Inst   STEP2_next_count_state_n0_i_a4            STEP2.next_count_state_n0_i_a4
+   Inst   STEP5_next_qstate_1_sqmuxa_2_1_i          STEP5.next_qstate_1_sqmuxa_2_1_i
+   Inst             STEP1A_G_8                                STEP1A.G_8
+   Inst   STEP5_un1_next_qstate_10_i                STEP5.un1_next_qstate_10_i
+   Inst   STEP4_rCOMBO_pmux_5_r                     STEP4.rCOMBO_pmux_5.r
+   Inst   STEP5_un1_next_qstate_11_i_m_i_0_         STEP5.un1_next_qstate_11_i_m_i[0]
+   Inst   STEP4_rCOMBO_pmux_5_m                     STEP4.rCOMBO_pmux_5.m
+   Inst   STEP5_next_qstate_0_sqmuxa_i              STEP5.next_qstate_0_sqmuxa_i
+   Inst   STEP4_rCOMBO_pmux_5_n                     STEP4.rCOMBO_pmux_5.n
+   Inst           STEP5_G_26_i                              STEP5.G_26_i
+   Inst   STEP4_rCOMBO_pmux_5_p                     STEP4.rCOMBO_pmux_5.p
+   Inst           STEP2_N_43_i                              STEP2.N_43_i
+   Inst   STEP4_rCOMBO_pmux_4_r                     STEP4.rCOMBO_pmux_4.r
+   Inst           STEP2_N_44_i                              STEP2.N_44_i
+   Inst   STEP4_rCOMBO_pmux_4_m                     STEP4.rCOMBO_pmux_4.m
+   Inst   STEP1A_next_CQ_cnst_0_i_4_                STEP1A.next_CQ_cnst_0_i[4]
+   Inst   STEP4_rCOMBO_pmux_4_n                     STEP4.rCOMBO_pmux_4.n
+   Inst   STEP1A_next_CQ_cnst_i_o3_i_1_             STEP1A.next_CQ_cnst_i_o3_i[1]
+   Inst   STEP4_rCOMBO_pmux_4_p                     STEP4.rCOMBO_pmux_4.p
+   Inst      STEP1A_un1_CQ_8_i                         STEP1A.un1_CQ_8_i
+   Inst   STEP4_rCOMBO_pmux_2_r                     STEP4.rCOMBO_pmux_2.r
+   Inst   STEP1A_un1_CQ_inv_10_i                    STEP1A.un1_CQ_inv_10_i
+   Inst   STEP4_rCOMBO_pmux_2_m                     STEP4.rCOMBO_pmux_2.m
+   Inst          STEP1A_N_29_i                             STEP1A.N_29_i
+   Inst   STEP4_rCOMBO_pmux_2_n                     STEP4.rCOMBO_pmux_2.n
+   Inst          STEP1A_N_28_i                             STEP1A.N_28_i
+   Inst   STEP4_rCOMBO_pmux_2_p                     STEP4.rCOMBO_pmux_2.p
+   Inst           STEP2_N_40_i                              STEP2.N_40_i
+   Inst   STEP4_rCOMBO_pmux_1_r                     STEP4.rCOMBO_pmux_1.r
+   Inst   STEP2_un5_count_decode_0_0_i              STEP2.un5_count_decode_0_0_i
+   Inst   STEP4_rCOMBO_pmux_1_m                     STEP4.rCOMBO_pmux_1.m
+   Inst   STEP1A_un1_CQ_35_iv_i                     STEP1A.un1_CQ_35_iv_i
+   Inst   STEP4_rCOMBO_pmux_1_n                     STEP4.rCOMBO_pmux_1.n
+   Inst   STEP1A_outCHAR14_m_i                      STEP1A.outCHAR14_m_i
+   Inst   STEP4_rCOMBO_pmux_1_p                     STEP4.rCOMBO_pmux_1.p
+   Inst        STEP1A_N_33_1_i                           STEP1A.N_33_1_i
+   Inst   STEP4_rCOMBO_pmux_6_r                     STEP4.rCOMBO_pmux_6.r
+   Inst   STEP1A_un1_CQ_10_m_i                      STEP1A.un1_CQ_10_m_i
+   Inst   STEP4_rCOMBO_pmux_6_m                     STEP4.rCOMBO_pmux_6.m
+   Inst           STEP1A_CQ_2_                              STEP1A.CQ[2]
+   Inst        STEP1A_N_28_1_i                           STEP1A.N_28_1_i
+   Inst   STEP4_rCOMBO_pmux_6_n                     STEP4.rCOMBO_pmux_6.n
+   Inst           STEP1A_CQ_3_                              STEP1A.CQ[3]
+   Inst   STEP1A_un1_CQ_inv_3_m_i                   STEP1A.un1_CQ_inv_3_m_i
+   Inst   STEP4_rCOMBO_pmux_6_p                     STEP4.rCOMBO_pmux_6.p
+   Inst           STEP1A_CQ_4_                              STEP1A.CQ[4]
+   Inst   STEP1A_un1_outCHAR14_3_iv_i               STEP1A.un1_outCHAR14_3_iv_i
+   Inst   STEP4_rCOMBO_pmux_3_r                     STEP4.rCOMBO_pmux_3.r
+   Inst           STEP1A_CQ_0_                              STEP1A.CQ[0]
+   Inst   STEP1A_CQ_inv_3_m_i_0_                    STEP1A.CQ_inv_3_m_i[0]
+   Inst   STEP4_rCOMBO_pmux_3_m                     STEP4.rCOMBO_pmux_3.m
+   Inst           STEP1A_CQ_1_                              STEP1A.CQ[1]
+   Inst   STEP1A_un1_CQ_31_iv_i                     STEP1A.un1_CQ_31_iv_i
+   Inst   STEP4_rCOMBO_pmux_3_n                     STEP4.rCOMBO_pmux_3.n
+   Inst        STEP3_qcombo_5_                           STEP3.qcombo[5]
+   Inst       STEP1A_CQ_m_i_1_                          STEP1A.CQ_m_i[1]
+   Inst   STEP4_rCOMBO_pmux_3_p                     STEP4.rCOMBO_pmux_3.p
+   Inst        STEP3_qcombo_6_                           STEP3.qcombo[6]
+   Inst   STEP1A_un1_CQ_30_iv_i                     STEP1A.un1_CQ_30_iv_i
+   Inst       STEP4_match_out4                          STEP4.match_out4
+   Inst        STEP3_qcombo_7_                           STEP3.qcombo[7]
+   Inst   STEP1A_un1_outCHAR14_5_iv_i               STEP1A.un1_outCHAR14_5_iv_i
+   Inst   STEP4_rCOMBO_pmux_7_r                     STEP4.rCOMBO_pmux_7.r
+   Inst        STEP3_qcombo_0_                           STEP3.qcombo[0]
+   Inst          STEP1A_N_37_i                             STEP1A.N_37_i
+   Inst   STEP4_rCOMBO_pmux_7_m                     STEP4.rCOMBO_pmux_7.m
+   Inst        STEP3_qcombo_1_                           STEP3.qcombo[1]
+   Inst   STEP1A_next_CQ_cnst_0_i_2_                STEP1A.next_CQ_cnst_0_i[2]
+   Inst   STEP4_rCOMBO_pmux_7_n                     STEP4.rCOMBO_pmux_7.n
+   Inst        STEP3_qcombo_2_                           STEP3.qcombo[2]
+   Inst          STEP1A_N_36_i                             STEP1A.N_36_i
+   Inst   STEP4_rCOMBO_pmux_7_p                     STEP4.rCOMBO_pmux_7.p
+   Inst        STEP3_qcombo_3_                           STEP3.qcombo[3]
+   Inst          STEP1A_N_35_i                             STEP1A.N_35_i
+   Inst      STEP3_qcombo_7_5_                         STEP3.qcombo_7[5]
+   Inst        STEP3_qcombo_4_                           STEP3.qcombo[4]
+   Inst          STEP1A_N_34_i                             STEP1A.N_34_i
+   Inst      STEP3_qcombo_8_6_                         STEP3.qcombo_8[6]
+   Inst   STEP5_next_qstate_3_                      STEP5.next_qstate[3]
+   Inst          STEP1A_N_38_i                             STEP1A.N_38_i
+   Inst      STEP3_qcombo_2_0_                         STEP3.qcombo_2[0]
+   Inst   STEP5_next_qstate_0_                      STEP5.next_qstate[0]
+   Inst          STEP1A_N_40_i                             STEP1A.N_40_i
+   Inst      STEP3_qcombo_3_1_                         STEP3.qcombo_3[1]
+   Inst   STEP5_next_qstate_1_                      STEP5.next_qstate[1]
+   Inst          STEP1A_N_39_i                             STEP1A.N_39_i
+   Inst      STEP3_qcombo_4_2_                         STEP3.qcombo_4[2]
+   Inst   STEP5_next_qstate_2_                      STEP5.next_qstate[2]
+   Inst          STEP1A_N_41_i                             STEP1A.N_41_i
+   Inst      STEP3_qcombo_5_3_                         STEP3.qcombo_5[3]
+   Inst   STEP2_count_decode_1_                     STEP2.count_decode[1]
+   Inst          STEP1A_N_42_i                             STEP1A.N_42_i
+   Inst       STEP1A_TOPRED_5_                          STEP1A.TOPRED[5]
+   Inst   STEP2_count_decode_2_                     STEP2.count_decode[2]
+   Inst   STEP1A_next_CQ_0_sqmuxa_2_i               STEP1A.next_CQ_0_sqmuxa_2_i
+   Inst       STEP1A_TOPRED_4_                          STEP1A.TOPRED[4]
+   Inst   STEP2_count_decode_3_                     STEP2.count_decode[3]
+   Inst   STEP1A_un1_outCHAR14_4_iv_i               STEP1A.un1_outCHAR14_4_iv_i
+   Inst       STEP1A_TOPRED_3_                          STEP1A.TOPRED[3]
+   Inst   STEP2_count_decode_4_                     STEP2.count_decode[4]
+   Inst   STEP1A_un1_outCHAR14_1_m_i                STEP1A.un1_outCHAR14_1_m_i
+   Inst       STEP1A_TOPRED_2_                          STEP1A.TOPRED[2]
+   Inst   STEP2_count_decode_5_                     STEP2.count_decode[5]
+   Inst   STEP1A_un1_CQ_25_m_i                      STEP1A.un1_CQ_25_m_i
+   Inst       STEP1A_TOPRED_1_                          STEP1A.TOPRED[1]
+   Inst   STEP2_count_decode_6_                     STEP2.count_decode[6]
+   Inst   STEP1A_un1_CQ_37_iv_i                     STEP1A.un1_CQ_37_iv_i
+   Inst       STEP1A_TOPRED_0_                          STEP1A.TOPRED[0]
+   Inst   STEP2_count_decode_7_                     STEP2.count_decode[7]
+   Inst    STEP1A_un1_CQ_9_m_i                       STEP1A.un1_CQ_9_m_i
+   Inst   STEP2_next_count_state_n1_i_o3            STEP2.next_count_state_n1_i_o3
+   Inst     STEP1B_outDISP_14_                        STEP1B.outDISP[14]
+   Inst   STEP1A_un1_outCHAR14_2_i                  STEP1A.un1_outCHAR14_2_i
+   Inst   STEP2_un5_count_decode_2_i_x3             STEP2.un5_count_decode_2_i_x3
+   Inst     STEP1B_outDISP_15_                        STEP1B.outDISP[15]
+   Inst   STEP1A_un1_CQ_36_iv_i                     STEP1A.un1_CQ_36_iv_i
+   Inst   STEP2_un5_count_decode_4_i_x3             STEP2.un5_count_decode_4_i_x3
+   Inst     STEP1B_outDISP_16_                        STEP1B.outDISP[16]
+   Inst   STEP1A_outCHAR14_m_2_i                    STEP1A.outCHAR14_m_2_i
+   Inst   STEP2_next_count_state_n2_i_a4_0          STEP2.next_count_state_n2_i_a4_0
+   Inst     STEP1B_outDISP_17_                        STEP1B.outDISP[17]
+   Inst       STEP1A_CQ_m_i_0_                          STEP1A.CQ_m_i[0]
+   Inst     STEP2_pointer_i_2_                        STEP2.pointer_i[2]
+   Inst     STEP1B_outDISP_18_                        STEP1B.outDISP[18]
+   Inst   STEP1A_un1_CQ_33_iv_i                     STEP1A.un1_CQ_33_iv_i
+   Inst   STEP2_next_count_state_n2_i_a4            STEP2.next_count_state_n2_i_a4
+   Inst     STEP1B_outDISP_19_                        STEP1B.outDISP[19]
+   Inst    STEP1A_un1_CQ_6_m_i                       STEP1A.un1_CQ_6_m_i
+   Inst     STEP2_pointer_i_1_                        STEP2.pointer_i[1]
+   Inst     STEP1B_outDISP_20_                        STEP1B.outDISP[20]
+   Inst   STEP1A_un1_CQ_20_m_i                      STEP1A.un1_CQ_20_m_i
+   Inst   STEP2_next_count_state_n1_i_a4            STEP2.next_count_state_n1_i_a4
+   Inst     STEP1B_outDISP_21_                        STEP1B.outDISP[21]
+   Inst   STEP1A_un1_CQ_32_iv_i                     STEP1A.un1_CQ_32_iv_i
+   Inst            STEP1A_G_10                               STEP1A.G_10
+   Inst     STEP1B_outDISP_22_                        STEP1B.outDISP[22]
+   Inst   STEP1A_un1_CQ_26_m_i                      STEP1A.un1_CQ_26_m_i
+   Inst       STEP5_un1_ARST_1                          STEP5.un1_ARST_1
+   Inst     STEP1B_outDISP_23_                        STEP1B.outDISP[23]
+   Inst   STEP1A_un1_CQ_18_m_i                      STEP1A.un1_CQ_18_m_i
+   Inst             STEP5_G_10                                STEP5.G_10
+   Inst     STEP1B_outDISP_24_                        STEP1B.outDISP[24]
+   Inst   STEP1A_outCHAR14_m_6_i                    STEP1A.outCHAR14_m_6_i
+   Inst   STEP5_next_qstate_i_3_                    STEP5.next_qstate_i[3]
+   Inst     STEP1B_outDISP_25_                        STEP1B.outDISP[25]
+   Inst   STEP1A_un1_CQ_34_iv_i                     STEP1A.un1_CQ_34_iv_i
+   Inst              STEP5_G_8                                 STEP5.G_8
+   Inst     STEP1B_outDISP_26_                        STEP1B.outDISP[26]
+   Inst   STEP1A_CQ_inv_m_0_i_0_                    STEP1A.CQ_inv_m_0_i[0]
+   Inst   STEP5_un1_next_qstate_4_i                 STEP5.un1_next_qstate_4_i
+   Inst     STEP1B_outDISP_27_                        STEP1B.outDISP[27]
+   Inst   STEP1A_un1_outCHAR14_iv_i                 STEP1A.un1_outCHAR14_iv_i
+   Inst       STEP5_un1_ARST_7                          STEP5.un1_ARST_7
+   Inst   STEP2_count_decode_0_                     STEP2.count_decode[0]
+   Inst     STEP1A_un1_CQ_25_i                        STEP1A.un1_CQ_25_i
+   Inst   STEP5_un1_next_qstate_3_i                 STEP5.un1_next_qstate_3_i
+   Inst   STEP2_next_count_state_2_                 STEP2.next_count_state[2]
+   Inst   STEP1A_un1_outCHAR14_1_iv_i               STEP1A.un1_outCHAR14_1_iv_i
+   Inst       STEP5_un1_ARST_6                          STEP5.un1_ARST_6
+   Inst      STEP1B_outDISP_0_                         STEP1B.outDISP[0]
+   Inst     STEP1A_next_CQ62_i                        STEP1A.next_CQ62_i
+   Inst   STEP5_un1_next_qstate_2_i                 STEP5.un1_next_qstate_2_i
+   Inst      STEP1B_outDISP_1_                         STEP1B.outDISP[1]
+   Inst     STEP1A_un1_CQ_16_i                        STEP1A.un1_CQ_16_i
+   Inst       STEP5_un1_ARST_5                          STEP5.un1_ARST_5
+   Inst      STEP1B_outDISP_2_                         STEP1B.outDISP[2]
+   Inst     STEP1A_next_CQ38_i                        STEP1A.next_CQ38_i
+   Inst       STEP5_un1_ARST_4                          STEP5.un1_ARST_4
+   Inst      STEP1B_outDISP_3_                         STEP1B.outDISP[3]
+   Inst          STEP1A_N_26_i                             STEP1A.N_26_i
+   Inst       STEP5_un1_ARST_3                          STEP5.un1_ARST_3
+   Inst      STEP1B_outDISP_4_                         STEP1B.outDISP[4]
+   Inst          STEP1A_N_27_i                             STEP1A.N_27_i
+   Inst       STEP5_un1_ARST_2                          STEP5.un1_ARST_2
+   Inst      STEP1B_outDISP_5_                         STEP1B.outDISP[5]
+   Inst   STEP1A_next_CQ_5_sqmuxa_i                 STEP1A.next_CQ_5_sqmuxa_i
+   Inst       STEP1A_TOPRED_7_                          STEP1A.TOPRED[7]
+   Inst      STEP1B_outDISP_6_                         STEP1B.outDISP[6]
+   Inst   STEP1A_un1_next_CQ_1_sqmuxa_i             STEP1A.un1_next_CQ_1_sqmuxa_i
+   Inst       STEP1A_TOPRED_6_                          STEP1A.TOPRED[6]
+   Inst      STEP1B_outDISP_7_                         STEP1B.outDISP[7]
+   Inst   STEP1A_next_CQ_1_sqmuxa_2_i               STEP1A.next_CQ_1_sqmuxa_2_i
+   Inst   STEP5_next_qstate_1_sqmuxa_2              STEP5.next_qstate_1_sqmuxa_2
+   Inst      STEP1B_outDISP_8_                         STEP1B.outDISP[8]
+   Inst     STEP1A_un1_CQ_24_i                        STEP1A.un1_CQ_24_i
+   Inst     STEP4_match_out4_i                        STEP4.match_out4_i
+   Inst      STEP1B_outDISP_9_                         STEP1B.outDISP[9]
+   Inst          STEP1A_N_44_i                             STEP1A.N_44_i
+   Inst   STEP5_next_qstate_1_sqmuxa_2_1            STEP5.next_qstate_1_sqmuxa_2_1
+   Inst     STEP1B_outDISP_10_                        STEP1B.outDISP[10]
+   Inst     STEP1A_next_CQ40_i                        STEP1A.next_CQ40_i
+   Inst   STEP5_next_qstate_i_2_                    STEP5.next_qstate_i[2]
+   Inst     STEP1B_outDISP_11_                        STEP1B.outDISP[11]
+   Inst        STEP1A_N_29_1_i                           STEP1A.N_29_1_i
+   Inst   STEP5_next_qstate_i_0_                    STEP5.next_qstate_i[0]
+   Inst     STEP1B_outDISP_12_                        STEP1B.outDISP[12]
+   Inst   STEP1A_un1_CQ_inv_12_i                    STEP1A.un1_CQ_inv_12_i
+   Inst   STEP5_next_qstate_i_1_                    STEP5.next_qstate_i[1]
+   Inst     STEP1B_outDISP_13_                        STEP1B.outDISP[13]
+   Inst    STEP1A_un1_CQ_9_i_0                       STEP1A.un1_CQ_9_i_0
+   Inst   STEP5_next_qstate_6_iv_0_                 STEP5.next_qstate_6_iv[0]
+   Inst   STEP2_next_count_state_0_                 STEP2.next_count_state[0]
+   Inst      STEP2_MIDRED_i_1_                         STEP2.MIDRED_i[1]
+   Inst   STEP5_un1_next_qstate_11_i_0_             STEP5.un1_next_qstate_11_i[0]
+   Inst   STEP2_next_count_state_1_                 STEP2.next_count_state[1]
+   Inst      STEP2_MIDRED_i_2_                         STEP2.MIDRED_i[2]
+   Inst   STEP5_un1_next_qstate_11_i_m_0_           STEP5.un1_next_qstate_11_i_m[0]
+   Inst        FDIVBY2_clk_out                           FDIVBY2.clk_out
+   Inst      STEP2_MIDRED_i_3_                         STEP2.MIDRED_i[3]
+   Inst   STEP5_un1_next_qstate_2                   STEP5.un1_next_qstate_2
+   Inst        FDIVBY4_clk_out                           FDIVBY4.clk_out
+   Inst      STEP2_MIDRED_i_4_                         STEP2.MIDRED_i[4]
+   Inst   STEP5_un1_next_qstate_3                   STEP5.un1_next_qstate_3
+   Inst                RGTPB_Q                                   RGTPB.Q
+   Inst      STEP2_MIDRED_i_5_                         STEP2.MIDRED_i[5]
+   Inst   STEP5_un1_next_qstate_4                   STEP5.un1_next_qstate_4
+   Inst                LFTPB_Q                                   LFTPB.Q
+   Inst      STEP2_MIDRED_i_6_                         STEP2.MIDRED_i[6]
+   Inst   STEP5_next_qstate_6_2                     STEP5.next_qstate_6_2
+   Inst                 DIP_0_                                    DIP[0]
+   Inst      STEP2_MIDRED_i_7_                         STEP2.MIDRED_i[7]
+   Inst   STEP5_next_qstate_6_1                     STEP5.next_qstate_6_1
+   Inst                 DIP_1_                                    DIP[1]
+   Inst     STEP1A_TOPRED_i_0_                        STEP1A.TOPRED_i[0]
+   Inst   STEP5_un1_next_qstate_10                  STEP5.un1_next_qstate_10
+   Inst                 DIP_2_                                    DIP[2]
+   Inst     STEP1A_TOPRED_i_1_                        STEP1A.TOPRED_i[1]
+   Inst        RGTPB_i_S1_NC_i                           RGTPB.i_S1_NC_i
+   Inst                 DIP_3_                                    DIP[3]
+   Inst     STEP1A_TOPRED_i_2_                        STEP1A.TOPRED_i[2]
+   Inst        LFTPB_i_S2_NO_i                           LFTPB.i_S2_NO_i
+   Inst                 DIP_4_                                    DIP[4]
+   Inst     STEP1A_TOPRED_i_3_                        STEP1A.TOPRED_i[3]
+   Inst        LFTPB_i_S2_NC_i                           LFTPB.i_S2_NC_i
+   Inst                 DIP_5_                                    DIP[5]
+   Inst     STEP1A_TOPRED_i_4_                        STEP1A.TOPRED_i[4]
+   Inst         STEP2_N_33_i_i                            STEP2.N_33_i_i
+   Inst                 DIP_6_                                    DIP[6]
+   Inst     STEP1A_TOPRED_i_5_                        STEP1A.TOPRED_i[5]
+   Inst         STEP2_N_34_i_i                            STEP2.N_34_i_i
+   Inst                 DIP_7_                                    DIP[7]
+   Inst     STEP1A_TOPRED_i_6_                        STEP1A.TOPRED_i[6]
+   Inst   STEP1A_un1_outCHAR14_2                    STEP1A.un1_outCHAR14_2
+   Inst     STEP1A_TOPRED_i_7_                        STEP1A.TOPRED_i[7]
+   Inst       STEP5_un1_ARST_8                          STEP5.un1_ARST_8
+   Inst       STEP1B_DIS1_i_1_                          STEP1B.DIS1_i[1]
+   Inst   STEP5_un1_next_qstate_8_i                 STEP5.un1_next_qstate_8_i
+   Inst       STEP1B_DIS1_i_2_                          STEP1B.DIS1_i[2]
+   Inst       STEP5_un1_ARST_9                          STEP5.un1_ARST_9
+   Inst       STEP1B_DIS1_i_3_                          STEP1B.DIS1_i[3]
+   Inst             STEP5_G_11                                STEP5.G_11
+   Inst            o_TOPRED_0_                               o_TOPRED[0]
+   Inst       STEP1B_DIS1_i_4_                          STEP1B.DIS1_i[4]
+   Inst              STEP5_G_9                                 STEP5.G_9
+   Inst            o_TOPRED_1_                               o_TOPRED[1]
+   Inst       STEP1B_DIS1_i_5_                          STEP1B.DIS1_i[5]
+   Inst              STEP5_G_7                                 STEP5.G_7
+   Inst            o_TOPRED_2_                               o_TOPRED[2]
+   Inst       STEP1B_DIS1_i_6_                          STEP1B.DIS1_i[6]
+   Inst      STEP5_outNMSG10_2                         STEP5.outNMSG10_2
+   Inst            o_TOPRED_3_                               o_TOPRED[3]
+   Inst               DIP_i_0_                                  DIP_i[0]
+   Inst           STEP2_N_39_i                              STEP2.N_39_i
+   Inst            o_TOPRED_4_                               o_TOPRED[4]
+   Inst               DIP_i_1_                                  DIP_i[1]
+   Inst     FDIVBY2_tim_div2_i                        FDIVBY2.tim_div2_i
+   Inst            o_TOPRED_5_                               o_TOPRED[5]
+   Inst               DIP_i_2_                                  DIP_i[2]
+   Inst     FDIVBY4_tim_div4_i                        FDIVBY4.tim_div4_i
+   Inst            o_TOPRED_6_                               o_TOPRED[6]
+   Inst               DIP_i_3_                                  DIP_i[3]
+   Inst        RGTPB_i_S1_NO_i                           RGTPB.i_S1_NO_i
+   Inst            o_TOPRED_7_                               o_TOPRED[7]
+   Inst               DIP_i_4_                                  DIP_i[4]
+   Inst            STEP5_outEN                               STEP5.outEN
+   Inst            o_MIDRED_0_                               o_MIDRED[0]
+   Inst               DIP_i_5_                                  DIP_i[5]
+   Inst   STEP5_next_qstate_1_sqmuxa_2_i            STEP5.next_qstate_1_sqmuxa_2_i
+   Inst            o_MIDRED_1_                               o_MIDRED[1]
+   Inst               DIP_i_6_                                  DIP_i[6]
+   Inst   STEP1A_un1_CQ_inv_6_i                     STEP1A.un1_CQ_inv_6_i
+   Inst            o_MIDRED_2_                               o_MIDRED[2]
+   Inst               DIP_i_7_                                  DIP_i[7]
+   Inst    STEP1A_outCHAR_1_2_                       STEP1A.outCHAR_1[2]
+   Inst            o_MIDRED_3_                               o_MIDRED[3]
+   Inst      STEP2_MIDRED_i_0_                         STEP2.MIDRED_i[0]
+   Inst    STEP1A_outCHAR_1_6_                       STEP1A.outCHAR_1[6]
+   Inst            o_MIDRED_4_                               o_MIDRED[4]
+   Inst       STEP1B_DIS3_i_0_                          STEP1B.DIS3_i[0]
+   Inst    STEP1A_outCHAR_1_0_                       STEP1A.outCHAR_1[0]
+   Inst            o_MIDRED_5_                               o_MIDRED[5]
+   Inst       STEP1B_DIS3_i_1_                          STEP1B.DIS3_i[1]
+   Inst    STEP1A_outCHAR_1_1_                       STEP1A.outCHAR_1[1]
+   Inst            o_MIDRED_6_                               o_MIDRED[6]
+   Inst       STEP1B_DIS3_i_2_                          STEP1B.DIS3_i[2]
+   Inst    STEP1A_outCHAR_1_3_                       STEP1A.outCHAR_1[3]
+   Inst            o_MIDRED_7_                               o_MIDRED[7]
+   Inst       STEP1B_DIS3_i_3_                          STEP1B.DIS3_i[3]
+   Inst    STEP1A_outCHAR_1_4_                       STEP1A.outCHAR_1[4]
+   Inst            o_BOTRED_0_                               o_BOTRED[0]
+   Inst       STEP1B_DIS3_i_4_                          STEP1B.DIS3_i[4]
+   Inst    STEP1A_outCHAR_1_5_                       STEP1A.outCHAR_1[5]
+   Inst            o_BOTRED_1_                               o_BOTRED[1]
+   Inst       STEP1B_DIS3_i_5_                          STEP1B.DIS3_i[5]
+   Inst            o_BOTRED_2_                               o_BOTRED[2]
+   Inst       STEP1B_DIS3_i_6_                          STEP1B.DIS3_i[6]
+   Inst            o_BOTRED_3_                               o_BOTRED[3]
+   Inst       STEP1B_DIS2_i_0_                          STEP1B.DIS2_i[0]
+   Inst            o_BOTRED_4_                               o_BOTRED[4]
+   Inst       STEP1B_DIS2_i_1_                          STEP1B.DIS2_i[1]
+   Inst            o_BOTRED_5_                               o_BOTRED[5]
+   Inst       STEP1B_DIS2_i_2_                          STEP1B.DIS2_i[2]
+   Inst            o_BOTRED_6_                               o_BOTRED[6]
+   Inst       STEP1B_DIS2_i_3_                          STEP1B.DIS2_i[3]
+   Inst            o_BOTRED_7_                               o_BOTRED[7]
+   Inst       STEP1B_DIS2_i_4_                          STEP1B.DIS2_i[4]
+   Inst              o_DIS1_0_                                 o_DIS1[0]
+   Inst       STEP1B_DIS2_i_5_                          STEP1B.DIS2_i[5]
+   Inst              o_DIS1_1_                                 o_DIS1[1]
+   Inst       STEP1B_DIS2_i_6_                          STEP1B.DIS2_i[6]
+   Inst              o_DIS1_2_                                 o_DIS1[2]
+   Inst       STEP1B_DIS1_i_0_                          STEP1B.DIS1_i[0]
+   Inst              o_DIS1_3_                                 o_DIS1[3]
+   Inst         STEP1A_CQ_i_4_                            STEP1A.CQ_i[4]
+   Inst              o_DIS1_4_                                 o_DIS1[4]
+   Inst         STEP1A_CQ_i_0_                            STEP1A.CQ_i[0]
+   Inst              o_DIS1_5_                                 o_DIS1[5]
+   Inst   STEP5_un1_next_qstate5_1_i                STEP5.un1_next_qstate5_1_i
+   Inst              o_DIS1_6_                                 o_DIS1[6]
+   Inst           RGTPB_S1BC_i                              RGTPB.S1BC_i
+   Inst              o_DIS2_0_                                 o_DIS2[0]
+   Inst           LFTPB_S2BC_i                              LFTPB.S2BC_i
+   Inst              o_DIS2_1_                                 o_DIS2[1]
+   Inst       STEP2_JUMBO_i_0_                          STEP2.JUMBO_i[0]
+   Inst              o_DIS2_2_                                 o_DIS2[2]
+   Inst   STEP5_jumbo_leds_i_1_                     STEP5.jumbo_leds_i[1]
+   Inst              o_DIS2_3_                                 o_DIS2[3]
+   Inst   STEP5_jumbo_leds_i_2_                     STEP5.jumbo_leds_i[2]
+   Inst              o_DIS2_4_                                 o_DIS2[4]
+   Inst       STEP1B_DIS4_i_0_                          STEP1B.DIS4_i[0]
+   Inst              o_DIS2_5_                                 o_DIS2[5]
+   Inst       STEP1B_DIS4_i_1_                          STEP1B.DIS4_i[1]
+   Inst              o_DIS2_6_                                 o_DIS2[6]
+   Inst       STEP1B_DIS4_i_2_                          STEP1B.DIS4_i[2]
+   Inst              o_DIS3_0_                                 o_DIS3[0]
+   Inst       STEP1B_DIS4_i_3_                          STEP1B.DIS4_i[3]
+   Inst              o_DIS3_1_                                 o_DIS3[1]
+   Inst       STEP1B_DIS4_i_4_                          STEP1B.DIS4_i[4]
+   Inst              o_DIS3_2_                                 o_DIS3[2]
+   Inst       STEP1B_DIS4_i_5_                          STEP1B.DIS4_i[5]
+   Inst              o_DIS3_3_                                 o_DIS3[3]
+   Inst       STEP1B_DIS4_i_6_                          STEP1B.DIS4_i[6]
+   Inst              o_DIS3_4_                                 o_DIS3[4]
+   Inst     STEP1A_un1_CQ_25_m                        STEP1A.un1_CQ_25_m
+   Inst              o_DIS3_5_                                 o_DIS3[5]
+   Inst   STEP1A_outCHAR14_m_2                      STEP1A.outCHAR14_m_2
+   Inst              o_DIS3_6_                                 o_DIS3[6]
+   Inst     STEP1A_un1_CQ_18_m                        STEP1A.un1_CQ_18_m
+   Inst              o_DIS4_0_                                 o_DIS4[0]
+   Inst   STEP1A_un1_outCHAR14_1_m                  STEP1A.un1_outCHAR14_1_m
+   Inst              o_DIS4_1_                                 o_DIS4[1]
+   Inst   STEP1A_next_CQ_cnst_i_o2_0_0_             STEP1A.next_CQ_cnst_i_o2_0[0]
+   Inst              o_DIS4_2_                                 o_DIS4[2]
+   Inst     STEP1A_un1_CQ_25_r                        STEP1A.un1_CQ_25.r
+   Inst              o_DIS4_3_                                 o_DIS4[3]
+   Inst    STEP1A_un1_CQ_25_m_                        STEP1A.un1_CQ_25.m
+   Inst              o_DIS4_4_                                 o_DIS4[4]
+   Inst     STEP1A_un1_CQ_25_n                        STEP1A.un1_CQ_25.n
+   Inst              o_DIS4_5_                                 o_DIS4[5]
+   Inst     STEP1A_un1_CQ_25_p                        STEP1A.un1_CQ_25.p
+   Inst              o_DIS4_6_                                 o_DIS4[6]
+   Inst    STEP1A_un1_CQ_inv_6                       STEP1A.un1_CQ_inv_6
+   Inst             o_JUMBO_0_                                o_JUMBO[0]
+   Inst         STEP1A_CQ_i_3_                            STEP1A.CQ_i[3]
+   Inst             o_JUMBO_1_                                o_JUMBO[1]
+   Inst    STEP1A_un1_CQ_inv_1                       STEP1A.un1_CQ_inv_1
+   Inst             o_JUMBO_2_                                o_JUMBO[2]
+   Inst        STEP1A_un1_CQ_9                           STEP1A.un1_CQ_9
+   Inst        o_LED_YELLOW_0_                           o_LED_YELLOW[0]
+   Inst        STEP1A_un1_CQ_8                           STEP1A.un1_CQ_8
+   Inst        o_LED_YELLOW_1_                           o_LED_YELLOW[1]
+   Inst            STEP1A_G_86                               STEP1A.G_86
+   Inst   STEP2_un5_count_decode_1_i_1              STEP2.un5_count_decode_1_i_1
+   Inst            STEP1A_G_87                               STEP1A.G_87
+   Inst   STEP2_un5_count_decode_1_i                STEP2.un5_count_decode_1_i
+   Inst            STEP1A_G_85                               STEP1A.G_85
+   Inst   STEP2_un5_count_decode_0_0_a4_1           STEP2.un5_count_decode_0_0_a4_1
+   Inst         STEP1A_CQ_i_1_                            STEP1A.CQ_i[1]
+   Inst   STEP2_un5_count_decode_0_0_a4             STEP2.un5_count_decode_0_0_a4
+   Inst    STEP5_mSEL_i_2_i_0_                       STEP5.mSEL_i_2_i[0]
+   Inst    STEP3_qcombo_6_1_4_                       STEP3.qcombo_6_1[4]
+   Inst   STEP1A_next_CQ_cnst_i_a3_3_               STEP1A.next_CQ_cnst_i_a3[3]
+   Inst    STEP3_qcombo_6_2_4_                       STEP3.qcombo_6_2[4]
+   Inst   STEP1A_next_CQ_cnst_i_a2_1_               STEP1A.next_CQ_cnst_i_a2[1]
+   Inst      STEP3_qcombo_6_4_                         STEP3.qcombo_6[4]
+   Inst   STEP1A_next_CQ_cnst_i_a3_1_1_3_           STEP1A.next_CQ_cnst_i_a3_1_1[3]
+   Inst    STEP3_qcombo_9_1_7_                       STEP3.qcombo_9_1[7]
+   Inst     STEP1A_CQ_m_1_0_0_                        STEP1A.CQ_m_1_0[0]
+   Inst    STEP3_qcombo_9_2_7_                       STEP3.qcombo_9_2[7]
+   Inst   STEP1A_un1_CQ_22_m_1                      STEP1A.un1_CQ_22_m_1
+   Inst      STEP3_qcombo_9_7_                         STEP3.qcombo_9[7]
+   Inst       STEP1A_outCHAR12                          STEP1A.outCHAR12
+   Inst   STEP2_next_count_state_n2_i               STEP2.next_count_state_n2_i
+   Inst     STEP1A_outCHAR14_1                        STEP1A.outCHAR14_1
+   Inst   STEP2_next_count_state_n1_i_1             STEP2.next_count_state_n1_i_1
+   Inst     STEP1A_un1_CQ_24_1                        STEP1A.un1_CQ_24_1
+   Inst   STEP2_next_count_state_n1_i               STEP2.next_count_state_n1_i
+   Inst   STEP1A_next_CQ_cnst_i_a2_0_1_0_           STEP1A.next_CQ_cnst_i_a2_0_1[0]
+   Inst   STEP2_un5_count_decode_7_i_1              STEP2.un5_count_decode_7_i_1
+   Inst   STEP1A_un1_outCHAR14_1_iv                 STEP1A.un1_outCHAR14_1_iv
+   Inst   STEP2_un5_count_decode_7_i                STEP2.un5_count_decode_7_i
+   Inst   STEP1A_outCHAR14_m_3                      STEP1A.outCHAR14_m_3
+   Inst   STEP2_un5_count_decode_6_i_1              STEP2.un5_count_decode_6_i_1
+   Inst   STEP1A_un1_outCHAR14_iv                   STEP1A.un1_outCHAR14_iv
+   Inst   STEP2_un5_count_decode_6_i                STEP2.un5_count_decode_6_i
+   Inst    STEP1A_un1_CQ_34_iv                       STEP1A.un1_CQ_34_iv
+   Inst   STEP2_un5_count_decode_5_i_1              STEP2.un5_count_decode_5_i_1
+   Inst     STEP1A_un1_CQ_20_m                        STEP1A.un1_CQ_20_m
+   Inst   STEP2_un5_count_decode_5_i                STEP2.un5_count_decode_5_i
+   Inst     STEP1A_un1_CQ_26_m                        STEP1A.un1_CQ_26_m
+   Inst   STEP2_un5_count_decode_4_i_1              STEP2.un5_count_decode_4_i_1
+   Inst   STEP1A_next_CQ_0_sqmuxa_2                 STEP1A.next_CQ_0_sqmuxa_2
+   Inst   STEP2_un5_count_decode_4_i                STEP2.un5_count_decode_4_i
+   Inst      STEP1A_un1_CQ_6_m                         STEP1A.un1_CQ_6_m
+   Inst   STEP2_un5_count_decode_3_i_1              STEP2.un5_count_decode_3_i_1
+   Inst   STEP1A_outCHAR12_1_i                      STEP1A.outCHAR12_1_i
+   Inst   STEP2_un5_count_decode_3_i                STEP2.un5_count_decode_3_i
+   Inst     STEP1A_un1_CQ_23_m                        STEP1A.un1_CQ_23_m
+   Inst   STEP2_un5_count_decode_2_i_1              STEP2.un5_count_decode_2_i_1
+   Inst         STEP1A_CQ_m_0_                            STEP1A.CQ_m[0]
+   Inst   STEP2_un5_count_decode_2_i                STEP2.un5_count_decode_2_i
+   Inst   STEP1A_un1_CQ_31_iv_1                     STEP1A.un1_CQ_31_iv_1
+   Inst   STEP1A_un1_next_CQ_1_sqmuxa_1             STEP1A.un1_next_CQ_1_sqmuxa_1
+   Inst    STEP1A_un1_CQ_31_iv                       STEP1A.un1_CQ_31_iv
+   Inst   STEP1A_un1_next_CQ_1_sqmuxa               STEP1A.un1_next_CQ_1_sqmuxa
+   Inst   STEP1A_next_CQ_cnst_i_a2_0_0_             STEP1A.next_CQ_cnst_i_a2_0[0]
+   Inst   STEP1A_next_CQ_cnst_i_1_0_                STEP1A.next_CQ_cnst_i_1[0]
+   Inst     STEP1A_CQ_inv_m_0_                        STEP1A.CQ_inv_m[0]
+   Inst   STEP1A_next_CQ_cnst_i_2_0_                STEP1A.next_CQ_cnst_i_2[0]
+   Inst   STEP1A_next_CQ_cnst_i_a3_0_1_0_           STEP1A.next_CQ_cnst_i_a3_0_1[0]
+   Inst   STEP1A_next_CQ_cnst_i_0_                  STEP1A.next_CQ_cnst_i[0]
+   Inst   STEP1A_next_CQ_cnst_i_a3_0_0_             STEP1A.next_CQ_cnst_i_a3_0[0]
+   Inst     STEP1A_next_CQ62_1                        STEP1A.next_CQ62_1
+   Inst       STEP1A_outCHAR14                          STEP1A.outCHAR14
+   Inst       STEP1A_next_CQ62                          STEP1A.next_CQ62
+   Inst       STEP1A_next_CQ38                          STEP1A.next_CQ38
+   Inst   STEP1A_CQ_inv_3_m_1_0_                    STEP1A.CQ_inv_3_m_1[0]
+   Inst   STEP1A_un1_CQ_23_m_i                      STEP1A.un1_CQ_23_m_i
+   Inst   STEP1A_CQ_inv_3_m_0_                      STEP1A.CQ_inv_3_m[0]
+   Inst   STEP1A_next_CQ_cnst_i_a3_0_3_             STEP1A.next_CQ_cnst_i_a3_0[3]
+   Inst   STEP1A_un1_CQ_24_1_0                      STEP1A.un1_CQ_24_1_0
+   Inst   STEP1A_next_CQ_cnst_0_a3_0_4_             STEP1A.next_CQ_cnst_0_a3_0[4]
+   Inst       STEP1A_un1_CQ_24                          STEP1A.un1_CQ_24
+   Inst   STEP1A_next_CQ_cnst_0_4_                  STEP1A.next_CQ_cnst_0[4]
+   Inst     STEP1A_next_CQ40_1                        STEP1A.next_CQ40_1
+   Inst   STEP1A_next_CQ_9_2__r                     STEP1A.next_CQ_9_2_.r
+   Inst     STEP1A_next_CQ40_2                        STEP1A.next_CQ40_2
+   Inst   STEP1A_next_CQ_9_2__m                     STEP1A.next_CQ_9_2_.m
+   Inst       STEP1A_next_CQ40                          STEP1A.next_CQ40
+   Inst   STEP1A_next_CQ_9_2__n                     STEP1A.next_CQ_9_2_.n
+   Inst   STEP2_next_count_state_n2_i_1             STEP2.next_count_state_n2_i_1
+   Inst   STEP1A_next_CQ_9_2__p                     STEP1A.next_CQ_9_2_.p
+   Inst   STEP1A_CQ_inv_m_0_0_                      STEP1A.CQ_inv_m_0[0]
+   Inst   STEP1A_next_CQ_9_3__r                     STEP1A.next_CQ_9_3_.r
+   Inst   STEP1A_next_CQ_1_sqmuxa_2_1               STEP1A.next_CQ_1_sqmuxa_2_1
+   Inst   STEP1A_next_CQ_9_3__m                     STEP1A.next_CQ_9_3_.m
+   Inst   STEP1A_next_CQ_1_sqmuxa_2                 STEP1A.next_CQ_1_sqmuxa_2
+   Inst   STEP1A_next_CQ_9_3__n                     STEP1A.next_CQ_9_3_.n
+   Inst   STEP1A_un1_CQ_32_iv_1                     STEP1A.un1_CQ_32_iv_1
+   Inst   STEP1A_next_CQ_9_3__p                     STEP1A.next_CQ_9_3_.p
+   Inst   STEP1A_un1_CQ_32_iv_2                     STEP1A.un1_CQ_32_iv_2
+   Inst      STEP1A_N_17_i_0_i                         STEP1A.N_17_i_0_i
+   Inst    STEP1A_un1_CQ_32_iv                       STEP1A.un1_CQ_32_iv
+   Inst    STEP5_syncrst_i_1_i                       STEP5.syncrst_i_1_i
+   Inst   STEP1A_un1_CQ_33_iv_1                     STEP1A.un1_CQ_33_iv_1
+   Inst   STEP1A_next_CQ_cnst_0_a3_2_2_             STEP1A.next_CQ_cnst_0_a3_2[2]
+   Inst    STEP1A_un1_CQ_33_iv                       STEP1A.un1_CQ_33_iv
+   Inst            STEP1A_G_84                               STEP1A.G_84
+   Inst   STEP1A_un1_CQ_36_iv_1                     STEP1A.un1_CQ_36_iv_1
+   Inst            STEP1A_G_88                               STEP1A.G_88
+   Inst    STEP1A_un1_CQ_36_iv                       STEP1A.un1_CQ_36_iv
+   Inst   STEP1A_next_CQ_5_sqmuxa                   STEP1A.next_CQ_5_sqmuxa
+   Inst   STEP1A_un1_CQ_37_iv_1                     STEP1A.un1_CQ_37_iv_1
+   Inst   STEP1A_un1_outCHAR14_5_iv                 STEP1A.un1_outCHAR14_5_iv
+   Inst    STEP1A_un1_CQ_37_iv                       STEP1A.un1_CQ_37_iv
+   Inst      STEP1A_un1_CQ_9_m                         STEP1A.un1_CQ_9_m
+   Inst   STEP1A_un1_outCHAR14_4_iv_1               STEP1A.un1_outCHAR14_4_iv_1
+   Inst   STEP1A_next_CQ_9_0__r                     STEP1A.next_CQ_9_0_.r
+   Inst   STEP1A_un1_outCHAR14_4_iv_2               STEP1A.un1_outCHAR14_4_iv_2
+   Inst   STEP1A_next_CQ_9_0__m                     STEP1A.next_CQ_9_0_.m
+   Inst   STEP1A_un1_outCHAR14_4_iv                 STEP1A.un1_outCHAR14_4_iv
+   Inst   STEP1A_next_CQ_9_0__n                     STEP1A.next_CQ_9_0_.n
+   Inst    STEP1A_un1_CQ_35_iv                       STEP1A.un1_CQ_35_iv
+   Inst   STEP1A_next_CQ_9_0__p                     STEP1A.next_CQ_9_0_.p
+   Inst   STEP5_un1_next_qstate_8_1                 STEP5.un1_next_qstate_8_1
+   Inst         STEP1A_CQ_m_1_                            STEP1A.CQ_m[1]
+   Inst   STEP5_un1_next_qstate_8                   STEP5.un1_next_qstate_8
+   Inst      STEP5_outNMSG10_i                         STEP5.outNMSG10_i
+   Inst   STEP1A_next_CQ_cnst_0_1_2_                STEP1A.next_CQ_cnst_0_1[2]
+   Inst       STEP1A_un1_RST_3                          STEP1A.un1_RST_3
+   Inst   STEP1A_next_CQ_cnst_0_2_2_                STEP1A.next_CQ_cnst_0_2[2]
+   Inst       STEP1A_un1_RST_2                          STEP1A.un1_RST_2
+   Inst   STEP1A_next_CQ_cnst_0_2_                  STEP1A.next_CQ_cnst_0[2]
+   Inst       STEP1A_un1_RST_1                          STEP1A.un1_RST_1
+   Inst   STEP1A_next_CQ_cnst_i_a3_1_1_0_3_         STEP1A.next_CQ_cnst_i_a3_1_1_0[3]
+   Inst         STEP1A_un1_RST                            STEP1A.un1_RST
+   Inst   STEP1A_next_CQ_cnst_i_a3_1_3_             STEP1A.next_CQ_cnst_i_a3_1[3]
+   Inst     STEP1A_next_CQ62_2                        STEP1A.next_CQ62_2
+   Inst   STEP1A_next_CQ_cnst_0_a3_1_4_             STEP1A.next_CQ_cnst_0_a3_1[4]
+   Inst         STEP1A_CQ_i_2_                            STEP1A.CQ_i[2]
+   Inst   STEP1A_next_CQ_cnst_0_a3_4_               STEP1A.next_CQ_cnst_0_a3[4]
+   Inst    STEP1A_un1_CQ_inv_3                       STEP1A.un1_CQ_inv_3
+   Inst   STEP1A_next_CQ_cnst_0_a3_1_0_2_           STEP1A.next_CQ_cnst_0_a3_1_0[2]
+   Inst   STEP1A_next_CQ_cnst_i_a3_1_1_0_           STEP1A.next_CQ_cnst_i_a3_1_1[0]
+   Inst   STEP1A_next_CQ_cnst_0_a3_2_               STEP1A.next_CQ_cnst_0_a3[2]
+   Inst     STEP1A_outCHAR14_m                        STEP1A.outCHAR14_m
+   Inst   STEP1A_next_CQ_cnst_0_a3_0_1_2_           STEP1A.next_CQ_cnst_0_a3_0_1[2]
+   Inst       STEP1A_un1_CQ_29                          STEP1A.un1_CQ_29
+   Inst   STEP1A_next_CQ_cnst_0_a3_0_2_             STEP1A.next_CQ_cnst_0_a3_0[2]
+   Inst     STEP1A_un1_CQ_28_r                        STEP1A.un1_CQ_28.r
+   Inst   STEP1A_CQ_inv_m_0_1_0_                    STEP1A.CQ_inv_m_0_1[0]
+   Inst     STEP1A_un1_CQ_28_m                        STEP1A.un1_CQ_28.m
+   Inst        STEP5_outNMSG10                           STEP5.outNMSG10
+   Inst     STEP1A_un1_CQ_28_n                        STEP1A.un1_CQ_28.n
+   Inst      STEP5_outNMSG12_1                         STEP5.outNMSG12_1
+   Inst     STEP1A_un1_CQ_28_p                        STEP1A.un1_CQ_28.p
+   Inst        STEP5_outNMSG12                           STEP5.outNMSG12
+   Inst   STEP1A_un1_CQ_inv_10                      STEP1A.un1_CQ_inv_10
+   Inst   STEP5_next_qstate4_1                      STEP5.next_qstate4_1
+   Inst   STEP1A_next_CQ_cnst_i_o3_1_               STEP1A.next_CQ_cnst_i_o3[1]
+   Inst     STEP5_next_qstate4                        STEP5.next_qstate4
+   Inst   STEP1A_next_CQ_cnst_0_a3_1_2_             STEP1A.next_CQ_cnst_0_a3_1[2]
+   Inst   STEP5_next_qstate_0_sqmuxa_1              STEP5.next_qstate_0_sqmuxa_1
+   Inst          STEP5_cnten_i                             STEP5.cnten_i
+   Inst   STEP5_next_qstate_0_sqmuxa                STEP5.next_qstate_0_sqmuxa
+   Inst   STEP2_next_count_statelde_i_a4            STEP2.next_count_statelde_i_a4
+   Inst   STEP1A_next_CQ_cnst_i_1_1_                STEP1A.next_CQ_cnst_i_1[1]
+   Inst   STEP2_un5_count_decode_2_i_o4             STEP2.un5_count_decode_2_i_o4
+   Inst   STEP1A_next_CQ_cnst_i_2_1_                STEP1A.next_CQ_cnst_i_2[1]
+   Inst         STEP2_N_35_i_i                            STEP2.N_35_i_i
+   Inst   STEP1A_next_CQ_cnst_i_3_1_                STEP1A.next_CQ_cnst_i_3[1]
+   Inst   STEP2_un5_count_decode_1_i_o4             STEP2.un5_count_decode_1_i_o4
+   Inst   STEP1A_next_CQ_cnst_i_1_                  STEP1A.next_CQ_cnst_i[1]
+   Inst   STEP2_un5_count_decode_0_0                STEP2.un5_count_decode_0_0
+   Inst   STEP1A_next_CQ_cnst_i_a3_0_1_1_           STEP1A.next_CQ_cnst_i_a3_0_1[1]
+   Inst         STEP2_JUMBO_0_                            STEP2.JUMBO[0]
+   Inst   STEP1A_next_CQ_cnst_i_a3_0_1_             STEP1A.next_CQ_cnst_i_a3_0[1]
+   Inst   STEP5_un1_next_qstate5                    STEP5.un1_next_qstate5
+   Inst   STEP1A_un1_CQ_35_iv_1                     STEP1A.un1_CQ_35_iv_1
+   Inst   STEP5_un1_next_qstate5_1                  STEP5.un1_next_qstate5_1
+   Inst   STEP1A_un1_CQ_35_iv_2                     STEP1A.un1_CQ_35_iv_2
+   Inst   STEP5_outNMSG_i_a2_1_                     STEP5.outNMSG_i_a2[1]
+   Inst           STEP2_N_41_i                              STEP2.N_41_i
+   Inst   STEP5_jumbo_leds_i_0_                     STEP5.jumbo_leds_i[0]
+   Inst           STEP5_G_26_1                              STEP5.G_26_1
+   Inst   STEP5_outNMSG_i_a2_0_                     STEP5.outNMSG_i_a2[0]
+   Inst             STEP5_G_26                                STEP5.G_26
+   Inst   STEP1A_next_CQ_cnst_i_a3_2_0_             STEP1A.next_CQ_cnst_i_a3_2[0]
+   Inst   STEP1A_un1_outCHAR14_3_iv_1               STEP1A.un1_outCHAR14_3_iv_1
+   Inst   STEP1A_next_CQ_cnst_i_a3_2_1_0_           STEP1A.next_CQ_cnst_i_a3_2_1[0]
+   Inst   STEP1A_un1_outCHAR14_3_iv                 STEP1A.un1_outCHAR14_3_iv
+   Inst   STEP1A_next_CQ_cnst_i_a3_1_0_             STEP1A.next_CQ_cnst_i_a3_1[0]
+   Inst   STEP1A_next_CQ_cnst_i_1_3_                STEP1A.next_CQ_cnst_i_1[3]
+   Inst       STEP1A_un1_CQ_16                          STEP1A.un1_CQ_16
+   Inst   STEP1A_next_CQ_cnst_i_2_3_                STEP1A.next_CQ_cnst_i_2[3]
+   Inst       STEP1A_un1_RST_5                          STEP1A.un1_RST_5
+   Inst   STEP1A_next_CQ_cnst_i_3_                  STEP1A.next_CQ_cnst_i[3]
+   Inst       STEP1A_un1_RST_4                          STEP1A.un1_RST_4
+   Inst   STEP1A_un1_CQ_30_iv_1                     STEP1A.un1_CQ_30_iv_1
+   Inst   STEP1A_next_CQ_cnst_i_a3_1_               STEP1A.next_CQ_cnst_i_a3[1]
+   Inst    STEP1A_un1_CQ_30_iv                       STEP1A.un1_CQ_30_iv
+   Inst   STEP1A_next_CQ_cnst_i_a3_1_1_             STEP1A.next_CQ_cnst_i_a3_1[1]
+   Inst   STEP1A_un1_CQ_inv_12_1                    STEP1A.un1_CQ_inv_12_1
+   Inst   STEP1A_next_CQ_9_1__r                     STEP1A.next_CQ_9_1_.r
+   Inst   STEP1A_un1_CQ_inv_12_2                    STEP1A.un1_CQ_inv_12_2
+   Inst   STEP1A_next_CQ_9_1__m                     STEP1A.next_CQ_9_1_.m
+   Inst   STEP1A_un1_CQ_inv_12_3                    STEP1A.un1_CQ_inv_12_3
+   Inst   STEP1A_next_CQ_9_1__n                     STEP1A.next_CQ_9_1_.n
+   Inst   STEP1A_un1_CQ_inv_12                      STEP1A.un1_CQ_inv_12
+   Inst   STEP1A_next_CQ_9_1__p                     STEP1A.next_CQ_9_1_.p
+   Inst      STEP5_outNMSG10_1                         STEP5.outNMSG10_1
+   Inst   STEP1A_next_CQ_cnst_i_a3_2_1_             STEP1A.next_CQ_cnst_i_a3_2[1]
+   Inst   STEP1A_next_CQ_cnst_i_o3_i_0_             STEP1A.next_CQ_cnst_i_o3_i[0]
+   Inst       STEP1A_outCHAR11                          STEP1A.outCHAR11
+   Net    step5_un1_next_qstate5_1_i_n                STEP5.un1_next_qstate5_1_i
+   Net         step1a_n_32_i_n                             STEP1A.N_32_i
+   Net    step5_un1_arst_1_0_n                        STEP5.un1_ARST_1_0
+   Net            jumbo_i_0__n                                JUMBO_i[0]
+   Net    step5_next_qstate_1_sqmuxa_2_1_i_n          STEP5.next_qstate_1_sqmuxa_2_1_i
+   Net       jumbo_leds_i_1__n                           jumbo_leds_i[1]
+   Net    step5_un1_next_qstate_10_0_n                STEP5.un1_next_qstate_10_0
+   Net       jumbo_leds_i_2__n                           jumbo_leds_i[2]
+   Net    step5_un1_next_qstate_11_i_m_i_0__n         STEP5.un1_next_qstate_11_i_m_i[0]
+   Net             dis4_i_0__n                                 DIS4_i[0]
+   Net    step5_next_qstate_0_sqmuxa_i_n              STEP5.next_qstate_0_sqmuxa_i
+   Net             dis4_i_1__n                                 DIS4_i[1]
+   Net    step5_next_qstate_6_iv_i_0__n               STEP5.next_qstate_6_iv_i[0]
+   Net             dis4_i_2__n                                 DIS4_i[2]
+   Net          step5_n_29_0_n                              STEP5.N_29_0
+   Net             dis4_i_3__n                                 DIS4_i[3]
+   Net             dis4_i_4__n                                 DIS4_i[4]
+   Net             dis4_i_5__n                                 DIS4_i[5]
+   Net             dis4_i_6__n                                 DIS4_i[6]
+   Net             dis3_i_0__n                                 DIS3_i[0]
+   Net             dis3_i_1__n                                 DIS3_i[1]
+   Net             dis3_i_2__n                                 DIS3_i[2]
+   Net             dis3_i_3__n                                 DIS3_i[3]
+   Net             lookup_0__n                                 lookup[0]
+   Net             dis3_i_4__n                                 DIS3_i[4]
+   Net             lookup_1__n                                 lookup[1]
+   Net             dis3_i_5__n                                 DIS3_i[5]
+   Net             lookup_2__n                                 lookup[2]
+   Net             dis3_i_6__n                                 DIS3_i[6]
+   Net             lookup_3__n                                 lookup[3]
+   Net             dis2_i_0__n                                 DIS2_i[0]
+   Net             lookup_4__n                                 lookup[4]
+   Net             dis2_i_1__n                                 DIS2_i[1]
+   Net        step5_n_29_0_1_n                            STEP5.N_29_0_1
+   Net             lookup_5__n                                 lookup[5]
+   Net             dis2_i_2__n                                 DIS2_i[2]
+   Net    step1a_un1_outchar14_3_0_1_n                STEP1A.un1_outCHAR14_3_0_1
+   Net             lookup_6__n                                 lookup[6]
+   Net             dis2_i_3__n                                 DIS2_i[3]
+   Net       step1a_n_12_i_1_n                           STEP1A.N_12_i_1
+   Net               dis1_0__n                                   DIS1[0]
+   Net             dis2_i_4__n                                 DIS2_i[4]
+   Net       step1a_n_12_i_2_n                           STEP1A.N_12_i_2
+   Net               dis1_1__n                                   DIS1[1]
+   Net             dis2_i_5__n                                 DIS2_i[5]
+   Net    step1a_un1_cq_30_0_1_n                      STEP1A.un1_CQ_30_0_1
+   Net               dis1_2__n                                   DIS1[2]
+   Net             dis2_i_6__n                                 DIS2_i[6]
+   Net    step1a_un1_cq_inv_12_0_1_n                  STEP1A.un1_CQ_inv_12_0_1
+   Net               dis1_3__n                                   DIS1[3]
+   Net             dis1_i_0__n                                 DIS1_i[0]
+   Net    step1a_un1_cq_inv_12_0_2_n                  STEP1A.un1_CQ_inv_12_0_2
+   Net               dis1_4__n                                   DIS1[4]
+   Net             dis1_i_1__n                                 DIS1_i[1]
+   Net    step1a_un1_cq_inv_12_0_3_n                  STEP1A.un1_CQ_inv_12_0_3
+   Net               dis1_5__n                                   DIS1[5]
+   Net             dis1_i_2__n                                 DIS1_i[2]
+   Net     step5_outnmsg10_1_n                         STEP5.outNMSG10_1
+   Net               dis1_6__n                                   DIS1[6]
+   Net             dis1_i_3__n                                 DIS1_i[3]
+   Net       jumbo_leds_1_0__n                           jumbo_leds_1[0]
+   Net               dis2_0__n                                   DIS2[0]
+   Net             dis1_i_4__n                                 DIS1_i[4]
+   Net       jumbo_leds_1_2__n                           jumbo_leds_1[2]
+   Net               dis2_1__n                                   DIS2[1]
+   Net             dis1_i_5__n                                 DIS1_i[5]
+   Net    step5_next_qstate_0_sqmuxa_1_n              STEP5.next_qstate_0_sqmuxa_1
+   Net               dis2_2__n                                   DIS2[2]
+   Net             dis1_i_6__n                                 DIS1_i[6]
+   Net        step1a_n_9_i_1_n                            STEP1A.N_9_i_1
+   Net               dis2_3__n                                   DIS2[3]
+   Net              dip_i_0__n                                  DIP_i[0]
+   Net        step1a_n_9_i_2_n                            STEP1A.N_9_i_2
+   Net               dis2_4__n                                   DIS2[4]
+   Net              dip_i_1__n                                  DIP_i[1]
+   Net        step1a_n_9_i_3_n                            STEP1A.N_9_i_3
+   Net               dis2_5__n                                   DIS2[5]
+   Net              dip_i_2__n                                  DIP_i[2]
+   Net         step1a_n_31_1_n                             STEP1A.N_31_1
+   Net               dis2_6__n                                   DIS2[6]
+   Net              dip_i_3__n                                  DIP_i[3]
+   Net    step1a_un1_cq_35_0_1_n                      STEP1A.un1_CQ_35_0_1
+   Net               dis3_0__n                                   DIS3[0]
+   Net              dip_i_4__n                                  DIP_i[4]
+   Net    step1a_un1_cq_35_0_2_n                      STEP1A.un1_CQ_35_0_2
+   Net               dis3_1__n                                   DIS3[1]
+   Net              dip_i_5__n                                  DIP_i[5]
+   Net    step5_un1_next_qstate_8_1_n                 STEP5.un1_next_qstate_8_1
+   Net               dis3_2__n                                   DIS3[2]
+   Net              dip_i_6__n                                  DIP_i[6]
+   Net    step1a_next_cq_cnst_0_1_2__n                STEP1A.next_CQ_cnst_0_1[2]
+   Net               dis3_3__n                                   DIS3[3]
+   Net              dip_i_7__n                                  DIP_i[7]
+   Net    step1a_next_cq_cnst_0_2_2__n                STEP1A.next_CQ_cnst_0_2[2]
+   Net               dis3_4__n                                   DIS3[4]
+   Net           midred_i_0__n                               MIDRED_i[0]
+   Net       step1a_n_40_1_0_n                           STEP1A.N_40_1_0
+   Net               dis3_5__n                                   DIS3[5]
+   Net           midred_i_1__n                               MIDRED_i[1]
+   Net       step1a_n_41_1_0_n                           STEP1A.N_41_1_0
+   Net               dis3_6__n                                   DIS3[6]
+   Net           midred_i_2__n                               MIDRED_i[2]
+   Net         step1a_n_34_1_n                             STEP1A.N_34_1
+   Net               dis4_0__n                                   DIS4[0]
+   Net           midred_i_3__n                               MIDRED_i[3]
+   Net         step1a_n_35_1_n                             STEP1A.N_35_1
+   Net               dis4_1__n                                   DIS4[1]
+   Net           midred_i_4__n                               MIDRED_i[4]
+   Net    step1a_cq_inv_m_0_1_0__n                    STEP1A.CQ_inv_m_0_1[0]
+   Net               dis4_2__n                                   DIS4[2]
+   Net           midred_i_5__n                               MIDRED_i[5]
+   Net    step1a_next_cq_1_sqmuxa_2_1_n               STEP1A.next_CQ_1_sqmuxa_2_1
+   Net               dis4_3__n                                   DIS4[3]
+   Net           midred_i_6__n                               MIDRED_i[6]
+   Net    step1a_un1_cq_32_0_1_n                      STEP1A.un1_CQ_32_0_1
+   Net               dis4_4__n                                   DIS4[4]
+   Net           midred_i_7__n                               MIDRED_i[7]
+   Net    step1a_un1_cq_32_0_2_n                      STEP1A.un1_CQ_32_0_2
+   Net               dis4_5__n                                   DIS4[5]
+   Net           topred_i_0__n                               TOPRED_i[0]
+   Net    step1a_un1_cq_33_0_1_n                      STEP1A.un1_CQ_33_0_1
+   Net               dis4_6__n                                   DIS4[6]
+   Net           topred_i_1__n                               TOPRED_i[1]
+   Net    step1a_un1_cq_36_0_1_n                      STEP1A.un1_CQ_36_0_1
+   Net           topred_i_2__n                               TOPRED_i[2]
+   Net    step1a_un1_cq_37_0_1_n                      STEP1A.un1_CQ_37_0_1
+   Net            pointer_0__n                                pointer[0]
+   Net           topred_i_3__n                               TOPRED_i[3]
+   Net    step1a_un1_outchar14_4_0_1_n                STEP1A.un1_outCHAR14_4_0_1
+   Net            pointer_1__n                                pointer[1]
+   Net           topred_i_4__n                               TOPRED_i[4]
+   Net    step1a_un1_outchar14_4_0_2_n                STEP1A.un1_outCHAR14_4_0_2
+   Net            pointer_2__n                                pointer[2]
+   Net           topred_i_5__n                               TOPRED_i[5]
+   Net    step1a_un1_next_cq_1_sqmuxa_0_1_n           STEP1A.un1_next_CQ_1_sqmuxa_0_1
+   Net             midred_0__n                                 MIDRED[0]
+   Net           topred_i_6__n                               TOPRED_i[6]
+   Net        step1a_n_7_i_1_n                            STEP1A.N_7_i_1
+   Net             midred_1__n                                 MIDRED[1]
+   Net           topred_i_7__n                               TOPRED_i[7]
+   Net        step1a_n_7_i_2_n                            STEP1A.N_7_i_2
+   Net             midred_2__n                                 MIDRED[2]
+   Net        step1a_cq_i_0__n                            STEP1A.CQ_i[0]
+   Net    step1a_next_cq62_1_n                        STEP1A.next_CQ62_1
+   Net             midred_3__n                                 MIDRED[3]
+   Net        step1a_cq_i_1__n                            STEP1A.CQ_i[1]
+   Net    step1a_cq_inv_3_m_1_0__n                    STEP1A.CQ_inv_3_m_1[0]
+   Net             midred_4__n                                 MIDRED[4]
+   Net        step1a_cq_i_4__n                            STEP1A.CQ_i[4]
+   Net    step1a_un1_cq_24_1_0_n                      STEP1A.un1_CQ_24_1_0
+   Net             midred_5__n                                 MIDRED[5]
+   Net        step1a_cq_i_3__n                            STEP1A.CQ_i[3]
+   Net    step1a_next_cq40_1_n                        STEP1A.next_CQ40_1
+   Net             midred_6__n                                 MIDRED[6]
+   Net    step1a_msel_i_2_i_0__n                      STEP1A.mSEL_i_2_i[0]
+   Net    step1a_next_cq40_2_n                        STEP1A.next_CQ40_2
+   Net             midred_7__n                                 MIDRED[7]
+   Net    step1a_un1_cq_23_m_i_0_n                    STEP1A.un1_CQ_23_m_i_0
+   Net          randcombo_0__n                              randcombo[0]
+   Net    step1a_outchar12_1_i_0_n                    STEP1A.outCHAR12_1_i_0
+   Net          randcombo_1__n                              randcombo[1]
+   Net          randcombo_2__n                              randcombo[2]
+   Net     step1a_n_17_i_0_i_n                         STEP1A.N_17_i_0_i
+   Net          randcombo_3__n                              randcombo[3]
+   Net        step1a_cq_i_2__n                            STEP1A.CQ_i[2]
+   Net          randcombo_4__n                              randcombo[4]
+   Net     step5_outnmsg10_i_n                         STEP5.outNMSG10_i
+   Net          randcombo_5__n                              randcombo[5]
+   Net       jumbo_leds_i_0__n                           jumbo_leds_i[0]
+   Net          randcombo_6__n                              randcombo[6]
+   Net          randcombo_7__n                              randcombo[7]
+   Net         jumbo_leds_1__n                             jumbo_leds[1]
+   Net          pointer_i_0__n                              pointer_i[0]
+   Net         jumbo_leds_2__n                             jumbo_leds[2]
+   Net          pointer_i_1__n                              pointer_i[1]
+   Net    step3_qcombo_6_1_4__n                       STEP3.qcombo_6_1[4]
+   Net                 vcc_n_n                                       VCC
+   Net          pointer_i_2__n                              pointer_i[2]
+   Net    step3_qcombo_6_2_4__n                       STEP3.qcombo_6_2[4]
+   Net                 gnd_n_n                                       GND
+   Net    step5_un1_next_qstate_2_i_n                 STEP5.un1_next_qstate_2_i
+   Net    step3_qcombo_9_1_7__n                       STEP3.qcombo_9_1[7]
+   Net              jumbo_0__n                                  JUMBO[0]
+   Net    step5_un1_next_qstate_3_i_n                 STEP5.un1_next_qstate_3_i
+   Net    step3_qcombo_9_2_7__n                       STEP3.qcombo_9_2[7]
+   Net             topred_0__n                                 TOPRED[0]
+   Net    step5_un1_next_qstate_4_i_n                 STEP5.un1_next_qstate_4_i
+   Net    step1a_un1_cq_25_un3_n                      STEP1A.un1_CQ_25.un3
+   Net             topred_1__n                                 TOPRED[1]
+   Net    step5_next_qstate_i_3__n                    STEP5.next_qstate_i[3]
+   Net    step1a_un1_cq_25_un1_n                      STEP1A.un1_CQ_25.un1
+   Net             topred_2__n                                 TOPRED[2]
+   Net    step5_un1_next_qstate_11_i_0__n             STEP5.un1_next_qstate_11_i[0]
+   Net    step1a_un1_cq_25_un0_n                      STEP1A.un1_CQ_25.un0
+   Net             topred_3__n                                 TOPRED[3]
+   Net    step5_next_qstate_i_0__n                    STEP5.next_qstate_i[0]
+   Net    step1a_next_cq_9_2__un3_n                   STEP1A.next_CQ_9_2_.un3
+   Net             topred_4__n                                 TOPRED[4]
+   Net    step5_next_qstate_i_1__n                    STEP5.next_qstate_i[1]
+   Net    step1a_next_cq_9_2__un1_n                   STEP1A.next_CQ_9_2_.un1
+   Net             topred_5__n                                 TOPRED[5]
+   Net    step5_next_qstate_i_2__n                    STEP5.next_qstate_i[2]
+   Net    step1a_next_cq_9_2__un0_n                   STEP1A.next_CQ_9_2_.un0
+   Net             topred_6__n                                 TOPRED[6]
+   Net    step4_match_out4_i_n                        STEP4.match_out4_i
+   Net    step1a_next_cq_9_3__un3_n                   STEP1A.next_CQ_9_3_.un3
+   Net             topred_7__n                                 TOPRED[7]
+   Net    step5_un1_next_qstate_8_i_n                 STEP5.un1_next_qstate_8_i
+   Net    step1a_next_cq_9_3__un1_n                   STEP1A.next_CQ_9_3_.un1
+   Net    step2_un5_count_decode_0__n                 STEP2.un5_count_decode[0]
+   Net    step1a_next_cq_9_3__un0_n                   STEP1A.next_CQ_9_3_.un0
+   Net    step1a_next_cq_9_0__un3_n                   STEP1A.next_CQ_9_0_.un3
+   Net    step1a_next_cq_9_0__un1_n                   STEP1A.next_CQ_9_0_.un1
+   Net    step1a_next_cq_9_0__un0_n                   STEP1A.next_CQ_9_0_.un0
+   Net    step1a_un1_cq_28_un3_n                      STEP1A.un1_CQ_28.un3
+   Net    step1a_un1_cq_28_un1_n                      STEP1A.un1_CQ_28.un1
+   Net    step1a_un1_cq_28_un0_n                      STEP1A.un1_CQ_28.un0
+   Net    step1a_next_cq_9_1__un3_n                   STEP1A.next_CQ_9_1_.un3
+   Net    step1a_next_cq_9_1__un1_n                   STEP1A.next_CQ_9_1_.un1
+   Net    step5_next_qstate_1_sqmuxa_2_i_n            STEP5.next_qstate_1_sqmuxa_2_i
+   Net    step1a_next_cq_9_1__un0_n                   STEP1A.next_CQ_9_1_.un0
+   Net    step5_next_qstate_3__n                      STEP5.next_qstate[3]
+   Net    step1a_un1_cq_inv_6_i_n                     STEP1A.un1_CQ_inv_6_i
+   Net    step4_rcombo_pmux_5_un3_n                   STEP4.rCOMBO_pmux_5.un3
+   Net    step5_next_qstate_0__n                      STEP5.next_qstate[0]
+   Net              dip_c_0__n                                  DIP_c[0]
+   Net    step4_rcombo_pmux_5_un1_n                   STEP4.rCOMBO_pmux_5.un1
+   Net    step5_next_qstate_1__n                      STEP5.next_qstate[1]
+   Net                dip_0__n                                    DIP[0]
+   Net    step4_rcombo_pmux_5_un0_n                   STEP4.rCOMBO_pmux_5.un0
+   Net    step5_next_qstate_2__n                      STEP5.next_qstate[2]
+   Net              dip_c_1__n                                  DIP_c[1]
+   Net    step4_rcombo_pmux_4_un3_n                   STEP4.rCOMBO_pmux_4.un3
+   Net      step5_un1_arst_2_n                          STEP5.un1_ARST_2
+   Net                dip_1__n                                    DIP[1]
+   Net    step4_rcombo_pmux_4_un1_n                   STEP4.rCOMBO_pmux_4.un1
+   Net      step5_un1_arst_3_n                          STEP5.un1_ARST_3
+   Net              dip_c_2__n                                  DIP_c[2]
+   Net    step4_rcombo_pmux_4_un0_n                   STEP4.rCOMBO_pmux_4.un0
+   Net      step5_un1_arst_4_n                          STEP5.un1_ARST_4
+   Net                dip_2__n                                    DIP[2]
+   Net    step4_rcombo_pmux_2_un3_n                   STEP4.rCOMBO_pmux_2.un3
+   Net      step5_un1_arst_5_n                          STEP5.un1_ARST_5
+   Net              dip_c_3__n                                  DIP_c[3]
+   Net    step4_rcombo_pmux_2_un1_n                   STEP4.rCOMBO_pmux_2.un1
+   Net      step5_un1_arst_6_n                          STEP5.un1_ARST_6
+   Net                dip_3__n                                    DIP[3]
+   Net    step4_rcombo_pmux_2_un0_n                   STEP4.rCOMBO_pmux_2.un0
+   Net      step5_un1_arst_7_n                          STEP5.un1_ARST_7
+   Net              dip_c_4__n                                  DIP_c[4]
+   Net    step4_rcombo_pmux_1_un3_n                   STEP4.rCOMBO_pmux_1.un3
+   Net    step5_next_qstate_1_sqmuxa_2_n              STEP5.next_qstate_1_sqmuxa_2
+   Net                dip_4__n                                    DIP[4]
+   Net    step4_rcombo_pmux_1_un1_n                   STEP4.rCOMBO_pmux_1.un1
+   Net      step5_un1_arst_8_n                          STEP5.un1_ARST_8
+   Net              dip_c_5__n                                  DIP_c[5]
+   Net    step4_rcombo_pmux_1_un0_n                   STEP4.rCOMBO_pmux_1.un0
+   Net      step5_un1_arst_9_n                          STEP5.un1_ARST_9
+   Net                dip_5__n                                    DIP[5]
+   Net    step4_rcombo_pmux_6_un3_n                   STEP4.rCOMBO_pmux_6.un3
+   Net    step5_next_qstate_6_1__n                    STEP5.next_qstate_6[1]
+   Net              dip_c_6__n                                  DIP_c[6]
+   Net    step4_rcombo_pmux_6_un1_n                   STEP4.rCOMBO_pmux_6.un1
+   Net    step5_next_qstate_6_2__n                    STEP5.next_qstate_6[2]
+   Net                dip_6__n                                    DIP[6]
+   Net    step4_rcombo_pmux_6_un0_n                   STEP4.rCOMBO_pmux_6.un0
+   Net              dip_c_7__n                                  DIP_c[7]
+   Net    step4_rcombo_pmux_3_un3_n                   STEP4.rCOMBO_pmux_3.un3
+   Net     step3_qcombo_6_4__n                         STEP3.qcombo_6[4]
+   Net    step4_rcombo_pmux_3_un1_n                   STEP4.rCOMBO_pmux_3.un1
+   Net     step3_qcombo_9_7__n                         STEP3.qcombo_9[7]
+   Net    step4_rcombo_pmux_3_un0_n                   STEP4.rCOMBO_pmux_3.un0
+   Net          step1a_cq_0__n                              STEP1A.CQ[0]
+   Net    step4_rcombo_pmux_7_un3_n                   STEP4.rCOMBO_pmux_7.un3
+   Net          step1a_cq_3__n                              STEP1A.CQ[3]
+   Net    step4_rcombo_pmux_7_un1_n                   STEP4.rCOMBO_pmux_7.un1
+   Net          step1a_cq_4__n                              STEP1A.CQ[4]
+   Net    step4_rcombo_pmux_7_un0_n                   STEP4.rCOMBO_pmux_7.un0
+   Net          step1a_cq_1__n                              STEP1A.CQ[1]
+   Net          step1a_cq_2__n                              STEP1A.CQ[2]
+   Net        step1a_un1_rst_n                            STEP1A.un1_RST
+   Net      step1a_un1_rst_1_n                          STEP1A.un1_RST_1
+   Net      step1a_outchar12_n                          STEP1A.outCHAR12
+   Net           o_topred_0__n                               o_TOPRED[0]
+   Net      step1a_un1_rst_2_n                          STEP1A.un1_RST_2
+   Net           o_topred_1__n                               o_TOPRED[1]
+   Net    step1a_un1_cq_inv_6_n                       STEP1A.un1_CQ_inv_6
+   Net           o_topred_2__n                               o_TOPRED[2]
+   Net      step1a_un1_rst_3_n                          STEP1A.un1_RST_3
+   Net           o_topred_3__n                               o_TOPRED[3]
+   Net      step1a_un1_cq_29_n                          STEP1A.un1_CQ_29
+   Net           o_topred_4__n                               o_TOPRED[4]
+   Net      step1a_un1_cq_30_n                          STEP1A.un1_CQ_30
+   Net           o_topred_5__n                               o_TOPRED[5]
+   Net      step1a_un1_cq_31_n                          STEP1A.un1_CQ_31
+   Net           o_topred_6__n                               o_TOPRED[6]
+   Net      step1a_un1_rst_4_n                          STEP1A.un1_RST_4
+   Net    step1a_un1_cq_inv_12_n                      STEP1A.un1_CQ_inv_12
+   Net           o_midred_0__n                               o_MIDRED[0]
+   Net    step1a_un1_outchar14_2_n                    STEP1A.un1_outCHAR14_2
+   Net           o_midred_1__n                               o_MIDRED[1]
+   Net      step1a_un1_cq_32_n                          STEP1A.un1_CQ_32
+   Net           o_midred_2__n                               o_MIDRED[2]
+   Net      step1a_un1_cq_33_n                          STEP1A.un1_CQ_33
+   Net           o_midred_3__n                               o_MIDRED[3]
+   Net    step1a_un1_outchar14_3_n                    STEP1A.un1_outCHAR14_3
+   Net           o_midred_4__n                               o_MIDRED[4]
+   Net      step1a_un1_rst_5_n                          STEP1A.un1_RST_5
+   Net           o_midred_5__n                               o_MIDRED[5]
+   Net      step1a_un1_cq_34_n                          STEP1A.un1_CQ_34
+   Net           o_midred_6__n                               o_MIDRED[6]
+   Net    step1a_un1_outchar14_4_n                    STEP1A.un1_outCHAR14_4
+   Net      step1a_un1_cq_35_n                          STEP1A.un1_CQ_35
+   Net           o_botred_0__n                               o_BOTRED[0]
+   Net    step1a_un1_outchar14_5_n                    STEP1A.un1_outCHAR14_5
+   Net           o_botred_1__n                               o_BOTRED[1]
+   Net      step1a_un1_cq_36_n                          STEP1A.un1_CQ_36
+   Net           o_botred_2__n                               o_BOTRED[2]
+   Net      step1a_un1_cq_37_n                          STEP1A.un1_CQ_37
+   Net           o_botred_3__n                               o_BOTRED[3]
+   Net    step1a_next_cq_9_0__n                       STEP1A.next_CQ_9[0]
+   Net           o_botred_4__n                               o_BOTRED[4]
+   Net    step1a_next_cq_9_1__n                       STEP1A.next_CQ_9[1]
+   Net           o_botred_5__n                               o_BOTRED[5]
+   Net    step1a_next_cq_9_2__n                       STEP1A.next_CQ_9[2]
+   Net           o_botred_6__n                               o_BOTRED[6]
+   Net    step1a_next_cq_9_3__n                       STEP1A.next_CQ_9[3]
+   Net    step1a_next_cq_9_4__n                       STEP1A.next_CQ_9[4]
+   Net             o_dis1_0__n                                 o_DIS1[0]
+   Net             o_dis1_1__n                                 o_DIS1[1]
+   Net     step3_qcombo_7_5__n                         STEP3.qcombo_7[5]
+   Net             o_dis1_2__n                                 o_DIS1[2]
+   Net     step3_qcombo_8_6__n                         STEP3.qcombo_8[6]
+   Net             o_dis1_3__n                                 o_DIS1[3]
+   Net     step3_qcombo_2_0__n                         STEP3.qcombo_2[0]
+   Net             o_dis1_4__n                                 o_DIS1[4]
+   Net     step3_qcombo_3_1__n                         STEP3.qcombo_3[1]
+   Net             o_dis1_5__n                                 o_DIS1[5]
+   Net     step3_qcombo_4_2__n                         STEP3.qcombo_4[2]
+   Net     step3_qcombo_5_3__n                         STEP3.qcombo_5[3]
+   Net             o_dis2_0__n                                 o_DIS2[0]
+   Net    step1a_un1_outchar14_n                      STEP1A.un1_outCHAR14
+   Net             o_dis2_1__n                                 o_DIS2[1]
+   Net      step5_un1_arst_1_n                          STEP5.un1_ARST_1
+   Net             o_dis2_2__n                                 o_DIS2[2]
+   Net    step5_un1_next_qstate_8_n                   STEP5.un1_next_qstate_8
+   Net             o_dis2_3__n                                 o_DIS2[3]
+   Net    step5_un1_next_qstate_11_2__n               STEP5.un1_next_qstate_11[2]
+   Net             o_dis2_4__n                                 o_DIS2[4]
+   Net            step5_n_16_n                                STEP5.N_16
+   Net             o_dis2_5__n                                 o_DIS2[5]
+   Net    step5_un1_next_qstate_11_1__n               STEP5.un1_next_qstate_11[1]
+   Net            step5_n_13_n                                STEP5.N_13
+   Net             o_dis3_0__n                                 o_DIS3[0]
+   Net    step5_un1_next_qstate_11_0__n               STEP5.un1_next_qstate_11[0]
+   Net             o_dis3_1__n                                 o_DIS3[1]
+   Net       step5_outnmsg10_n                           STEP5.outNMSG10
+   Net             o_dis3_2__n                                 o_DIS3[2]
+   Net     step5_outnmsg12_2_n                         STEP5.outNMSG12_2
+   Net             o_dis3_3__n                                 o_DIS3[3]
+   Net         jumbo_leds_0__n                             jumbo_leds[0]
+   Net             o_dis3_4__n                                 o_DIS3[4]
+   Net    step5_next_qstate_0_sqmuxa_n                STEP5.next_qstate_0_sqmuxa
+   Net             o_dis3_5__n                                 o_DIS3[5]
+   Net      step4_match_out4_n                          STEP4.match_out4
+   Net    step5_next_qstate_1_sqmuxa_2_1_n            STEP5.next_qstate_1_sqmuxa_2_1
+   Net             o_dis4_0__n                                 o_DIS4[0]
+   Net            step5_n_29_n                                STEP5.N_29
+   Net             o_dis4_1__n                                 o_DIS4[1]
+   Net    step5_un1_next_qstate_11_i_m_0__n           STEP5.un1_next_qstate_11_i_m[0]
+   Net             o_dis4_2__n                                 o_DIS4[2]
+   Net    step5_un1_next_qstate_10_n                  STEP5.un1_next_qstate_10
+   Net             o_dis4_3__n                                 o_DIS4[3]
+   Net    step5_un1_next_qstate_2_n                   STEP5.un1_next_qstate_2
+   Net             o_dis4_4__n                                 o_DIS4[4]
+   Net    step5_un1_next_qstate_3_n                   STEP5.un1_next_qstate_3
+   Net             o_dis4_5__n                                 o_DIS4[5]
+   Net    step5_un1_next_qstate_4_n                   STEP5.un1_next_qstate_4
+   Net            o_jumbo_0__n                                o_JUMBO[0]
+   Net            o_jumbo_1__n                                o_JUMBO[1]
+   Net            step4_n_23_n                                STEP4.N_23
+   Net            step4_n_22_n                                STEP4.N_22
+   Net       o_led_yellow_0__n                           o_LED_YELLOW[0]
+   Net            step4_n_21_n                                STEP4.N_21
+   Net            step4_n_20_n                                STEP4.N_20
+   Net    step1a_un1_cq_24_i_n                        STEP1A.un1_CQ_24_i
+   Net            step4_n_19_n                                STEP4.N_19
+   Net         step1a_n_44_i_n                             STEP1A.N_44_i
+   Net            step4_n_18_n                                STEP4.N_18
+   Net    step1a_next_cq40_i_n                        STEP1A.next_CQ40_i
+   Net     step4_rcombo_pmux_n                         STEP4.rCOMBO_pmux
+   Net       step1a_n_29_1_i_n                           STEP1A.N_29_1_i
+   Net      step1a_un1_cq_16_n                          STEP1A.un1_CQ_16
+   Net    step1a_un1_cq_inv_12_0_n                    STEP1A.un1_CQ_inv_12_0
+   Net         step1a_n_41_1_n                             STEP1A.N_41_1
+   Net     step1a_un1_cq_9_i_n                         STEP1A.un1_CQ_9_i
+   Net    step1a_un1_cq_16_2_n                        STEP1A.un1_CQ_16_2
+   Net         step1a_n_18_i_n                             STEP1A.N_18_i
+   Net           step1a_n_30_n                               STEP1A.N_30
+   Net    step1a_un1_cq_18_m_i_n                      STEP1A.un1_CQ_18_m_i
+   Net    step1a_msel_i_2_0__n                        STEP1A.mSEL_i_2[0]
+   Net    step1a_outchar14_m_6_i_n                    STEP1A.outCHAR14_m_6_i
+   Net           step1a_n_22_n                               STEP1A.N_22
+   Net    step1a_un1_cq_34_0_n                        STEP1A.un1_CQ_34_0
+   Net           step1a_n_32_n                               STEP1A.N_32
+   Net    step1a_cq_inv_m_0_i_0__n                    STEP1A.CQ_inv_m_0_i[0]
+   Net           step1a_n_49_n                               STEP1A.N_49
+   Net    step1a_un1_outchar14_0_n                    STEP1A.un1_outCHAR14_0
+   Net    step1a_un13_next_cq_1__n                    STEP1A.un13_next_CQ[1]
+   Net    step1a_un1_cq_25_i_n                        STEP1A.un1_CQ_25_i
+   Net    step1a_un1_next_cq_1_sqmuxa_n               STEP1A.un1_next_CQ_1_sqmuxa
+   Net    step1a_un1_outchar14_1_0_n                  STEP1A.un1_outCHAR14_1_0
+   Net           step1a_n_33_n                               STEP1A.N_33
+   Net    step1a_next_cq62_i_n                        STEP1A.next_CQ62_i
+   Net           step1a_n_26_n                               STEP1A.N_26
+   Net    step1a_un1_cq_16_i_n                        STEP1A.un1_CQ_16_i
+   Net           step1a_n_31_n                               STEP1A.N_31
+   Net    step1a_next_cq38_0_n                        STEP1A.next_CQ38_0
+   Net         step1a_n_33_1_n                             STEP1A.N_33_1
+   Net         step1a_n_26_i_n                             STEP1A.N_26_i
+   Net    step1a_un1_cq_inv_3_n                       STEP1A.un1_CQ_inv_3
+   Net         step1a_n_27_i_n                             STEP1A.N_27_i
+   Net      step1a_next_cq62_n                          STEP1A.next_CQ62
+   Net          step1a_n_7_i_n                              STEP1A.N_7_i
+   Net           step1a_n_16_n                               STEP1A.N_16
+   Net    step1a_next_cq_5_sqmuxa_i_n                 STEP1A.next_CQ_5_sqmuxa_i
+   Net           step1a_n_44_n                               STEP1A.N_44
+   Net    step1a_un1_next_cq_1_sqmuxa_0_n             STEP1A.un1_next_CQ_1_sqmuxa_0
+   Net    step1a_un1_cq_10_m_n                        STEP1A.un1_CQ_10_m
+   Net    step1a_next_cq_1_sqmuxa_2_i_n               STEP1A.next_CQ_1_sqmuxa_2_i
+   Net         step1a_n_44_1_n                             STEP1A.N_44_1
+   Net    step1a_next_cq_0_sqmuxa_2_i_n               STEP1A.next_CQ_0_sqmuxa_2_i
+   Net    step1a_un1_cq_inv_3_m_n                     STEP1A.un1_CQ_inv_3_m
+   Net    step1a_un1_outchar14_4_0_n                  STEP1A.un1_outCHAR14_4_0
+   Net         step1a_n_28_1_n                             STEP1A.N_28_1
+   Net    step1a_un1_outchar14_1_m_i_n                STEP1A.un1_outCHAR14_1_m_i
+   Net    step1a_un1_cq_25_m_n                        STEP1A.un1_CQ_25_m
+   Net    step1a_un1_cq_25_m_i_n                      STEP1A.un1_CQ_25_m_i
+   Net        step1a_cq_m_0__n                            STEP1A.CQ_m[0]
+   Net    step1a_un1_cq_37_0_n                        STEP1A.un1_CQ_37_0
+   Net    step1a_outchar14_m_n                        STEP1A.outCHAR14_m
+   Net    step1a_un1_cq_9_m_i_n                       STEP1A.un1_CQ_9_m_i
+   Net    step5_un1_next_qstate5_1_n                  STEP5.un1_next_qstate5_1
+   Net    step1a_un1_outchar14_2_i_n                  STEP1A.un1_outCHAR14_2_i
+   Net           step1a_n_29_n                               STEP1A.N_29
+   Net    step1a_un1_cq_36_0_n                        STEP1A.un1_CQ_36_0
+   Net         step1a_n_29_1_n                             STEP1A.N_29_1
+   Net    step1a_outchar14_m_2_i_n                    STEP1A.outCHAR14_m_2_i
+   Net       step1a_n_17_i_0_n                           STEP1A.N_17_i_0
+   Net      step1a_cq_m_i_0__n                          STEP1A.CQ_m_i[0]
+   Net           step1a_n_28_n                               STEP1A.N_28
+   Net    step1a_un1_cq_33_0_n                        STEP1A.un1_CQ_33_0
+   Net    step1a_un1_cq_24_1_n                        STEP1A.un1_CQ_24_1
+   Net    step1a_un1_cq_6_m_i_n                       STEP1A.un1_CQ_6_m_i
+   Net    step1a_un1_cq_inv_10_n                      STEP1A.un1_CQ_inv_10
+   Net    step1a_un1_cq_20_m_i_n                      STEP1A.un1_CQ_20_m_i
+   Net      step1a_outchar14_n                          STEP1A.outCHAR14
+   Net    step1a_un1_cq_32_0_n                        STEP1A.un1_CQ_32_0
+   Net      step1a_un1_cq_28_n                          STEP1A.un1_CQ_28
+   Net    step1a_un1_cq_26_m_i_n                      STEP1A.un1_CQ_26_m_i
+   Net    step1a_cq_inv_m_0_0__n                      STEP1A.CQ_inv_m_0[0]
+   Net    step1a_cq_inv_3_m_i_0__n                    STEP1A.CQ_inv_3_m_i[0]
+   Net       step1a_un1_cq_8_n                           STEP1A.un1_CQ_8
+   Net    step1a_un1_cq_31_0_n                        STEP1A.un1_CQ_31_0
+   Net           step1a_n_81_n                               STEP1A.N_81
+   Net    step1a_un1_cq_31_1_i_n                      STEP1A.un1_CQ_31_1_i
+   Net           step1a_n_36_n                               STEP1A.N_36
+   Net      step1a_cq_m_i_1__n                          STEP1A.CQ_m_i[1]
+   Net       step1a_un1_cq_9_n                           STEP1A.un1_CQ_9
+   Net    step1a_un1_cq_30_0_n                        STEP1A.un1_CQ_30_0
+   Net           step1a_n_39_n                               STEP1A.N_39
+   Net    step1a_un1_outchar14_5_0_n                  STEP1A.un1_outCHAR14_5_0
+   Net           step1a_n_42_n                               STEP1A.N_42
+   Net         step1a_n_37_i_n                             STEP1A.N_37_i
+   Net           step1a_n_41_n                               STEP1A.N_41
+   Net    step1a_next_cq_cnst_0_2__n                  STEP1A.next_CQ_cnst_0[2]
+   Net    step1a_next_cq_cnst_2__n                    STEP1A.next_CQ_cnst[2]
+   Net         step1a_n_36_i_n                             STEP1A.N_36_i
+   Net    step1a_un13_next_cq_2__n                    STEP1A.un13_next_CQ[2]
+   Net         step1a_n_35_i_n                             STEP1A.N_35_i
+   Net    step1a_un13_next_cq_3__n                    STEP1A.un13_next_CQ[3]
+   Net         step1a_n_34_i_n                             STEP1A.N_34_i
+   Net           step1a_n_40_n                               STEP1A.N_40
+   Net         step1a_n_38_i_n                             STEP1A.N_38_i
+   Net           step1a_n_38_n                               STEP1A.N_38
+   Net         step1a_n_40_i_n                             STEP1A.N_40_i
+   Net           step1a_n_34_n                               STEP1A.N_34
+   Net         step1a_n_39_i_n                             STEP1A.N_39_i
+   Net           step1a_n_35_n                               STEP1A.N_35
+   Net         step1a_n_41_i_n                             STEP1A.N_41_i
+   Net           step1a_n_37_n                               STEP1A.N_37
+   Net         step1a_n_42_i_n                             STEP1A.N_42_i
+   Net         step1a_n_40_1_n                             STEP1A.N_40_1
+   Net    step1a_next_cq_9_0_4__n                     STEP1A.next_CQ_9_0[4]
+   Net    step1a_un1_cq_23_m_1_n                      STEP1A.un1_CQ_23_m_1
+   Net         step1a_n_12_i_n                             STEP1A.N_12_i
+   Net    step1a_un1_cq_18_m_n                        STEP1A.un1_CQ_18_m
+   Net         step1a_n_22_i_n                             STEP1A.N_22_i
+   Net    step1a_next_cq_5_sqmuxa_n                   STEP1A.next_CQ_5_sqmuxa
+   Net     step1a_un1_cq_8_i_n                         STEP1A.un1_CQ_8_i
+   Net    step1a_un1_outchar14_1_m_n                  STEP1A.un1_outCHAR14_1_m
+   Net    step1a_un1_cq_inv_10_0_n                    STEP1A.un1_CQ_inv_10_0
+   Net     step1a_un1_cq_9_m_n                         STEP1A.un1_CQ_9_m
+   Net         step1a_n_29_i_n                             STEP1A.N_29_i
+   Net        step1a_cq_m_1__n                            STEP1A.CQ_m[1]
+   Net         step1a_n_28_i_n                             STEP1A.N_28_i
+   Net    step1a_un1_cq_inv_1_n                       STEP1A.un1_CQ_inv_1
+   Net    step1a_un1_cq_26_m_n                        STEP1A.un1_CQ_26_m
+   Net    step2_un5_count_decode_0_0__n               STEP2.un5_count_decode_0[0]
+   Net    step1a_cq_inv_3_m_0__n                      STEP1A.CQ_inv_3_m[0]
+   Net    step1a_next_cq_0_sqmuxa_2_n                 STEP1A.next_CQ_0_sqmuxa_2
+   Net      step1a_next_cq38_n                          STEP1A.next_CQ38
+   Net    step1a_un1_cq_35_0_n                        STEP1A.un1_CQ_35_0
+   Net    step1a_next_cq_1_sqmuxa_2_n                 STEP1A.next_CQ_1_sqmuxa_2
+   Net    step1a_outchar14_m_i_n                      STEP1A.outCHAR14_m_i
+   Net     step1a_un1_cq_6_m_n                         STEP1A.un1_CQ_6_m
+   Net       step1a_n_33_1_i_n                           STEP1A.N_33_1_i
+   Net    step1a_un1_cq_23_m_n                        STEP1A.un1_CQ_23_m
+   Net    step1a_un1_cq_10_m_i_n                      STEP1A.un1_CQ_10_m_i
+   Net    step1a_outchar12_1_n                        STEP1A.outCHAR12_1
+   Net       step1a_n_28_1_i_n                           STEP1A.N_28_1_i
+   Net    step1a_un1_cq_20_m_n                        STEP1A.un1_CQ_20_m
+   Net    step1a_un1_cq_inv_3_m_i_n                   STEP1A.un1_CQ_inv_3_m_i
+   Net    step1a_outchar14_m_2_n                      STEP1A.outCHAR14_m_2
+   Net    step1a_un1_outchar14_3_0_n                  STEP1A.un1_outCHAR14_3_0
+   Net         step1a_n_38_1_n                             STEP1A.N_38_1
+   Net         step1a_n_16_0_n                             STEP1A.N_16_0
+   Net           step1a_n_27_n                               STEP1A.N_27
+   Net    step1a_un1_cq_inv_3_i_n                     STEP1A.un1_CQ_inv_3_i
+   Net    step1a_un1_outchar14_1_n                    STEP1A.un1_outCHAR14_1
+   Net    step1a_outchar11_i_n                        STEP1A.outCHAR11_i
+   Net    step1a_outchar14_m_6_n                      STEP1A.outCHAR14_m_6
+   Net          step1a_n_9_i_n                              STEP1A.N_9_i
+   Net      step1a_un1_cq_25_n                          STEP1A.un1_CQ_25
+   Net         step1a_n_31_i_n                             STEP1A.N_31_i
+   Net      step1a_next_cq40_n                          STEP1A.next_CQ40
+   Net         step1a_n_30_i_n                             STEP1A.N_30_i
+   Net      step1a_un1_cq_24_n                          STEP1A.un1_CQ_24
+   Net         step1a_n_33_i_n                             STEP1A.N_33_i
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     DIP_7_
+        Input     i_S1_NC
+        Input     i_S1_NO
+        Input     i_S2_NC
+        Input     i_S2_NO
+        Input     DIP_6_
+        Input     DIP_5_
+        Input     DIP_4_
+        Input     DIP_3_
+        Input     DIP_2_
+        Input     DIP_1_
+        Input     DIP_0_
+        Output     o_TOPRED_7_
+        Output     o_MIDRED_7_
+        Output     o_BOTRED_7_
+        Output     o_DIS1_6_
+        Output     o_DIS2_6_
+        Output     o_DIS3_6_
+        Output     o_DIS4_6_
+        Output     o_JUMBO_2_
+        Output     o_LED_YELLOW_1_
+        Output     o_TOPRED_6_
+        Output     o_TOPRED_5_
+        Output     o_TOPRED_4_
+        Output     o_TOPRED_3_
+        Output     o_TOPRED_2_
+        Output     o_TOPRED_1_
+        Output     o_TOPRED_0_
+        Output     o_MIDRED_6_
+        Output     o_MIDRED_5_
+        Output     o_MIDRED_4_
+        Output     o_MIDRED_3_
+        Output     o_MIDRED_2_
+        Output     o_MIDRED_1_
+        Output     o_MIDRED_0_
+        Output     o_BOTRED_6_
+        Output     o_BOTRED_5_
+        Output     o_BOTRED_4_
+        Output     o_BOTRED_3_
+        Output     o_BOTRED_2_
+        Output     o_BOTRED_1_
+        Output     o_BOTRED_0_
+        Output     o_DIS1_5_
+        Output     o_DIS1_4_
+        Output     o_DIS1_3_
+        Output     o_DIS1_2_
+        Output     o_DIS1_1_
+        Output     o_DIS1_0_
+        Output     o_DIS2_5_
+        Output     o_DIS2_4_
+        Output     o_DIS2_3_
+        Output     o_DIS2_2_
+        Output     o_DIS2_1_
+        Output     o_DIS2_0_
+        Output     o_DIS3_5_
+        Output     o_DIS3_4_
+        Output     o_DIS3_3_
+        Output     o_DIS3_2_
+        Output     o_DIS3_1_
+        Output     o_DIS3_0_
+        Output     o_DIS4_5_
+        Output     o_DIS4_4_
+        Output     o_DIS4_3_
+        Output     o_DIS4_2_
+        Output     o_DIS4_1_
+        Output     o_DIS4_0_
+        Output     o_JUMBO_1_
+        Output     o_JUMBO_0_
+        Output     o_LED_YELLOW_0_
+End

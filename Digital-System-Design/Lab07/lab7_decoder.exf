@@ -1,0 +1,72 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// -------------------------------------------------------------------------------------------------
+      Port          1      I[7:0]                        I                  7          8            -1
+      Port          2      Y[7:0]                        Y                  7          8            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      I_7_                        I[7]                       1            0            
+        Port      I_6_                        I[6]                       1            1            
+        Port      I_5_                        I[5]                       1            2            
+        Port      I_4_                        I[4]                       1            3            
+        Port      I_3_                        I[3]                       1            4            
+        Port      I_2_                        I[2]                       1            5            
+        Port      I_1_                        I[1]                       1            6            
+        Port      I_0_                        I[0]                       1            7            
+        Port      Y_7_                        Y[7]                       2            0            
+        Port      Y_6_                        Y[6]                       2            1            
+        Port      Y_5_                        Y[5]                       2            2            
+        Port      Y_4_                        Y[4]                       2            3            
+        Port      Y_3_                        Y[3]                       2            4            
+        Port      Y_2_                        Y[2]                       2            5            
+        Port      Y_1_                        Y[1]                       2            6            
+        Port      Y_0_                        Y[0]                       2            7            
+End
+Section Cross Reference File
+Design 'Lab7_decoder' created Sat Feb 23 14:44:42 2019
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst                   Y_0_                                      Y[0]
+   Inst                   Y_1_                                      Y[1]
+   Inst                   Y_2_                                      Y[2]
+   Inst                   Y_3_                                      Y[3]
+   Inst                   Y_4_                                      Y[4]
+   Inst                   Y_5_                                      Y[5]
+   Inst                   Y_6_                                      Y[6]
+   Inst                   Y_7_                                      Y[7]
+   Net                 gnd_n_n                                       GND
+   Net                  y_0__n                                      Y[0]
+   Net                  y_1__n                                      Y[1]
+   Net                  y_2__n                                      Y[2]
+   Net                  y_3__n                                      Y[3]
+   Net                  y_4__n                                      Y[4]
+   Net                  y_5__n                                      Y[5]
+   Net                  y_6__n                                      Y[6]
+   Net                  i_7__n                                      I[7]
+   Net                  i_6__n                                      I[6]
+   Net                  i_5__n                                      I[5]
+   Net                  i_4__n                                      I[4]
+   Net                  i_3__n                                      I[3]
+   Net                  i_2__n                                      I[2]
+   Net                  i_1__n                                      I[1]
+   Net                  i_0__n                                      I[0]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     I_7_
+        Input     I_6_
+        Input     I_5_
+        Input     I_4_
+        Input     I_3_
+        Input     I_2_
+        Input     I_1_
+        Input     I_0_
+        Output     Y_7_
+        Output     Y_6_
+        Output     Y_5_
+        Output     Y_4_
+        Output     Y_3_
+        Output     Y_2_
+        Output     Y_1_
+        Output     Y_0_
+End

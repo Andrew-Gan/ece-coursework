@@ -1,0 +1,2 @@
+@W: CG921 :"W:\my documents\ece 270\lab13\gan35_lab13.v":521:12:521:14|qCC is already declared in this scope.
+

@@ -1,0 +1,90 @@
+#$ DATE Sun Mar 03 13:51:44 2019
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE lab8
+#$ PINS 16 CLKIN:1'ke'  CS:2'ke'  RS:3'ke'  SS:4'ke'  CM:5'ke'  RM:6'ke'  SM:7'ke'  D:8'ke'  NC:9'ke'  NO:10'ke'  BQ:23'ke'  QM:17'ke'  QM_N:16'ke'  QS:15'ke'  QS_N:14'ke'  QFF:18'ke' 
+#$ NODES 29 un3_QM un3_QM_N un3_QS un3_QS_N N_16 N_17 N_7_i N_16_i N_8_i N_17_i \
+#  un3_QS_N_i un3_QS_i un3_QM_N_i un3_QM_i CS_c RS_c SS_c CM_c RM_c SM_c \
+#  NC_c NO_c BQ_c QFFDFFreg N_8 N_7 N_21 N_21_i BQ_c_0 
+.model lab8
+.inputs CLKIN.BLIF CS.BLIF RS.BLIF SS.BLIF CM.BLIF RM.BLIF SM.BLIF D.BLIF NC.BLIF \
+  NO.BLIF un3_QM.BLIF un3_QM_N.BLIF un3_QS.BLIF un3_QS_N.BLIF N_16.BLIF N_17.BLIF N_7_i.BLIF N_16_i.BLIF \
+  N_8_i.BLIF N_17_i.BLIF un3_QS_N_i.BLIF un3_QS_i.BLIF un3_QM_N_i.BLIF un3_QM_i.BLIF CS_c.BLIF RS_c.BLIF SS_c.BLIF \
+  CM_c.BLIF RM_c.BLIF SM_c.BLIF NC_c.BLIF NO_c.BLIF BQ_c.BLIF QFFDFFreg.BLIF N_8.BLIF N_7.BLIF \
+  N_21.BLIF N_21_i.BLIF BQ_c_0.BLIF  
+.outputs BQ QM QM_N QS QS_N QFF QFFDFFreg.D QFFDFFreg.C un3_QM un3_QM_N un3_QS \
+  un3_QS_N N_16 N_17 N_7_i N_16_i N_8_i N_17_i un3_QS_N_i un3_QS_i un3_QM_N_i un3_QM_i \
+  CS_c RS_c SS_c CM_c RM_c SM_c NC_c NO_c BQ_c N_8 N_7 \
+  N_21 N_21_i BQ_c_0
+.names  CLKIN.BLIF QFFDFFreg.C
+1 1
+.names  CS.BLIF CS_c
+1 1
+.names  RS.BLIF RS_c
+1 1
+.names  SS.BLIF SS_c
+1 1
+.names  CM.BLIF CM_c
+1 1
+.names  RM.BLIF RM_c
+1 1
+.names  SM.BLIF SM_c
+1 1
+.names  D.BLIF QFFDFFreg.D
+1 1
+.names  NC.BLIF NC_c
+1 1
+.names  NO.BLIF NO_c
+1 1
+.names  BQ_c.BLIF BQ
+1 1
+.names  N_17_i.BLIF QM
+1 1
+.names  N_8_i.BLIF QM_N
+1 1
+.names  N_16_i.BLIF QS
+1 1
+.names  N_7_i.BLIF QS_N
+1 1
+.names  QFFDFFreg.BLIF QFF
+1 1
+.names  N_21.BLIF N_21_i
+0 1
+.names  BQ_c_0.BLIF BQ_c
+0 1
+.names  N_7.BLIF N_7_i
+0 1
+.names  N_16.BLIF N_16_i
+0 1
+.names  N_8.BLIF N_8_i
+0 1
+.names  N_17.BLIF N_17_i
+0 1
+.names  NO_c.BLIF N_21_i.BLIF BQ_c_0
+11 1
+.names  BQ_c.BLIF NC_c.BLIF N_21
+11 1
+.names  CM_c.BLIF SM_c.BLIF un3_QM
+11 1
+.names  CM_c.BLIF RM_c.BLIF un3_QM_N
+11 1
+.names  un3_QM.BLIF un3_QM_i
+0 1
+.names  N_8_i.BLIF un3_QM_i.BLIF N_17
+11 1
+.names  un3_QM_N.BLIF un3_QM_N_i
+0 1
+.names  N_17_i.BLIF un3_QM_N_i.BLIF N_8
+11 1
+.names  CS_c.BLIF SS_c.BLIF un3_QS
+11 1
+.names  CS_c.BLIF RS_c.BLIF un3_QS_N
+11 1
+.names  un3_QS.BLIF un3_QS_i
+0 1
+.names  N_7_i.BLIF un3_QS_i.BLIF N_16
+11 1
+.names  un3_QS_N.BLIF un3_QS_N_i
+0 1
+.names  N_16_i.BLIF un3_QS_N_i.BLIF N_7
+11 1
+.end

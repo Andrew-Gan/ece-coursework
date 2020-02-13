@@ -1,0 +1,1075 @@
+#$ TOOL  ispLEVER Classic 1.7.00.05.28.13
+#$ DATE  Thu Apr 04 16:05:03 2019
+#$ MODULE  lab11_top
+#$ PROPERTY  LATTICE OSCTIMER I1= -, -, -, tmr_out, 1048576; 
+#$ PINS 69 o_TOPRED_2_:33 o_TOPRED_1_:39 DIP_7_:26 o_TOPRED_0_:40
+ o_MIDRED_6_:131 o_TOPRED_7_:28 o_MIDRED_4_:133 o_MIDRED_2_:135 o_BOTRED_7_:112
+ o_MIDRED_0_:139 o_DIS1_6_:87 o_BOTRED_6_:111 o_BOTRED_5_:105 o_DIS2_6_:98
+ o_BOTRED_4_:104 o_BOTRED_3_:103 o_DIS3_6_:125 o_BOTRED_2_:102 o_BOTRED_1_:101
+ o_DIS4_6_:44 o_BOTRED_0_:100 o_DIS1_5_:86 o_JUMBO_2_:142 o_DIS1_4_:85
+ o_DIS1_3_:84 o_LED_YELLOW_1_:62 o_DIS1_2_:83 i_S1_NC:58 o_DIS1_1_:81 i_S1_NO:59
+ o_DIS1_0_:80 i_S2_NC:60 o_DIS2_5_:97 i_S2_NO:61 o_DIS2_4_:96 o_DIS2_3_:95
+ o_DIS2_2_:94 o_DIS2_1_:93 o_DIS2_0_:88 o_DIS3_5_:124 o_DIS3_4_:123 o_DIS3_3_:122
+ o_DIS3_2_:121 o_DIS3_1_:120 o_DIS3_0_:116 o_DIS4_5_:48 o_DIS4_4_:49 o_DIS4_3_:50
+ o_DIS4_2_:51 o_DIS4_1_:52 o_DIS4_0_:53 o_JUMBO_1_:141 o_JUMBO_0_:140
+ o_LED_YELLOW_0_:63 DIP_6_:25 DIP_5_:24 DIP_4_:23 DIP_3_:76 DIP_2_:77 DIP_1_:78
+ DIP_0_:79 o_TOPRED_6_:29 o_TOPRED_5_:30 o_TOPRED_4_:31 o_TOPRED_3_:32
+ o_MIDRED_5_:132 o_MIDRED_7_:130 o_MIDRED_3_:134 o_MIDRED_1_:138
+#$ NODES 89 tmr_out LFTPB_Q FDIVBY2_clk_out FDIVBY4_clk_out RGTPB_Q
+ STEP1A_outCHAR_1_0_ STEP1A_outCHAR_1_1_ STEP1A_outCHAR_1_2_ STEP1A_outCHAR_1_3_
+ STEP1A_outCHAR_1_4_ STEP1A_outCHAR_1_5_ STEP1A_outCHAR_1_6_ STEP1B_outDISP_0_
+ STEP1B_outDISP_1_ step1a_un1_cq_30_0_1_n STEP1B_outDISP_2_ STEP1B_outDISP_3_
+ STEP1B_outDISP_4_ STEP1B_outDISP_5_ STEP1B_outDISP_6_ STEP1B_outDISP_7_
+ STEP1B_outDISP_8_ STEP1B_outDISP_9_ STEP1B_outDISP_10_ STEP1B_outDISP_11_
+ STEP1B_outDISP_12_ STEP1B_outDISP_13_ STEP1B_outDISP_14_ step1a_un1_cq_35_0_2_n
+ STEP1B_outDISP_15_ STEP1B_outDISP_16_ STEP1B_outDISP_17_ STEP1B_outDISP_18_
+ STEP1B_outDISP_19_ STEP1B_outDISP_20_ step1a_un1_cq_33_0_1_n
+ step1a_un1_cq_36_0_1_n STEP5_outEN STEP2_next_count_state_0_
+ STEP2_next_count_state_1_ STEP2_next_count_state_2_ step1a_un1_cq_23_m_i_0_n
+ STEP3_qcombo_0_ STEP3_qcombo_1_ STEP3_qcombo_2_ STEP3_qcombo_3_ STEP3_qcombo_4_
+ STEP3_qcombo_5_ STEP3_qcombo_6_ STEP3_qcombo_7_ gnd_n_n STEP5_next_qstate_3_
+ STEP5_next_qstate_0_ STEP5_next_qstate_1_ STEP5_next_qstate_2_ STEP1A_CQ_0_
+ STEP1A_CQ_3_ STEP1A_CQ_4_ STEP1A_CQ_1_ STEP1A_CQ_2_ step1a_un1_cq_inv_12_n
+ step1a_un1_outchar14_2_n step5_un1_arst_1_n step1a_outchar14_m_6_i_n
+ step1a_un1_cq_25_m_i_n step1a_un1_cq_32_0_n step1a_un1_cq_28_n
+ step1a_un1_cq_31_1_i_n step1a_un1_outchar14_1_m_n A0_OSCOUT
+ STEP1A_outCHAR_1_0__0 STEP1A_outCHAR_1_1__0 STEP1A_outCHAR_1_1__1
+ STEP1A_outCHAR_1_3__0 STEP1A_outCHAR_1_3__1 STEP1A_outCHAR_1_4__0
+ STEP1A_outCHAR_1_4__1 STEP1A_outCHAR_1_5__0 STEP1A_outCHAR_1_6__0
+ STEP1A_outCHAR_1_6__1 STEP2_next_count_state_0__0 STEP5_next_qstate_3__0
+ STEP5_next_qstate_3__1 STEP5_next_qstate_0__0 STEP5_next_qstate_1__0
+ STEP5_next_qstate_2__0 STEP1A_CQ_0__0 STEP1A_CQ_3__0 STEP1A_CQ_1__0
+#$ EXTERNAL osctimer 4 DYNOSCDIS'i' TIMERRES'i' OSCOUT'o' TIMEROUT'o'
+#$ INSTANCE I1 OSCTIMER 4 gnd_n_n gnd_n_n A0_OSCOUT tmr_out
+.model lab11_top 
+.inputs DIP_7_.BLIF i_S1_NC.BLIF i_S1_NO.BLIF i_S2_NC.BLIF i_S2_NO.BLIF \
+ DIP_6_.BLIF DIP_5_.BLIF DIP_4_.BLIF DIP_3_.BLIF DIP_2_.BLIF DIP_1_.BLIF \
+ DIP_0_.BLIF tmr_out.BLIF LFTPB_Q.Q FDIVBY2_clk_out.Q FDIVBY4_clk_out.Q RGTPB_Q.Q \
+ STEP1A_outCHAR_1_0_.Q STEP1A_outCHAR_1_1_.Q STEP1A_outCHAR_1_2_.Q \
+ STEP1A_outCHAR_1_3_.Q STEP1A_outCHAR_1_4_.Q STEP1A_outCHAR_1_5_.Q \
+ STEP1A_outCHAR_1_6_.Q STEP1B_outDISP_0_.Q STEP1B_outDISP_1_.Q \
+ step1a_un1_cq_30_0_1_n.BLIF STEP1B_outDISP_2_.Q STEP1B_outDISP_3_.Q \
+ STEP1B_outDISP_4_.Q STEP1B_outDISP_5_.Q STEP1B_outDISP_6_.Q STEP1B_outDISP_7_.Q \
+ STEP1B_outDISP_8_.Q STEP1B_outDISP_9_.Q STEP1B_outDISP_10_.Q \
+ STEP1B_outDISP_11_.Q STEP1B_outDISP_12_.Q STEP1B_outDISP_13_.Q \
+ STEP1B_outDISP_14_.Q step1a_un1_cq_35_0_2_n.BLIF STEP1B_outDISP_15_.Q \
+ STEP1B_outDISP_16_.Q STEP1B_outDISP_17_.Q STEP1B_outDISP_18_.Q \
+ STEP1B_outDISP_19_.Q STEP1B_outDISP_20_.Q step1a_un1_cq_33_0_1_n.BLIF \
+ step1a_un1_cq_36_0_1_n.BLIF STEP5_outEN.Q STEP2_next_count_state_0_.Q \
+ STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q \
+ step1a_un1_cq_23_m_i_0_n.BLIF STEP3_qcombo_0_.Q STEP3_qcombo_1_.Q \
+ STEP3_qcombo_2_.Q STEP3_qcombo_3_.Q STEP3_qcombo_4_.Q STEP3_qcombo_5_.Q \
+ STEP3_qcombo_6_.Q STEP3_qcombo_7_.Q gnd_n_n.BLIF STEP5_next_qstate_3_.Q \
+ STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q \
+ STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q \
+ step1a_un1_cq_inv_12_n.BLIF step1a_un1_outchar14_2_n.BLIF \
+ step5_un1_arst_1_n.BLIF step1a_outchar14_m_6_i_n.BLIF \
+ step1a_un1_cq_25_m_i_n.BLIF step1a_un1_cq_32_0_n.BLIF step1a_un1_cq_28_n.BLIF \
+ step1a_un1_cq_31_1_i_n.BLIF step1a_un1_outchar14_1_m_n.BLIF A0_OSCOUT.BLIF \
+ STEP1A_outCHAR_1_0__0.BLIF STEP1A_outCHAR_1_1__0.BLIF STEP1A_outCHAR_1_1__1.BLIF \
+ STEP1A_outCHAR_1_3__0.BLIF STEP1A_outCHAR_1_3__1.BLIF STEP1A_outCHAR_1_4__0.BLIF \
+ STEP1A_outCHAR_1_4__1.BLIF STEP1A_outCHAR_1_5__0.BLIF STEP1A_outCHAR_1_6__0.BLIF \
+ STEP1A_outCHAR_1_6__1.BLIF o_JUMBO_1_.BLIF STEP2_next_count_state_0__0.BLIF \
+ STEP5_next_qstate_3__0.BLIF STEP5_next_qstate_3__1.BLIF \
+ STEP5_next_qstate_0__0.BLIF STEP5_next_qstate_1__0.BLIF \
+ STEP5_next_qstate_2__0.BLIF STEP1A_CQ_0__0.BLIF STEP1A_CQ_3__0.BLIF \
+ STEP1A_CQ_1__0.BLIF
+.outputs o_TOPRED_2_- o_TOPRED_1_- o_TOPRED_0_- o_MIDRED_6_.D o_MIDRED_6_.C \
+ o_MIDRED_6_.AP o_TOPRED_7_- o_MIDRED_4_.D o_MIDRED_4_.C o_MIDRED_4_.AP \
+ o_MIDRED_2_.D o_MIDRED_2_.C o_MIDRED_2_.AP o_BOTRED_7_ o_MIDRED_0_.D- \
+ o_MIDRED_0_.C o_MIDRED_0_.AR o_DIS1_6_.D o_DIS1_6_.C o_DIS1_6_.AP o_BOTRED_6_ \
+ o_BOTRED_5_ o_DIS2_6_.D o_DIS2_6_.C o_DIS2_6_.AP o_BOTRED_4_ o_BOTRED_3_ \
+ o_DIS3_6_.D o_DIS3_6_.C o_DIS3_6_.AP o_BOTRED_2_ o_BOTRED_1_ o_DIS4_6_.D \
+ o_DIS4_6_.C o_DIS4_6_.AP o_BOTRED_0_ o_DIS1_5_.D o_DIS1_5_.C o_DIS1_5_.AP \
+ o_JUMBO_2_- o_DIS1_4_.D o_DIS1_4_.C o_DIS1_4_.AP o_DIS1_3_.D o_DIS1_3_.C \
+ o_DIS1_3_.AP o_LED_YELLOW_1_.D o_LED_YELLOW_1_.C o_LED_YELLOW_1_.AR \
+ o_LED_YELLOW_1_.AP o_DIS1_2_.D o_DIS1_2_.C o_DIS1_2_.AP o_DIS1_1_.D o_DIS1_1_.C \
+ o_DIS1_1_.AP o_DIS1_0_.D o_DIS1_0_.C o_DIS1_0_.AP o_DIS2_5_.D o_DIS2_5_.C \
+ o_DIS2_5_.AP o_DIS2_4_.D o_DIS2_4_.C o_DIS2_4_.AP o_DIS2_3_.D o_DIS2_3_.C \
+ o_DIS2_3_.AP o_DIS2_2_.D o_DIS2_2_.C o_DIS2_2_.AP o_DIS2_1_.D o_DIS2_1_.C \
+ o_DIS2_1_.AP o_DIS2_0_.D o_DIS2_0_.C o_DIS2_0_.AP o_DIS3_5_.D o_DIS3_5_.C \
+ o_DIS3_5_.AP o_DIS3_4_.D o_DIS3_4_.C o_DIS3_4_.AP o_DIS3_3_.D o_DIS3_3_.C \
+ o_DIS3_3_.AP o_DIS3_2_.D o_DIS3_2_.C o_DIS3_2_.AP o_DIS3_1_.D o_DIS3_1_.C \
+ o_DIS3_1_.AP o_DIS3_0_.D o_DIS3_0_.C o_DIS3_0_.AP o_DIS4_5_.D o_DIS4_5_.C \
+ o_DIS4_5_.AP o_DIS4_4_.D o_DIS4_4_.C o_DIS4_4_.AP o_DIS4_3_.D o_DIS4_3_.C \
+ o_DIS4_3_.AP o_DIS4_2_.D o_DIS4_2_.C o_DIS4_2_.AP o_DIS4_1_.D o_DIS4_1_.C \
+ o_DIS4_1_.AP o_DIS4_0_.D o_DIS4_0_.C o_DIS4_0_.AP o_JUMBO_1_ o_JUMBO_0_- \
+ o_LED_YELLOW_0_.D o_LED_YELLOW_0_.C o_LED_YELLOW_0_.AR o_LED_YELLOW_0_.AP \
+ o_TOPRED_6_- o_TOPRED_5_- o_TOPRED_4_- o_TOPRED_3_- o_MIDRED_5_.D o_MIDRED_5_.C \
+ o_MIDRED_5_.AR o_MIDRED_7_.D o_MIDRED_7_.C o_MIDRED_7_.AR o_MIDRED_3_.D \
+ o_MIDRED_3_.C o_MIDRED_3_.AR o_MIDRED_1_.D o_MIDRED_1_.C o_MIDRED_1_.AR \
+ LFTPB_Q.D LFTPB_Q.C LFTPB_Q.AR LFTPB_Q.AP FDIVBY2_clk_out.D FDIVBY2_clk_out.C \
+ FDIVBY2_clk_out.AR FDIVBY4_clk_out.D FDIVBY4_clk_out.C FDIVBY4_clk_out.AR \
+ RGTPB_Q.D RGTPB_Q.C RGTPB_Q.AR RGTPB_Q.AP STEP1A_outCHAR_1_0_.D- \
+ STEP1A_outCHAR_1_0_.LH STEP1A_outCHAR_1_0_.AR STEP1A_outCHAR_1_0_.AP \
+ STEP1A_outCHAR_1_1_.D- STEP1A_outCHAR_1_1_.LH STEP1A_outCHAR_1_1_.AR \
+ STEP1A_outCHAR_1_1_.AP STEP1A_outCHAR_1_2_.D- STEP1A_outCHAR_1_2_.LH \
+ STEP1A_outCHAR_1_2_.AP STEP1A_outCHAR_1_3_.D- STEP1A_outCHAR_1_3_.LH \
+ STEP1A_outCHAR_1_3_.AR STEP1A_outCHAR_1_3_.AP STEP1A_outCHAR_1_4_.D \
+ STEP1A_outCHAR_1_4_.LH STEP1A_outCHAR_1_4_.AR STEP1A_outCHAR_1_4_.AP \
+ STEP1A_outCHAR_1_5_.D STEP1A_outCHAR_1_5_.LH STEP1A_outCHAR_1_5_.AR \
+ STEP1A_outCHAR_1_5_.AP STEP1A_outCHAR_1_6_.D- STEP1A_outCHAR_1_6_.LH \
+ STEP1A_outCHAR_1_6_.AR STEP1A_outCHAR_1_6_.AP STEP1B_outDISP_0_.D \
+ STEP1B_outDISP_0_.C STEP1B_outDISP_0_.AR STEP1B_outDISP_1_.D STEP1B_outDISP_1_.C \
+ STEP1B_outDISP_1_.AR step1a_un1_cq_30_0_1_n- STEP1B_outDISP_2_.D \
+ STEP1B_outDISP_2_.C STEP1B_outDISP_2_.AR STEP1B_outDISP_3_.D STEP1B_outDISP_3_.C \
+ STEP1B_outDISP_3_.AR STEP1B_outDISP_4_.D STEP1B_outDISP_4_.C \
+ STEP1B_outDISP_4_.AR STEP1B_outDISP_5_.D STEP1B_outDISP_5_.C \
+ STEP1B_outDISP_5_.AR STEP1B_outDISP_6_.D STEP1B_outDISP_6_.C \
+ STEP1B_outDISP_6_.AR STEP1B_outDISP_7_.D STEP1B_outDISP_7_.C \
+ STEP1B_outDISP_7_.AR STEP1B_outDISP_8_.D STEP1B_outDISP_8_.C \
+ STEP1B_outDISP_8_.AR STEP1B_outDISP_9_.D STEP1B_outDISP_9_.C \
+ STEP1B_outDISP_9_.AR STEP1B_outDISP_10_.D STEP1B_outDISP_10_.C \
+ STEP1B_outDISP_10_.AR STEP1B_outDISP_11_.D STEP1B_outDISP_11_.C \
+ STEP1B_outDISP_11_.AR STEP1B_outDISP_12_.D STEP1B_outDISP_12_.C \
+ STEP1B_outDISP_12_.AR STEP1B_outDISP_13_.D STEP1B_outDISP_13_.C \
+ STEP1B_outDISP_13_.AR STEP1B_outDISP_14_.D STEP1B_outDISP_14_.C \
+ STEP1B_outDISP_14_.AR step1a_un1_cq_35_0_2_n- STEP1B_outDISP_15_.D \
+ STEP1B_outDISP_15_.C STEP1B_outDISP_15_.AR STEP1B_outDISP_16_.D \
+ STEP1B_outDISP_16_.C STEP1B_outDISP_16_.AR STEP1B_outDISP_17_.D \
+ STEP1B_outDISP_17_.C STEP1B_outDISP_17_.AR STEP1B_outDISP_18_.D \
+ STEP1B_outDISP_18_.C STEP1B_outDISP_18_.AR STEP1B_outDISP_19_.D \
+ STEP1B_outDISP_19_.C STEP1B_outDISP_19_.AR STEP1B_outDISP_20_.D \
+ STEP1B_outDISP_20_.C STEP1B_outDISP_20_.AR step1a_un1_cq_33_0_1_n- \
+ step1a_un1_cq_36_0_1_n- STEP5_outEN.D STEP5_outEN.LH \
+ STEP2_next_count_state_0_.D- STEP2_next_count_state_0_.C \
+ STEP2_next_count_state_0_.CE STEP2_next_count_state_0_.AR \
+ STEP2_next_count_state_1_.D- STEP2_next_count_state_1_.C \
+ STEP2_next_count_state_1_.CE STEP2_next_count_state_1_.AR \
+ STEP2_next_count_state_2_.D- STEP2_next_count_state_2_.C \
+ STEP2_next_count_state_2_.CE STEP2_next_count_state_2_.AR \
+ step1a_un1_cq_23_m_i_0_n- STEP3_qcombo_0_.D STEP3_qcombo_0_.C STEP3_qcombo_0_.CE \
+ STEP3_qcombo_0_.AP STEP3_qcombo_1_.D STEP3_qcombo_1_.C STEP3_qcombo_1_.CE \
+ STEP3_qcombo_1_.AR STEP3_qcombo_2_.D STEP3_qcombo_2_.C STEP3_qcombo_2_.CE \
+ STEP3_qcombo_2_.AR STEP3_qcombo_3_.D STEP3_qcombo_3_.C STEP3_qcombo_3_.CE \
+ STEP3_qcombo_3_.AR STEP3_qcombo_4_.T STEP3_qcombo_4_.C STEP3_qcombo_4_.CE \
+ STEP3_qcombo_4_.AR STEP3_qcombo_5_.D STEP3_qcombo_5_.C STEP3_qcombo_5_.CE \
+ STEP3_qcombo_5_.AR STEP3_qcombo_6_.D STEP3_qcombo_6_.C STEP3_qcombo_6_.CE \
+ STEP3_qcombo_6_.AR STEP3_qcombo_7_.T STEP3_qcombo_7_.C STEP3_qcombo_7_.CE \
+ STEP3_qcombo_7_.AR gnd_n_n STEP5_next_qstate_3_.D STEP5_next_qstate_3_.C \
+ STEP5_next_qstate_3_.AR STEP5_next_qstate_3_.AP STEP5_next_qstate_0_.D- \
+ STEP5_next_qstate_0_.C STEP5_next_qstate_0_.AR STEP5_next_qstate_0_.AP \
+ STEP5_next_qstate_1_.D- STEP5_next_qstate_1_.C STEP5_next_qstate_1_.AR \
+ STEP5_next_qstate_1_.AP STEP5_next_qstate_2_.D- STEP5_next_qstate_2_.C \
+ STEP5_next_qstate_2_.AR STEP5_next_qstate_2_.AP STEP1A_CQ_0_.D.X1 \
+ STEP1A_CQ_0_.D.X2 STEP1A_CQ_0_.C STEP1A_CQ_0_.AR STEP1A_CQ_0_.AP STEP1A_CQ_3_.D \
+ STEP1A_CQ_3_.C STEP1A_CQ_3_.AR STEP1A_CQ_3_.AP STEP1A_CQ_4_.D STEP1A_CQ_4_.C \
+ STEP1A_CQ_4_.AR STEP1A_CQ_1_.D STEP1A_CQ_1_.C STEP1A_CQ_1_.AR STEP1A_CQ_1_.AP \
+ STEP1A_CQ_2_.D STEP1A_CQ_2_.C STEP1A_CQ_2_.AR step1a_un1_cq_inv_12_n \
+ step1a_un1_outchar14_2_n step5_un1_arst_1_n- step1a_outchar14_m_6_i_n- \
+ step1a_un1_cq_25_m_i_n- step1a_un1_cq_32_0_n step1a_un1_cq_28_n \
+ step1a_un1_cq_31_1_i_n- step1a_un1_outchar14_1_m_n STEP1A_outCHAR_1_0__0 \
+ STEP1A_outCHAR_1_1__0- STEP1A_outCHAR_1_1__1- STEP1A_outCHAR_1_3__0 \
+ STEP1A_outCHAR_1_3__1 STEP1A_outCHAR_1_4__0 STEP1A_outCHAR_1_4__1 \
+ STEP1A_outCHAR_1_5__0- STEP1A_outCHAR_1_6__0- STEP1A_outCHAR_1_6__1 \
+ STEP2_next_count_state_0__0 STEP5_next_qstate_3__0 STEP5_next_qstate_3__1 \
+ STEP5_next_qstate_0__0 STEP5_next_qstate_1__0 STEP5_next_qstate_2__0 \
+ STEP1A_CQ_0__0- STEP1A_CQ_3__0- STEP1A_CQ_1__0-
+.names DIP_5_.BLIF STEP3_qcombo_2_.Q o_TOPRED_2_-
+11 1
+.names DIP_5_.BLIF STEP3_qcombo_1_.Q o_TOPRED_1_-
+11 1
+.names DIP_5_.BLIF STEP3_qcombo_0_.Q o_TOPRED_0_-
+11 1
+.names STEP5_outEN.Q STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q o_MIDRED_6_.D
+-00---- 1
+1-1---- 1
+01----- 1
+----100 1
+---0--- 1
+.names RGTPB_Q.Q o_MIDRED_6_.C
+1 1
+.names LFTPB_Q.Q o_MIDRED_6_.AP
+1 1
+.names DIP_5_.BLIF STEP3_qcombo_7_.Q o_TOPRED_7_-
+11 1
+.names STEP5_outEN.Q STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q o_MIDRED_4_.D
+--00--- 1
+1--1--- 1
+-01---- 1
+01----- 1
+----100 1
+.names RGTPB_Q.Q o_MIDRED_4_.C
+1 1
+.names LFTPB_Q.Q o_MIDRED_4_.AP
+1 1
+.names STEP5_outEN.Q STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q o_MIDRED_2_.D
+-00---- 1
+1-1---- 1
+01----- 1
+----100 1
+---1--- 1
+.names RGTPB_Q.Q o_MIDRED_2_.C
+1 1
+.names LFTPB_Q.Q o_MIDRED_2_.AP
+1 1
+.names DIP_7_.BLIF o_BOTRED_7_
+0 1
+.names STEP5_outEN.Q STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q o_MIDRED_0_.D-
+0000--- 1
+1111--- 1
+----100 1
+.names RGTPB_Q.Q o_MIDRED_0_.C
+1 1
+.names LFTPB_Q.Q o_MIDRED_0_.AR
+1 1
+.names STEP1A_outCHAR_1_6_.Q o_DIS1_6_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS1_6_.C
+1 1
+.names LFTPB_Q.Q o_DIS1_6_.AP
+1 1
+.names DIP_6_.BLIF o_BOTRED_6_
+0 1
+.names DIP_5_.BLIF o_BOTRED_5_
+0 1
+.names STEP1B_outDISP_6_.Q o_DIS2_6_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS2_6_.C
+1 1
+.names LFTPB_Q.Q o_DIS2_6_.AP
+1 1
+.names DIP_4_.BLIF o_BOTRED_4_
+0 1
+.names DIP_3_.BLIF o_BOTRED_3_
+0 1
+.names STEP1B_outDISP_13_.Q o_DIS3_6_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS3_6_.C
+1 1
+.names LFTPB_Q.Q o_DIS3_6_.AP
+1 1
+.names DIP_2_.BLIF o_BOTRED_2_
+0 1
+.names DIP_1_.BLIF o_BOTRED_1_
+0 1
+.names STEP1B_outDISP_20_.Q o_DIS4_6_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS4_6_.C
+1 1
+.names LFTPB_Q.Q o_DIS4_6_.AP
+1 1
+.names DIP_0_.BLIF o_BOTRED_0_
+0 1
+.names STEP1A_outCHAR_1_5_.Q o_DIS1_5_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS1_5_.C
+1 1
+.names LFTPB_Q.Q o_DIS1_5_.AP
+1 1
+.names STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q o_JUMBO_2_-
+1000 1
+.names STEP1A_outCHAR_1_4_.Q o_DIS1_4_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS1_4_.C
+1 1
+.names LFTPB_Q.Q o_DIS1_4_.AP
+1 1
+.names STEP1A_outCHAR_1_3_.Q o_DIS1_3_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS1_3_.C
+1 1
+.names LFTPB_Q.Q o_DIS1_3_.AP
+1 1
+.names o_LED_YELLOW_1_.D
+.names i_S2_NO.BLIF o_LED_YELLOW_1_.C
+0 1
+.names i_S2_NO.BLIF o_LED_YELLOW_1_.AR
+0 1
+.names i_S2_NC.BLIF o_LED_YELLOW_1_.AP
+0 1
+.names STEP1A_outCHAR_1_2_.Q o_DIS1_2_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS1_2_.C
+1 1
+.names LFTPB_Q.Q o_DIS1_2_.AP
+1 1
+.names STEP1A_outCHAR_1_1_.Q o_DIS1_1_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS1_1_.C
+1 1
+.names LFTPB_Q.Q o_DIS1_1_.AP
+1 1
+.names STEP1A_outCHAR_1_0_.Q o_DIS1_0_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS1_0_.C
+1 1
+.names LFTPB_Q.Q o_DIS1_0_.AP
+1 1
+.names STEP1B_outDISP_5_.Q o_DIS2_5_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS2_5_.C
+1 1
+.names LFTPB_Q.Q o_DIS2_5_.AP
+1 1
+.names STEP1B_outDISP_4_.Q o_DIS2_4_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS2_4_.C
+1 1
+.names LFTPB_Q.Q o_DIS2_4_.AP
+1 1
+.names STEP1B_outDISP_3_.Q o_DIS2_3_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS2_3_.C
+1 1
+.names LFTPB_Q.Q o_DIS2_3_.AP
+1 1
+.names STEP1B_outDISP_2_.Q o_DIS2_2_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS2_2_.C
+1 1
+.names LFTPB_Q.Q o_DIS2_2_.AP
+1 1
+.names STEP1B_outDISP_1_.Q o_DIS2_1_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS2_1_.C
+1 1
+.names LFTPB_Q.Q o_DIS2_1_.AP
+1 1
+.names STEP1B_outDISP_0_.Q o_DIS2_0_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS2_0_.C
+1 1
+.names LFTPB_Q.Q o_DIS2_0_.AP
+1 1
+.names STEP1B_outDISP_12_.Q o_DIS3_5_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS3_5_.C
+1 1
+.names LFTPB_Q.Q o_DIS3_5_.AP
+1 1
+.names STEP1B_outDISP_11_.Q o_DIS3_4_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS3_4_.C
+1 1
+.names LFTPB_Q.Q o_DIS3_4_.AP
+1 1
+.names STEP1B_outDISP_10_.Q o_DIS3_3_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS3_3_.C
+1 1
+.names LFTPB_Q.Q o_DIS3_3_.AP
+1 1
+.names STEP1B_outDISP_9_.Q o_DIS3_2_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS3_2_.C
+1 1
+.names LFTPB_Q.Q o_DIS3_2_.AP
+1 1
+.names STEP1B_outDISP_8_.Q o_DIS3_1_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS3_1_.C
+1 1
+.names LFTPB_Q.Q o_DIS3_1_.AP
+1 1
+.names STEP1B_outDISP_7_.Q o_DIS3_0_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS3_0_.C
+1 1
+.names LFTPB_Q.Q o_DIS3_0_.AP
+1 1
+.names STEP1B_outDISP_19_.Q o_DIS4_5_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS4_5_.C
+1 1
+.names LFTPB_Q.Q o_DIS4_5_.AP
+1 1
+.names STEP1B_outDISP_18_.Q o_DIS4_4_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS4_4_.C
+1 1
+.names LFTPB_Q.Q o_DIS4_4_.AP
+1 1
+.names STEP1B_outDISP_17_.Q o_DIS4_3_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS4_3_.C
+1 1
+.names LFTPB_Q.Q o_DIS4_3_.AP
+1 1
+.names STEP1B_outDISP_16_.Q o_DIS4_2_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS4_2_.C
+1 1
+.names LFTPB_Q.Q o_DIS4_2_.AP
+1 1
+.names STEP1B_outDISP_15_.Q o_DIS4_1_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS4_1_.C
+1 1
+.names LFTPB_Q.Q o_DIS4_1_.AP
+1 1
+.names STEP1B_outDISP_14_.Q o_DIS4_0_.D
+0 1
+.names FDIVBY4_clk_out.Q o_DIS4_0_.C
+1 1
+.names LFTPB_Q.Q o_DIS4_0_.AP
+1 1
+.names STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q o_JUMBO_1_
+-000 1
+1-00 1
+.names FDIVBY2_clk_out.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q o_JUMBO_0_-
+11100 1
+.names o_LED_YELLOW_0_.D
+.names i_S1_NO.BLIF o_LED_YELLOW_0_.C
+0 1
+.names i_S1_NO.BLIF o_LED_YELLOW_0_.AR
+0 1
+.names i_S1_NC.BLIF o_LED_YELLOW_0_.AP
+0 1
+.names DIP_5_.BLIF STEP3_qcombo_6_.Q o_TOPRED_6_-
+11 1
+.names DIP_5_.BLIF STEP3_qcombo_5_.Q o_TOPRED_5_-
+11 1
+.names DIP_5_.BLIF STEP3_qcombo_4_.Q o_TOPRED_4_-
+11 1
+.names DIP_5_.BLIF STEP3_qcombo_3_.Q o_TOPRED_3_-
+11 1
+.names STEP5_outEN.Q STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q o_MIDRED_5_.D
+----100 1
+00----- 1
+11----- 1
+---0--- 1
+--1---- 1
+.names RGTPB_Q.Q o_MIDRED_5_.C
+1 1
+.names LFTPB_Q.Q o_MIDRED_5_.AR
+1 1
+.names STEP5_outEN.Q STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q o_MIDRED_7_.D
+----100 1
+00----- 1
+11----- 1
+---0--- 1
+--0---- 1
+.names RGTPB_Q.Q o_MIDRED_7_.C
+1 1
+.names LFTPB_Q.Q o_MIDRED_7_.AR
+1 1
+.names STEP5_outEN.Q STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q o_MIDRED_3_.D
+----100 1
+00----- 1
+11----- 1
+---1--- 1
+--0---- 1
+.names RGTPB_Q.Q o_MIDRED_3_.C
+1 1
+.names LFTPB_Q.Q o_MIDRED_3_.AR
+1 1
+.names STEP5_outEN.Q STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q o_MIDRED_1_.D
+----100 1
+00----- 1
+11----- 1
+---1--- 1
+--1---- 1
+.names RGTPB_Q.Q o_MIDRED_1_.C
+1 1
+.names LFTPB_Q.Q o_MIDRED_1_.AR
+1 1
+.names LFTPB_Q.D
+ 1
+.names i_S2_NO.BLIF LFTPB_Q.C
+0 1
+.names i_S2_NC.BLIF LFTPB_Q.AR
+0 1
+.names i_S2_NO.BLIF LFTPB_Q.AP
+0 1
+.names FDIVBY2_clk_out.Q FDIVBY2_clk_out.D
+0 1
+.names tmr_out.BLIF FDIVBY2_clk_out.C
+1 1
+.names LFTPB_Q.Q FDIVBY2_clk_out.AR
+1 1
+.names FDIVBY4_clk_out.Q FDIVBY4_clk_out.D
+0 1
+.names FDIVBY2_clk_out.Q FDIVBY4_clk_out.C
+1 1
+.names LFTPB_Q.Q FDIVBY4_clk_out.AR
+1 1
+.names RGTPB_Q.D
+ 1
+.names i_S1_NO.BLIF RGTPB_Q.C
+0 1
+.names i_S1_NC.BLIF RGTPB_Q.AR
+0 1
+.names i_S1_NO.BLIF RGTPB_Q.AP
+0 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q STEP1A_outCHAR_1_0_.D-
+-0000 1
+00--0 1
+.names step1a_un1_cq_inv_12_n.BLIF STEP1A_outCHAR_1_0_.LH
+1 1
+.names step1a_un1_outchar14_2_n.BLIF STEP1A_outCHAR_1_0_.AR
+1 1
+.names STEP1A_outCHAR_1_0__0.BLIF STEP1A_outCHAR_1_0_.AP
+1 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q STEP1A_outCHAR_1_1_.D-
+-0000 1
+00--0 1
+.names step1a_un1_cq_inv_12_n.BLIF STEP1A_outCHAR_1_1_.LH
+1 1
+.names STEP1A_outCHAR_1_1__0.BLIF STEP1A_outCHAR_1_1_.AR
+1 1
+.names STEP1A_outCHAR_1_1__1.BLIF STEP1A_outCHAR_1_1_.AP
+1 1
+.names STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_2_.Q STEP1A_outCHAR_1_2_.D-
+000 1
+.names step1a_un1_cq_inv_12_n.BLIF STEP1A_outCHAR_1_2_.LH
+1 1
+.names step1a_un1_cq_32_0_n.BLIF STEP1A_outCHAR_1_2_.AP
+0 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q STEP1A_outCHAR_1_3_.D-
+-0000 1
+00--0 1
+.names step1a_un1_cq_inv_12_n.BLIF STEP1A_outCHAR_1_3_.LH
+1 1
+.names STEP1A_outCHAR_1_3__0.BLIF STEP1A_outCHAR_1_3_.AR
+1 1
+.names STEP1A_outCHAR_1_3__1.BLIF STEP1A_outCHAR_1_3_.AP
+1 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_1_.Q STEP1A_outCHAR_1_4_.D
+101 1
+.names step1a_un1_cq_inv_12_n.BLIF STEP1A_outCHAR_1_4_.LH
+1 1
+.names STEP1A_outCHAR_1_4__0.BLIF STEP1A_outCHAR_1_4_.AR
+1 1
+.names STEP1A_outCHAR_1_4__1.BLIF STEP1A_outCHAR_1_4_.AP
+1 1
+.names STEP1A_outCHAR_1_5_.D
+.names step1a_un1_cq_inv_12_n.BLIF STEP1A_outCHAR_1_5_.LH
+1 1
+.names STEP1A_outCHAR_1_5__0.BLIF STEP1A_outCHAR_1_5_.AR
+1 1
+.names STEP1A_CQ_4_.Q step1a_un1_cq_28_n.BLIF STEP1A_outCHAR_1_5_.AP
+01 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q STEP1A_outCHAR_1_6_.D-
+-0000 1
+00--0 1
+.names step1a_un1_cq_inv_12_n.BLIF STEP1A_outCHAR_1_6_.LH
+1 1
+.names STEP1A_outCHAR_1_6__0.BLIF STEP1A_outCHAR_1_6_.AR
+1 1
+.names STEP1A_outCHAR_1_6__1.BLIF STEP1A_outCHAR_1_6_.AP
+1 1
+.names STEP1A_outCHAR_1_0_.Q STEP1B_outDISP_0_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_0_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_0_.AR
+1 1
+.names STEP1A_outCHAR_1_1_.Q STEP1B_outDISP_1_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_1_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_1_.AR
+1 1
+.names STEP1A_CQ_3_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_un1_cq_30_0_1_n-
+101 1
+011 1
+.names STEP1A_outCHAR_1_2_.Q STEP1B_outDISP_2_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_2_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_2_.AR
+1 1
+.names STEP1A_outCHAR_1_3_.Q STEP1B_outDISP_3_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_3_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_3_.AR
+1 1
+.names STEP1A_outCHAR_1_4_.Q STEP1B_outDISP_4_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_4_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_4_.AR
+1 1
+.names STEP1A_outCHAR_1_5_.Q STEP1B_outDISP_5_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_5_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_5_.AR
+1 1
+.names STEP1A_outCHAR_1_6_.Q STEP1B_outDISP_6_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_6_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_6_.AR
+1 1
+.names STEP1B_outDISP_0_.Q STEP1B_outDISP_7_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_7_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_7_.AR
+1 1
+.names STEP1B_outDISP_1_.Q STEP1B_outDISP_8_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_8_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_8_.AR
+1 1
+.names STEP1B_outDISP_2_.Q STEP1B_outDISP_9_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_9_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_9_.AR
+1 1
+.names STEP1B_outDISP_3_.Q STEP1B_outDISP_10_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_10_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_10_.AR
+1 1
+.names STEP1B_outDISP_4_.Q STEP1B_outDISP_11_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_11_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_11_.AR
+1 1
+.names STEP1B_outDISP_5_.Q STEP1B_outDISP_12_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_12_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_12_.AR
+1 1
+.names STEP1B_outDISP_6_.Q STEP1B_outDISP_13_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_13_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_13_.AR
+1 1
+.names STEP1B_outDISP_7_.Q STEP1B_outDISP_14_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_14_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_14_.AR
+1 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_un1_outchar14_2_n.BLIF step1a_un1_cq_35_0_2_n-
+11000- 1
+-----1 1
+.names STEP1B_outDISP_8_.Q STEP1B_outDISP_15_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_15_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_15_.AR
+1 1
+.names STEP1B_outDISP_9_.Q STEP1B_outDISP_16_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_16_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_16_.AR
+1 1
+.names STEP1B_outDISP_10_.Q STEP1B_outDISP_17_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_17_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_17_.AR
+1 1
+.names STEP1B_outDISP_11_.Q STEP1B_outDISP_18_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_18_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_18_.AR
+1 1
+.names STEP1B_outDISP_12_.Q STEP1B_outDISP_19_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_19_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_19_.AR
+1 1
+.names STEP1B_outDISP_13_.Q STEP1B_outDISP_20_.D
+1 1
+.names FDIVBY4_clk_out.Q STEP1B_outDISP_20_.C
+1 1
+.names LFTPB_Q.Q STEP1B_outDISP_20_.AR
+1 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_un1_cq_33_0_1_n-
+1010- 1
+00-11 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_un1_cq_36_0_1_n-
+01010 1
+1-101 1
+.names STEP5_next_qstate_3_.Q STEP5_outEN.D
+0 1
+.names o_JUMBO_1_.BLIF STEP5_outEN.LH
+1 1
+.names STEP2_next_count_state_0_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP2_next_count_state_0_.D-
+-100 1
+1--- 1
+.names RGTPB_Q.Q STEP2_next_count_state_0_.C
+1 1
+.names STEP2_next_count_state_0__0.BLIF STEP2_next_count_state_0_.CE
+1 1
+.names LFTPB_Q.Q STEP2_next_count_state_0_.AR
+1 1
+.names STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP2_next_count_state_1_.D-
+--100 1
+00--- 1
+11--- 1
+.names RGTPB_Q.Q STEP2_next_count_state_1_.C
+1 1
+.names STEP2_next_count_state_0__0.BLIF STEP2_next_count_state_1_.CE
+1 1
+.names LFTPB_Q.Q STEP2_next_count_state_1_.AR
+1 1
+.names STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP2_next_count_state_2_.D-
+111--- 1
+---100 1
+-00--- 1
+0-0--- 1
+.names RGTPB_Q.Q STEP2_next_count_state_2_.C
+1 1
+.names STEP2_next_count_state_0__0.BLIF STEP2_next_count_state_2_.CE
+1 1
+.names LFTPB_Q.Q STEP2_next_count_state_2_.AR
+1 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q step1a_un1_cq_23_m_i_0_n-
+001- 1
+-010 1
+.names STEP3_qcombo_0_.Q STEP3_qcombo_7_.Q STEP3_qcombo_0_.D
+10 1
+01 1
+.names FDIVBY4_clk_out.Q STEP3_qcombo_0_.C
+1 1
+.names DIP_4_.BLIF STEP3_qcombo_0_.CE
+1 1
+.names LFTPB_Q.Q STEP3_qcombo_0_.AP
+1 1
+.names STEP3_qcombo_0_.Q STEP3_qcombo_1_.Q STEP3_qcombo_1_.D
+10 1
+01 1
+.names FDIVBY4_clk_out.Q STEP3_qcombo_1_.C
+1 1
+.names DIP_4_.BLIF STEP3_qcombo_1_.CE
+1 1
+.names LFTPB_Q.Q STEP3_qcombo_1_.AR
+1 1
+.names STEP3_qcombo_1_.Q STEP3_qcombo_2_.Q STEP3_qcombo_2_.D
+10 1
+01 1
+.names FDIVBY4_clk_out.Q STEP3_qcombo_2_.C
+1 1
+.names DIP_4_.BLIF STEP3_qcombo_2_.CE
+1 1
+.names LFTPB_Q.Q STEP3_qcombo_2_.AR
+1 1
+.names STEP3_qcombo_2_.Q STEP3_qcombo_3_.Q STEP3_qcombo_3_.D
+10 1
+01 1
+.names FDIVBY4_clk_out.Q STEP3_qcombo_3_.C
+1 1
+.names DIP_4_.BLIF STEP3_qcombo_3_.CE
+1 1
+.names LFTPB_Q.Q STEP3_qcombo_3_.AR
+1 1
+.names STEP3_qcombo_0_.Q STEP3_qcombo_2_.Q STEP3_qcombo_3_.Q STEP3_qcombo_4_.T
+100 1
+010 1
+001 1
+111 1
+.names FDIVBY4_clk_out.Q STEP3_qcombo_4_.C
+1 1
+.names DIP_4_.BLIF STEP3_qcombo_4_.CE
+1 1
+.names LFTPB_Q.Q STEP3_qcombo_4_.AR
+1 1
+.names STEP3_qcombo_4_.Q STEP3_qcombo_5_.Q STEP3_qcombo_5_.D
+10 1
+01 1
+.names FDIVBY4_clk_out.Q STEP3_qcombo_5_.C
+1 1
+.names DIP_4_.BLIF STEP3_qcombo_5_.CE
+1 1
+.names LFTPB_Q.Q STEP3_qcombo_5_.AR
+1 1
+.names STEP3_qcombo_5_.Q STEP3_qcombo_6_.Q STEP3_qcombo_6_.D
+10 1
+01 1
+.names FDIVBY4_clk_out.Q STEP3_qcombo_6_.C
+1 1
+.names DIP_4_.BLIF STEP3_qcombo_6_.CE
+1 1
+.names LFTPB_Q.Q STEP3_qcombo_6_.AR
+1 1
+.names STEP3_qcombo_1_.Q STEP3_qcombo_5_.Q STEP3_qcombo_6_.Q STEP3_qcombo_7_.T
+100 1
+010 1
+001 1
+111 1
+.names FDIVBY4_clk_out.Q STEP3_qcombo_7_.C
+1 1
+.names DIP_4_.BLIF STEP3_qcombo_7_.CE
+1 1
+.names LFTPB_Q.Q STEP3_qcombo_7_.AR
+1 1
+.names gnd_n_n
+.names DIP_7_.BLIF STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q STEP3_qcombo_0_.Q STEP3_qcombo_1_.Q STEP3_qcombo_2_.Q STEP3_qcombo_3_.Q STEP3_qcombo_4_.Q STEP3_qcombo_5_.Q STEP3_qcombo_6_.Q STEP3_qcombo_7_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP5_next_qstate_3_.D
+1111-------0---- 1
+0111-------1---- 1
+1011------0----- 1
+0011------1----- 1
+1101-----0------ 1
+0101-----1------ 1
+1001----0------- 1
+0001----1------- 1
+1110---0-------- 1
+0110---1-------- 1
+1010--0--------- 1
+0010--1--------- 1
+1100-0---------- 1
+0100-1---------- 1
+10000----------- 1
+00001----------- 1
+-------------111 1
+------------1--- 1
+.names RGTPB_Q.Q STEP5_next_qstate_3_.C
+1 1
+.names STEP5_next_qstate_3__0.BLIF STEP5_next_qstate_3_.AR
+1 1
+.names STEP5_next_qstate_3__1.BLIF STEP5_next_qstate_3_.AP
+1 1
+.names DIP_7_.BLIF STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q STEP3_qcombo_0_.Q STEP3_qcombo_1_.Q STEP3_qcombo_2_.Q STEP3_qcombo_3_.Q STEP3_qcombo_4_.Q STEP3_qcombo_5_.Q STEP3_qcombo_6_.Q STEP3_qcombo_7_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_0_.D-
+0111-------001 1
+1111-------101 1
+0011------0-01 1
+1011------1-01 1
+0101-----0--01 1
+1101-----1--01 1
+0001----0---01 1
+1001----1---01 1
+0110---0----01 1
+1110---1----01 1
+0010--0-----01 1
+1010--1-----01 1
+0100-0------01 1
+1100-1------01 1
+00000-------01 1
+10001-------01 1
+------------10 1
+.names RGTPB_Q.Q STEP5_next_qstate_0_.C
+1 1
+.names STEP5_next_qstate_0__0.BLIF STEP5_next_qstate_0_.AR
+1 1
+.names LFTPB_Q.Q STEP5_next_qstate_0_.Q step5_un1_arst_1_n.BLIF STEP5_next_qstate_0_.AP
+011 1
+.names DIP_7_.BLIF STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q STEP3_qcombo_0_.Q STEP3_qcombo_1_.Q STEP3_qcombo_2_.Q STEP3_qcombo_3_.Q STEP3_qcombo_4_.Q STEP3_qcombo_5_.Q STEP3_qcombo_6_.Q STEP3_qcombo_7_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_1_.D-
+1111-------00-- 1
+0111-------10-- 1
+1011------0-0-- 1
+0011------1-0-- 1
+1101-----0--0-- 1
+0101-----1--0-- 1
+1001----0---0-- 1
+0001----1---0-- 1
+1110---0----0-- 1
+0110---1----0-- 1
+1010--0-----0-- 1
+0010--1-----0-- 1
+1100-0------0-- 1
+0100-1------0-- 1
+10000-------0-- 1
+00001-------0-- 1
+------------011 1
+-------------00 1
+------------1-0 1
+.names RGTPB_Q.Q STEP5_next_qstate_1_.C
+1 1
+.names STEP5_next_qstate_1__0.BLIF STEP5_next_qstate_1_.AR
+1 1
+.names LFTPB_Q.Q STEP5_next_qstate_1_.Q step5_un1_arst_1_n.BLIF STEP5_next_qstate_1_.AP
+011 1
+.names DIP_7_.BLIF STEP2_next_count_state_0_.Q STEP2_next_count_state_1_.Q STEP2_next_count_state_2_.Q STEP3_qcombo_0_.Q STEP3_qcombo_1_.Q STEP3_qcombo_2_.Q STEP3_qcombo_3_.Q STEP3_qcombo_4_.Q STEP3_qcombo_5_.Q STEP3_qcombo_6_.Q STEP3_qcombo_7_.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP5_next_qstate_2_.D-
+1111-------00--- 1
+0111-------10--- 1
+1011------0-0--- 1
+0011------1-0--- 1
+1101-----0--0--- 1
+0101-----1--0--- 1
+1001----0---0--- 1
+0001----1---0--- 1
+1110---0----0--- 1
+0110---1----0--- 1
+1010--0-----0--- 1
+0010--1-----0--- 1
+1100-0------0--- 1
+0100-1------0--- 1
+10000-------0--- 1
+00001-------0--- 1
+------------0111 1
+--------------00 1
+-------------0-0 1
+------------1--0 1
+.names RGTPB_Q.Q STEP5_next_qstate_2_.C
+1 1
+.names STEP5_next_qstate_2__0.BLIF STEP5_next_qstate_2_.AR
+1 1
+.names LFTPB_Q.Q STEP5_next_qstate_2_.Q step5_un1_arst_1_n.BLIF STEP5_next_qstate_2_.AP
+011 1
+.names STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q STEP1A_CQ_0_.D.X1
+0100----- 1
+0-00100-- 1
+--0010000 1
+-1000011- 1
+-1001010- 1
+0-0001000 1
+1000110-0 1
+1000-1010 1
+-10011-11 1
+.names STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP1A_CQ_0_.D.X2
+00 1
+.names FDIVBY4_clk_out.Q STEP1A_CQ_0_.C
+1 1
+.names STEP1A_CQ_0__0.BLIF STEP1A_CQ_0_.AR
+1 1
+.names LFTPB_Q.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP1A_CQ_0_.AP
+1000 1
+.names STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q STEP1A_CQ_3_.D
+1000-1-0- 1
+1-00-001- 1
+1100-1--0 1
+-00010011 1
+1-0010-1- 1
+1-000-10- 1
+1-00-00-1 1
+1-0001--- 1
+1000----1 1
+1000--1-- 1
+.names FDIVBY4_clk_out.Q STEP1A_CQ_3_.C
+1 1
+.names STEP1A_CQ_3__0.BLIF STEP1A_CQ_3_.AR
+1 1
+.names LFTPB_Q.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP1A_CQ_3_.AP
+1100 1
+.names STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q STEP1A_CQ_4_.D
+11001010- 1
+110011--1 1
+.names FDIVBY4_clk_out.Q STEP1A_CQ_4_.C
+1 1
+.names LFTPB_Q.Q STEP1A_CQ_4_.AR
+1 1
+.names STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q STEP1A_CQ_1_.D
+0000-1-1- 1
+1100-001- 1
+1100-00-1 1
+-0001-000 1
+-00001-11 1
+-0000101- 1
+1100-1--0 1
+110010--- 1
+110001--- 1
+00001--0- 1
+00000--1- 1
+0000--1-- 1
+0000-1--1 1
+.names FDIVBY4_clk_out.Q STEP1A_CQ_1_.C
+1 1
+.names STEP1A_CQ_1__0.BLIF STEP1A_CQ_1_.AR
+1 1
+.names LFTPB_Q.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP1A_CQ_1_.AP
+10000 1
+.names STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q STEP1A_CQ_2_.D
+1100-001- 1
+000010010 1
+1-0001010 1
+0000-0001 1
+0000000-1 1
+11000-10- 1
+110010-1- 1
+110001--- 1
+1100-00-1 1
+1100-1--0 1
+.names FDIVBY4_clk_out.Q STEP1A_CQ_2_.C
+1 1
+.names LFTPB_Q.Q STEP1A_CQ_2_.AR
+1 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_un1_cq_inv_12_n
+0000- 1
+-1-11 1
+0-000 1
+-00-0 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_outchar14_m_6_i_n.BLIF step1a_un1_outchar14_2_n
+0011- 1
+---10 1
+.names DIP_6_.BLIF LFTPB_Q.Q step5_un1_arst_1_n-
+00 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_outchar14_m_6_i_n-
+1001 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_un1_cq_25_m_i_n-
+1011 1
+-101 1
+.names step1a_un1_cq_23_m_i_0_n.BLIF STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_un1_cq_32_0_n
+100-0- 1
+1-1-11 1
+10--00 1
+1--1-0 1
+1-0--0 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_un1_cq_28_n
+0110 1
+0011 1
+.names step1a_un1_cq_23_m_i_0_n.BLIF STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_2_.Q step1a_un1_cq_31_1_i_n-
+-1100 1
+0---- 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_outchar14_m_6_i_n.BLIF step1a_un1_outchar14_1_m_n
+1011- 1
+-101- 1
+---10 1
+.names step1a_un1_cq_23_m_i_0_n.BLIF STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_un1_cq_25_m_i_n.BLIF STEP1A_outCHAR_1_0__0
+------0 1
+0------ 1
+-110-0- 1
+--1010- 1
+.names step1a_un1_cq_25_m_i_n.BLIF step1a_un1_cq_31_1_i_n.BLIF STEP1A_outCHAR_1_1__0-
+11 1
+.names step1a_un1_cq_36_0_1_n.BLIF step1a_un1_outchar14_2_n.BLIF STEP1A_outCHAR_1_1__1-
+10 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_un1_cq_25_m_i_n.BLIF STEP1A_outCHAR_1_3__0
+-----0 1
+001-0- 1
+-1010- 1
+.names step1a_un1_cq_35_0_2_n.BLIF STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q STEP1A_outCHAR_1_3__1
+0----- 1
+-1-101 1
+-1010- 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_un1_outchar14_1_m_n.BLIF STEP1A_outCHAR_1_4__0
+-----1 1
+001--- 1
+11101- 1
+01010- 1
+.names step1a_un1_cq_33_0_1_n.BLIF STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_2_.Q STEP1A_outCHAR_1_4__1
+0---- 1
+-1100 1
+.names step1a_un1_cq_31_1_i_n.BLIF step1a_un1_outchar14_1_m_n.BLIF STEP1A_outCHAR_1_5__0-
+10 1
+.names step1a_un1_cq_30_0_1_n.BLIF step1a_un1_cq_31_1_i_n.BLIF STEP1A_outCHAR_1_6__0-
+11 1
+.names STEP1A_CQ_0_.Q STEP1A_CQ_3_.Q STEP1A_CQ_4_.Q STEP1A_CQ_1_.Q STEP1A_CQ_2_.Q step1a_outchar14_m_6_i_n.BLIF STEP1A_outCHAR_1_6__1
+-----0 1
+01010- 1
+.names STEP5_outEN.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP2_next_count_state_0__0
+1--- 1
+-100 1
+.names LFTPB_Q.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q step5_un1_arst_1_n.BLIF STEP5_next_qstate_3__0
+1----1 1
+-0---1 1
+--0001 1
+.names LFTPB_Q.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q step5_un1_arst_1_n.BLIF STEP5_next_qstate_3__1
+011--1 1
+01-1-1 1
+01--11 1
+.names LFTPB_Q.Q STEP5_next_qstate_0_.Q step5_un1_arst_1_n.BLIF STEP5_next_qstate_0__0
+1-1 1
+-01 1
+.names LFTPB_Q.Q STEP5_next_qstate_1_.Q step5_un1_arst_1_n.BLIF STEP5_next_qstate_1__0
+1-1 1
+-01 1
+.names LFTPB_Q.Q STEP5_next_qstate_2_.Q step5_un1_arst_1_n.BLIF STEP5_next_qstate_2__0
+1-1 1
+-01 1
+.names LFTPB_Q.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP1A_CQ_0__0-
+0--- 1
+-000 1
+.names LFTPB_Q.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP1A_CQ_3__0-
+0--- 1
+-100 1
+.names LFTPB_Q.Q STEP5_next_qstate_3_.Q STEP5_next_qstate_0_.Q STEP5_next_qstate_1_.Q STEP5_next_qstate_2_.Q STEP1A_CQ_1__0-
+0---- 1
+-0000 1
+.end

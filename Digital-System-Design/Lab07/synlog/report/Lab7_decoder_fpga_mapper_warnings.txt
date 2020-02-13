@@ -1,0 +1,1 @@
+@W: MO129 :"u:\desktop\lab7\lab7_decoder.v":7:2:7:5|Sequential instance Y_1[0] reduced to a combinational gate by constant propagation

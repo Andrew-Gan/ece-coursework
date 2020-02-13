@@ -1,0 +1,223 @@
+
+Timing Report
+
+//  Project = lab13
+//  Family  = lc4k
+//  Device  = LC4256ZE
+//  Speed   = -5.8
+//  Voltage = 1.8
+//  Operating Condition = COM
+//  Data sheet version  = 0.9
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  Pass Clock = OFF
+//  Maximum Paths = 20
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+
+
+Section fMAX
+
+  Maximum Operating Frequency: 52.08 MHz
+  Clock Source From:           DIP[7]
+  Logic Levels:                4
+  Path Delay:                  19.20 ns
+  Path Expansion                                Source                        Destination
+  ==============                                ======                        ===========
+   0.45  tCOi                                   o_TOPRED_3_.C                 o_TOPRED_3_.Q
+   3.90  tFBK+tROUTE+tBLA*5+tMCELL              o_TOPRED_3_.Q                 addrbus_0__n
+   0.45  tPDi                                   addrbus_0__n                  addrbus_0__n
+   4.15  tFBK+tROUTE+tBLA*10+tMCELL             addrbus_0__n                  step1b_mem_1_0__n
+   0.45  tPDi                                   step1b_mem_1_0__n             step1b_mem_1_0__n
+   3.65  tFBK+tROUTE+tMCELL                     step1b_mem_1_0__n             dataobus_0__n
+   0.45  tPDi                                   dataobus_0__n                 dataobus_0__n
+   3.70  tFBK+tROUTE+tBLA+tMCELL                dataobus_0__n                 STEP3_qIR_0_.D
+   2.00  tS_PT                                  STEP3_qIR_0_.D                STEP3_qIR_0_.C
+ 
+  Clock Source From: DIP[7]
+  Delay         Level   Location(From => To)    Source                        Destination                   Destination_Clock
+  =====         =====   ====================    ======                        ===========                   =================
+  19.20           4      F13      =>  L11       o_TOPRED_3_.C                 STEP3_qIR_0_.D                DIP[7]
+  19.20           4      F13      =>  L12       o_TOPRED_3_.C                 STEP3_qIR_1_.D                DIP[7]
+  19.20           4      F13      =>  L13       o_TOPRED_3_.C                 STEP3_qIR_2_.D                DIP[7]
+  19.20           4      F13      =>  L14       o_TOPRED_3_.C                 STEP3_qIR_3_.D                DIP[7]
+  19.20           4      F13      =>  L3        o_TOPRED_3_.C                 STEP3_qIR_4_.D                DIP[7]
+  19.20           4      F13      =>  L9        o_TOPRED_3_.C                 STEP3_qIR_5_.D                DIP[7]
+  19.20           4      F13      =>  L10       o_TOPRED_3_.C                 STEP3_qIR_6_.D                DIP[7]
+  19.20           4      F13      =>  K11       o_TOPRED_3_.C                 STEP4B_X_0_.D                 DIP[7]
+  19.20           4      F13      =>  K15       o_TOPRED_3_.C                 STEP4B_X_1_.D                 DIP[7]
+  19.20           4      F13      =>  K0        o_TOPRED_3_.C                 STEP4B_X_2_.D                 DIP[7]
+  19.20           4      F13      =>  K13       o_TOPRED_3_.C                 STEP4B_X_3_.D                 DIP[7]
+  19.20           4      F13      =>  K1        o_TOPRED_3_.C                 STEP4B_Y_0_.D                 DIP[7]
+  19.20           4      F13      =>  K2        o_TOPRED_3_.C                 STEP4B_Y_1_.D                 DIP[7]
+  19.20           4      F13      =>  K3        o_TOPRED_3_.C                 STEP4B_Y_2_.D                 DIP[7]
+  19.20           4      F13      =>  K4        o_TOPRED_3_.C                 STEP4B_Y_3_.D                 DIP[7]
+  19.15           4      L3       =>  L11       STEP3_qIR_4_.C                STEP3_qIR_0_.D                DIP[7]
+  19.15           4      L3       =>  L12       STEP3_qIR_4_.C                STEP3_qIR_1_.D                DIP[7]
+  19.15           4      L3       =>  L13       STEP3_qIR_4_.C                STEP3_qIR_2_.D                DIP[7]
+  19.15           4      L3       =>  L14       STEP3_qIR_4_.C                STEP3_qIR_3_.D                DIP[7]
+  19.15           4      L3       =>  L3        STEP3_qIR_4_.C                STEP3_qIR_4_.D                DIP[7]
+ 
+  Clock Source From: i_S1_NO
+  Delay         Level   Location(From => To)    Source                        Destination                   Destination_Clock
+  =====         =====   ====================    ======                        ===========                   =================
+  19.20           4      F13      =>  L11       o_TOPRED_3_.C                 STEP3_qIR_0_.D                DIP[7]
+  19.20           4      F13      =>  L12       o_TOPRED_3_.C                 STEP3_qIR_1_.D                DIP[7]
+  19.20           4      F13      =>  L13       o_TOPRED_3_.C                 STEP3_qIR_2_.D                DIP[7]
+  19.20           4      F13      =>  L14       o_TOPRED_3_.C                 STEP3_qIR_3_.D                DIP[7]
+  19.20           4      F13      =>  L3        o_TOPRED_3_.C                 STEP3_qIR_4_.D                DIP[7]
+  19.20           4      F13      =>  L9        o_TOPRED_3_.C                 STEP3_qIR_5_.D                DIP[7]
+  19.20           4      F13      =>  L10       o_TOPRED_3_.C                 STEP3_qIR_6_.D                DIP[7]
+  19.20           4      F13      =>  K11       o_TOPRED_3_.C                 STEP4B_X_0_.D                 DIP[7]
+  19.20           4      F13      =>  K15       o_TOPRED_3_.C                 STEP4B_X_1_.D                 DIP[7]
+  19.20           4      F13      =>  K0        o_TOPRED_3_.C                 STEP4B_X_2_.D                 DIP[7]
+  19.20           4      F13      =>  K13       o_TOPRED_3_.C                 STEP4B_X_3_.D                 DIP[7]
+  19.20           4      F13      =>  K1        o_TOPRED_3_.C                 STEP4B_Y_0_.D                 DIP[7]
+  19.20           4      F13      =>  K2        o_TOPRED_3_.C                 STEP4B_Y_1_.D                 DIP[7]
+  19.20           4      F13      =>  K3        o_TOPRED_3_.C                 STEP4B_Y_2_.D                 DIP[7]
+  19.20           4      F13      =>  K4        o_TOPRED_3_.C                 STEP4B_Y_3_.D                 DIP[7]
+  19.15           4      L3       =>  L11       STEP3_qIR_4_.C                STEP3_qIR_0_.D                DIP[7]
+  19.15           4      L3       =>  L12       STEP3_qIR_4_.C                STEP3_qIR_1_.D                DIP[7]
+  19.15           4      L3       =>  L13       STEP3_qIR_4_.C                STEP3_qIR_2_.D                DIP[7]
+  19.15           4      L3       =>  L14       STEP3_qIR_4_.C                STEP3_qIR_3_.D                DIP[7]
+  19.15           4      L3       =>  L3        STEP3_qIR_4_.C                STEP3_qIR_4_.D                DIP[7]
+ 
+  Clock Source From: i_S2_NO
+  Delay         Level   Location(From => To)    Source                        Destination                   Destination_Clock
+  =====         =====   ====================    ======                        ===========                   =================
+  14.40           3      C10      =>  L11       STEP1B_MEM_STEP1B_MEM_ram0__0_.C   STEP3_qIR_0_.D                DIP[7]
+  14.40           3      C10      =>  K11       STEP1B_MEM_STEP1B_MEM_ram0__0_.C   STEP4B_X_0_.D                 DIP[7]
+  14.40           3      C10      =>  K1        STEP1B_MEM_STEP1B_MEM_ram0__0_.C   STEP4B_Y_0_.D                 DIP[7]
+  14.40           3      B7       =>  L14       STEP1B_MEM_STEP1B_MEM_ram0__3_.C   STEP3_qIR_3_.D                DIP[7]
+  14.40           3      B7       =>  K13       STEP1B_MEM_STEP1B_MEM_ram0__3_.C   STEP4B_X_3_.D                 DIP[7]
+  14.40           3      B7       =>  K4        STEP1B_MEM_STEP1B_MEM_ram0__3_.C   STEP4B_Y_3_.D                 DIP[7]
+  14.40           3      C11      =>  L11       STEP1B_MEM_STEP1B_MEM_ram1__0_.C   STEP3_qIR_0_.D                DIP[7]
+  14.40           3      C11      =>  K11       STEP1B_MEM_STEP1B_MEM_ram1__0_.C   STEP4B_X_0_.D                 DIP[7]
+  14.40           3      C11      =>  K1        STEP1B_MEM_STEP1B_MEM_ram1__0_.C   STEP4B_Y_0_.D                 DIP[7]
+  14.40           3      B9       =>  L14       STEP1B_MEM_STEP1B_MEM_ram1__3_.C   STEP3_qIR_3_.D                DIP[7]
+  14.40           3      B9       =>  K13       STEP1B_MEM_STEP1B_MEM_ram1__3_.C   STEP4B_X_3_.D                 DIP[7]
+  14.40           3      B9       =>  K4        STEP1B_MEM_STEP1B_MEM_ram1__3_.C   STEP4B_Y_3_.D                 DIP[7]
+  14.40           3      A3       =>  L11       STEP1B_MEM_STEP1B_MEM_ram2__0_.C   STEP3_qIR_0_.D                DIP[7]
+  14.40           3      A3       =>  K11       STEP1B_MEM_STEP1B_MEM_ram2__0_.C   STEP4B_X_0_.D                 DIP[7]
+  14.40           3      A3       =>  K1        STEP1B_MEM_STEP1B_MEM_ram2__0_.C   STEP4B_Y_0_.D                 DIP[7]
+  14.40           3      D3       =>  L14       STEP1B_MEM_STEP1B_MEM_ram2__3_.C   STEP3_qIR_3_.D                DIP[7]
+  14.40           3      D3       =>  K13       STEP1B_MEM_STEP1B_MEM_ram2__3_.C   STEP4B_X_3_.D                 DIP[7]
+  14.40           3      D3       =>  K4        STEP1B_MEM_STEP1B_MEM_ram2__3_.C   STEP4B_Y_3_.D                 DIP[7]
+  14.40           3      H7       =>  L11       STEP1B_MEM_STEP1B_MEM_ram3__0_.C   STEP3_qIR_0_.D                DIP[7]
+  14.40           3      H7       =>  K11       STEP1B_MEM_STEP1B_MEM_ram3__0_.C   STEP4B_X_0_.D                 DIP[7]
+
+
+Section tSU
+
+   tSU,    tHD   Level   Location(From => To)    Source                        Destination                   Reference_Clock
+  ===========   =====   ====================    ======                        ===========                   ===============
+  5.35,- 1.35     1     p26       =>  L11       DIP[7]                        STEP3_qIR_0_.D                DIP[7]
+  5.35,- 1.35     1     p26       =>  L12       DIP[7]                        STEP3_qIR_1_.D                DIP[7]
+  5.35,- 1.35     1     p26       =>  L13       DIP[7]                        STEP3_qIR_2_.D                DIP[7]
+  5.35,- 1.35     1     p26       =>  L14       DIP[7]                        STEP3_qIR_3_.D                DIP[7]
+  5.35,- 1.35     1     p26       =>  L3        DIP[7]                        STEP3_qIR_4_.D                DIP[7]
+  5.35,- 1.35     1     p26       =>  L9        DIP[7]                        STEP3_qIR_5_.D                DIP[7]
+  5.35,- 1.35     1     p26       =>  L10       DIP[7]                        STEP3_qIR_6_.D                DIP[7]
+  5.35,- 1.35     1     p26       =>  K11       DIP[7]                        STEP4B_X_0_.D                 DIP[7]
+  5.35,- 1.35     1     p26       =>  K15       DIP[7]                        STEP4B_X_1_.D                 DIP[7]
+  5.35,- 1.35     1     p26       =>  K0        DIP[7]                        STEP4B_X_2_.D                 DIP[7]
+  5.35,- 1.35     1     p26       =>  K13       DIP[7]                        STEP4B_X_3_.D                 DIP[7]
+  5.35,- 1.35     1     p26       =>  K1        DIP[7]                        STEP4B_Y_0_.D                 DIP[7]
+  5.35,- 1.35     1     p26       =>  K2        DIP[7]                        STEP4B_Y_1_.D                 DIP[7]
+  5.35,- 1.35     1     p26       =>  K3        DIP[7]                        STEP4B_Y_2_.D                 DIP[7]
+  5.35,- 1.35     1     p26       =>  K4        DIP[7]                        STEP4B_Y_3_.D                 DIP[7]
+  0.65,  3.35     1     p79       =>  K11       DIP[0]                        STEP4B_X_0_.D                 DIP[7]
+  0.65,  3.35     1     p79       =>  K1        DIP[0]                        STEP4B_Y_0_.D                 DIP[7]
+  0.65,  3.35     1     p78       =>  K15       DIP[1]                        STEP4B_X_1_.D                 DIP[7]
+  0.65,  3.35     1     p78       =>  K2        DIP[1]                        STEP4B_Y_1_.D                 DIP[7]
+  0.60,  3.40     1     p77       =>  K0        DIP[2]                        STEP4B_X_2_.D                 DIP[7]
+
+
+Section tRCV
+
+   Delay         Level   Location(From => To)    Source                        Destination
+  =====         =====   ====================    ======                        ===========
+   6.30           1     p26       =>  B6        DIP[7]                        o_JUMBO_0_.AR
+   2.20           1     p26       =>  M6        DIP[7]                        STEP2_qPC_0_.AR
+   2.20           1     p26       =>  M0        DIP[7]                        STEP2_qPC_1_.AR
+   2.20           1     p26       =>  M15       DIP[7]                        STEP2_qPC_2_.AR
+   2.20           1     p26       =>  M14       DIP[7]                        STEP2_qPC_3_.AR
+   2.20           1     p26       =>  K12       DIP[7]                        STEP5B_oDATA_0_.AR
+   2.20           1     p26       =>  K14       DIP[7]                        STEP5B_oDATA_1_.AR
+   2.20           1     p26       =>  K5        DIP[7]                        STEP5B_oDATA_2_.AR
+   2.20           1     p26       =>  M5        DIP[7]                        STEP5B_oDATA_3_.AR
+   2.20           1     p26       =>  B6        DIP[7]                        o_JUMBO_0_.AP
+   2.20           1     p26       =>  F13       DIP[7]                        o_TOPRED_3_.AP
+   2.20           1     p58       =>  I4        i_S1_NC                       RGTPB_Q.AR
+   2.20           1     p58       =>  I14       i_S1_NC                       o_LED_YELLOW_0_.AP
+   2.20           1     p59       =>  I4        i_S1_NO                       RGTPB_Q.AP
+   2.20           1     p59       =>  I14       i_S1_NO                       o_LED_YELLOW_0_.AR
+   2.20           1     p60       =>  A5        i_S2_NC                       LFTPB_Q.AR
+   2.20           1     p60       =>  I13       i_S2_NC                       o_LED_YELLOW_1_.AP
+   2.20           1     p61       =>  A5        i_S2_NO                       LFTPB_Q.AP
+   2.20           1     p61       =>  I13       i_S2_NO                       o_LED_YELLOW_1_.AR
+
+
+Section tPD
+
+   Delay         Level   Location(From => To)    Source                        Destination
+  =====         =====   ====================    ======                        ===========
+  11.15           2     p26       => p116       DIP[7]                        o_DIS3[0]
+  11.15           2     p26       => p120       DIP[7]                        o_DIS3[1]
+  11.15           2     p26       => p121       DIP[7]                        o_DIS3[2]
+  11.15           2     p26       => p122       DIP[7]                        o_DIS3[3]
+  11.15           2     p26       => p123       DIP[7]                        o_DIS3[4]
+  11.15           2     p26       => p124       DIP[7]                        o_DIS3[5]
+  11.15           2     p26       => p125       DIP[7]                        o_DIS3[6]
+  10.70           2     p26       => p80        DIP[7]                        o_DIS1[0]
+  10.70           2     p26       => p81        DIP[7]                        o_DIS1[1]
+  10.70           2     p26       => p83        DIP[7]                        o_DIS1[2]
+  10.70           2     p26       => p84        DIP[7]                        o_DIS1[3]
+  10.70           2     p26       => p85        DIP[7]                        o_DIS1[4]
+  10.70           2     p26       => p86        DIP[7]                        o_DIS1[5]
+  10.70           2     p26       => p87        DIP[7]                        o_DIS1[6]
+  10.70           2     p26       => p88        DIP[7]                        o_DIS2[0]
+  10.70           2     p26       => p93        DIP[7]                        o_DIS2[1]
+  10.70           2     p26       => p94        DIP[7]                        o_DIS2[2]
+  10.70           2     p26       => p95        DIP[7]                        o_DIS2[3]
+  10.70           2     p26       => p96        DIP[7]                        o_DIS2[4]
+  10.70           2     p26       => p97        DIP[7]                        o_DIS2[5]
+
+
+Section tCO
+
+     tCO         Level   Location(From => To)    Source                        Destination                   Register_Clock
+    ===         =====   ====================    ======                        ===========                   ==============
+  24.55           5     p26       => p80        DIP[7]                        o_DIS1[0]                     o_TOPRED_3_.C
+  24.55           5     p26       => p81        DIP[7]                        o_DIS1[1]                     o_TOPRED_3_.C
+  24.55           5     p26       => p83        DIP[7]                        o_DIS1[2]                     o_TOPRED_3_.C
+  24.55           5     p26       => p84        DIP[7]                        o_DIS1[3]                     o_TOPRED_3_.C
+  24.55           5     p26       => p85        DIP[7]                        o_DIS1[4]                     o_TOPRED_3_.C
+  24.55           5     p26       => p86        DIP[7]                        o_DIS1[5]                     o_TOPRED_3_.C
+  24.55           5     p26       => p87        DIP[7]                        o_DIS1[6]                     o_TOPRED_3_.C
+  24.55           5     p26       => p88        DIP[7]                        o_DIS2[0]                     o_TOPRED_3_.C
+  24.55           5     p26       => p93        DIP[7]                        o_DIS2[1]                     o_TOPRED_3_.C
+  24.55           5     p26       => p94        DIP[7]                        o_DIS2[2]                     o_TOPRED_3_.C
+  24.55           5     p26       => p95        DIP[7]                        o_DIS2[3]                     o_TOPRED_3_.C
+  24.55           5     p26       => p96        DIP[7]                        o_DIS2[4]                     o_TOPRED_3_.C
+  24.55           5     p26       => p97        DIP[7]                        o_DIS2[5]                     o_TOPRED_3_.C
+  24.55           5     p26       => p98        DIP[7]                        o_DIS2[6]                     o_TOPRED_3_.C
+  24.50           5     p26       => p80        DIP[7]                        o_DIS1[0]                     STEP3_qIR_4_.C
+  24.50           5     p26       => p81        DIP[7]                        o_DIS1[1]                     STEP3_qIR_4_.C
+  24.50           5     p26       => p83        DIP[7]                        o_DIS1[2]                     STEP3_qIR_4_.C
+  24.50           5     p26       => p84        DIP[7]                        o_DIS1[3]                     STEP3_qIR_4_.C
+  24.50           5     p26       => p85        DIP[7]                        o_DIS1[4]                     STEP3_qIR_4_.C
+  24.50           5     p26       => p86        DIP[7]                        o_DIS1[5]                     STEP3_qIR_4_.C

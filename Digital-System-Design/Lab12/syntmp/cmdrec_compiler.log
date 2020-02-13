@@ -1,0 +1,13 @@
+C:\ispLEVER_Classic1_7\synpbase\bin64\c_ver.exe  -osyn  "W:\my documents\ece 270\lab12\synwork\lab12_top_compiler.srs"  -top  lab12_top  -prodtype  synplify_pro  -I "w:\my documents\ece 270\lab12\"  -I C:\ispLEVER_Classic1_7\synpbase\lib  -v2001  -encrypt  -pro  -dmgen  "W:\my documents\ece 270\lab12\dm"  -ll 2000 -compiler_compatible  -ui -fid2 -ram -sharing on  -autosm -lib work C:\ispLEVER_Classic1_7\ispcpld\..\cae_library\synthesis\verilog\mach.v -lib work "W:\my documents\ece 270\lab12\lab12.h" -lib work "W:\my documents\ece 270\lab12\gan35_lab12.v" -loga  "W:\my documents\ece 270\lab12\lab12_top.srr" 
+rc:1 success:1
+W:\my documents\ece 270\lab12\synwork\lab12_top_compiler.srs|o|1555009253|14630
+C:\ispLEVER_Classic1_7\ispcpld\..\cae_library\synthesis\verilog\mach.v|i|1336523408|12168
+"W:\my|i|0|0
+documents\ece|i|0|0
+270\lab12\lab12.h"|i|0|0
+"W:\my|i|0|0
+documents\ece|i|0|0
+270\lab12\gan35_lab12.v"|i|0|0
+W:\my documents\ece 270\lab12\lab12_top.srr|o|1555009253|5240
+C:\ispLEVER_Classic1_7\synpbase\bin64\c_ver.exe|i|1363708060|5587968
+C:\ispLEVER_Classic1_7\synpbase\bin\c_ver.exe|i|1363708036|2088448

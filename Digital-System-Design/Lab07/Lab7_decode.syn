@@ -1,0 +1,11 @@
+JDF B
+// Created by Version 1.7 
+PROJECT Lab7_decode
+DESIGN lab7_decode Normal
+DEVKIT GAL22V10C-10LP
+ENTRY Pure Verilog HDL
+MODULE lab7_decode.v
+MODSTYLE Lab7_decode Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE Lab7_decode

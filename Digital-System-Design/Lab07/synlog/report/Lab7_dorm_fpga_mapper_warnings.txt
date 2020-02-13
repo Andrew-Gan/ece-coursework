@@ -1,0 +1,1 @@
+@W: MO111 :"u:\desktop\lab7\lab7_dorm.v":1:21:1:22|Tristate driver DP on net DP has its enable tied to GND (module Lab7_dorm) 

@@ -1,0 +1,935 @@
+#$ DATE Thu Mar 21 15:29:12 2019
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ PROPERTY LATTICE OSCTIMER I1= dip_i_1__n, -, -, tmr_out, 1048576; 
+#$ MODULE lab9_top
+#$ PINS 69 o_DIS4_5_:48'ke'  o_DIS4_4_:49'ke'  DIP_7_:26'ke'  o_DIS4_3_:50'ke'  o_DIS4_2_:51'ke'  o_TOPRED_7_:28'ke'  o_DIS4_1_:52'ke'  o_DIS4_0_:53'ke'  o_MIDRED_7_:130'ke'  o_JUMBO_1_:141'ke'  o_JUMBO_0_:140'ke'  o_BOTRED_7_:112'ke'  o_LED_YELLOW_0_:63'ke'  o_DIS1_6_:87'ke'  o_DIS2_6_:98'ke'  o_DIS3_6_:125'ke'  o_DIS4_6_:44'ke'  o_JUMBO_2_:142'ke'  DIP_6_:25'ke'  DIP_5_:24'ke'  o_LED_YELLOW_1_:62'ke'  DIP_4_:23'ke'  i_S1_NC:58'ke'  DIP_3_:76'ke'  i_S1_NO:59'ke'  DIP_2_:77'ke'  i_S2_NC:60'ke'  DIP_1_:78'ke'  i_S2_NO:61'ke'  DIP_0_:79'ke'  o_TOPRED_6_:29'ke'  o_TOPRED_5_:30'ke'  o_TOPRED_4_:31'ke'  o_TOPRED_3_:32'ke'  o_TOPRED_2_:33'ke'  o_TOPRED_1_:39'ke'  o_TOPRED_0_:40'ke'  o_MIDRED_6_:131'ke'  o_MIDRED_5_:132'ke'  o_MIDRED_4_:133'ke'  o_MIDRED_3_:134'ke'  o_MIDRED_2_:135'ke'  o_MIDRED_1_:138'ke'  o_MIDRED_0_:139'ke'  o_BOTRED_6_:111'ke'  o_BOTRED_5_:105'ke'  o_BOTRED_4_:104'ke'  o_BOTRED_3_:103'ke'  o_BOTRED_2_:102'ke'  o_BOTRED_1_:101'ke'  o_BOTRED_0_:100'ke'  o_DIS1_5_:86'ke'  o_DIS1_4_:85'ke'  o_DIS1_3_:84'ke'  o_DIS1_2_:83'ke'  o_DIS1_1_:81'ke'  o_DIS1_0_:80'ke'  o_DIS2_5_:97'ke'  o_DIS2_4_:96'ke'  o_DIS2_3_:95'ke'  o_DIS2_2_:94'ke'  o_DIS2_1_:93'ke'  o_DIS2_0_:88'ke'  o_DIS3_5_:124'ke'  o_DIS3_4_:123'ke'  o_DIS3_3_:122'ke'  o_DIS3_2_:121'ke'  o_DIS3_1_:120'ke'  o_DIS3_0_:116'ke' 
+#$ NODES 302 vcc_n_n tmr_out FDIVBY2_clk_out RGTPB_Q LFTPB_Q STEP4L_countout_0_ STEP4L_countout_1_ STEP4L_countout_2_ STEP4L_countout_3_ STEP4R_countout_0_ \
+#  STEP4R_countout_1_ STEP4R_countout_2_ STEP4R_countout_3_ string_i_2__n STEP6_ringout_0_ string_i_3__n STEP6_ringout_1_ string_i_5__n STEP6_ringout_2_ N_34_i \
+#  STEP6_ringout_3_ N_35_i STEP6_ringout_4_ N_14_i STEP6_ringout_5_ N_39_i STEP6_ringout_6_ N_40_i STEP6_ringout_7_ N_19_i \
+#  jumbo_1__n N_23_i gnd_n_n N_24_i string_0__n N_45_i string_6__n N_46_i string_23__n N_26_0 \
+#  STEP6_next_OUT_0_ string_i_4__n STEP6_next_OUT_1_ N_48_i STEP6_next_OUT_2_ N_38_i STEP6_next_OUT_3_ N_33_i STEP6_next_OUT_4_ string_i_1__n \
+#  STEP6_next_OUT_5_ N_37_i STEP6_next_OUT_6_ N_131_i STEP6_next_OUT_7_ N_16_i N_105_0 N_107_0 N_109_i N_112_i \
+#  N_113_0 string_i_21__n string_i_24__n string_i_26__n string_i_27__n N_105 N_88_i N_106 N_89_i N_107 \
+#  N_68_i N_108 N_72_i N_109 N_73_i N_110 N_94_i N_113 N_95_i N_36 \
+#  N_75_0 N_24 string_i_25__n N_41 N_97_i N_42 N_87_i STEP4L_G_119 N_80_i STEP4L_G_122 \
+#  N_79_i STEP4L_G_123 N_81_i N_82 N_60_i N_73 N_85_i N_75 N_86_i N_97 \
+#  N_98_i STEP8_present_state_1_ N_65_i STEP8_present_state_2_ N_90_i STEP8_present_state_3_ N_91_i STEP8_present_state_4_ N_70_i STEP8_present_state_5_ \
+#  string_i_22__n STEP8_present_state_6_ N_82_i N_106_i STEP8_present_state_i_0_ N_108_i jumbo_i_1_0__n N_110_0 jumbo_i_1_2__n step8_present_state_nss_6__n \
+#  step8_n_61_0_n step8_n_76_i_n step8_n_59_0_n step8_n_55_n step8_n_58_i_n step8_n_77_n step8_n_78_i_n step8_n_78_n step8_n_79_i_n step8_n_79_n \
+#  step8_n_57_i_n step8_n_71_n step8_n_71_i_n step8_n_61_n step8_present_state_nss_i_6__n step8_n_76_n step8_present_state_nss_i_0_0__n step8_n_58_n STEP8_present_state_srsts_i_x3_4_ step8_n_57_n \
+#  N_70_i_1 DIS4H_hexout_1_i_x2_3_ N_65_i_1 N_81 N_60_i_1 N_91 N_16_i_1 N_90 step8_n_61_0_1_n N_96 \
+#  step8_n_51_i_1_n N_86 jumbo_i_1_1_0__n N_70 jumbo_1_1__n N_85 jumbo_i_1_1_2__n N_65 step6_next_out_9_1_0__n N_98 \
+#  step6_next_out_9_2_0__n N_60 step6_next_out_9_3_0__n N_79 step6_next_out_9_4_0__n N_80 step6_next_out_9_5_0__n N_83 string_1_6__n N_84 \
+#  string_2_6__n N_87 N_42_1 N_74 N_41_1 N_94 N_41_2 N_95 string_i_1_22__n N_72 \
+#  string_i_2_22__n N_68 string_i_3_22__n N_88 N_91_1 N_89 N_90_1 N_112 N_86_1 STEP4R_G_138 \
+#  string_1_23__n N_131 string_i_1_25__n DIS1H_hexout_1_i_x2_3_ string_i_2_25__n STEP4R_G_134 N_37_1 STEP4R_G_136 string_i_1_1__n N_129 \
+#  string_i_2_1__n N_37 string_i_3_1__n N_48 string_1_0__n N_32 string_2_0__n N_16 string_i_1_4__n N_33 \
+#  string_i_2_4__n N_30 STEP4L_G_119_1 N_31 STEP4L_G_122_1 N_26 STEP4L_G_123_1 N_38 N_110_0_1 N_25 \
+#  N_108_1 N_45 dis1h_hexout_1_0_m2_4__un3_n N_46 dis1h_hexout_1_0_m2_4__un1_n N_23 dis1h_hexout_1_0_m2_4__un0_n N_19 dis4h_hexout_1_0_m2_4__un3_n N_39 \
+#  dis4h_hexout_1_0_m2_4__un1_n N_40 dis4h_hexout_1_0_m2_4__un0_n N_14 step8_present_state_srsts_0_m3_6__un3_n N_34 step8_present_state_srsts_0_m3_6__un1_n N_35 step8_present_state_srsts_0_m3_6__un0_n S1BC_i \
+#  S2BC_i jumbo_i_1__n string_i_23__n dip_i_7__n string_i_0__n string_i_6__n dip_i_0__n dip_i_1__n dip_i_2__n dip_i_3__n \
+#  dip_i_4__n dip_i_5__n dip_i_6__n midred_i_0__n midred_i_1__n midred_i_2__n midred_i_3__n midred_i_4__n midred_i_5__n midred_i_6__n \
+#  midred_i_7__n countr_i_0__n countr_i_1__n countr_i_2__n countr_i_3__n countl_i_0__n countl_i_1__n countl_i_2__n countl_i_3__n N_25_i \
+#  N_31_i N_32_i N_30_i N_74_i N_83_i N_84_i N_159_i N_160_i N_161_i N_42_i \
+#  N_36_i N_41_i i_S2_NO_i i_S1_NO_i step8_present_state_i_6__n step8_present_state_i_4__n step8_present_state_i_5__n step8_present_state_i_1__n step8_present_state_i_3__n step8_n_82_i_n \
+#  dip_c_0__n dip_c_1__n dip_c_2__n dip_c_3__n dip_c_4__n dip_c_5__n dip_c_6__n dip_c_7__n i_S1_NC_c i_S1_NO_c \
+#  i_S2_NC_c i_S2_NO_c 
+#$ EXTERNAL OSCTIMER 4 DYNOSCDIS'i' TIMERRES'i' OSCOUT'o' TIMEROUT'o'
+#$ NODES 1 I1>OSCOUT
+
+#$ INSTANCE I1 OSCTIMER 4 dip_i_1__n gnd_n_n I1>OSCOUT tmr_out
+.model lab9_top
+.inputs DIP_7_.BLIF i_S1_NC.BLIF i_S1_NO.BLIF i_S2_NC.BLIF i_S2_NO.BLIF DIP_6_.BLIF DIP_5_.BLIF DIP_4_.BLIF DIP_3_.BLIF \
+  DIP_2_.BLIF DIP_1_.BLIF DIP_0_.BLIF vcc_n_n.BLIF tmr_out.BLIF FDIVBY2_clk_out.BLIF RGTPB_Q.BLIF LFTPB_Q.BLIF STEP4L_countout_0_.BLIF \
+  STEP4L_countout_1_.BLIF STEP4L_countout_2_.BLIF STEP4L_countout_3_.BLIF STEP4R_countout_0_.BLIF STEP4R_countout_1_.BLIF STEP4R_countout_2_.BLIF STEP4R_countout_3_.BLIF string_i_2__n.BLIF STEP6_ringout_0_.BLIF \
+  string_i_3__n.BLIF STEP6_ringout_1_.BLIF string_i_5__n.BLIF STEP6_ringout_2_.BLIF N_34_i.BLIF STEP6_ringout_3_.BLIF N_35_i.BLIF STEP6_ringout_4_.BLIF N_14_i.BLIF \
+  STEP6_ringout_5_.BLIF N_39_i.BLIF STEP6_ringout_6_.BLIF N_40_i.BLIF STEP6_ringout_7_.BLIF N_19_i.BLIF jumbo_1__n.BLIF N_23_i.BLIF N_24_i.BLIF \
+  string_0__n.BLIF N_45_i.BLIF string_6__n.BLIF N_46_i.BLIF string_23__n.BLIF N_26_0.BLIF STEP6_next_OUT_0_.BLIF string_i_4__n.BLIF STEP6_next_OUT_1_.BLIF \
+  N_48_i.BLIF STEP6_next_OUT_2_.BLIF N_38_i.BLIF STEP6_next_OUT_3_.BLIF N_33_i.BLIF STEP6_next_OUT_4_.BLIF string_i_1__n.BLIF STEP6_next_OUT_5_.BLIF N_37_i.BLIF \
+  STEP6_next_OUT_6_.BLIF N_131_i.BLIF STEP6_next_OUT_7_.BLIF N_16_i.BLIF N_105_0.BLIF N_107_0.BLIF N_109_i.BLIF N_112_i.BLIF N_113_0.BLIF \
+  string_i_21__n.BLIF string_i_24__n.BLIF string_i_26__n.BLIF string_i_27__n.BLIF N_105.BLIF N_88_i.BLIF N_106.BLIF N_89_i.BLIF N_107.BLIF \
+  N_68_i.BLIF N_108.BLIF N_72_i.BLIF N_109.BLIF N_73_i.BLIF N_110.BLIF N_94_i.BLIF N_113.BLIF N_95_i.BLIF \
+  N_36.BLIF N_75_0.BLIF N_24.BLIF string_i_25__n.BLIF N_41.BLIF N_97_i.BLIF N_42.BLIF N_87_i.BLIF STEP4L_G_119.BLIF \
+  N_80_i.BLIF STEP4L_G_122.BLIF N_79_i.BLIF STEP4L_G_123.BLIF N_81_i.BLIF N_82.BLIF N_60_i.BLIF N_73.BLIF N_85_i.BLIF \
+  N_75.BLIF N_86_i.BLIF N_97.BLIF N_98_i.BLIF STEP8_present_state_1_.BLIF N_65_i.BLIF STEP8_present_state_2_.BLIF N_90_i.BLIF STEP8_present_state_3_.BLIF \
+  N_91_i.BLIF STEP8_present_state_4_.BLIF N_70_i.BLIF STEP8_present_state_5_.BLIF string_i_22__n.BLIF STEP8_present_state_6_.BLIF N_82_i.BLIF N_106_i.BLIF STEP8_present_state_i_0_.BLIF \
+  N_108_i.BLIF jumbo_i_1_0__n.BLIF N_110_0.BLIF jumbo_i_1_2__n.BLIF step8_present_state_nss_6__n.BLIF step8_n_61_0_n.BLIF step8_n_76_i_n.BLIF step8_n_59_0_n.BLIF step8_n_55_n.BLIF \
+  step8_n_58_i_n.BLIF step8_n_77_n.BLIF step8_n_78_i_n.BLIF step8_n_78_n.BLIF step8_n_79_i_n.BLIF step8_n_79_n.BLIF step8_n_57_i_n.BLIF step8_n_71_n.BLIF step8_n_71_i_n.BLIF \
+  step8_n_61_n.BLIF step8_present_state_nss_i_6__n.BLIF step8_n_76_n.BLIF step8_present_state_nss_i_0_0__n.BLIF step8_n_58_n.BLIF STEP8_present_state_srsts_i_x3_4_.BLIF step8_n_57_n.BLIF N_70_i_1.BLIF DIS4H_hexout_1_i_x2_3_.BLIF \
+  N_65_i_1.BLIF N_81.BLIF N_60_i_1.BLIF N_91.BLIF N_16_i_1.BLIF N_90.BLIF step8_n_61_0_1_n.BLIF N_96.BLIF step8_n_51_i_1_n.BLIF \
+  N_86.BLIF jumbo_i_1_1_0__n.BLIF N_70.BLIF jumbo_1_1__n.BLIF N_85.BLIF jumbo_i_1_1_2__n.BLIF N_65.BLIF step6_next_out_9_1_0__n.BLIF N_98.BLIF \
+  step6_next_out_9_2_0__n.BLIF N_60.BLIF step6_next_out_9_3_0__n.BLIF N_79.BLIF step6_next_out_9_4_0__n.BLIF N_80.BLIF step6_next_out_9_5_0__n.BLIF N_83.BLIF string_1_6__n.BLIF \
+  N_84.BLIF string_2_6__n.BLIF N_87.BLIF N_42_1.BLIF N_74.BLIF N_41_1.BLIF N_94.BLIF N_41_2.BLIF N_95.BLIF \
+  string_i_1_22__n.BLIF N_72.BLIF string_i_2_22__n.BLIF N_68.BLIF string_i_3_22__n.BLIF N_88.BLIF N_91_1.BLIF N_89.BLIF N_90_1.BLIF \
+  N_112.BLIF N_86_1.BLIF STEP4R_G_138.BLIF string_1_23__n.BLIF N_131.BLIF string_i_1_25__n.BLIF DIS1H_hexout_1_i_x2_3_.BLIF string_i_2_25__n.BLIF STEP4R_G_134.BLIF \
+  N_37_1.BLIF STEP4R_G_136.BLIF string_i_1_1__n.BLIF N_129.BLIF string_i_2_1__n.BLIF N_37.BLIF string_i_3_1__n.BLIF N_48.BLIF string_1_0__n.BLIF \
+  N_32.BLIF string_2_0__n.BLIF N_16.BLIF string_i_1_4__n.BLIF N_33.BLIF string_i_2_4__n.BLIF N_30.BLIF STEP4L_G_119_1.BLIF N_31.BLIF \
+  STEP4L_G_122_1.BLIF N_26.BLIF STEP4L_G_123_1.BLIF N_38.BLIF N_110_0_1.BLIF N_25.BLIF N_108_1.BLIF N_45.BLIF dis1h_hexout_1_0_m2_4__un3_n.BLIF \
+  N_46.BLIF dis1h_hexout_1_0_m2_4__un1_n.BLIF N_23.BLIF dis1h_hexout_1_0_m2_4__un0_n.BLIF N_19.BLIF dis4h_hexout_1_0_m2_4__un3_n.BLIF N_39.BLIF dis4h_hexout_1_0_m2_4__un1_n.BLIF N_40.BLIF \
+  dis4h_hexout_1_0_m2_4__un0_n.BLIF N_14.BLIF step8_present_state_srsts_0_m3_6__un3_n.BLIF N_34.BLIF step8_present_state_srsts_0_m3_6__un1_n.BLIF N_35.BLIF step8_present_state_srsts_0_m3_6__un0_n.BLIF S1BC_i.BLIF S2BC_i.BLIF \
+  jumbo_i_1__n.BLIF string_i_23__n.BLIF dip_i_7__n.BLIF string_i_0__n.BLIF string_i_6__n.BLIF dip_i_0__n.BLIF dip_i_1__n.BLIF dip_i_2__n.BLIF dip_i_3__n.BLIF \
+  dip_i_4__n.BLIF dip_i_5__n.BLIF dip_i_6__n.BLIF midred_i_0__n.BLIF midred_i_1__n.BLIF midred_i_2__n.BLIF midred_i_3__n.BLIF midred_i_4__n.BLIF midred_i_5__n.BLIF \
+  midred_i_6__n.BLIF midred_i_7__n.BLIF countr_i_0__n.BLIF countr_i_1__n.BLIF countr_i_2__n.BLIF countr_i_3__n.BLIF countl_i_0__n.BLIF countl_i_1__n.BLIF countl_i_2__n.BLIF \
+  countl_i_3__n.BLIF N_25_i.BLIF N_31_i.BLIF N_32_i.BLIF N_30_i.BLIF N_74_i.BLIF N_83_i.BLIF N_84_i.BLIF N_159_i.BLIF \
+  N_160_i.BLIF N_161_i.BLIF N_42_i.BLIF N_36_i.BLIF N_41_i.BLIF i_S2_NO_i.BLIF i_S1_NO_i.BLIF step8_present_state_i_6__n.BLIF step8_present_state_i_4__n.BLIF \
+  step8_present_state_i_5__n.BLIF step8_present_state_i_1__n.BLIF step8_present_state_i_3__n.BLIF step8_n_82_i_n.BLIF dip_c_0__n.BLIF dip_c_1__n.BLIF dip_c_2__n.BLIF dip_c_3__n.BLIF dip_c_4__n.BLIF \
+  dip_c_5__n.BLIF dip_c_6__n.BLIF dip_c_7__n.BLIF i_S1_NC_c.BLIF i_S1_NO_c.BLIF i_S2_NC_c.BLIF i_S2_NO_c.BLIF   I1>OSCOUT.BLIF
+.outputs o_TOPRED_7_ o_MIDRED_7_ o_BOTRED_7_ o_DIS1_6_ o_DIS2_6_ o_DIS3_6_ o_DIS4_6_ o_JUMBO_2_ o_LED_YELLOW_1_ o_TOPRED_6_ o_TOPRED_5_ \
+  o_TOPRED_4_ o_TOPRED_3_ o_TOPRED_2_ o_TOPRED_1_ o_TOPRED_0_ o_MIDRED_6_ o_MIDRED_5_ o_MIDRED_4_ o_MIDRED_3_ o_MIDRED_2_ o_MIDRED_1_ \
+  o_MIDRED_0_ o_BOTRED_6_ o_BOTRED_5_ o_BOTRED_4_ o_BOTRED_3_ o_BOTRED_2_ o_BOTRED_1_ o_BOTRED_0_ o_DIS1_5_ o_DIS1_4_ o_DIS1_3_ \
+  o_DIS1_2_ o_DIS1_1_ o_DIS1_0_ o_DIS2_5_ o_DIS2_4_ o_DIS2_3_ o_DIS2_2_ o_DIS2_1_ o_DIS2_0_ o_DIS3_5_ o_DIS3_4_ \
+  o_DIS3_3_ o_DIS3_2_ o_DIS3_1_ o_DIS3_0_ o_DIS4_5_ o_DIS4_4_ o_DIS4_3_ o_DIS4_2_ o_DIS4_1_ o_DIS4_0_ o_JUMBO_1_ \
+  o_JUMBO_0_ o_LED_YELLOW_0_ STEP8_present_state_i_0_.D STEP8_present_state_i_0_.C STEP8_present_state_1_.D STEP8_present_state_1_.C STEP8_present_state_2_.D STEP8_present_state_2_.C STEP8_present_state_3_.D STEP8_present_state_3_.C STEP8_present_state_4_.D \
+  STEP8_present_state_4_.C STEP8_present_state_5_.D STEP8_present_state_5_.C STEP8_present_state_6_.D STEP8_present_state_6_.C STEP4R_countout_0_.D STEP4R_countout_0_.C STEP4R_countout_1_.D STEP4R_countout_1_.C STEP4R_countout_2_.D STEP4R_countout_2_.C \
+  STEP4R_countout_3_.D STEP4R_countout_3_.C STEP6_ringout_0_.D STEP6_ringout_0_.C STEP6_ringout_1_.D STEP6_ringout_1_.C STEP6_ringout_2_.D STEP6_ringout_2_.C STEP6_ringout_3_.D STEP6_ringout_3_.C STEP6_ringout_4_.D \
+  STEP6_ringout_4_.C STEP6_ringout_5_.D STEP6_ringout_5_.C STEP6_ringout_6_.D STEP6_ringout_6_.C STEP6_ringout_7_.D STEP6_ringout_7_.C STEP4L_countout_0_.D STEP4L_countout_0_.C STEP4L_countout_1_.D STEP4L_countout_1_.C \
+  STEP4L_countout_2_.D STEP4L_countout_2_.C STEP4L_countout_3_.D STEP4L_countout_3_.C FDIVBY2_clk_out.D FDIVBY2_clk_out.C FDIVBY2_clk_out.AR RGTPB_Q.D RGTPB_Q.C RGTPB_Q.AR RGTPB_Q.AP \
+  LFTPB_Q.D LFTPB_Q.C LFTPB_Q.AR LFTPB_Q.AP STEP6_next_OUT_0_.D STEP6_next_OUT_0_.LH STEP6_next_OUT_1_.D STEP6_next_OUT_1_.LH STEP6_next_OUT_2_.D STEP6_next_OUT_2_.LH STEP6_next_OUT_3_.D \
+  STEP6_next_OUT_3_.LH STEP6_next_OUT_4_.D STEP6_next_OUT_4_.LH STEP6_next_OUT_5_.D STEP6_next_OUT_5_.LH STEP6_next_OUT_6_.D STEP6_next_OUT_6_.LH STEP6_next_OUT_7_.D STEP6_next_OUT_7_.LH STEP4R_G_138.X1 STEP4R_G_138.X2 \
+  DIS1H_hexout_1_i_x2_3_.X1 DIS1H_hexout_1_i_x2_3_.X2 STEP4R_G_134.X1 STEP4R_G_134.X2 STEP4R_G_136.X1 STEP4R_G_136.X2 DIS4H_hexout_1_i_x2_3_.X1 DIS4H_hexout_1_i_x2_3_.X2 STEP8_present_state_srsts_i_x3_4_.X1 STEP8_present_state_srsts_i_x3_4_.X2 STEP4L_G_119.X1 \
+  STEP4L_G_119.X2 STEP4L_G_122_1.X1 STEP4L_G_122_1.X2 STEP4L_G_122.X1 STEP4L_G_122.X2 STEP4L_G_123_1.X1 STEP4L_G_123_1.X2 STEP4L_G_123.X1 STEP4L_G_123.X2 STEP4L_G_119_1.X1 STEP4L_G_119_1.X2 \
+  vcc_n_n string_i_2__n string_i_3__n string_i_5__n N_34_i N_35_i N_14_i N_39_i N_40_i N_19_i jumbo_1__n \
+  N_23_i gnd_n_n N_24_i string_0__n N_45_i string_6__n N_46_i string_23__n N_26_0 string_i_4__n N_48_i \
+  N_38_i N_33_i string_i_1__n N_37_i N_131_i N_16_i N_105_0 N_107_0 N_109_i N_112_i N_113_0 \
+  string_i_21__n string_i_24__n string_i_26__n string_i_27__n N_105 N_88_i N_106 N_89_i N_107 N_68_i N_108 \
+  N_72_i N_109 N_73_i N_110 N_94_i N_113 N_95_i N_36 N_75_0 N_24 string_i_25__n \
+  N_41 N_97_i N_42 N_87_i N_80_i N_79_i N_81_i N_82 N_60_i N_73 N_85_i \
+  N_75 N_86_i N_97 N_98_i N_65_i N_90_i N_91_i N_70_i string_i_22__n N_82_i N_106_i \
+  N_108_i jumbo_i_1_0__n N_110_0 jumbo_i_1_2__n step8_present_state_nss_6__n step8_n_61_0_n step8_n_76_i_n step8_n_59_0_n step8_n_55_n step8_n_58_i_n step8_n_77_n \
+  step8_n_78_i_n step8_n_78_n step8_n_79_i_n step8_n_79_n step8_n_57_i_n step8_n_71_n step8_n_71_i_n step8_n_61_n step8_present_state_nss_i_6__n step8_n_76_n step8_present_state_nss_i_0_0__n \
+  step8_n_58_n step8_n_57_n N_70_i_1 N_65_i_1 N_81 N_60_i_1 N_91 N_16_i_1 N_90 step8_n_61_0_1_n N_96 \
+  step8_n_51_i_1_n N_86 jumbo_i_1_1_0__n N_70 jumbo_1_1__n N_85 jumbo_i_1_1_2__n N_65 step6_next_out_9_1_0__n N_98 step6_next_out_9_2_0__n \
+  N_60 step6_next_out_9_3_0__n N_79 step6_next_out_9_4_0__n N_80 step6_next_out_9_5_0__n N_83 string_1_6__n N_84 string_2_6__n N_87 \
+  N_42_1 N_74 N_41_1 N_94 N_41_2 N_95 string_i_1_22__n N_72 string_i_2_22__n N_68 string_i_3_22__n \
+  N_88 N_91_1 N_89 N_90_1 N_112 N_86_1 string_1_23__n N_131 string_i_1_25__n string_i_2_25__n N_37_1 \
+  string_i_1_1__n N_129 string_i_2_1__n N_37 string_i_3_1__n N_48 string_1_0__n N_32 string_2_0__n N_16 string_i_1_4__n \
+  N_33 string_i_2_4__n N_30 N_31 N_26 N_38 N_110_0_1 N_25 N_108_1 N_45 dis1h_hexout_1_0_m2_4__un3_n \
+  N_46 dis1h_hexout_1_0_m2_4__un1_n N_23 dis1h_hexout_1_0_m2_4__un0_n N_19 dis4h_hexout_1_0_m2_4__un3_n N_39 dis4h_hexout_1_0_m2_4__un1_n N_40 dis4h_hexout_1_0_m2_4__un0_n N_14 \
+  step8_present_state_srsts_0_m3_6__un3_n N_34 step8_present_state_srsts_0_m3_6__un1_n N_35 step8_present_state_srsts_0_m3_6__un0_n S1BC_i S2BC_i jumbo_i_1__n string_i_23__n dip_i_7__n string_i_0__n \
+  string_i_6__n dip_i_0__n dip_i_1__n dip_i_2__n dip_i_3__n dip_i_4__n dip_i_5__n dip_i_6__n midred_i_0__n midred_i_1__n midred_i_2__n \
+  midred_i_3__n midred_i_4__n midred_i_5__n midred_i_6__n midred_i_7__n countr_i_0__n countr_i_1__n countr_i_2__n countr_i_3__n countl_i_0__n countl_i_1__n \
+  countl_i_2__n countl_i_3__n N_25_i N_31_i N_32_i N_30_i N_74_i N_83_i N_84_i N_159_i N_160_i \
+  N_161_i N_42_i N_36_i N_41_i i_S2_NO_i i_S1_NO_i step8_present_state_i_6__n step8_present_state_i_4__n step8_present_state_i_5__n step8_present_state_i_1__n step8_present_state_i_3__n \
+  step8_n_82_i_n dip_c_0__n dip_c_1__n dip_c_2__n dip_c_3__n dip_c_4__n dip_c_5__n dip_c_6__n dip_c_7__n i_S1_NC_c i_S1_NO_c \
+  i_S2_NC_c i_S2_NO_c
+.names  string_0__n.BLIF string_i_0__n
+0 1
+.names  string_6__n.BLIF string_i_6__n
+0 1
+.names  dip_c_0__n.BLIF dip_i_0__n
+0 1
+.names  dip_c_1__n.BLIF dip_i_1__n
+0 1
+.names  FDIVBY2_clk_out.BLIF STEP6_ringout_3_.C
+1 1
+.names  dip_c_2__n.BLIF dip_i_2__n
+0 1
+.names  dip_c_3__n.BLIF dip_i_3__n
+0 1
+.names  dip_c_4__n.BLIF dip_i_4__n
+0 1
+.names  dip_c_5__n.BLIF dip_i_5__n
+0 1
+.names  FDIVBY2_clk_out.BLIF STEP6_ringout_4_.C
+1 1
+.names  dip_c_6__n.BLIF dip_i_6__n
+0 1
+.names  STEP6_ringout_0_.BLIF midred_i_0__n
+0 1
+.names  STEP6_ringout_1_.BLIF midred_i_1__n
+0 1
+.names  STEP6_ringout_2_.BLIF midred_i_2__n
+0 1
+.names  FDIVBY2_clk_out.BLIF STEP6_ringout_5_.C
+1 1
+.names  STEP6_ringout_3_.BLIF midred_i_3__n
+0 1
+.names  STEP6_ringout_4_.BLIF midred_i_4__n
+0 1
+.names  STEP6_ringout_5_.BLIF midred_i_5__n
+0 1
+.names  N_23_i.BLIF countr_i_2__n.BLIF N_30
+11 1
+.names  FDIVBY2_clk_out.BLIF STEP6_ringout_6_.C
+1 1
+.names  dip_i_7__n.BLIF N_19.BLIF string_i_5__n
+11 1
+.names  dip_i_7__n.BLIF N_16.BLIF string_i_3__n
+11 1
+.names  dip_i_7__n.BLIF N_14.BLIF string_i_2__n
+11 1
+.names  dip_i_0__n.BLIF STEP4R_G_138.BLIF STEP4R_countout_3_.D
+11 1
+.names  FDIVBY2_clk_out.BLIF STEP6_ringout_7_.C
+1 1
+.names  dip_i_0__n.BLIF STEP4R_G_136.BLIF STEP4R_countout_2_.D
+11 1
+.names  dip_i_0__n.BLIF STEP4R_G_134.BLIF STEP4R_countout_1_.D
+11 1
+.names  dip_i_0__n.BLIF countr_i_0__n.BLIF STEP4R_countout_0_.D
+11 1
+.names  N_129.BLIF STEP4R_countout_2_.BLIF N_131
+11 1
+.names  LFTPB_Q.BLIF STEP4L_countout_0_.C
+1 1
+.names  STEP4R_countout_0_.BLIF STEP4R_countout_1_.BLIF N_129
+11 1
+.names  RGTPB_Q.BLIF S1BC_i
+0 1
+.names  LFTPB_Q.BLIF S2BC_i
+0 1
+.names  jumbo_1__n.BLIF jumbo_i_1__n
+0 1
+.names  LFTPB_Q.BLIF STEP4L_countout_1_.C
+1 1
+.names  string_23__n.BLIF string_i_23__n
+0 1
+.names  dip_c_7__n.BLIF dip_i_7__n
+0 1
+.names  countr_i_1__n.BLIF countr_i_3__n.BLIF N_23_i
+11 1
+.names  N_39_i.BLIF N_40_i.BLIF N_19_i
+11 1
+.names  LFTPB_Q.BLIF STEP4L_countout_2_.C
+1 1
+.names  N_34_i.BLIF N_35_i.BLIF N_14_i
+11 1
+.names  STEP4R_countout_3_.BLIF countr_i_2__n.BLIF N_48
+11 1
+.names  STEP4R_countout_1_.BLIF STEP4R_countout_3_.BLIF N_46
+11 1
+.names  N_23_i.BLIF STEP4R_countout_2_.BLIF N_45
+11 1
+.names  LFTPB_Q.BLIF STEP4L_countout_3_.C
+1 1
+.names  N_23.BLIF N_24_i.BLIF N_40
+11 1
+.names  N_26.BLIF STEP4R_countout_0_.BLIF N_39
+11 1
+.names  N_24.BLIF countr_i_1__n.BLIF N_38
+11 1
+.names  DIS1H_hexout_1_i_x2_3_.BLIF N_23_i.BLIF N_36
+11 1
+.names  tmr_out.BLIF FDIVBY2_clk_out.C
+1 1
+.names  STEP4R_countout_0_.BLIF countr_i_3__n.BLIF N_35
+11 1
+.names  N_25.BLIF N_25_i
+0 1
+.names  dip_c_0__n.BLIF FDIVBY2_clk_out.AR
+1 1
+.names  N_25_i.BLIF countr_i_1__n.BLIF N_34
+11 1
+.names  countr_i_0__n.BLIF countr_i_1__n.BLIF N_33
+11 1
+.names  N_131.BLIF countr_i_3__n.BLIF N_31
+11 1
+.names  vcc_n_n.BLIF RGTPB_Q.D
+1 1
+.names  dip_c_6__n.BLIF countl_i_2__n.BLIF N_107_0
+11 1
+.names  dip_i_6__n.BLIF STEP4L_countout_2_.BLIF N_106
+11 1
+.names  i_S1_NO_i.BLIF RGTPB_Q.C
+1 1
+.names  dip_c_6__n.BLIF countl_i_1__n.BLIF N_105_0
+11 1
+.names  dip_i_6__n.BLIF STEP4L_countout_1_.BLIF N_109
+11 1
+.names  i_S1_NO_i.BLIF RGTPB_Q.AP
+1 1
+.names  DIP_0_.BLIF dip_c_0__n
+1 1
+.names  vcc_n_n.BLIF LFTPB_Q.D
+1 1
+.names  DIP_1_.BLIF dip_c_1__n
+1 1
+.names  N_40.BLIF countr_i_1__n.BLIF N_32
+11 1
+.names  DIP_2_.BLIF dip_c_2__n
+1 1
+.names  N_30.BLIF N_30_i
+0 1
+.names  i_S2_NO_i.BLIF LFTPB_Q.C
+1 1
+.names  DIP_3_.BLIF dip_c_3__n
+1 1
+.names  N_31.BLIF N_31_i
+0 1
+.names  DIP_4_.BLIF dip_c_4__n
+1 1
+.names  N_32.BLIF N_32_i
+0 1
+.names  DIP_5_.BLIF dip_c_5__n
+1 1
+.names  N_45_i.BLIF N_46_i.BLIF N_26_0
+11 1
+.names  i_S2_NO_i.BLIF LFTPB_Q.AP
+1 1
+.names  DIP_6_.BLIF dip_c_6__n
+1 1
+.names  STEP4R_countout_2_.BLIF dis1h_hexout_1_0_m2_4__un3_n
+0 1
+.names  DIP_7_.BLIF dip_c_7__n
+1 1
+.names  STEP4R_countout_3_.BLIF STEP4R_countout_2_.BLIF dis1h_hexout_1_0_m2_4__un1_n
+11 1
+.names  i_S1_NC.BLIF i_S1_NC_c
+1 1
+.names  countr_i_0__n.BLIF dis1h_hexout_1_0_m2_4__un3_n.BLIF dis1h_hexout_1_0_m2_4__un0_n
+11 1
+.names  i_S1_NO.BLIF i_S1_NO_c
+1 1
+.names  dis1h_hexout_1_0_m2_4__un1_n.BLIF dis1h_hexout_1_0_m2_4__un0_n.BLIF N_25
+1- 1
+-1 1
+.names  dip_i_0__n.BLIF STEP6_next_OUT_0_.LH
+1 1
+.names  i_S2_NC.BLIF i_S2_NC_c
+1 1
+.names  STEP4R_countout_2_.BLIF countr_i_0__n.BLIF N_24_i
+11 1
+.names  i_S2_NO.BLIF i_S2_NO_c
+1 1
+.names  N_75.BLIF STEP4L_countout_0_.BLIF N_88
+11 1
+.names  countr_i_0__n.BLIF o_TOPRED_0_
+1 1
+.names  N_73.BLIF countl_i_1__n.BLIF N_87
+11 1
+.names  STEP6_ringout_0_.BLIF STEP6_next_OUT_1_.D
+1 1
+.names  countr_i_1__n.BLIF o_TOPRED_1_
+1 1
+.names  DIS4H_hexout_1_i_x2_3_.BLIF N_72_i.BLIF N_85
+11 1
+.names  countr_i_2__n.BLIF o_TOPRED_2_
+1 1
+.names  STEP4L_countout_0_.BLIF countl_i_3__n.BLIF N_84
+11 1
+.names  dip_i_0__n.BLIF STEP6_next_OUT_1_.LH
+1 1
+.names  countr_i_3__n.BLIF o_TOPRED_3_
+1 1
+.names  N_74.BLIF N_74_i
+0 1
+.names  countl_i_0__n.BLIF o_TOPRED_4_
+1 1
+.names  N_74_i.BLIF countl_i_1__n.BLIF N_83
+11 1
+.names  countl_i_1__n.BLIF o_TOPRED_5_
+1 1
+.names  N_98.BLIF countl_i_3__n.BLIF N_80
+11 1
+.names  STEP6_ringout_1_.BLIF STEP6_next_OUT_2_.D
+1 1
+.names  countl_i_2__n.BLIF o_TOPRED_6_
+1 1
+.names  N_72_i.BLIF countl_i_2__n.BLIF N_79
+11 1
+.names  countl_i_3__n.BLIF o_TOPRED_7_
+1 1
+.names  dip_i_7__n.BLIF N_70.BLIF string_i_27__n
+11 1
+.names  dip_i_0__n.BLIF STEP6_next_OUT_2_.LH
+1 1
+.names  midred_i_0__n.BLIF o_MIDRED_0_
+1 1
+.names  dip_i_7__n.BLIF N_68.BLIF string_i_26__n
+11 1
+.names  midred_i_1__n.BLIF o_MIDRED_1_
+1 1
+.names  dip_i_7__n.BLIF N_65.BLIF string_i_24__n
+11 1
+.names  midred_i_2__n.BLIF o_MIDRED_2_
+1 1
+.names  dip_i_7__n.BLIF N_60.BLIF string_i_21__n
+11 1
+.names  STEP6_ringout_2_.BLIF STEP6_next_OUT_3_.D
+1 1
+.names  midred_i_3__n.BLIF o_MIDRED_3_
+1 1
+.names  dip_i_0__n.BLIF countl_i_0__n.BLIF STEP4L_countout_0_.D
+11 1
+.names  midred_i_4__n.BLIF o_MIDRED_4_
+1 1
+.names  N_109_i.BLIF N_112_i.BLIF N_113_0
+11 1
+.names  dip_i_0__n.BLIF STEP6_next_OUT_3_.LH
+1 1
+.names  midred_i_5__n.BLIF o_MIDRED_5_
+1 1
+.names  N_105.BLIF STEP4L_countout_0_.BLIF N_112
+11 1
+.names  midred_i_6__n.BLIF o_MIDRED_6_
+1 1
+.names  midred_i_7__n.BLIF o_MIDRED_7_
+1 1
+.names  N_89.BLIF countl_i_1__n.BLIF N_81
+11 1
+.names  STEP6_ringout_3_.BLIF STEP6_next_OUT_4_.D
+1 1
+.names  dip_i_0__n.BLIF o_BOTRED_0_
+1 1
+.names  N_83.BLIF N_83_i
+0 1
+.names  dip_i_1__n.BLIF o_BOTRED_1_
+1 1
+.names  N_84.BLIF N_84_i
+0 1
+.names  dip_i_0__n.BLIF STEP6_next_OUT_4_.LH
+1 1
+.names  dip_i_2__n.BLIF o_BOTRED_2_
+1 1
+.names  N_94_i.BLIF N_95_i.BLIF N_75_0
+11 1
+.names  dip_i_3__n.BLIF o_BOTRED_3_
+1 1
+.names  STEP4L_countout_2_.BLIF dis4h_hexout_1_0_m2_4__un3_n
+0 1
+.names  dip_i_4__n.BLIF o_BOTRED_4_
+1 1
+.names  STEP4L_countout_3_.BLIF STEP4L_countout_2_.BLIF dis4h_hexout_1_0_m2_4__un1_n
+11 1
+.names  STEP6_ringout_4_.BLIF STEP6_next_OUT_5_.D
+1 1
+.names  dip_i_5__n.BLIF o_BOTRED_5_
+1 1
+.names  countl_i_0__n.BLIF dis4h_hexout_1_0_m2_4__un3_n.BLIF dis4h_hexout_1_0_m2_4__un0_n
+11 1
+.names  dip_i_6__n.BLIF o_BOTRED_6_
+1 1
+.names  dis4h_hexout_1_0_m2_4__un1_n.BLIF dis4h_hexout_1_0_m2_4__un0_n.BLIF N_74
+1- 1
+-1 1
+.names  dip_i_0__n.BLIF STEP6_next_OUT_5_.LH
+1 1
+.names  dip_i_7__n.BLIF o_BOTRED_7_
+1 1
+.names  STEP4L_countout_2_.BLIF countl_i_0__n.BLIF N_73_i
+11 1
+.names  string_i_0__n.BLIF o_DIS1_0_
+1 1
+.names  countl_i_1__n.BLIF countl_i_3__n.BLIF N_72_i
+11 1
+.names  string_i_1__n.BLIF o_DIS1_1_
+1 1
+.names  N_88_i.BLIF N_89_i.BLIF N_68_i
+11 1
+.names  STEP6_ringout_5_.BLIF STEP6_next_OUT_6_.D
+1 1
+.names  string_i_2__n.BLIF o_DIS1_2_
+1 1
+.names  N_96.BLIF STEP4L_countout_1_.BLIF N_98
+11 1
+.names  string_i_3__n.BLIF o_DIS1_3_
+1 1
+.names  STEP4L_countout_3_.BLIF countl_i_2__n.BLIF N_97
+11 1
+.names  dip_i_0__n.BLIF STEP6_next_OUT_6_.LH
+1 1
+.names  string_i_4__n.BLIF o_DIS1_4_
+1 1
+.names  STEP4L_countout_0_.BLIF STEP4L_countout_2_.BLIF N_96
+11 1
+.names  string_i_5__n.BLIF o_DIS1_5_
+1 1
+.names  STEP4L_countout_1_.BLIF STEP4L_countout_3_.BLIF N_95
+11 1
+.names  string_i_6__n.BLIF o_DIS1_6_
+1 1
+.names  N_72_i.BLIF STEP4L_countout_2_.BLIF N_94
+11 1
+.names  STEP6_ringout_6_.BLIF STEP6_next_OUT_7_.D
+1 1
+.names  dip_i_7__n.BLIF o_DIS2_0_
+1 1
+.names  N_72.BLIF N_73_i.BLIF N_89
+11 1
+.names  dip_i_7__n.BLIF o_DIS2_1_
+1 1
+.names  i_S1_NC_c.BLIF RGTPB_Q.AR
+0 1
+.names  dip_i_0__n.BLIF STEP6_next_OUT_7_.LH
+1 1
+.names  dip_i_7__n.BLIF o_DIS2_2_
+1 1
+.names  i_S2_NO_c.BLIF i_S2_NO_i
+0 1
+.names  vcc_n_n.BLIF o_DIS2_3_
+1 1
+.names  i_S2_NC_c.BLIF LFTPB_Q.AR
+0 1
+.names  vcc_n_n.BLIF o_DIS2_4_
+1 1
+.names  N_36.BLIF N_36_i
+0 1
+.names  N_131.BLIF STEP4R_G_138.X1
+1 1
+.names  dip_i_7__n.BLIF o_DIS2_5_
+1 1
+.names  N_41.BLIF N_41_i
+0 1
+.names  dip_i_7__n.BLIF o_DIS2_6_
+1 1
+.names  N_42.BLIF N_42_i
+0 1
+.names  STEP4R_countout_3_.BLIF STEP4R_G_138.X2
+1 1
+.names  dip_i_7__n.BLIF o_DIS3_0_
+1 1
+.names  STEP4L_G_119.BLIF N_161_i
+0 1
+.names  vcc_n_n.BLIF o_DIS3_1_
+1 1
+.names  dip_i_0__n.BLIF N_161_i.BLIF STEP4L_countout_1_.D
+11 1
+.names  dip_i_7__n.BLIF o_DIS3_2_
+1 1
+.names  STEP4L_G_122.BLIF N_160_i
+0 1
+.names  STEP4R_countout_0_.BLIF DIS1H_hexout_1_i_x2_3_.X1
+1 1
+.names  dip_i_7__n.BLIF o_DIS3_3_
+1 1
+.names  dip_i_0__n.BLIF N_160_i.BLIF STEP4L_countout_2_.D
+11 1
+.names  dip_i_7__n.BLIF o_DIS3_4_
+1 1
+.names  STEP4L_G_123.BLIF N_159_i
+0 1
+.names  STEP4R_countout_2_.BLIF DIS1H_hexout_1_i_x2_3_.X2
+1 1
+.names  vcc_n_n.BLIF o_DIS3_5_
+1 1
+.names  dip_i_0__n.BLIF N_159_i.BLIF STEP4L_countout_3_.D
+11 1
+.names  vcc_n_n.BLIF o_DIS3_6_
+1 1
+.names  countl_i_0__n.BLIF countl_i_1__n.BLIF N_82
+11 1
+.names  string_i_21__n.BLIF o_DIS4_0_
+1 1
+.names  FDIVBY2_clk_out.BLIF FDIVBY2_clk_out.D
+0 1
+.names  STEP4R_countout_0_.BLIF STEP4R_G_134.X1
+1 1
+.names  string_i_22__n.BLIF o_DIS4_1_
+1 1
+.names  i_S1_NO_c.BLIF i_S1_NO_i
+0 1
+.names  string_i_23__n.BLIF o_DIS4_2_
+1 1
+.names  STEP4R_countout_1_.BLIF STEP4R_G_134.X2
+1 1
+.names  string_i_24__n.BLIF o_DIS4_3_
+1 1
+.names  string_i_25__n.BLIF o_DIS4_4_
+1 1
+.names  string_i_26__n.BLIF o_DIS4_5_
+1 1
+.names  N_129.BLIF STEP4R_G_136.X1
+1 1
+.names  string_i_27__n.BLIF o_DIS4_6_
+1 1
+.names  jumbo_i_1_0__n.BLIF o_JUMBO_0_
+1 1
+.names  STEP4R_countout_2_.BLIF STEP4R_G_136.X2
+1 1
+.names  jumbo_i_1__n.BLIF o_JUMBO_1_
+1 1
+.names  jumbo_i_1_2__n.BLIF o_JUMBO_2_
+1 1
+.names  S1BC_i.BLIF o_LED_YELLOW_0_
+1 1
+.names  STEP4L_countout_0_.BLIF DIS4H_hexout_1_i_x2_3_.X1
+1 1
+.names  S2BC_i.BLIF o_LED_YELLOW_1_
+1 1
+.names  dip_i_2__n.BLIF STEP8_present_state_4_.BLIF step8_n_78_n
+11 1
+.names  dip_c_2__n.BLIF STEP8_present_state_1_.BLIF step8_n_79_n
+11 1
+.names  STEP4L_countout_2_.BLIF DIS4H_hexout_1_i_x2_3_.X2
+1 1
+.names  step8_n_59_0_n.BLIF step8_n_82_i_n.BLIF STEP8_present_state_4_.D
+11 1
+.names  STEP8_present_state_srsts_i_x3_4_.BLIF step8_n_82_i_n
+0 1
+.names  step8_n_59_0_n.BLIF STEP8_present_state_srsts_i_x3_4_.BLIF STEP8_present_state_1_.D
+11 1
+.names  dip_c_2__n.BLIF STEP8_present_state_srsts_i_x3_4_.X1
+1 1
+.names  step8_n_71_i_n.BLIF step8_present_state_nss_i_6__n.BLIF step8_present_state_nss_i_0_0__n
+11 1
+.names  N_109_i.BLIF N_106_i.BLIF N_110_0_1
+11 1
+.names  dip_c_2__n.BLIF step8_present_state_srsts_0_m3_6__un3_n
+0 1
+.names  STEP8_present_state_i_0_.BLIF STEP8_present_state_srsts_i_x3_4_.X2
+1 1
+.names  N_110_0_1.BLIF N_108_i.BLIF N_110_0
+11 1
+.names  STEP8_present_state_3_.BLIF dip_c_2__n.BLIF step8_present_state_srsts_0_m3_6__un1_n
+11 1
+.names  N_105.BLIF N_107.BLIF N_108_1
+11 1
+.names  STEP8_present_state_5_.BLIF step8_present_state_srsts_0_m3_6__un3_n.BLIF step8_present_state_srsts_0_m3_6__un0_n
+11 1
+.names  N_108_1.BLIF STEP4L_countout_0_.BLIF N_108
+11 1
+.names  step8_present_state_srsts_0_m3_6__un1_n.BLIF step8_present_state_srsts_0_m3_6__un0_n.BLIF step8_n_55_n
+1- 1
+-1 1
+.names  STEP4L_G_119_1.BLIF STEP4L_G_119.X1
+1 1
+.names  dip_i_7__n.BLIF N_87_i.BLIF string_i_2_25__n
+11 1
+.names  step8_n_78_i_n.BLIF step8_n_79_i_n.BLIF step8_n_57_i_n
+11 1
+.names  string_i_1_25__n.BLIF string_i_2_25__n.BLIF string_i_25__n
+11 1
+.names  dip_i_3__n.BLIF STEP8_present_state_2_.BLIF step8_n_58_i_n
+11 1
+.names  STEP4L_countout_1_.BLIF STEP4L_G_119.X2
+1 1
+.names  N_48.BLIF STEP4R_countout_1_.BLIF N_37_1
+11 1
+.names  dip_i_0__n.BLIF step8_n_76_i_n.BLIF step8_n_59_0_n
+11 1
+.names  N_37_1.BLIF countr_i_0__n.BLIF N_37
+11 1
+.names  STEP8_present_state_3_.BLIF step8_present_state_i_3__n
+0 1
+.names  N_33_i.BLIF N_26_0.BLIF string_i_1_1__n
+11 1
+.names  STEP8_present_state_1_.BLIF step8_present_state_i_1__n
+0 1
+.names  dip_c_6__n.BLIF STEP4L_G_122_1.X1
+1 1
+.names  N_48_i.BLIF dip_i_7__n.BLIF string_i_2_1__n
+11 1
+.names  STEP8_present_state_4_.BLIF step8_present_state_i_4__n
+0 1
+.names  string_i_1_1__n.BLIF string_i_2_1__n.BLIF string_i_3_1__n
+11 1
+.names  STEP8_present_state_5_.BLIF step8_present_state_i_5__n
+0 1
+.names  N_113.BLIF STEP4L_G_122_1.X2
+1 1
+.names  string_i_3_1__n.BLIF N_24.BLIF string_i_1__n
+11 1
+.names  STEP8_present_state_6_.BLIF step8_present_state_i_6__n
+0 1
+.names  dip_i_7__n.BLIF N_30_i.BLIF string_1_0__n
+11 1
+.names  step8_n_55_n.BLIF step8_n_77_n.BLIF step8_present_state_nss_6__n
+11 1
+.names  N_31_i.BLIF N_32_i.BLIF string_2_0__n
+11 1
+.names  step8_n_77_n.BLIF step8_n_78_n.BLIF STEP8_present_state_5_.D
+11 1
+.names  STEP4L_G_122_1.BLIF STEP4L_G_122.X1
+1 1
+.names  string_1_0__n.BLIF string_2_0__n.BLIF string_0__n
+11 1
+.names  step8_n_77_n.BLIF step8_n_79_n.BLIF STEP8_present_state_3_.D
+11 1
+.names  N_25.BLIF N_48_i.BLIF string_i_1_4__n
+11 1
+.names  dip_i_0__n.BLIF step8_n_61_n.BLIF step8_n_71_n
+11 1
+.names  STEP4L_countout_2_.BLIF STEP4L_G_122.X2
+1 1
+.names  dip_i_7__n.BLIF N_38_i.BLIF string_i_2_4__n
+11 1
+.names  step8_n_58_n.BLIF STEP8_present_state_i_0_.BLIF step8_n_76_n
+11 1
+.names  string_i_1_4__n.BLIF string_i_2_4__n.BLIF string_i_4__n
+11 1
+.names  dip_c_3__n.BLIF dip_i_0__n.BLIF step8_n_77_n
+11 1
+.names  vcc_n_n
+1
+.names  dip_c_6__n.BLIF STEP4L_G_123_1.X1
+1 1
+.names  STEP4R_countout_3_.BLIF countr_i_1__n.BLIF N_41_2
+11 1
+.names  gnd_n_n
+.names  N_41_1.BLIF N_41_2.BLIF N_41
+11 1
+.names  N_110.BLIF STEP4L_G_123_1.X2
+1 1
+.names  N_97_i.BLIF dip_i_7__n.BLIF string_i_1_22__n
+11 1
+.names  N_73.BLIF N_75_0.BLIF string_i_2_22__n
+11 1
+.names  string_i_1_22__n.BLIF string_i_2_22__n.BLIF string_i_3_22__n
+11 1
+.names  STEP4L_G_123_1.BLIF STEP4L_G_123.X1
+1 1
+.names  string_i_3_22__n.BLIF N_82_i.BLIF string_i_22__n
+11 1
+.names  N_97.BLIF STEP4L_countout_0_.BLIF N_91_1
+11 1
+.names  STEP4L_countout_3_.BLIF STEP4L_G_123.X2
+1 1
+.names  N_91_1.BLIF STEP4L_countout_1_.BLIF N_91
+11 1
+.names  N_96.BLIF STEP4L_countout_3_.BLIF N_90_1
+11 1
+.names  N_90_1.BLIF countl_i_1__n.BLIF N_90
+11 1
+.names  dip_c_6__n.BLIF STEP4L_G_119_1.X1
+1 1
+.names  N_97.BLIF STEP4L_countout_1_.BLIF N_86_1
+11 1
+.names  N_86_1.BLIF countl_i_0__n.BLIF N_86
+11 1
+.names  STEP4L_countout_0_.BLIF STEP4L_G_119_1.X2
+1 1
+.names  N_84_i.BLIF dip_i_7__n.BLIF string_1_23__n
+11 1
+.names  string_1_23__n.BLIF N_83_i.BLIF string_23__n
+11 1
+.names  N_74.BLIF N_97_i.BLIF string_i_1_25__n
+11 1
+.names  STEP6_next_OUT_0_.BLIF STEP6_ringout_0_.D
+1 1
+.names  jumbo_1_1__n.BLIF step8_present_state_i_4__n.BLIF jumbo_1__n
+11 1
+.names  STEP6_next_OUT_1_.BLIF STEP6_ringout_1_.D
+1 1
+.names  step8_present_state_i_4__n.BLIF step8_present_state_i_5__n.BLIF jumbo_i_1_1_2__n
+11 1
+.names  STEP6_next_OUT_2_.BLIF STEP6_ringout_2_.D
+1 1
+.names  jumbo_i_1_1_2__n.BLIF step8_present_state_i_6__n.BLIF jumbo_i_1_2__n
+11 1
+.names  STEP6_next_OUT_3_.BLIF STEP6_ringout_3_.D
+1 1
+.names  midred_i_0__n.BLIF midred_i_1__n.BLIF step6_next_out_9_1_0__n
+11 1
+.names  STEP6_next_OUT_4_.BLIF STEP6_ringout_4_.D
+1 1
+.names  midred_i_2__n.BLIF midred_i_3__n.BLIF step6_next_out_9_2_0__n
+11 1
+.names  STEP6_next_OUT_5_.BLIF STEP6_ringout_5_.D
+1 1
+.names  midred_i_6__n.BLIF midred_i_4__n.BLIF step6_next_out_9_3_0__n
+11 1
+.names  STEP6_next_OUT_6_.BLIF STEP6_ringout_6_.D
+1 1
+.names  step6_next_out_9_1_0__n.BLIF step6_next_out_9_2_0__n.BLIF step6_next_out_9_4_0__n
+11 1
+.names  STEP6_next_OUT_7_.BLIF STEP6_ringout_7_.D
+1 1
+.names  step6_next_out_9_3_0__n.BLIF midred_i_5__n.BLIF step6_next_out_9_5_0__n
+11 1
+.names  step6_next_out_9_4_0__n.BLIF step6_next_out_9_5_0__n.BLIF STEP6_next_OUT_0_.D
+11 1
+.names  dip_i_7__n.BLIF N_36_i.BLIF string_1_6__n
+11 1
+.names  N_41_i.BLIF N_42_i.BLIF string_2_6__n
+11 1
+.names  string_1_6__n.BLIF string_2_6__n.BLIF string_6__n
+11 1
+.names  N_48.BLIF STEP4R_countout_0_.BLIF N_42_1
+11 1
+.names  N_42_1.BLIF STEP4R_countout_1_.BLIF N_42
+11 1
+.names  STEP4R_countout_0_.BLIF STEP4R_countout_2_.BLIF N_41_1
+11 1
+.names  N_85_i.BLIF N_90_i.BLIF N_70_i_1
+11 1
+.names  N_70_i_1.BLIF N_91_i.BLIF N_70_i
+11 1
+.names  N_85_i.BLIF N_86_i.BLIF N_65_i_1
+11 1
+.names  N_65_i_1.BLIF N_98_i.BLIF N_65_i
+11 1
+.names  N_79_i.BLIF N_80_i.BLIF N_60_i_1
+11 1
+.names  N_60_i_1.BLIF N_81_i.BLIF N_60_i
+11 1
+.names  N_36_i.BLIF N_37_i.BLIF N_16_i_1
+11 1
+.names  N_16_i_1.BLIF N_131_i.BLIF N_16_i
+11 1
+.names  step8_n_57_i_n.BLIF step8_n_58_n.BLIF step8_n_61_0_1_n
+11 1
+.names  step8_n_61_0_1_n.BLIF STEP8_present_state_i_0_.BLIF step8_n_61_0_n
+11 1
+.names  dip_i_0__n.BLIF dip_i_3__n.BLIF step8_n_51_i_1_n
+11 1
+.names  step8_n_51_i_1_n.BLIF step8_n_57_n.BLIF STEP8_present_state_2_.D
+11 1
+.names  step8_present_state_i_1__n.BLIF step8_present_state_i_3__n.BLIF jumbo_i_1_1_0__n
+11 1
+.names  jumbo_i_1_1_0__n.BLIF step8_present_state_i_6__n.BLIF jumbo_i_1_0__n
+11 1
+.names  STEP8_present_state_i_0_.BLIF step8_present_state_i_1__n.BLIF jumbo_1_1__n
+11 1
+.names  N_91.BLIF N_91_i
+0 1
+.names  N_70_i.BLIF N_70
+0 1
+.names  N_82.BLIF N_82_i
+0 1
+.names  N_106.BLIF N_106_i
+0 1
+.names  N_108.BLIF N_108_i
+0 1
+.names  N_110_0.BLIF N_110
+0 1
+.names  step8_n_61_0_n.BLIF step8_n_61_n
+0 1
+.names  step8_n_76_n.BLIF step8_n_76_i_n
+0 1
+.names  step8_n_58_i_n.BLIF step8_n_58_n
+0 1
+.names  step8_n_78_n.BLIF step8_n_78_i_n
+0 1
+.names  step8_n_79_n.BLIF step8_n_79_i_n
+0 1
+.names  step8_n_57_i_n.BLIF step8_n_57_n
+0 1
+.names  step8_n_71_n.BLIF step8_n_71_i_n
+0 1
+.names  FDIVBY2_clk_out.BLIF STEP8_present_state_i_0_.C
+1 1
+.names  step8_present_state_nss_6__n.BLIF step8_present_state_nss_i_6__n
+0 1
+.names  step8_present_state_nss_i_0_0__n.BLIF STEP8_present_state_i_0_.D
+0 1
+.names  N_73_i.BLIF N_73
+0 1
+.names  N_94.BLIF N_94_i
+0 1
+.names  FDIVBY2_clk_out.BLIF STEP8_present_state_1_.C
+1 1
+.names  N_95.BLIF N_95_i
+0 1
+.names  N_75_0.BLIF N_75
+0 1
+.names  N_97.BLIF N_97_i
+0 1
+.names  N_87.BLIF N_87_i
+0 1
+.names  FDIVBY2_clk_out.BLIF STEP8_present_state_2_.C
+1 1
+.names  N_80.BLIF N_80_i
+0 1
+.names  N_79.BLIF N_79_i
+0 1
+.names  N_81.BLIF N_81_i
+0 1
+.names  N_60_i.BLIF N_60
+0 1
+.names  FDIVBY2_clk_out.BLIF STEP8_present_state_3_.C
+1 1
+.names  N_85.BLIF N_85_i
+0 1
+.names  N_86.BLIF N_86_i
+0 1
+.names  N_98.BLIF N_98_i
+0 1
+.names  N_65_i.BLIF N_65
+0 1
+.names  FDIVBY2_clk_out.BLIF STEP8_present_state_4_.C
+1 1
+.names  N_90.BLIF N_90_i
+0 1
+.names  N_48.BLIF N_48_i
+0 1
+.names  N_38.BLIF N_38_i
+0 1
+.names  N_33.BLIF N_33_i
+0 1
+.names  FDIVBY2_clk_out.BLIF STEP8_present_state_5_.C
+1 1
+.names  N_37.BLIF N_37_i
+0 1
+.names  N_131.BLIF N_131_i
+0 1
+.names  N_16_i.BLIF N_16
+0 1
+.names  step8_present_state_nss_6__n.BLIF STEP8_present_state_6_.D
+1 1
+.names  N_105_0.BLIF N_105
+0 1
+.names  N_107_0.BLIF N_107
+0 1
+.names  FDIVBY2_clk_out.BLIF STEP8_present_state_6_.C
+1 1
+.names  N_109.BLIF N_109_i
+0 1
+.names  N_112.BLIF N_112_i
+0 1
+.names  N_113_0.BLIF N_113
+0 1
+.names  N_88.BLIF N_88_i
+0 1
+.names  RGTPB_Q.BLIF STEP4R_countout_0_.C
+1 1
+.names  N_89.BLIF N_89_i
+0 1
+.names  N_68_i.BLIF N_68
+0 1
+.names  N_72_i.BLIF N_72
+0 1
+.names  N_34.BLIF N_34_i
+0 1
+.names  RGTPB_Q.BLIF STEP4R_countout_1_.C
+1 1
+.names  N_35.BLIF N_35_i
+0 1
+.names  N_14_i.BLIF N_14
+0 1
+.names  N_39.BLIF N_39_i
+0 1
+.names  N_40.BLIF N_40_i
+0 1
+.names  RGTPB_Q.BLIF STEP4R_countout_2_.C
+1 1
+.names  N_19_i.BLIF N_19
+0 1
+.names  N_23_i.BLIF N_23
+0 1
+.names  N_24_i.BLIF N_24
+0 1
+.names  N_45.BLIF N_45_i
+0 1
+.names  RGTPB_Q.BLIF STEP4R_countout_3_.C
+1 1
+.names  N_46.BLIF N_46_i
+0 1
+.names  N_26_0.BLIF N_26
+0 1
+.names  STEP6_ringout_6_.BLIF midred_i_6__n
+0 1
+.names  STEP6_ringout_7_.BLIF midred_i_7__n
+0 1
+.names  FDIVBY2_clk_out.BLIF STEP6_ringout_0_.C
+1 1
+.names  STEP4R_countout_0_.BLIF countr_i_0__n
+0 1
+.names  STEP4R_countout_1_.BLIF countr_i_1__n
+0 1
+.names  STEP4R_countout_2_.BLIF countr_i_2__n
+0 1
+.names  STEP4R_countout_3_.BLIF countr_i_3__n
+0 1
+.names  FDIVBY2_clk_out.BLIF STEP6_ringout_1_.C
+1 1
+.names  STEP4L_countout_0_.BLIF countl_i_0__n
+0 1
+.names  STEP4L_countout_1_.BLIF countl_i_1__n
+0 1
+.names  STEP4L_countout_2_.BLIF countl_i_2__n
+0 1
+.names  STEP4L_countout_3_.BLIF countl_i_3__n
+0 1
+.names  FDIVBY2_clk_out.BLIF STEP6_ringout_2_.C
+1 1
+.end

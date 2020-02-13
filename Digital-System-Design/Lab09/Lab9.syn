@@ -1,0 +1,19 @@
+JDF B
+// Created by Version 1.7 
+PROJECT Lab9
+DESIGN lab9 Normal
+DEVKIT LC4256ZE-5TN144C
+ENTRY Pure Verilog HDL
+MODULE binary_counter.v
+MODSTYLE binary_counter Normal
+MODULE gan35_lab9.v
+MODSTYLE bintohex Normal
+MODSTYLE moorelsa_sd Normal
+MODSTYLE lab9_top Normal
+MODSTYLE frequency_divider Normal
+MODSTYLE up_down_counter Normal
+MODSTYLE ring_counter Normal
+MODSTYLE bounceless_switch Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE lab9_top

@@ -1,0 +1,5 @@
+. myLP labprac.v "w:\my documents\ece 270\labprac\labprac.v"
+I1 OSCTIMER  "w:\my documents\ece 270\labprac\"
+LP cla4 labprac.v "w:\my documents\ece 270\labprac\labprac.v"
+LFTPB bounceless_switch labprac.v "w:\my documents\ece 270\labprac\labprac.v"
+RGTPB bounceless_switch labprac.v "w:\my documents\ece 270\labprac\labprac.v"

@@ -1,0 +1,348 @@
+|--------------------------------------------------- ----------|
+|- ispLEVER Classic 1.7.00.05.28.13 Equations File            -|
+|- Copyright(C), 1992-2012, Lattice Semiconductor Corporation -|
+|- All Rights Reserved.                                       -|
+|--------------------------------------------------------------|
+
+
+Equations:
+
+AQ_0_.D = X_0_.Q & !Y_0_.Q
+    # !X_0_.Q & Y_0_.Q ; (2 pterms, 2 signals)
+AQ_0_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+AQ_0_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+AQ_1_.D.X1 = !Y_0_.Q & !Y_1_.Q
+    # X_0_.Q & !Y_1_.Q & inst_M.Q
+    # !X_0_.Q & !Y_1_.Q & !inst_M.Q
+    # !X_0_.Q & Y_0_.Q & Y_1_.Q & inst_M.Q
+    # X_0_.Q & Y_0_.Q & Y_1_.Q & !inst_M.Q ; (5 pterms, 4 signals)
+AQ_1_.D.X2 = !X_1_.Q ; (1 pterm, 1 signal)
+AQ_1_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+AQ_1_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+AQ_2_.D.X1 = !X_1_.Q & !Y_2_.Q & !inst_M.Q
+    # !X_0_.Q & !Y_0_.Q & !Y_1_.Q & !Y_2_.Q
+    # X_1_.Q & !Y_1_.Q & !Y_2_.Q
+    # !X_0_.Q & X_1_.Q & !Y_0_.Q & !Y_2_.Q & inst_M.Q
+    # X_0_.Q & Y_0_.Q & !Y_1_.Q & !Y_2_.Q
+    # X_0_.Q & X_1_.Q & Y_0_.Q & !Y_2_.Q & inst_M.Q
+    # !X_0_.Q & !X_1_.Q & Y_0_.Q & Y_2_.Q & inst_M.Q
+    # !X_1_.Q & Y_1_.Q & Y_2_.Q & inst_M.Q
+    # X_0_.Q & !X_1_.Q & !Y_0_.Q & Y_2_.Q & inst_M.Q
+    # !X_0_.Q & X_1_.Q & Y_0_.Q & Y_1_.Q & Y_2_.Q
+    # X_1_.Q & Y_1_.Q & Y_2_.Q & !inst_M.Q
+    # X_0_.Q & X_1_.Q & !Y_0_.Q & Y_1_.Q & Y_2_.Q ; (12 pterms, 6 signals)
+AQ_2_.D.X2 = !X_2_.Q ; (1 pterm, 1 signal)
+AQ_2_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+AQ_2_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+AQ_3_.D.X1 = !X_2_.Q & !Y_3_.Q & !inst_M.Q
+    # !X_0_.Q & !X_1_.Q & !Y_0_.Q & !Y_1_.Q & !Y_2_.Q & !Y_3_.Q
+    # X_2_.Q & !Y_2_.Q & !Y_3_.Q
+    # !X_0_.Q & !X_1_.Q & X_2_.Q & !Y_0_.Q & !Y_1_.Q & !Y_3_.Q & inst_M.Q
+    # !X_0_.Q & X_1_.Q & !Y_0_.Q & Y_1_.Q & !Y_2_.Q & !Y_3_.Q
+    # !X_0_.Q & X_1_.Q & X_2_.Q & !Y_0_.Q & Y_1_.Q & !Y_3_.Q & inst_M.Q
+    # X_0_.Q & !X_1_.Q & Y_0_.Q & !Y_1_.Q & !Y_2_.Q & !Y_3_.Q
+    # X_0_.Q & !X_1_.Q & X_2_.Q & Y_0_.Q & !Y_1_.Q & !Y_3_.Q & inst_M.Q
+    # X_0_.Q & X_1_.Q & Y_0_.Q & Y_1_.Q & !Y_2_.Q & !Y_3_.Q
+    # X_0_.Q & X_1_.Q & X_2_.Q & Y_0_.Q & Y_1_.Q & !Y_3_.Q & inst_M.Q
+    # X_2_.Q & Y_2_.Q & Y_3_.Q & !inst_M.Q
+    # !X_0_.Q & !X_2_.Q & Y_0_.Q & Y_3_.Q & inst_M.Q
+    # !X_1_.Q & !X_2_.Q & Y_1_.Q & Y_3_.Q & inst_M.Q
+    # !X_2_.Q & Y_2_.Q & Y_3_.Q & inst_M.Q
+    # !X_0_.Q & Y_0_.Q & Y_2_.Q & Y_3_.Q & inst_M.Q
+    # !X_1_.Q & Y_1_.Q & Y_2_.Q & Y_3_.Q & inst_M.Q
+    # X_1_.Q & !X_2_.Q & !Y_1_.Q & Y_3_.Q & inst_M.Q
+    # X_1_.Q & !Y_1_.Q & Y_2_.Q & Y_3_.Q & inst_M.Q
+    # X_0_.Q & !X_2_.Q & !Y_0_.Q & Y_3_.Q & inst_M.Q
+    # X_0_.Q & !Y_0_.Q & Y_2_.Q & Y_3_.Q & inst_M.Q ; (20 pterms, 8 signals)
+AQ_3_.D.X2 = !X_3_.Q ; (1 pterm, 1 signal)
+AQ_3_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+AQ_3_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+DISP_19_.D = DIP_5_ ; (1 pterm, 1 signal)
+DISP_19_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+DISP_19_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+LFTPB_Q.D = 1 ; (1 pterm, 0 signal)
+LFTPB_Q.C = !i_S2_NO ; (1 pterm, 1 signal)
+LFTPB_Q.AR = !i_S2_NC ; (1 pterm, 1 signal)
+LFTPB_Q.AP = !i_S2_NO ; (1 pterm, 1 signal)
+
+RGTPB_Q.D = 1 ; (1 pterm, 0 signal)
+RGTPB_Q.C = !i_S1_NO ; (1 pterm, 1 signal)
+RGTPB_Q.AR = !i_S1_NC ; (1 pterm, 1 signal)
+RGTPB_Q.AP = !i_S1_NO ; (1 pterm, 1 signal)
+
+X_0_.D = !DIP_6_ & DIP_0_
+    # DIP_6_ & !DIP_5_ & AQ_0_.Q
+    # DIP_0_ & AQ_0_.Q ; (3 pterms, 4 signals)
+X_0_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+X_0_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+X_1_.D = !DIP_6_ & DIP_1_
+    # DIP_6_ & !DIP_5_ & AQ_1_.Q
+    # DIP_1_ & AQ_1_.Q ; (3 pterms, 4 signals)
+X_1_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+X_1_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+X_2_.D = !DIP_6_ & DIP_2_
+    # DIP_6_ & !DIP_5_ & AQ_2_.Q
+    # DIP_2_ & AQ_2_.Q ; (3 pterms, 4 signals)
+X_2_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+X_2_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+X_3_.D = !DIP_6_ & DIP_3_
+    # DIP_6_ & !DIP_5_ & AQ_3_.Q
+    # DIP_3_ & AQ_3_.Q ; (3 pterms, 4 signals)
+X_3_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+X_3_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+Y_0_.D = DIP_6_ & !DIP_5_ & DIP_0_
+    # !DIP_6_ & DIP_5_ & AQ_0_.Q ; (2 pterms, 4 signals)
+Y_0_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+Y_0_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+Y_1_.D = DIP_6_ & !DIP_5_ & DIP_1_
+    # !DIP_6_ & DIP_5_ & AQ_1_.Q ; (2 pterms, 4 signals)
+Y_1_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+Y_1_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+Y_2_.D = DIP_6_ & !DIP_5_ & DIP_2_
+    # !DIP_6_ & DIP_5_ & AQ_2_.Q ; (2 pterms, 4 signals)
+Y_2_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+Y_2_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+Y_3_.D = DIP_6_ & !DIP_5_ & DIP_3_
+    # !DIP_6_ & DIP_5_ & AQ_3_.Q ; (2 pterms, 4 signals)
+Y_3_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+Y_3_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+inst_M.D = DIP_7_ & DIP_6_ & !DIP_5_
+    # !DIP_7_ & inst_M.Q ; (2 pterms, 4 signals)
+inst_M.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+inst_M.CE = !LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+o_BOTRED_0_ = !DIP_0_ ; (1 pterm, 1 signal)
+
+o_BOTRED_1_ = !DIP_1_ ; (1 pterm, 1 signal)
+
+o_BOTRED_2_ = !DIP_2_ ; (1 pterm, 1 signal)
+
+o_BOTRED_3_ = !DIP_3_ ; (1 pterm, 1 signal)
+
+o_BOTRED_4_ = !DIP_4_ ; (1 pterm, 1 signal)
+
+o_BOTRED_5_ = !DIP_5_ ; (1 pterm, 1 signal)
+
+o_BOTRED_6_ = !DIP_6_ ; (1 pterm, 1 signal)
+
+o_BOTRED_7_ = !DIP_7_ ; (1 pterm, 1 signal)
+
+o_DIS1_0_ = 0 ; (0 pterm, 0 signal)
+
+o_DIS1_1_.D = DIP_5_ ; (1 pterm, 1 signal)
+o_DIS1_1_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_DIS1_1_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+o_DIS1_2_ = 0 ; (0 pterm, 0 signal)
+
+o_DIS1_3_.D = !DIP_6_ & !DIP_5_ ; (1 pterm, 2 signals)
+o_DIS1_3_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_DIS1_3_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+o_DIS1_4_ = 0 ; (0 pterm, 0 signal)
+
+o_DIS1_5_.D = DIP_6_ & !DIP_5_ ; (1 pterm, 2 signals)
+o_DIS1_5_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_DIS1_5_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+o_DIS1_6_.D = !( !DIP_6_ & !DIP_5_ ) ; (1 pterm, 2 signals)
+o_DIS1_6_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_DIS1_6_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+o_DIS2_0_.D = DIP_6_ & !DIP_5_ ; (1 pterm, 2 signals)
+o_DIS2_0_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_DIS2_0_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+o_DIS2_1_.D = !( DIP_6_ & !DIP_5_ ) ; (1 pterm, 2 signals)
+o_DIS2_1_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_DIS2_1_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+o_DIS2_2_ = 0 ; (0 pterm, 0 signal)
+
+o_DIS2_3_.D = DIP_6_ & DIP_5_ ; (1 pterm, 2 signals)
+o_DIS2_3_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_DIS2_3_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+o_DIS2_4_ = 0 ; (0 pterm, 0 signal)
+
+o_DIS2_5_.D = DIP_6_ & DIP_5_ ; (1 pterm, 2 signals)
+o_DIS2_5_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_DIS2_5_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+o_DIS2_6_ = 1 ; (1 pterm, 0 signal)
+
+o_DIS3_0_.D = !DIP_6_ & !DIP_5_ ; (1 pterm, 2 signals)
+o_DIS3_0_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_DIS3_0_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+o_DIS3_1_ = 0 ; (0 pterm, 0 signal)
+
+o_DIS3_2_.D = DIP_6_ & !DIP_5_ ; (1 pterm, 2 signals)
+o_DIS3_2_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_DIS3_2_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+o_DIS3_3_.D = DIP_5_ ; (1 pterm, 1 signal)
+o_DIS3_3_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_DIS3_3_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+o_DIS3_4_.D = !DIP_6_ & !DIP_5_ ; (1 pterm, 2 signals)
+o_DIS3_4_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_DIS3_4_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+o_DIS3_5_ = !DISP_19_.Q ; (1 pterm, 1 signal)
+
+o_DIS3_6_.D = !DIP_6_ & !DIP_5_ ; (1 pterm, 2 signals)
+o_DIS3_6_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_DIS3_6_.CE = DIP_7_ & !LFTPB_Q.Q ; (1 pterm, 2 signals)
+
+o_DIS4_0_ = 1 ; (1 pterm, 0 signal)
+
+o_DIS4_1_ = 1 ; (1 pterm, 0 signal)
+
+o_DIS4_2_ = 1 ; (1 pterm, 0 signal)
+
+o_DIS4_3_ = 1 ; (1 pterm, 0 signal)
+
+o_DIS4_4_ = 1 ; (1 pterm, 0 signal)
+
+o_DIS4_5_ = 1 ; (1 pterm, 0 signal)
+
+o_DIS4_6_ = 1 ; (1 pterm, 0 signal)
+
+o_JUMBO_0_ = 1 ; (1 pterm, 0 signal)
+
+o_JUMBO_1_ = 1 ; (1 pterm, 0 signal)
+
+o_JUMBO_2_ = 1 ; (1 pterm, 0 signal)
+
+o_JUMBO_3_ = 1 ; (1 pterm, 0 signal)
+
+o_MIDRED_0_ = 1 ; (1 pterm, 0 signal)
+
+o_MIDRED_1_ = 1 ; (1 pterm, 0 signal)
+
+o_MIDRED_2_ = 1 ; (1 pterm, 0 signal)
+
+o_MIDRED_3_ = 1 ; (1 pterm, 0 signal)
+
+o_MIDRED_4_ = 1 ; (1 pterm, 0 signal)
+
+o_MIDRED_5_ = 1 ; (1 pterm, 0 signal)
+
+o_MIDRED_6_ = 1 ; (1 pterm, 0 signal)
+
+o_MIDRED_7_ = 1 ; (1 pterm, 0 signal)
+
+o_TOPRED_0_.D = !X_0_.Q & !Y_0_.Q
+    # X_0_.Q & Y_0_.Q ; (2 pterms, 2 signals)
+o_TOPRED_0_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+o_TOPRED_0_.AP = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+o_TOPRED_1_ = !AQ_1_.Q ; (1 pterm, 1 signal)
+
+o_TOPRED_2_ = !AQ_2_.Q ; (1 pterm, 1 signal)
+
+o_TOPRED_3_ = !AQ_3_.Q ; (1 pterm, 1 signal)
+
+o_TOPRED_4_ = !( DIP_7_ & DIP_6_ & !DIP_5_ & qCC_0_.Q
+    # DIP_7_ & !DIP_6_ & DIP_5_ & qCC_0_.Q ) ; (2 pterms, 4 signals)
+
+o_TOPRED_5_ = !( DIP_7_ & AQ_3_.Q ) ; (1 pterm, 2 signals)
+
+o_TOPRED_6_ = !( DIP_7_ & qCC_2_.Q ) ; (1 pterm, 2 signals)
+
+o_TOPRED_7_ = !( DIP_7_ & DIP_6_ & !DIP_5_ & qCC_3_.Q
+    # DIP_7_ & !DIP_6_ & DIP_5_ & qCC_3_.Q ) ; (2 pterms, 4 signals)
+
+o_YEL_0_.D = 0 ; (0 pterm, 0 signal)
+o_YEL_0_.C = !i_S2_NO ; (1 pterm, 1 signal)
+o_YEL_0_.AR = !i_S2_NO ; (1 pterm, 1 signal)
+o_YEL_0_.AP = !i_S2_NC ; (1 pterm, 1 signal)
+
+o_YEL_1_.D = 0 ; (0 pterm, 0 signal)
+o_YEL_1_.C = !i_S1_NO ; (1 pterm, 1 signal)
+o_YEL_1_.AR = !i_S1_NO ; (1 pterm, 1 signal)
+o_YEL_1_.AP = !i_S1_NC ; (1 pterm, 1 signal)
+
+qCC_0_.D = !( !X_2_.Q & !Y_3_.Q & !inst_M.Q
+    # !X_2_.Q & Y_3_.Q & inst_M.Q
+    # X_2_.Q & !Y_2_.Q & !Y_3_.Q
+    # X_2_.Q & Y_2_.Q & Y_3_.Q
+    # X_0_.Q & !Y_0_.Q & !inst_M.Q
+    # !X_0_.Q & Y_0_.Q & !inst_M.Q
+    # !X_0_.Q & !Y_0_.Q & inst_M.Q
+    # X_0_.Q & Y_0_.Q & inst_M.Q ) ; (8 pterms, 6 signals)
+qCC_0_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+qCC_0_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+qCC_2_.D = !( X_2_.Q & Y_0_.Q & !Y_2_.Q
+    # !X_2_.Q & Y_0_.Q & Y_2_.Q
+    # !X_0_.Q & X_1_.Q & X_3_.Q & !Y_3_.Q
+    # !X_0_.Q & X_1_.Q & !X_3_.Q & Y_3_.Q
+    # !X_0_.Q & X_1_.Q & !X_2_.Q & !Y_2_.Q & !inst_M.Q
+    # X_2_.Q & !X_3_.Q & Y_2_.Q & !Y_3_.Q & !inst_M.Q
+    # X_2_.Q & X_3_.Q & Y_2_.Q & Y_3_.Q & !inst_M.Q
+    # !X_1_.Q & Y_0_.Q & !Y_1_.Q & !inst_M.Q
+    # !X_2_.Q & X_3_.Q & !Y_3_.Q
+    # !X_2_.Q & !X_3_.Q & Y_3_.Q
+    # !X_0_.Q & !X_1_.Q & Y_1_.Q
+    # X_1_.Q & Y_0_.Q & Y_1_.Q & !inst_M.Q
+    # X_2_.Q & !Y_1_.Q & !Y_2_.Q
+    # !X_2_.Q & !Y_1_.Q & Y_2_.Q
+    # X_0_.Q & !Y_0_.Q
+    # !X_1_.Q & Y_1_.Q & inst_M.Q
+    # X_3_.Q & !Y_3_.Q & inst_M.Q
+    # !X_3_.Q & Y_3_.Q & inst_M.Q
+    # X_2_.Q & !Y_2_.Q & inst_M.Q
+    # X_1_.Q & !Y_1_.Q & inst_M.Q
+    # !X_2_.Q & Y_2_.Q & inst_M.Q
+    # !X_0_.Q & Y_0_.Q ) ; (22 pterms, 9 signals)
+qCC_2_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+qCC_2_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+
+qCC_3_.D = X_0_.Q & X_3_.Q & Y_0_.Q & Y_1_.Q & Y_2_.Q & !inst_M.Q
+    # X_0_.Q & X_3_.Q & !Y_0_.Q & !Y_1_.Q & !Y_2_.Q & inst_M.Q
+    # X_0_.Q & X_2_.Q & X_3_.Q & Y_0_.Q & Y_1_.Q & !inst_M.Q
+    # X_0_.Q & X_2_.Q & X_3_.Q & !Y_0_.Q & !Y_1_.Q & inst_M.Q
+    # X_0_.Q & X_1_.Q & X_3_.Q & Y_0_.Q & Y_2_.Q & !inst_M.Q
+    # X_0_.Q & X_1_.Q & X_3_.Q & !Y_0_.Q & !Y_2_.Q & inst_M.Q
+    # X_0_.Q & X_1_.Q & X_2_.Q & X_3_.Q & Y_0_.Q & !inst_M.Q
+    # X_0_.Q & X_1_.Q & X_2_.Q & X_3_.Q & !Y_0_.Q & inst_M.Q
+    # X_1_.Q & X_3_.Q & Y_1_.Q & Y_2_.Q & !inst_M.Q
+    # X_1_.Q & X_3_.Q & !Y_1_.Q & !Y_2_.Q & inst_M.Q
+    # X_1_.Q & X_2_.Q & X_3_.Q & Y_1_.Q & !inst_M.Q
+    # X_1_.Q & X_2_.Q & X_3_.Q & !Y_1_.Q & inst_M.Q
+    # X_2_.Q & X_3_.Q & Y_2_.Q & !inst_M.Q
+    # X_2_.Q & X_3_.Q & !Y_2_.Q & inst_M.Q
+    # X_0_.Q & !Y_0_.Q & !Y_1_.Q & !Y_2_.Q & !Y_3_.Q & inst_M.Q
+    # X_0_.Q & X_1_.Q & !Y_0_.Q & !Y_2_.Q & !Y_3_.Q & inst_M.Q
+    # X_0_.Q & X_2_.Q & !Y_0_.Q & !Y_1_.Q & !Y_3_.Q & inst_M.Q
+    # X_0_.Q & X_1_.Q & X_2_.Q & !Y_0_.Q & !Y_3_.Q & inst_M.Q
+    # X_1_.Q & !Y_1_.Q & !Y_2_.Q & !Y_3_.Q & inst_M.Q
+    # X_0_.Q & Y_0_.Q & Y_1_.Q & Y_2_.Q & Y_3_.Q & !inst_M.Q
+    # X_1_.Q & X_2_.Q & !Y_1_.Q & !Y_3_.Q & inst_M.Q
+    # X_0_.Q & X_1_.Q & Y_0_.Q & Y_2_.Q & Y_3_.Q & !inst_M.Q
+    # X_0_.Q & X_2_.Q & Y_0_.Q & Y_1_.Q & Y_3_.Q & !inst_M.Q
+    # X_0_.Q & X_1_.Q & X_2_.Q & Y_0_.Q & Y_3_.Q & !inst_M.Q
+    # X_2_.Q & !Y_2_.Q & !Y_3_.Q & inst_M.Q
+    # X_1_.Q & Y_1_.Q & Y_2_.Q & Y_3_.Q & !inst_M.Q
+    # X_1_.Q & X_2_.Q & Y_1_.Q & Y_3_.Q & !inst_M.Q
+    # X_2_.Q & Y_2_.Q & Y_3_.Q & !inst_M.Q
+    # X_3_.Q & Y_3_.Q & !inst_M.Q
+    # X_3_.Q & !Y_3_.Q & inst_M.Q ; (30 pterms, 9 signals)
+qCC_3_.C = RGTPB_Q.Q ; (1 pterm, 1 signal)
+qCC_3_.AR = LFTPB_Q.Q ; (1 pterm, 1 signal)
+

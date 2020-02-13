@@ -1,0 +1,13 @@
+@N|Running in 64-bit mode
+@N: CG364 :"C:\ispLEVER_Classic1_7\ispcpld\..\cae_library\synthesis\verilog\mach.v":417:7:417:14|Synthesizing module OSCTIMER
+@N: CG364 :"W:\my documents\ece 270\lab11\lab11_top.v":189:9:189:25|Synthesizing module frequency_divider
+@N: CG364 :"W:\my documents\ece 270\lab11\lab11_top.v":162:9:162:25|Synthesizing module bounceless_switch
+@N: CG364 :"W:\my documents\ece 270\lab11\lab11_top.v":235:7:235:12|Synthesizing module msggen
+@N: CG364 :"W:\my documents\ece 270\lab11\lab11_top.v":209:7:209:15|Synthesizing module dispshift
+@N: CG364 :"W:\my documents\ece 270\lab11\lab11_top.v":374:9:374:23|Synthesizing module up_count_decode
+@N: CL177 :"W:\my documents\ece 270\lab11\lab11_top.v":386:2:386:7|Sharing sequential element count_state.
+@N: CG364 :"W:\my documents\ece 270\lab11\lab11_top.v":400:7:400:10|Synthesizing module lfsr
+@N: CG364 :"W:\my documents\ece 270\lab11\lab11_top.v":429:7:429:18|Synthesizing module match_detect
+@N: CG364 :"W:\my documents\ece 270\lab11\lab11_top.v":451:7:451:9|Synthesizing module dcl
+@N: CG364 :"W:\my documents\ece 270\lab11\lab11_top.v":1:7:1:15|Synthesizing module lab11_top
+

@@ -1,0 +1,18 @@
+Section Cross Reference File
+Design 'lab8_4' created Sun Mar 03 15:40:51 2019
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     CLKIN
+        Input     D
+        Input     NC
+        Input     NO
+        Output     BQ
+        Output     QM
+        Output     QM_N
+        Output     QS
+        Output     QS_N
+        Output     QFF
+End

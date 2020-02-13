@@ -1,0 +1,22 @@
+JDF B
+// Created by Version 1.7 
+PROJECT Lab13
+DESIGN lab13 Normal
+DEVKIT LC4256ZE-5TN144C
+ENTRY Pure Verilog HDL
+MODULE gan35_lab13.v
+MODSTYLE mux21x4 Normal
+MODSTYLE memory Normal
+MODSTYLE mux21x7 Normal
+MODSTYLE outport Normal
+MODSTYLE idms Normal
+MODSTYLE alu Normal
+MODSTYLE lab13_top Normal
+MODSTYLE bounceless_switch Normal
+MODSTYLE ir Normal
+MODSTYLE cla4 Normal
+MODSTYLE hex2dis Normal
+MODSTYLE pc Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE lab13_top

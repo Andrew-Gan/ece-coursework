@@ -1,0 +1,9 @@
+C:\ispLEVER_Classic1_7\synpbase\bin64\m_cpld.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  W:\ecn.data\desktop\lab9  -part LC4064B  -package T44C  -grade -2.5   -ispmach4s -RWCheckOnRam 1 -areadelay 0 -minc  -auto_constrain_io    -summaryfile W:\ecn.data\desktop\lab9\synlog\report\lab9_top_fpga_mapper.xml -top_level_module  lab9_top  -ta_num_paths 3  -ta_num_points 0  -oedif  W:\ecn.data\desktop\lab9\lab9_top.edi  -freq 200.000  W:\ecn.data\desktop\lab9\synwork\lab9_top_compiler.srs  -ologparam  W:\ecn.data\desktop\lab9\syntmp\lab9_top.plg  -osyn  W:\ecn.data\desktop\lab9\lab9_top.srm  -prjdir  w:\ecn.data\desktop\lab9\  -prjname  lab9_top  -log  W:\ecn.data\desktop\lab9\synlog\lab9_top_fpga_mapper.srr 
+rc:1 success:1
+W:\ecn.data\desktop\lab9\lab9_top.edi|o|1553196546|135671
+W:\ecn.data\desktop\lab9\synwork\lab9_top_compiler.srs|i|1553196545|8090
+W:\ecn.data\desktop\lab9\syntmp\lab9_top.plg|o|1553196546|0
+W:\ecn.data\desktop\lab9\lab9_top.srm|o|1553196546|45236
+W:\ecn.data\desktop\lab9\synlog\lab9_top_fpga_mapper.srr|o|1553196547|1789
+C:\ispLEVER_Classic1_7\synpbase\bin64\m_cpld.exe|i|1363708044|7491584
+C:\ispLEVER_Classic1_7\synpbase\bin\m_cpld.exe|i|1363708014|6638080

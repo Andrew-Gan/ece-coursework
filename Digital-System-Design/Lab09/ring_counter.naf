@@ -1,0 +1,10 @@
+clk  i
+rst  i
+ringout[7]  o
+ringout[6]  o
+ringout[5]  o
+ringout[4]  o
+ringout[3]  o
+ringout[2]  o
+ringout[1]  o
+ringout[0]  o

@@ -1,0 +1,5 @@
+@W: CL118 :"W:\ecn.data\desktop\lab9\gan35_lab9.v":301:2:301:3|Latch generated from always block for signal next_OUT[7:0]; possible missing assignment in an if or case statement.
+@W: CG296 :"W:\ecn.data\desktop\lab9\gan35_lab9.v":151:10:151:12|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"W:\ecn.data\desktop\lab9\gan35_lab9.v":155:14:155:17|Referenced variable hexL is not in sensitivity list
+@W: CG290 :"W:\ecn.data\desktop\lab9\gan35_lab9.v":155:31:155:34|Referenced variable hexR is not in sensitivity list
+

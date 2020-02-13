@@ -1,0 +1,10 @@
+C:\ispLEVER_Classic1_7\synpbase\bin64\c_ver.exe  -osyn  U:\desktop\lab8\synwork\lab8_3_compiler.srs  -top  lab8_3  -prodtype  synplify_pro  -I u:\desktop\lab8\  -I C:\ispLEVER_Classic1_7\synpbase\lib  -v2001  -encrypt  -pro  -dmgen  U:\desktop\lab8\dm  -ll 2000   -ui -fid2 -ram -sharing on  -autosm -lib work C:\ispLEVER_Classic1_7\synpbase\lib\cpld\lattice.v -lib work C:\ispLEVER_Classic1_7\ispcpld\generic\verilog\synplify\generic.v -lib work U:\desktop\lab8\lab8.h -lib work U:\desktop\lab8\lab8-3.v -loga  U:\desktop\lab8\lab8_3.srr 
+rc:1 success:1
+U:\desktop\lab8\synwork\lab8_3_compiler.srs|o|1551991639|2220
+C:\ispLEVER_Classic1_7\synpbase\lib\cpld\lattice.v|i|1336465752|212290
+C:\ispLEVER_Classic1_7\ispcpld\generic\verilog\synplify\generic.v|i|1194890048|8047
+U:\desktop\lab8\lab8.h|i|1551638819|0
+U:\desktop\lab8\lab8-3.v|i|1551991609|1056
+U:\desktop\lab8\lab8_3.srr|o|1551991639|1665
+C:\ispLEVER_Classic1_7\synpbase\bin64\c_ver.exe|i|1363704460|5587968
+C:\ispLEVER_Classic1_7\synpbase\bin\c_ver.exe|i|1363704436|2088448

@@ -1,0 +1,3 @@
+@W: CG296 :"U:\desktop\lab7\lab7_decode.v":8:11:8:11|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"U:\desktop\lab7\lab7_decode.v":9:4:9:4|Referenced variable S is not in sensitivity list
+

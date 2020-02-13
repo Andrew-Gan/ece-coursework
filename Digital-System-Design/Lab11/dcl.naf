@@ -1,0 +1,11 @@
+CLK  i
+ARST  i
+inM  i
+inR  i
+outNMSG[1]  o
+outNMSG[0]  o
+outLED[2]  o
+outLED[1]  o
+outLED[0]  o
+outSRST  o
+outEN  o

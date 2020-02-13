@@ -1,0 +1,62 @@
+#Build: Synplify Pro G-2012.09LC-SP1 , Build 035R, Mar 19 2013
+#install: C:\ispLEVER_Classic1_7\synpbase
+#OS: Windows 7 6.1
+#Hostname: EE65PC10
+
+#Implementation: lab7
+
+$ Start of Compile
+#Sat Feb 23 14:44:28 2019
+
+Synopsys Verilog Compiler, version comp201209rcp1, Build 283R, built Mar 19 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2012 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\umr_capim.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\scemi_objects.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\vlog\hypermods.v"
+@I::"C:\ispLEVER_Classic1_7\synpbase\lib\cpld\lattice.v"
+@I::"C:\ispLEVER_Classic1_7\ispcpld\generic\verilog\synplify\generic.v"
+@I::"U:\desktop\lab7\lab7.h"
+@I::"U:\desktop\lab7\lab7_decoder.v"
+Verilog syntax check successful!
+File U:\desktop\lab7\lab7_decoder.v changed - recompiling
+Selecting top level module Lab7_decoder
+@N: CG364 :"U:\desktop\lab7\lab7_decoder.v":1:7:1:18|Synthesizing module Lab7_decoder
+
+@A: CL110 :"U:\desktop\lab7\lab7_decoder.v":7:2:7:5|Too many clocks (> 8) for set/reset analysis of DISP, try moving enabling expressions outside always block
+@W: CL118 :"U:\desktop\lab7\lab7_decoder.v":7:2:7:5|Latch generated from always block for signal DISP[7:0]; possible missing assignment in an if or case statement.
+@W: CL279 :"U:\desktop\lab7\lab7_decoder.v":7:2:7:5|Pruning register bits 7 to 1 of Y[7:0] 
+
+@W: CL246 :"U:\desktop\lab7\lab7_decoder.v":1:20:1:20|Input port bits 3 to 0 of I[7:0] are unused
+
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Feb 23 14:44:28 2019
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys CPLD Technology Mapper, Version maplat, Build 621R, Built Mar 19 2013
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09LC-SP1 
+@N: MF248 |Running in 64-bit mode.
+@W: MO129 :"u:\desktop\lab7\lab7_decoder.v":7:2:7:5|Sequential instance Y_1[0] reduced to a combinational gate by constant propagation
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+OBUF            8 uses
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+G-2012.09LC-SP1 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 30MB peak: 93MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Feb 23 14:44:29 2019
+
+###########################################################]

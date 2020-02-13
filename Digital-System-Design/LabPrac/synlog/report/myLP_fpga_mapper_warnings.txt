@@ -1,0 +1,9 @@
+@W: BN132 :"w:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Removing instance DISP[3],  because it is equivalent to instance DISP[14]
+@W: BN132 :"w:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Removing instance DISP[18],  because it is equivalent to instance DISP[14]
+@W: BN132 :"w:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Removing instance DISP[17],  because it is equivalent to instance DISP[1]
+@W: BN132 :"w:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Removing instance DISP[12],  because it is equivalent to instance DISP[10]
+@W: BN132 :"w:\my documents\ece 270\labprac\labprac.v":143:0:143:5|Removing instance DISP[16],  because it is equivalent to instance DISP[5]
+@W: FC103 :|Internal tri state un24_TOPRED_0[1] converted to mux. Simulation mismatch can happen 
+@W: FC103 :|Internal tri state un24_TOPRED_0[2] converted to mux. Simulation mismatch can happen 
+@W: FC103 :|Internal tri state un24_TOPRED_0[0] converted to mux. Simulation mismatch can happen 
+@W: FC103 :|Internal tri state un24_TOPRED_0[3] converted to mux. Simulation mismatch can happen 

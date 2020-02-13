@@ -1,0 +1,44 @@
+Running in Lattice mode
+
+
+Starting:    C:\ispLEVER_Classic1_7\synpbase\win64\mbin\synbatch.exe
+Install:     C:\ispLEVER_Classic1_7\synpbase
+Date:        Sun Apr 21 15:14:04 2019
+Version:     G-2012.09LC-SP1 
+
+Arguments:   -product synplify_pro  -batch w:/my documents/ece 270/labprac\myLP.prj
+ProductType: synplify_pro
+
+
+
+
+
+
+log file: "W:\my documents\ece 270\labprac\myLP.srr"
+
+Running myLP|labprac
+Running Compile on myLP|labprac
+Running Compile Process on myLP|labprac
+Running Compile Input on myLP|labprac
+Copied W:\my documents\ece 270\labprac\synwork\myLP_compiler.srs to W:\my documents\ece 270\labprac\myLP.srs
+compiler Completed with warnings
+Return Code: 1
+Run Time:0h:00m:01s
+
+Copied W:\my documents\ece 270\labprac\myLP.srr to W:\my documents\ece 270\labprac\mylp.srf
+Job Compile Process completed on myLP|labprac
+Job Compile completed on myLP|labprac
+Running Map on myLP|labprac
+Running Map & Optimize on myLP|labprac
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:0h:00m:01s
+
+Job Map completed on myLP|labprac
+Copied W:\my documents\ece 270\labprac\myLP.srr to W:\my documents\ece 270\labprac\mylp.srf
+Job Logic Synthesis completed on myLP|labprac
+
+
+exit status=0
+
+

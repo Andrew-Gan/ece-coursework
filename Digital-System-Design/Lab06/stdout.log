@@ -1,0 +1,44 @@
+Running in Lattice mode
+
+
+Starting:    C:\ispLEVER_Classic1_7\synpbase\win64\mbin\synbatch.exe
+Install:     C:\ispLEVER_Classic1_7\synpbase
+Date:        Thu Feb 21 15:39:32 2019
+Version:     G-2012.09LC-SP1 
+
+Arguments:   -product synplify_pro  -batch u:/desktop/lab6\Lab6.prj
+ProductType: synplify_pro
+
+
+
+
+
+
+log file: "U:\desktop\lab6\Lab6.srr"
+
+Running Lab6|lab6
+Running Compile on Lab6|lab6
+Running Compile Process on Lab6|lab6
+Running Compile Input on Lab6|lab6
+Copied U:\desktop\lab6\synwork\Lab6_compiler.srs to U:\desktop\lab6\Lab6.srs
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:01s
+
+Copied U:\desktop\lab6\Lab6.srr to U:\desktop\lab6\lab6.srf
+Job Compile Process completed on Lab6|lab6
+Job Compile completed on Lab6|lab6
+Running Map on Lab6|lab6
+Running Map & Optimize on Lab6|lab6
+fpga_mapper Completed
+Return Code: 0
+Run Time:0h:00m:01s
+
+Job Map completed on Lab6|lab6
+Copied U:\desktop\lab6\Lab6.srr to U:\desktop\lab6\lab6.srf
+Job Logic Synthesis completed on Lab6|lab6
+
+
+exit status=0
+
+

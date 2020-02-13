@@ -1,0 +1,63 @@
+#$ DATE Thu Feb 21 15:39:51 2019
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE lab6
+#$ PINS 8 I R Ci K:1,2,3,4'ke'  A B Co F:23,22,21,20'ke' 
+#$ NODES 20 un3_B un2_B un2_B_i I_i I_c R_c Ci_c K_c A_c B_c \
+#  Co_c R_c_i un3_B_i Ci_c_i K_c_i B_c_1 un2_B_1 un3_B_i_1 A_c_1 A_c_2 \
+#  
+.model lab6
+.inputs I.BLIF R.BLIF Ci.BLIF K.BLIF un3_B.BLIF un2_B.BLIF un2_B_i.BLIF I_i.BLIF I_c.BLIF \
+  R_c.BLIF Ci_c.BLIF K_c.BLIF A_c.BLIF B_c.BLIF Co_c.BLIF R_c_i.BLIF un3_B_i.BLIF Ci_c_i.BLIF \
+  K_c_i.BLIF B_c_1.BLIF un2_B_1.BLIF un3_B_i_1.BLIF A_c_1.BLIF A_c_2.BLIF  
+.outputs A B Co F un3_B un2_B un2_B_i I_i I_c R_c Ci_c \
+  K_c A_c B_c Co_c R_c_i un3_B_i Ci_c_i K_c_i B_c_1 un2_B_1 un3_B_i_1 \
+  A_c_1 A_c_2
+.names  I.BLIF I_c
+1 1
+.names  R.BLIF R_c
+1 1
+.names  Ci.BLIF Ci_c
+1 1
+.names  K.BLIF K_c
+1 1
+.names  A_c.BLIF A
+1 1
+.names  B_c.BLIF B
+1 1
+.names  Co_c.BLIF Co
+1 1
+.names  un3_B_i.BLIF F
+1 1
+.names  I_c.BLIF un2_B_i.BLIF B_c_1
+11 1
+.names  B_c_1.BLIF un3_B.BLIF B_c
+11 1
+.names  R_c.BLIF Ci_c.BLIF un2_B_1
+11 1
+.names  un2_B_1.BLIF K_c.BLIF un2_B
+11 1
+.names  R_c_i.BLIF Ci_c_i.BLIF un3_B_i_1
+11 1
+.names  un3_B_i_1.BLIF K_c_i.BLIF un3_B_i
+11 1
+.names  Ci_c.BLIF I_c.BLIF A_c_1
+11 1
+.names  K_c.BLIF R_c.BLIF A_c_2
+11 1
+.names  A_c_1.BLIF A_c_2.BLIF A_c
+11 1
+.names  I_c.BLIF I_i
+0 1
+.names  I_i.BLIF un3_B.BLIF Co_c
+11 1
+.names  un2_B.BLIF un2_B_i
+0 1
+.names  R_c.BLIF R_c_i
+0 1
+.names  un3_B_i.BLIF un3_B
+0 1
+.names  Ci_c.BLIF Ci_c_i
+0 1
+.names  K_c.BLIF K_c_i
+0 1
+.end
