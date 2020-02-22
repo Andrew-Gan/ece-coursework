@@ -1,4 +1,4 @@
-# ECE270 Introduction to Digital Systems Design
+# ECE 270 Introduction to Digital Systems Design
 
 [Lab 02](https://github.com/Andrew-Gan/ece-undergrad/tree/master/Digital-System-Design/Lab02) - Voltage and Current Measurements using DMM  
   
