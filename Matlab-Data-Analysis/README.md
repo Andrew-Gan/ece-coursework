@@ -1,12 +1,11 @@
-# engr132
-Transforming Ideas to Innovation II (MATLAB)  
+# ENGR 132 Transforming Ideas to Innovation II
   
 The files above include MATLAB and excel files used for the computation of data and formulation of models to predict the behavior of a system. The work was completed as the final project of a course.  
   
 Semester:  
 Spring 2019  
   
-Team mates:  
+Teammates:  
 Indraneel Lingam  
 John Augustus Papas Dennerline  
 Nicholas S Sherman  
