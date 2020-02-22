@@ -7,7 +7,7 @@ Spring 2019
   
 Teammates:  
 Indraneel Lingam  
-John Augustus Papas Dennerline  
+John P Dennerline  
 Nicholas S Sherman  
   
 Scenario:   
