@@ -1,13 +1,5 @@
 # ECE 270 Introduction to Digital Systems Design
 
-[Lab 02](https://github.com/Andrew-Gan/ece-undergrad/tree/master/Digital-System-Design/Lab02) - Voltage and Current Measurements using DMM  
-  
-[Lab 03](https://github.com/Andrew-Gan/ece-undergrad/tree/master/Digital-System-Design/Lab03) - Propagation Delay  
-  
-[Lab 04](https://engineering.purdue.edu/~meyer/DDU270/Labs/PDF/2-Lab04.pdf) - Measuring DC/AC Characteristics  
-  
-[Lab 05](https://github.com/Andrew-Gan/ece-undergrad/tree/master/Digital-System-Design/Lab05) - Observing and Resolving a Glitch using Oscilloscope  
-  
 [Lab 06](https://github.com/Andrew-Gan/ece-undergrad/blob/master/Digital-System-Design/Lab06/lab6.v) - Creating a Verilog Module  
   
 [Lab 07](https://github.com/Andrew-Gan/ece-undergrad/blob/master/Digital-System-Design/Lab07/lab7.v) - Alphanumeric Display  
