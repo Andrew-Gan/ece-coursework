@@ -1,2 +1,25 @@
-# ece270
-Introduction to Digital System Design
+# ECE270 Introduction to Digital Systems Design
+
+[Lab 02](https://github.com/Andrew-Gan/ece-undergrad/tree/master/Digital-System-Design/Lab02) - Voltage and Current Measurements using DMM  
+  
+[Lab 03](https://github.com/Andrew-Gan/ece-undergrad/tree/master/Digital-System-Design/Lab03) - Propagation Delay  
+  
+[Lab 04](https://engineering.purdue.edu/~meyer/DDU270/Labs/PDF/2-Lab04.pdf) - Measuring DC/AC Characteristics  
+  
+[Lab 05](https://github.com/Andrew-Gan/ece-undergrad/tree/master/Digital-System-Design/Lab05) - Observing and Resolving a Glitch using Oscilloscope  
+  
+[Lab 06](https://github.com/Andrew-Gan/ece-undergrad/blob/master/Digital-System-Design/Lab06/lab6.v) - Creating a Verilog Module  
+  
+[Lab 07](https://github.com/Andrew-Gan/ece-undergrad/blob/master/Digital-System-Design/Lab07/lab7.v) - Alphanumeric Display  
+  
+[Lab 08](https://github.com/Andrew-Gan/ece-undergrad/tree/master/Digital-System-Design/Lab08) - Latches and Flip-flops  
+  
+[Lab 09](https://github.com/Andrew-Gan/ece-undergrad/tree/master/Digital-System-Design/Lab09) - Counters and Light Sequencers  
+  
+[Lab 10](https://github.com/Andrew-Gan/ece-undergrad/tree/master/Digital-System-Design/Lab10) - Johnson Counter and State Decoder  
+  
+[Lab 11](https://github.com/Andrew-Gan/ece-undergrad/tree/master/Digital-System-Design/Lab11) - Sequence Recognizer State Machine  
+  
+[Lab 12](https://github.com/Andrew-Gan/ece-undergrad/blob/master/Digital-System-Design/Lab12/gan35_lab12.v) - BCD Full Adder Adder  
+  
+[Lab 13](https://github.com/Andrew-Gan/ece-undergrad/blob/master/Digital-System-Design/Lab13/gan35_lab13.v) - Simple Computer
