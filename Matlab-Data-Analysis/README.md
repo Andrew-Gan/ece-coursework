@@ -13,4 +13,4 @@ Nicholas S Sherman
 Scenario:   
 Manufacturing company produces several thermocouple designs, each with varying performance. Using the temperature data provided by the company, perform a statistical analysis and use the parameters such as SSE, variance, sample mean and the determined function type to calculate the best-fit equation for the data and conclude on the performance of the different designs.  
   
-[Technical brief](https://github.com/Andrew-Gan/engr132/blob/master/M4TechnicalBrief_012_26.docx)
+[Technical brief](https://github.com/Andrew-Gan/ece-undergrad/blob/master/Matlab-Data-Analysis/M4TechnicalBrief_012_26.pdf)
