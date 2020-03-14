@@ -4,10 +4,6 @@ Visual Studio Code
 G++ Compiler  
 OpenJDK  
   
-Operator Overloading  
-  
-Multithreading  
-  
 Interpreter  
   
 Compiler  
