@@ -1,8 +1,0 @@
-1. 32 semaphores are available (include/os/synch.h)
-2. 64 locks are available. (include/os/synch.h)
-3. By calling SemCreate() with the number of Semaphores needed as argument. The handler of the semaphores is returned. (os/synch.c)
-4.  SemWait() decrements the counter on the semaphore and suspends the process if the counter is below 0. (os/synch.c)
-    SemSignal() signals
-5. A handle is an integer number that often serves as the index of semaphore in the array. 
-   The handle of the semaphore is obtained when calling SemCreate(). To access the semaphore, we use the handle to index 
-   the sempahore in the array.
