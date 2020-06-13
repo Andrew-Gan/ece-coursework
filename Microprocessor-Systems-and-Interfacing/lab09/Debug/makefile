@@ -32,10 +32,10 @@ endif
 all: ECE362_lab9.elf
 
 # Tool invocations
-ECE362_lab9.elf: $(OBJS) $(USER_OBJS) /home/shay/a/gan35/workspace/ECE362_lab9/LinkerScript.ld
+ECE362_lab9.elf: $(OBJS) $(USER_OBJS) /home/andrew-gan/Documents/gitlab/ece-undergrad/Microprocessor-Systems-and-Interfacing/lab09/LinkerScript.ld
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU GCC Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/gan35/workspace/ECE362_lab9/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "ECE362_lab9.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/andrew-gan/Documents/gitlab/ece-undergrad/Microprocessor-Systems-and-Interfacing/lab09/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "ECE362_lab9.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

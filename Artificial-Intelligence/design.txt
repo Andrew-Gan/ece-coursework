@@ -1,0 +1,90 @@
+'Design your own Sokoban levels here.
+'Include a brief explanation to each level why the algorithmic improvement
+'  that is targeted makes a big difference on this level
+
+'Level improving from ucs to ucs -d
+Level p5-level-1
+#################
+#@   #  #.#   # #
+#   .   $   $   #
+# $  #    #    .#
+### #############
+# $  #
+#    #
+#  #.#
+######
+' This puzzle features many tiles that would lead to
+' dead states if a box is pushed to them.
+' The walls of the puzzle are designed to have U-shaped
+' structures with many corners so that many dead states
+' can be precomputed and cached before search begins.
+
+'Level improving from ucs -d to f -d
+Level p5-level-2
+    #####
+  ###@  #
+  #. $ .#
+  #  $ ##
+ ### ###
+## $  #
+#.    #
+#   ###
+#####
+' This puzzle contains many possible movements of the 
+' player. If ucs algorithm is used, a lot of time would 
+' be wasted by since the player needs to travel to a 
+' number of unnecessary locations. F algorithm focuses 
+' on box movements instead of player movements. In this 
+' puzzle, the possible box movement is very limited, which 
+' means the state it needs to explore is much less than 
+' ucs algorithm does, therefore the computation is 
+' reduced.
+
+'Level improving from f -d to fa -d
+Level p5-level-3
+################
+#     $       .#
+#              #
+#              #
+#     @        #
+#              #
+#          $   #
+#              #
+#      $       #
+#.            .#
+################
+' This puzzle is intuitive to solve, but it has a lot of
+' empty space for movement. Without a simple distance
+' heuristic function, the program may move the boxes in
+' any direction without getting closer to the targets.
+
+'Level improving from fa -d to fa2 -d
+Level p5-level-4
+#####
+#  @####
+#  $.  #
+###$.# #
+#  $.# #
+# #$.  #
+#    ###
+######
+' This puzzle can't be solved with a heuristic which just uses
+' distance from box to target as a metric because the second box from
+' the top does not actually end up on the target to its right, which
+' is unintuitve to a simple heuristc.
+
+'Optional: level for the Sokoban contest
+Level p5-contest
+          ########################
+          #       #    #         #
+          #   #$         $       #
+###########       #######  #######
+#. .  . .     #   #    #         #
+#         # $###  #    #    ##   #
+###########   #   #    #   ## $  #
+          #@      #    #         #
+          #########    ###########
+' This puzzle is unique because boxes that arrive on a target
+' has to be further moved to reach the goal state which really
+' tests the flexibily of the heuristic functions adopted.
+' A heuristic function based solely on distance may take more time.
