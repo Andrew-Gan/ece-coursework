@@ -1,6 +1,0 @@
-Selecting top level module lab8_2
-@N: CG364 :"U:\desktop\lab8\lab8-2.v":1:7:1:12|Synthesizing module lab8_2
-
-@W: FX105 :"U:\desktop\lab8\lab8-2.v":33:16:33:30|Found combinational loop at QS
-@W: FX105 :"U:\desktop\lab8\lab8-2.v":38:16:38:30|Found combinational loop at QM
-@W: FX105 :"U:\desktop\lab8\lab8-2.v":30:13:30:27|Found combinational loop at BQ

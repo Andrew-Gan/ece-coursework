@@ -1,2 +1,0 @@
-@E: CG285 :"W:\my documents\ece 270\lab12\gan35_lab12.v":593:3:593:6|Expecting statement
-

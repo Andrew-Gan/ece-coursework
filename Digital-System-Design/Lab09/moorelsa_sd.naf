@@ -1,7 +1,0 @@
-clk  i
-reset  i
-mode[1]  i
-mode[0]  i
-out[2]  o
-out[1]  o
-out[0]  o

@@ -1,4 +1,0 @@
-@N: MF248 |Running in 64-bit mode.
-@N: MO106 :"w:\ecn.data\desktop\lab9\gan35_lab9.v":263:4:263:7|Found ROM, 'DIS1H.hexout_1[6:0]', 16 words by 7 bits 
-@N: MO106 :"w:\ecn.data\desktop\lab9\gan35_lab9.v":263:4:263:7|Found ROM, 'DIS4H.hexout_1[6:0]', 16 words by 7 bits 
-@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.

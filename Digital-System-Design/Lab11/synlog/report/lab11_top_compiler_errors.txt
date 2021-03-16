@@ -1,2 +1,0 @@
-@E: CL123 :"W:\my documents\ece 270\lab11\lab11_top.v":476:0:476:5|Logic for next_qstate[3:0] does not match a standard flip-flop
-

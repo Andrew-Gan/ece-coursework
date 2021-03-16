@@ -1,4 +1,0 @@
-@W: CL169 :"W:\my documents\ece 270\lab10\gan35_lab10.v":296:0:296:5|Pruning register next_CQ[5:0] 
-@W: CL118 :"W:\my documents\ece 270\lab10\gan35_lab10.v":316:2:316:3|Latch generated from always block for signal outCHAR[6:0]; possible missing assignment in an if or case statement.
-@W: CL156 :"W:\my documents\ece 270\lab10\gan35_lab10.v":120:8:120:19|*Input un1_johnstate[7:0] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
-

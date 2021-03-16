@@ -1,2 +1,0 @@
-@E: CG313 :"U:\desktop\lab7\lab7.v":1:12:1:12|Port I: direction is incompatible with declaration (can only be type wire)
-

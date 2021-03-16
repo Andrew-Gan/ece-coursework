@@ -1,2 +1,0 @@
-@W: CG133 :"U:\desktop\lab7\lab7.v":6:11:6:14|No assignment to DISP
-

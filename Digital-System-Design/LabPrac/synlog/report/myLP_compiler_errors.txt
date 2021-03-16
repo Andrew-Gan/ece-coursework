@@ -1,3 +1,0 @@
-@E: CG426 :"W:\my documents\ece 270\labprac\labprac.v":145:4:145:10|Assignment target next_AQ must be of type reg or genvar
-@E: CG426 :"W:\my documents\ece 270\labprac\labprac.v":146:4:146:11|Assignment target next_qCC must be of type reg or genvar
-

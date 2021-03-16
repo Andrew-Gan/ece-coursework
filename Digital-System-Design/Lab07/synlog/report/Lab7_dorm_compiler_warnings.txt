@@ -1,3 +1,0 @@
-@W: CG360 :"U:\desktop\lab7\lab7_dorm.v":1:21:1:22|No assignment to wire DP
-@W: CL157 :"U:\desktop\lab7\lab7_dorm.v":1:21:1:22|*Output DP has undriven bits -- simulation mismatch possible.
-

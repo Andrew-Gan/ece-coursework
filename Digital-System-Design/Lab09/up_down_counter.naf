@@ -1,7 +1,0 @@
-clk  i
-rst  i
-dir  i
-countout[3]  o
-countout[2]  o
-countout[1]  o
-countout[0]  o

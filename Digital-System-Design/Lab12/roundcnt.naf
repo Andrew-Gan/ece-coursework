@@ -1,7 +1,0 @@
-CLK  i
-RST  i
-gameover  o
-qrnd[3]  o
-qrnd[2]  o
-qrnd[1]  o
-qrnd[0]  o

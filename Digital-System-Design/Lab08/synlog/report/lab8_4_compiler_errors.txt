@@ -1,2 +1,0 @@
-@E: CS160 :"U:\desktop\lab8\lab8-4.v":1:21:1:22|Bad or missing port direction for 'CS'
-

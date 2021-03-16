@@ -1,1 +1,0 @@
-@W: MT462 :|Net DIP_c[0] appears to be an unidentified clock source. Assuming default frequency. 

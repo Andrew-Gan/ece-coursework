@@ -1,3 +1,0 @@
-@E: CG353 :"U:\desktop\lab7\lab7_decoder.v":17:2:17:5|Expecting digit in radix 2
-@E: CS187 :"U:\desktop\lab7\lab7_decoder.v":28:0:28:8|Expecting endmodule
-

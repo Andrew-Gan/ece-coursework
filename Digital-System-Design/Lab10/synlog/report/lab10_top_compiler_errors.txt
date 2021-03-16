@@ -1,2 +1,0 @@
-@E: CL123 :"W:\my documents\ece 270\lab10\gan35_lab10.v":296:0:296:5|Logic for CQ[5:0] does not match a standard flip-flop
-

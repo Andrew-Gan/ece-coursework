@@ -1,9 +1,0 @@
-C:\ispLEVER_Classic1_7\synpbase\bin64\m_cpld.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  U:\desktop\lab6  -part ispGAL22LV10  -package LJ  -grade -4   -areadelay 0 -minc  -RWCheckOnRam 1     -summaryfile U:\desktop\lab6\synlog\report\Lab6_fpga_mapper.xml -top_level_module  Lab6  -oedif  U:\desktop\lab6\Lab6.edi  -freq 1.000  U:\desktop\lab6\synwork\Lab6_compiler.srs  -ologparam  U:\desktop\lab6\syntmp\Lab6.plg  -osyn  U:\desktop\lab6\Lab6.srm  -prjdir  u:\desktop\lab6\  -prjname  Lab6  -log  U:\desktop\lab6\synlog\Lab6_fpga_mapper.srr 
-rc:0 success:1
-U:\desktop\lab6\Lab6.edi|o|1550781574|8039
-U:\desktop\lab6\synwork\Lab6_compiler.srs|i|1550781573|1638
-U:\desktop\lab6\syntmp\Lab6.plg|o|1550781574|0
-U:\desktop\lab6\Lab6.srm|o|1550781574|3503
-U:\desktop\lab6\synlog\Lab6_fpga_mapper.srr|o|1550781574|1045
-C:\ispLEVER_Classic1_7\synpbase\bin64\m_cpld.exe|i|1363704444|7491584
-C:\ispLEVER_Classic1_7\synpbase\bin\m_cpld.exe|i|1363704414|6638080

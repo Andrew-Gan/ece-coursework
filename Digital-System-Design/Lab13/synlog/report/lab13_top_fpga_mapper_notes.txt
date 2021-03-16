@@ -1,8 +1,0 @@
-@N: MF248 |Running in 64-bit mode.
-@N: MF135 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Found RAM 'STEP1B.MEM_1[6:0]', 16 words by 7 bits 
-@N: MF135 :"w:\my documents\ece 270\lab13\gan35_lab13.v":359:3:359:8|Found RAM 'STEP1B.MEM[6:0]', 16 words by 7 bits 
-@N: MO106 :"w:\my documents\ece 270\lab13\gan35_lab13.v":309:3:309:6|Found ROM, 'STEP5C.outDIS_1[6:0]', 16 words by 7 bits 
-@N: MO106 :"w:\my documents\ece 270\lab13\gan35_lab13.v":309:3:309:6|Found ROM, 'STEP1F.outDIS_1[6:0]', 16 words by 7 bits 
-@N: MO106 :"w:\my documents\ece 270\lab13\gan35_lab13.v":309:3:309:6|Found ROM, 'STEP1D.outDIS_1[6:0]', 16 words by 7 bits 
-@N: MO106 :"w:\my documents\ece 270\lab13\gan35_lab13.v":309:3:309:6|Found ROM, 'STEP1C.outDIS_1[6:0]', 16 words by 7 bits 
-@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.

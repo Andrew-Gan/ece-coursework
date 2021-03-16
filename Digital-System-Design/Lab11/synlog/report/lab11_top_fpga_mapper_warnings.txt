@@ -1,2 +1,0 @@
-@W: MT462 :"w:\my documents\ece 270\lab11\lab11_top.v":348:5:352:55|Net STEP1A.un1_CQ_inv_12_0 appears to be an unidentified clock source. Assuming default frequency. 
-@W: MT462 :"w:\my documents\ece 270\lab11\lab11_top.v":479:7:508:30|Net jumbo_leds[1] appears to be an unidentified clock source. Assuming default frequency. 
